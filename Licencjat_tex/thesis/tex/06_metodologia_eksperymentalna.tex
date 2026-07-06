@@ -1,0 +1,21 @@
+\chapter{Metodologia eksperymentalna}
+
+\section{Przygotowanie danych}
+
+Przed właściwym procesem trenowania modeli dane zostały poddane wstępnej obróbce. W analizowanym zbiorze nie występowały braki danych, więc ich filtracja nie była konieczna. Ze względu na obecność wartości odstających zmiennej \texttt{playtime\_forever} zdecydowano się na ograniczenie jej wartości do $120000$ minut, co odpowiada 2000 godzinom, oraz w przybliżeniu $99{,}97$ percentylowi w zbiorze danych. Obserwacje powyżej tej granicy zostały zastąpione wartością 120000.  Założono, że wartości powyżej tej granicy nie niosą istotnej informacji o preferencjach graczy, a jedynie mogą zaburzyć proces trenowania modeli.
+
+Usunięto również gry przypisane do mniej niż 5 użytkowników oraz użytkowników posiadających w swojej bibliotece mniej niż 5 gier. Miało to na celu zmiejszenia wpływu zimnego startu na wyniki modeli oraz możliwość późniejszego podziału danych na zbiory treningowy, walidacyjny i testowy, w sposób zapewniający, że każdy użytkownik pojawi się w każdym z tych zbiorów.
+
+Zbiór po filtracji został podzielony na zbiory: treningowy, walidacyjny i testowy. Dla każdego użytkownika do zbioru testowego przypisano liczbę interakcji równą
+$\left\lceil 0{,}1 \cdot n_u \right\rceil$,
+gdzie $n_u$ oznacza liczbę interakcji danego użytkownika. Zastosowano zaokrąglenie w górę, aby zapewnić, że każdy użytkownik będzie miał co najmniej jedną interakcję w zbiorze testowym. Podział został przeprowadzony w sposób losowy ze względu na brak inforamcji o datach przypisania produktów do bibliotek użytkowników. Pozostały zbiór został analogicznie podzielony na zbiór treningowy i walidacyjny. W celu zachowania reprodukowalności wyników, na każdym etapie podziału zostało ustalone ziarno generatora liczb pseudolosowych.
+
+\section{Porównywane modele}
+
+\section{Strojenie hiperparametrów}
+
+\section{Finalna ewaluacja testowa}
+
+\section{Analiza stabilności, wrażliwości i testy statystyczne}
+
+\section{Ograniczenia metodologii}

@@ -1,0 +1,72 @@
+\babel@toc {polish}{}\relax 
+\contentsline {chapter}{Streszczenie}{3}{chapter*.1}%
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{Abstract}{4}{chapter*.2}%
+\babel@toc {polish}{}\relax 
+\contentsline {chapter}{\numberline {1}Wstęp}{11}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motywacja i problem badawczy}{11}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Cel, zakres i pytania badawcze}{11}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Struktura pracy}{11}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Podstawy teoretyczne systemów rekomendacyjnych}{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Zadanie rekomendacji top-N}{12}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Explicit feedback, implicit feedback i czas gry}{12}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Filtrowanie kolaboratywne i faktoryzacja macierzy}{12}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Model implicit ALS}{12}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Funkcje wag pewności badane w pracy}{12}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Bayesian Personalized Ranking}{12}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Metryki ewaluacyjne}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Ewaluacja rekomendacji top-K}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Metryki trafności rankingu}{13}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Metryki pokrycia katalogu, popularności i różnorodności}{13}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Ograniczenia porównywania metryk rankingowych}{13}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Przegląd literatury}{14}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Modele dla danych implicit feedback}{14}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Systemy rekomendacyjne dla gier i danych Steam}{14}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Wykorzystanie czasu gry w literaturze}{14}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Problemy reprodukowalności i porównywalności wyników}{14}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Podsumowanie roli literatury w pracy}{14}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Dane i analiza eksploracyjna}{15}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Źródło i struktura danych}{15}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Dane jako niejawna informacja zwrotna (implicit feedback)}{15}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Podstawowe statystyki surowego zbioru}{16}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Wpływ przygotowania danych na strukturę zbioru}{16}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Rozkład czasu gry i interakcje z zerowym czasem gry}{17}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Aktywność użytkowników i popularność gier}{18}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Aktywność użytkowników}{18}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Popularność gier}{18}{subsection.5.6.2}%
+\contentsline {section}{\numberline {5.7}Wnioski z analizy eksploracyjnej}{21}{section.5.7}%
+\contentsline {chapter}{\numberline {6}Metodologia eksperymentalna}{22}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Przygotowanie danych}{22}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Porównywane modele}{23}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Strojenie hiperparametrów}{23}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Finalna ewaluacja testowa}{23}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Analiza stabilności, wrażliwości i testy statystyczne}{23}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Ograniczenia metodologii}{23}{section.6.6}%
+\contentsline {chapter}{\numberline {7}Wyniki eksperymentów}{24}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Wyniki strojenia hiperparametrów}{24}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Analiza funkcji wag pewności}{24}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Wyniki finalne wariantów ALS}{24}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Porównanie z modelami odniesienia}{24}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Trafność, pokrycie katalogu i obciążenie popularnością}{24}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Stabilność wyników, testy statystyczne i analiza wrażliwości}{24}{section.7.6}%
+\contentsline {chapter}{\numberline {8}Dyskusja i odniesienie do literatury}{25}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Interpretacja roli czasu gry}{25}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Znaczenie przesunięcia $\beta $}{25}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Znaczenie interakcji z zerowym i niskim czasem gry}{25}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Porównanie ALS z modelami odniesienia}{25}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Odniesienie do literatury i próby replikacji}{25}{section.8.5}%
+\contentsline {section}{\numberline {8.6}Ograniczenia pracy}{25}{section.8.6}%
+\contentsline {chapter}{\numberline {9}Wnioski}{26}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Podsumowanie eksperymentów}{26}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Odpowiedź na pytania badawcze}{26}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Najważniejsze wnioski praktyczne i metodologiczne}{26}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Kierunki dalszych badań}{26}{section.9.4}%
+\contentsline {chapter}{Bibliografia}{27}{chapter*.11}%
+\contentsline {chapter}{Wykaz symboli i skrótów}{28}{chapter*.12}%
+\contentsline {chapter}{Spis rysunków}{28}{chapter*.12}%
+\contentsline {chapter}{Spis tabel}{29}{chapter*.13}%
+\contentsline {chapter}{Załączniki}{31}{chapter*.15}%
+\contentsline {chapter}{\numberline {A}Dodatkowe tabele wyników}{32}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Dodatkowe wykresy}{33}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Struktura plików projektu i reprodukowalność}{34}{appendix.C}%
+\contentsfinish 

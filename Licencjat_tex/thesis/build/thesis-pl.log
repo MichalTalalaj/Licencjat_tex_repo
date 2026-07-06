@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.5)  6 JUL 2026 21:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.5)  6 JUL 2026 22:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/misie/Downloads/Licencjat_tex/thesis/thesis-pl.tex
-(c:/Users/misie/Downloads/Licencjat_tex/thesis/thesis-pl.tex
+**c:/Users/misie/Downloads/Licencjat_tex_repo/Licencjat_tex/thesis/thesis-pl.tex
+(c:/Users/misie/Downloads/Licencjat_tex_repo/Licencjat_tex/thesis/thesis-pl.tex
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
 (d:/texlive/2026/texmf-dist/tex/latex/base/report.cls
@@ -750,7 +750,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'polish'.
- (./thesis-pl.aux
+ (build/thesis-pl.aux
 Package babel Info: 'polish' activates 'polish' shorthands.
 (babel)             Reported on input line 9.
 )
@@ -797,7 +797,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 115.
- (./thesis-pl.out) (./thesis-pl.out)
+ (build/thesis-pl.out) (build/thesis-pl.out)
 \@outlinefile=\write4
 \openout4 = `thesis-pl.out'.
 
@@ -818,7 +818,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis-pl.bbl' found.
- (./thesis-pl.bbl)
+ (build/thesis-pl.bbl)
 Package biblatex Info: Reference section=0 on input line 115.
 Package biblatex Info: Reference segment=0 on input line 115.
 
@@ -891,7 +891,7 @@ Package pdftex.def Info: titlepage-pl.pdf , page1 used on input line 118.
 
 {d:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{d:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] (./tex/00_abstract.tex) [4
 
-] (./thesis-pl.toc
+] (build/thesis-pl.toc
 LaTeX Font Info:    Trying to load font information for OML+plm on input line 2.
  (d:/texlive/2026/texmf-dist/tex/latex/polski/omlplm.fd
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
@@ -1019,13 +1019,13 @@ Rozdzia\l  9.
 
 ]) [28
 
-] (./thesis-pl.lof)
+] (build/thesis-pl.lof)
 \tf@lof=\write6
 \openout6 = `thesis-pl.lof'.
 
  [29
 
-] (./thesis-pl.lot)
+] (build/thesis-pl.lot)
 \tf@lot=\write7
 \openout7 = `thesis-pl.lot'.
 
@@ -1045,7 +1045,7 @@ Dodatek B.
 Dodatek C.
 ) [34
 
-] (./thesis-pl.aux)
+] (build/thesis-pl.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
@@ -1057,15 +1057,15 @@ Package logreq Info: Writing requests to 'thesis-pl.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24291 strings out of 467168
- 421207 string characters out of 5413706
+ 24292 strings out of 467168
+ 421362 string characters out of 5413706
  1304892 words of memory out of 5000000
  53084 multiletter control sequences out of 15000+600000
  641249 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,17n,90p,895b,2433s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,17n,90p,914b,2433s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi12.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plr10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plsy10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on thesis-pl.pdf (32 pages, 1323000 bytes).
+Output written on build/thesis-pl.pdf (32 pages, 1323244 bytes).
 PDF statistics:
  687 PDF objects out of 1000 (max. 8388607)
  538 compressed objects within 6 object streams

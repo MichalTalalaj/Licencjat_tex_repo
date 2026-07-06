@@ -1,0 +1,32 @@
+{
+  "latex-workshop.latex.outDir": "%DIR%/build",
+  "latex-workshop.latex.recipe.default": "lastUsed",
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "copyPdf",
+      "command": "powershell",
+      "args": [
+        "-Command",
+        "Copy-Item -Path '%OUTDIR%/thesis-pl.pdf' -Destination '%DIR%/thesis-pl.pdf' -Force"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk + copy",
+      "tools": ["latexmk", "copyPdf"]
+    }
+  ]
+}

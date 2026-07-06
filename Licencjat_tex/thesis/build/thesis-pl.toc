@@ -37,7 +37,7 @@
 \contentsline {section}{\numberline {5.7}Wnioski z analizy eksploracyjnej}{21}{section.5.7}%
 \contentsline {chapter}{\numberline {6}Metodologia eksperymentalna}{22}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Przygotowanie danych}{22}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Porównywane modele}{23}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Porównywane modele}{22}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Strojenie hiperparametrów}{23}{section.6.3}%
 \contentsline {section}{\numberline {6.4}Finalna ewaluacja testowa}{23}{section.6.4}%
 \contentsline {section}{\numberline {6.5}Analiza stabilności, wrażliwości i testy statystyczne}{23}{section.6.5}%

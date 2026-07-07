@@ -12,8 +12,7 @@
 \contentsline {section}{\numberline {2.2}Explicit feedback, implicit feedback i czas gry}{12}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Filtrowanie kolaboratywne i faktoryzacja macierzy}{12}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Model implicit ALS}{12}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Funkcje wag pewności badane w pracy}{12}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Bayesian Personalized Ranking}{12}{section.2.6}%
+\contentsline {section}{\numberline {2.5}Bayesian Personalized Ranking}{12}{section.2.5}%
 \contentsline {chapter}{\numberline {3}Metryki ewaluacyjne}{13}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Ewaluacja rekomendacji top-K}{13}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Metryki trafności rankingu}{13}{section.3.2}%

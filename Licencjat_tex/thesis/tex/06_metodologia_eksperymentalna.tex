@@ -12,11 +12,11 @@ gdzie $n_u$ oznacza liczbę interakcji danego użytkownika. Zastosowano zaokrąg
 
 \section{Porównywane modele}
     
-Porównano sześć modeli rekomendacyjnych, w tym cztery modele implicit ALS z różnymi funkcjami wag pewności (confidence), model Bayesian Personalized Ranking (BPR) oraz model popularnościowy jako punkt odniesienia. Zastosowane funkcje wag pewności w modelach implicit ALS to:
+Porównano sześć modeli rekomendacyjnych, w tym cztery modele implicit ALS z różnymi funkcjami wag pewności (confidence), model Bayesian Personalized Ranking (BPR) zawarte w bibliotece implicit \texttt{implicit} \cite{frederickson2022implicit} oraz model popularnościowy jako punkt odniesienia. Zastosowane funkcje wag pewności w modelach implicit ALS to:
 \begin{itemize}
     \item $c_{ui} = 1 + \alpha r_{ui}$,
     \item $c_{ui} = 1 + \alpha \log(1 + r_{ui})$,
-    \item $c_{ui} = 1 + \alpha \log(1 + r_{ui}) / (\log(1 + r_{ui}) + 1)$,
+    \item $c_{ui} = 1 + \alpha \frac{\log(1 + r_{ui})}{1 + \log(1 + r_{ui})}$,
     \item $c_{ui} = 1 + \alpha (\log(1 + r_{ui}) + \beta)$,
 \end{itemize}
 

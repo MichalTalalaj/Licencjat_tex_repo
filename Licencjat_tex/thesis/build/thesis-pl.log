@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.5)  7 JUL 2026 12:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.5)  7 JUL 2026 13:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -858,12 +858,12 @@ Package biblatex Info: Reference segment=0 on input line 129.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package babel Info: Main language set to 'polish'.
-<titlepage-pl.pdf, id=276, 597.51233pt x 845.0471pt>
+<titlepage-pl.pdf, id=272, 597.51233pt x 845.0471pt>
 File: titlepage-pl.pdf Graphic file (type pdf)
 <use titlepage-pl.pdf>
 Package pdftex.def Info: titlepage-pl.pdf  used on input line 133.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-<titlepage-pl.pdf, id=278, page=1, 597.51233pt x 845.0471pt>
+<titlepage-pl.pdf, id=274, page=1, 597.51233pt x 845.0471pt>
 File: titlepage-pl.pdf Graphic file (type pdf)
 <use titlepage-pl.pdf, page 1>
 Package pdftex.def Info: titlepage-pl.pdf , page1 used on input line 133.
@@ -962,7 +962,7 @@ Rozdzia\l  5.
 [15
 
 ]
-<figures/eda/filtered/filtered_positive_playtime_logscale_hist.png, id=485, 578.16pt x 361.35pt>
+<figures/eda/filtered/filtered_positive_playtime_logscale_hist.png, id=479, 578.16pt x 361.35pt>
 File: figures/eda/filtered/filtered_positive_playtime_logscale_hist.png Graphic file (type png)
 <use figures/eda/filtered/filtered_positive_playtime_logscale_hist.png>
 Package pdftex.def Info: figures/eda/filtered/filtered_positive_playtime_logscale_hist.png  used on input line 64.
@@ -970,18 +970,18 @@ Package pdftex.def Info: figures/eda/filtered/filtered_positive_playtime_logscal
 Package babel Info: 'polish' activates 'polish' shorthands.
 (babel)             Reported on input line 67.
  [16]
-<figures/eda/filtered/filtered_user_interaction_counts_hist.png, id=497, 578.16pt x 361.35pt>
+<figures/eda/filtered/filtered_user_interaction_counts_hist.png, id=491, 578.16pt x 361.35pt>
 File: figures/eda/filtered/filtered_user_interaction_counts_hist.png Graphic file (type png)
 <use figures/eda/filtered/filtered_user_interaction_counts_hist.png>
 Package pdftex.def Info: figures/eda/filtered/filtered_user_interaction_counts_hist.png  used on input line 96.
 (pdftex.def)             Requested size: 384.10962pt x 240.06866pt.
  [17 <./figures/eda/filtered/filtered_positive_playtime_logscale_hist.png>] [18 <./figures/eda/filtered/filtered_user_interaction_counts_hist.png>]
-<figures/eda/filtered/filtered_item_popularity_concentration.png, id=511, 578.16pt x 361.35pt>
+<figures/eda/filtered/filtered_item_popularity_concentration.png, id=505, 578.16pt x 361.35pt>
 File: figures/eda/filtered/filtered_item_popularity_concentration.png Graphic file (type png)
 <use figures/eda/filtered/filtered_item_popularity_concentration.png>
 Package pdftex.def Info: figures/eda/filtered/filtered_item_popularity_concentration.png  used on input line 109.
 (pdftex.def)             Requested size: 384.10962pt x 240.06866pt.
-<figures/eda/filtered/filtered_top_20_games_by_interactions.png, id=513, 715.2321pt x 497.6994pt>
+<figures/eda/filtered/filtered_top_20_games_by_interactions.png, id=507, 715.2321pt x 497.6994pt>
 File: figures/eda/filtered/filtered_top_20_games_by_interactions.png Graphic file (type png)
 <use figures/eda/filtered/filtered_top_20_games_by_interactions.png>
 Package pdftex.def Info: figures/eda/filtered/filtered_top_20_games_by_interactions.png  used on input line 118.
@@ -1058,24 +1058,24 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 Package rerunfilecheck Info: File `thesis-pl.out' has not changed.
-(rerunfilecheck)             Checksum: DE4DD7FD83EC4E3820BAAB7356E24B87;14703.
+(rerunfilecheck)             Checksum: D2F6DBE58CC4AF61FF1A76696862E73A;14455.
 Package logreq Info: Writing requests to 'thesis-pl.run.xml'.
 \openout1 = `thesis-pl.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24330 strings out of 467168
- 422025 string characters out of 5413706
- 1306061 words of memory out of 5000000
- 53113 multiletter control sequences out of 15000+600000
+ 24333 strings out of 467168
+ 422224 string characters out of 5413706
+ 1307145 words of memory out of 5000000
+ 53116 multiletter control sequences out of 15000+600000
  644845 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,17n,90p,1338b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi12.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plr10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plsy10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on build/thesis-pl.pdf (30 pages, 1341314 bytes).
+<d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi12.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi6.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plr10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plr8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plsy10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on build/thesis-pl.pdf (30 pages, 1353021 bytes).
 PDF statistics:
- 688 PDF objects out of 1000 (max. 8388607)
- 540 compressed objects within 6 object streams
+ 695 PDF objects out of 1000 (max. 8388607)
+ 544 compressed objects within 6 object streams
  107 named destinations out of 1000 (max. 500000)
- 580 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 572 words of extra memory for PDF output out of 10000 (max. 10000000)
 

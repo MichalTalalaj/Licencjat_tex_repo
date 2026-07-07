@@ -19,6 +19,36 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global/global}
+    \entry{frederickson2022implicit}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=ed092abebf2b3330ebe217df28f330df}{%
+           family={Frederickson},
+           familyi={F\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed092abebf2b3330ebe217df28f330df}
+      \strng{fullhash}{ed092abebf2b3330ebe217df28f330df}
+      \strng{fullhashraw}{ed092abebf2b3330ebe217df28f330df}
+      \strng{bibnamehash}{ed092abebf2b3330ebe217df28f330df}
+      \strng{authorbibnamehash}{ed092abebf2b3330ebe217df28f330df}
+      \strng{authornamehash}{ed092abebf2b3330ebe217df28f330df}
+      \strng{authorfullhash}{ed092abebf2b3330ebe217df28f330df}
+      \strng{authorfullhashraw}{ed092abebf2b3330ebe217df28f330df}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{GitHub repository}
+      \field{title}{implicit: Fast Python Collaborative Filtering for Implicit Datasets}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://github.com/benfred/implicit
+      \endverb
+      \verb{url}
+      \verb https://github.com/benfred/implicit
+      \endverb
+    \endentry
     \entry{hu2008implicit}{inproceedings}{}{}
       \name{author}{3}{}{%
         {{hash=855f3b81b4485b5f0dcd527f5803bb66}{%

@@ -12,8 +12,19 @@ gdzie $n_u$ oznacza liczbę interakcji danego użytkownika. Zastosowano zaokrąg
 
 \section{Porównywane modele}
     
-TEST TEST TEST
+Porównano sześć modeli rekomendacyjnych, w tym cztery modele implicit ALS z różnymi funkcjami wag pewności (confidence), model Bayesian Personalized Ranking (BPR) oraz model popularnościowy jako punkt odniesienia. Zastosowane funkcje wag pewności w modelach implicit ALS to:
+\begin{itemize}
+    \item $c_{ui} = 1 + \alpha r_{ui}$,
+    \item $c_{ui} = 1 + \alpha \log(1 + r_{ui})$,
+    \item $c_{ui} = 1 + \alpha \log(1 + r_{ui}) / (\log(1 + r_{ui}) + 1)$,
+    \item $c_{ui} = 1 + \alpha (\log(1 + r_{ui}) + \beta)$,
+\end{itemize}
+
+gdzie $r_{ui}$ oznacza zmienną \texttt{playtime\_forever} dla użytkownika $u$ i gry $i$, a $\alpha$ jest domyślnym hiperparametrem w modelach implicit ALS. Dwie pierwsze funkcje wag pewności zostały zaproponowane w pracy \cite{hu2008implicit}, natomiast kolejne zostały utworzone na podstawie wyników poprzednich modeli i analizy rozkładu zmiennej \texttt{playtime\_forever} w zbiorze danych. W szczególności funkcja $c_{ui} = 1 + \alpha (\log(1 + r_{ui}) + \beta)$ została zaproponowana w celu zmniejszenia wpływu szumu wynikającego z dużej liczby obserwacji o niskiej wartości zmiennej \texttt{playtime\_forever}, które ze względu na własności logarytmu mają stosunkowo wysoką wartość w funkcjach wag pewności, a nie są realnym odzwierciedleniem preferencji użytkowników. Dodatkowo przesunięcie  $\beta$ pozwala nadać obserwacjom z \texttt{playtime\_forever = 0} wagę większą niż 1, co miało na celu wyrazić zainteresowanie użytkownika grą, wynikające z jej zakupu, mimo braku czasu spędzonego w grze. Aby uniknąć arbitralnego wyboru wartości $\beta$, w eksperymencie przeprowadzono strojenie tego hiperparametru.
+
 \section{Strojenie hiperparametrów}
+
+
 
 \section{Finalna ewaluacja testowa}
 

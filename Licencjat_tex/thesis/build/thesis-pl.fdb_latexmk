@@ -1,21 +1,22 @@
 # Fdb version 4
-["biber build/thesis-pl"] 1783368041.30927 "build/thesis-pl.bcf" "build/thesis-pl.bbl" "build/thesis-pl" 1783371589.65749 0
+["biber build/thesis-pl"] 1783420816.02987 "build/thesis-pl.bcf" "build/thesis-pl.bbl" "build/thesis-pl" 1783420908.087 0
   "bib/bibliografia.bib" 1783260583 3091 947941f35ccc283e98027bb3eb0d4b85 ""
-  "build/thesis-pl.bcf" 1783371589 108631 2efc5a41f890940c8cd6b58fe68e8712 "pdflatex"
+  "build/thesis-pl.bcf" 1783420907 108700 b9cd186f2639c92e80abd979aba3c6aa "pdflatex"
   (generated)
   "build/thesis-pl.bbl"
   "build/thesis-pl.blg"
   (rewritten before read)
-["pdflatex"] 1783371586.20995 "c:/Users/misie/Desktop/Licencjat_tex_repo/Licencjat_tex/thesis/thesis-pl.tex" "build/thesis-pl.pdf" "thesis-pl" 1783371589.65843 0
-  "build/thesis-pl.aux" 1783371589 12983 e3876cad5588df51b960f96eb82dd84c "pdflatex"
-  "build/thesis-pl.bbl" 1783368052 1837 e12578489dbc800346f76c0f9d48a330 "biber build/thesis-pl"
-  "build/thesis-pl.lof" 1783371589 1010 8ec7a1ebd16ea9902fecf289546aebe4 "pdflatex"
-  "build/thesis-pl.lot" 1783371589 775 27cbaad0ce4109cf4e0f09c887e0d873 "pdflatex"
-  "build/thesis-pl.out" 1783371589 14703 de4dd7fd83ec4e3820baab7356e24b87 "pdflatex"
-  "build/thesis-pl.run.xml" 1783371589 2376 e4f069d9a7375964062ffbf48d658679 "pdflatex"
-  "build/thesis-pl.toc" 1783371589 6253 b49ef496761848b6b8a5e2b8dd8116ef "pdflatex"
+["pdflatex"] 1783420904.24878 "c:/Users/misie/Desktop/Licencjat_tex_repo/Licencjat_tex/thesis/thesis-pl.tex" "build/thesis-pl.pdf" "thesis-pl" 1783420908.08798 0
+  "build/thesis-pl.aux" 1783420907 13132 7de1805bd9d0d3ba06d12e76c8c26e15 "pdflatex"
+  "build/thesis-pl.bbl" 1783420818 3495 5d989aa8e16349ad45ace37336ea3bde "biber build/thesis-pl"
+  "build/thesis-pl.lof" 1783420907 1010 8ec7a1ebd16ea9902fecf289546aebe4 "pdflatex"
+  "build/thesis-pl.lot" 1783420907 775 27cbaad0ce4109cf4e0f09c887e0d873 "pdflatex"
+  "build/thesis-pl.out" 1783420907 14703 de4dd7fd83ec4e3820baab7356e24b87 "pdflatex"
+  "build/thesis-pl.run.xml" 1783420907 2376 e4f069d9a7375964062ffbf48d658679 "pdflatex"
+  "build/thesis-pl.toc" 1783420907 6253 61ea04b5917861f9c98d21eadb309170 "pdflatex"
   "c:/Users/misie/Desktop/Licencjat_tex_repo/Licencjat_tex/thesis/thesis-pl.tex" 1783371581 5777 5abb42d8c3b79b8dbc488662f503daf5 ""
   "d:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1783083389 2971 def0b6c1f0b107b3b936def894055589 ""
+  "d:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1783083389 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "d:/texlive/2026/texmf-dist/fonts/enc/dvips/pl/plmi.enc" 1783254206 2005 f094775651a1386335c158fb632529f1 ""
   "d:/texlive/2026/texmf-dist/fonts/enc/dvips/pl/plms.enc" 1783254206 2468 3f9e2f3088bcf5b581dfc367d71e7d95 ""
   "d:/texlive/2026/texmf-dist/fonts/enc/dvips/pl/plrm.enc" 1783254206 1944 1845592c00bbe510359fd6887a83ff72 ""
@@ -29,6 +30,7 @@
   "d:/texlive/2026/texmf-dist/fonts/tfm/jknappen/ec/ecsx1440.tfm" 1783250007 3584 9bd2baa3a21be3460ad52867ca0084f1 ""
   "d:/texlive/2026/texmf-dist/fonts/tfm/jknappen/ec/ecti1095.tfm" 1783250007 3072 b73d2778cc3af44970de4de5e032d7f6 ""
   "d:/texlive/2026/texmf-dist/fonts/tfm/jknappen/ec/ectt1095.tfm" 1783250007 1536 a988bfe554c1f79514bd46d13c3c64ce ""
+  "d:/texlive/2026/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1783250007 1536 02c06700a42be0f5a28664c7273f82e7 ""
   "d:/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1783082074 916 f87d7c45f9c908e672703b83b72241a3 ""
   "d:/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1783082074 928 2dc8d444221b7a635bb58038579b861a ""
   "d:/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1783082074 908 2921f8a10601f252058503cc6570e581 ""
@@ -191,7 +193,7 @@
   "tex/03_metryki_ewaluacyjne.tex" 1783260583 233 a7cf89a8574afbadd3f2977a5049c441 ""
   "tex/04_przeglad_literatury.tex" 1783260583 295 f687e95a85b3fe0d7ccc1ea006f0b9bc ""
   "tex/05_dane_i_eda.tex" 1783371581 11739 a0b56f404e43dc8ed6530235f0bb029c ""
-  "tex/06_metodologia_eksperymentalna.tex" 1783369592 2117 3b99a196853cdd28d24bedd35f26bd26 ""
+  "tex/06_metodologia_eksperymentalna.tex" 1783420903 3802 f5ed333bdd9ae00c5a981785a2706303 ""
   "tex/07_wyniki_eksperymentow.tex" 1783368146 347 f5732acb44534f4d14b31a575c80d3cb ""
   "tex/08_dyskusja_i_literatura.tex" 1783260583 345 a83ce95e378e93eddd8e1a88afa543a9 ""
   "tex/09_wnioski.tex" 1783260583 192 3cad960786cce7752f9b366472a0c34f ""

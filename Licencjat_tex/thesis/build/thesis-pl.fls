@@ -375,13 +375,15 @@ INPUT ./tex/06_metodologia_eksperymentalna.tex
 INPUT ./tex/06_metodologia_eksperymentalna.tex
 INPUT ./tex/06_metodologia_eksperymentalna.tex
 INPUT tex/06_metodologia_eksperymentalna.tex
+INPUT d:/texlive/2026/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm
+INPUT d:/texlive/2026/texmf-dist/fonts/enc/dvips/pl/plrm.enc
+INPUT d:/texlive/2026/texmf-dist/fonts/enc/dvips/pl/plms.enc
+INPUT d:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT ./tex/07_wyniki_eksperymentow.tex
 INPUT ./tex/07_wyniki_eksperymentow.tex
 INPUT ./tex/07_wyniki_eksperymentow.tex
 INPUT ./tex/07_wyniki_eksperymentow.tex
 INPUT tex/07_wyniki_eksperymentow.tex
-INPUT d:/texlive/2026/texmf-dist/fonts/enc/dvips/pl/plrm.enc
-INPUT d:/texlive/2026/texmf-dist/fonts/enc/dvips/pl/plms.enc
 INPUT ./tex/08_dyskusja_i_literatura.tex
 INPUT ./tex/08_dyskusja_i_literatura.tex
 INPUT ./tex/08_dyskusja_i_literatura.tex

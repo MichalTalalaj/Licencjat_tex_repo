@@ -19,6 +19,45 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global/global}
+    \entry{hu2008implicit}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=855f3b81b4485b5f0dcd527f5803bb66}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Yifan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=fce0a5d2aa4ba307f448e452e68fdbcb}{%
+           family={Koren},
+           familyi={K\bibinitperiod},
+           given={Yehuda},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=57bb7f21fb4a415436a1ab85ff5288c9}{%
+           family={Volinsky},
+           familyi={V\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{94c2c594f728c3bffe26090632b5a910}
+      \strng{fullhash}{94c2c594f728c3bffe26090632b5a910}
+      \strng{fullhashraw}{94c2c594f728c3bffe26090632b5a910}
+      \strng{bibnamehash}{94c2c594f728c3bffe26090632b5a910}
+      \strng{authorbibnamehash}{94c2c594f728c3bffe26090632b5a910}
+      \strng{authornamehash}{94c2c594f728c3bffe26090632b5a910}
+      \strng{authorfullhash}{94c2c594f728c3bffe26090632b5a910}
+      \strng{authorfullhashraw}{94c2c594f728c3bffe26090632b5a910}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 8th IEEE International Conference on Data Mining}
+      \field{title}{Collaborative Filtering for Implicit Feedback Datasets}
+      \field{year}{2008}
+      \field{pages}{263\bibrangedash 272}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ICDM.2008.22
+      \endverb
+    \endentry
     \entry{mcauleySteamData}{misc}{}{}
       \name{author}{2}{}{%
         {{hash=24f98302ee924662159ce29687c18e4e}{%

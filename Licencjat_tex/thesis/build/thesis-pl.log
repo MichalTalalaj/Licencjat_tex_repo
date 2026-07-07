@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.5)  6 JUL 2026 22:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.5)  7 JUL 2026 12:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -988,11 +988,11 @@ Package pdftex.def Info: figures/eda/filtered/filtered_top_20_games_by_interacti
 (pdftex.def)             Requested size: 384.10962pt x 267.28798pt.
 ) (./tex/06_metodologia_eksperymentalna.tex [19 <./figures/eda/filtered/filtered_item_popularity_concentration.png>] [20 <./figures/eda/filtered/filtered_top_20_games_by_interactions.png>]
 Rozdzia\l  6.
-) (./tex/07_wyniki_eksperymentow.tex [21
+[21
 
-{d:/texlive/2026/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{d:/texlive/2026/texmf-dist/fonts/enc/dvips/pl/plms.enc}]
+{d:/texlive/2026/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{d:/texlive/2026/texmf-dist/fonts/enc/dvips/pl/plms.enc}{d:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]) (./tex/07_wyniki_eksperymentow.tex [22]
 Rozdzia\l  7.
-) (./tex/08_dyskusja_i_literatura.tex [22
+) (./tex/08_dyskusja_i_literatura.tex [23
 
 ]
 Rozdzia\l  8.
@@ -1011,41 +1011,41 @@ LaTeX Font Warning: Font shape `U/lasy/m/n' in size <13> not available
 LaTeX Font Warning: Font shape `U/lasy/m/n' in size <6.5> not available
 (Font)              size <6> substituted on input line 3.
 
-) (./tex/09_wnioski.tex [23
+) (./tex/09_wnioski.tex [24
 
 ]
 Rozdzia\l  9.
-) [24
+) [25
 
-] (./tex/90_wykaz_symboli.tex [25
+] (./tex/90_wykaz_symboli.tex [26
 
-]) [26
+]) [27
 
 ] (build/thesis-pl.lof)
 \tf@lof=\write6
 \openout6 = `thesis-pl.lof'.
 
- [27
+ [28
 
 ] (build/thesis-pl.lot)
 \tf@lot=\write7
 \openout7 = `thesis-pl.lot'.
 
- [28
+ [29
 
-] (./tex/99_dodatki.tex [29
+] (./tex/99_dodatki.tex [30
 
 ]
 Dodatek A.
-[30
-
-]
-Dodatek B.
 [31
 
 ]
+Dodatek B.
+[32
+
+]
 Dodatek C.
-) [32
+) [33
 
 ] (build/thesis-pl.aux)
  ***********
@@ -1064,18 +1064,18 @@ Package logreq Info: Writing requests to 'thesis-pl.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24316 strings out of 467168
- 421677 string characters out of 5413706
- 1305997 words of memory out of 5000000
- 53103 multiletter control sequences out of 15000+600000
- 644504 words of font info for 86 fonts, out of 8000000 for 9000
+ 24330 strings out of 467168
+ 422025 string characters out of 5413706
+ 1306061 words of memory out of 5000000
+ 53113 multiletter control sequences out of 15000+600000
+ 644845 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,17n,90p,912b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,17n,90p,1338b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi12.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plr10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plsy10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on build/thesis-pl.pdf (29 pages, 1327767 bytes).
+Output written on build/thesis-pl.pdf (30 pages, 1341314 bytes).
 PDF statistics:
- 677 PDF objects out of 1000 (max. 8388607)
- 531 compressed objects within 6 object streams
- 105 named destinations out of 1000 (max. 500000)
+ 688 PDF objects out of 1000 (max. 8388607)
+ 540 compressed objects within 6 object streams
+ 107 named destinations out of 1000 (max. 500000)
  580 words of extra memory for PDF output out of 10000 (max. 10000000)
 

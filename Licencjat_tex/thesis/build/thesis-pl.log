@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.5)  7 JUL 2026 13:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.5)  8 JUL 2026 12:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1064,18 +1064,18 @@ Package logreq Info: Writing requests to 'thesis-pl.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24333 strings out of 467168
- 422224 string characters out of 5413706
- 1307145 words of memory out of 5000000
- 53116 multiletter control sequences out of 15000+600000
+ 24337 strings out of 467168
+ 422395 string characters out of 5413706
+ 1307211 words of memory out of 5000000
+ 53119 multiletter control sequences out of 15000+600000
  644845 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,17n,90p,1338b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,17n,90p,1446b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi12.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi6.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plr10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plr8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plsy10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on build/thesis-pl.pdf (30 pages, 1353021 bytes).
+Output written on build/thesis-pl.pdf (30 pages, 1358872 bytes).
 PDF statistics:
- 695 PDF objects out of 1000 (max. 8388607)
- 544 compressed objects within 6 object streams
- 107 named destinations out of 1000 (max. 500000)
+ 698 PDF objects out of 1000 (max. 8388607)
+ 547 compressed objects within 6 object streams
+ 108 named destinations out of 1000 (max. 500000)
  572 words of extra memory for PDF output out of 10000 (max. 10000000)
 

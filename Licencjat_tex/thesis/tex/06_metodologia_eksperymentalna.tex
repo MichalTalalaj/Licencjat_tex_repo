@@ -24,9 +24,11 @@ gdzie $r_{ui}$ oznacza zmienną \texttt{playtime\_forever} dla użytkownika $u$ 
 
 \section{Strojenie hiperparametrów}
 
-
+Proces strojenia hiperparametrów został przeprowadzony na podstawie zbioru walidacyjnego. Celem była optymalizacja \ndcg{} dla każdego z modeli. Procedura miała charakter dwuetapowy. Najpierw przeprowadzono szeroki grid search dla wszystkich modeli, aby znależć przybliżony zakres najlepszych wartości hiperparametrów, a następnie dokładnie przeszukano ten zakres za pomocą algorytmu Optuna \cite{akiba2019optuna}. W przypadku modeli implicit ALS strojenie obejmowało hiperparametry $\alpha$ i $\beta$ odpowiedzialne za wagę pewności, liczbę wymiarów latentnych $f$ oraz siłę regularizacji $\lambda$. Liczba iteracji algorytmu ALS została ustalona na 30, ze względu na brak istotnej poprawy wyników przy większej liczbie iteracji podczas wstępnego przeszukiwania siatkowego. Natomiast dla modelu BPR strojenie obejmowało $f$, $\lambda$, liczbę iteracji oraz długość kroku. W przypadku modelu popularnościowego nie przeprowadzano strojenia ze względu na brak hiperparametrów. Dla każdego z optymalizowanych modeli przeprowadzono 150 prób algorytmu Optuna, a w przypadku gdy znaleziona optymalna kombinacja hiperparametrów leżała na granicy przeszukiwanego przedziału, procedurę powtarzano z opowiednio przesuniętym zakresem.
 
 \section{Finalna ewaluacja testowa}
+
+
 
 \section{Analiza stabilności, wrażliwości i testy statystyczne}
 

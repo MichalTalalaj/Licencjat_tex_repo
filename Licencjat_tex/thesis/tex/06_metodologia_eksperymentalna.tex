@@ -24,12 +24,17 @@ gdzie $r_{ui}$ oznacza zmienną \texttt{playtime\_forever} dla użytkownika $u$ 
 
 \section{Strojenie hiperparametrów}
 
-Proces strojenia hiperparametrów został przeprowadzony na podstawie zbioru walidacyjnego. Celem była optymalizacja \ndcg{} dla każdego z modeli. Procedura miała charakter dwuetapowy. Najpierw przeprowadzono szeroki grid search dla wszystkich modeli, aby znależć przybliżony zakres najlepszych wartości hiperparametrów, a następnie dokładnie przeszukano ten zakres za pomocą algorytmu Optuna \cite{akiba2019optuna}. W przypadku modeli implicit ALS strojenie obejmowało hiperparametry $\alpha$ i $\beta$ odpowiedzialne za wagę pewności, liczbę wymiarów latentnych $f$ oraz siłę regularizacji $\lambda$. Liczba iteracji algorytmu ALS została ustalona na 30, ze względu na brak istotnej poprawy wyników przy większej liczbie iteracji podczas wstępnego przeszukiwania siatkowego. Natomiast dla modelu BPR strojenie obejmowało $f$, $\lambda$, liczbę iteracji oraz długość kroku. W przypadku modelu popularnościowego nie przeprowadzano strojenia ze względu na brak hiperparametrów. Dla każdego z optymalizowanych modeli przeprowadzono 150 prób algorytmu Optuna, a w przypadku gdy znaleziona optymalna kombinacja hiperparametrów leżała na granicy przeszukiwanego przedziału, procedurę powtarzano z opowiednio przesuniętym zakresem.
+Proces strojenia hiperparametrów został przeprowadzony na podstawie zbioru walidacyjnego. Celem była optymalizacja \ndcg{} dla każdego z modeli. Procedura miała charakter dwuetapowy. Najpierw przeprowadzono szeroki grid search dla wszystkich modeli, aby znależć przybliżony zakres najlepszych wartości hiperparametrów, a następnie dokładnie przeszukano ten zakres za pomocą algorytmu Optuna \cite{akiba2019optuna}. W przypadku modeli implicit ALS strojenie obejmowało hiperparametry $\alpha$ i $\beta$ odpowiedzialne za wagę pewności, liczbę wymiarów latentnych $f$ oraz siłę regularizacji $\lambda$. Liczba iteracji algorytmu ALS została ustalona na 30, ze względu na brak istotnej poprawy wyników przy większej liczbie iteracji podczas wstępnego przeszukiwania siatkowego. Natomiast dla modelu BPR strojenie obejmowało $f$, $\lambda$, liczbę iteracji oraz długość kroku. W przypadku modelu popularnościowego nie przeprowadzano strojenia ze względu na brak hiperparametrów. Dla każdego z optymalizowanych modeli przeprowadzono 150 prób algorytmu Optuna, a w przypadku gdy znaleziona optymalna kombinacja hiperparametrów leżała na granicy przeszukiwanego przedziału, procedurę powtarzano z opowiednio przesuniętym zakresem. Każdy etap przeprowadzono z ustalonym ziarnem generatora liczb pseudolosowych, aby zapewnić reprodukowalność wyników. 
 
 \section{Finalna ewaluacja testowa}
+% precision@10,recall@10,ndcg@10,coverage@10,delta_gap@10,diversity@10
+
+Po wybraniu optymalnych wartości hiperparametrów dla każdego z modeli, zostały one ponownie wytrenowane na połączonym zbiorze treningowym i walidacyjnym. Następnie poddano je ewaluacji na podstawie metryk precyzji (precision), czułości (recall) i NDCG, będącymi metrykami trafności rekomendacji, a także metryki pokrycia (coverage), różnorodności (diversity) i różnicy w popularności rekomendacji (delta GAP). Każda z metryk została obliczona dla listy rekomendacji o długości 10, a następnie uśredniona po wszystkich użytkownikach. Ewaluację powtórzono 5 razy z różnym ziarnem losowym modelu, a wyniki uśredniono oraz obliczono odchylenie standardowe. Dodatkowo metryka \ndcg{} została wyznaczona dla indywidualnie dla każdego użytkownika, co pozwoliło na przeprowadzenie testu Wilcoxona dla par obserwacji w celu sprawdzenia istotności statystycznej różnic jakości rekomendacji między modelami.
+
+\section{Analiza stabilności, wrażliwości}
 
 
-
-\section{Analiza stabilności, wrażliwości i testy statystyczne}
 
 \section{Ograniczenia metodologii}
+
+% Ze względu na dużą ilośc użytkowników z liczbą intrakcji poniżej 10 dodanie $\left\lceil 0{,}1 \cdot n_u \right\rceil$ obserwacji mogła spowodować znaczące poprawy jakości predykcji dla tych użytkowników. 

@@ -39,33 +39,33 @@
 \contentsline {section}{\numberline {6.2}Porównywane modele}{21}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Strojenie hiperparametrów}{22}{section.6.3}%
 \contentsline {section}{\numberline {6.4}Finalna ewaluacja testowa}{22}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Analiza stabilności, wrażliwości i testy statystyczne}{22}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Ograniczenia metodologii}{22}{section.6.6}%
-\contentsline {chapter}{\numberline {7}Wyniki eksperymentów}{23}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Wyniki strojenia hiperparametrów}{23}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Analiza funkcji wag pewności}{23}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Wyniki finalne wariantów ALS}{23}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Porównanie z modelami odniesienia}{23}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Trafność, pokrycie katalogu i obciążenie popularnością}{23}{section.7.5}%
-\contentsline {section}{\numberline {7.6}Stabilność wyników, testy statystyczne i analiza wrażliwości}{23}{section.7.6}%
-\contentsline {chapter}{\numberline {8}Dyskusja i odniesienie do literatury}{24}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Interpretacja roli czasu gry}{24}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Znaczenie przesunięcia $\beta $}{24}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Znaczenie interakcji z zerowym i niskim czasem gry}{24}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Porównanie ALS z modelami odniesienia}{24}{section.8.4}%
-\contentsline {section}{\numberline {8.5}Odniesienie do literatury i próby replikacji}{24}{section.8.5}%
-\contentsline {section}{\numberline {8.6}Ograniczenia pracy}{24}{section.8.6}%
-\contentsline {chapter}{\numberline {9}Wnioski}{25}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Podsumowanie eksperymentów}{25}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Odpowiedź na pytania badawcze}{25}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Najważniejsze wnioski praktyczne i metodologiczne}{25}{section.9.3}%
-\contentsline {section}{\numberline {9.4}Kierunki dalszych badań}{25}{section.9.4}%
-\contentsline {chapter}{Bibliografia}{26}{chapter*.11}%
-\contentsline {chapter}{Wykaz symboli i skrótów}{27}{chapter*.12}%
-\contentsline {chapter}{Spis rysunków}{27}{chapter*.12}%
-\contentsline {chapter}{Spis tabel}{28}{chapter*.13}%
-\contentsline {chapter}{Załączniki}{30}{chapter*.15}%
-\contentsline {chapter}{\numberline {A}Dodatkowe tabele wyników}{31}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Dodatkowe wykresy}{32}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Struktura plików projektu i reprodukowalność}{33}{appendix.C}%
+\contentsline {section}{\numberline {6.5}Analiza stabilności, wrażliwości}{23}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Ograniczenia metodologii}{23}{section.6.6}%
+\contentsline {chapter}{\numberline {7}Wyniki eksperymentów}{24}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Wyniki strojenia hiperparametrów}{24}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Analiza funkcji wag pewności}{24}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Wyniki finalne wariantów ALS}{24}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Porównanie z modelami odniesienia}{24}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Trafność, pokrycie katalogu i obciążenie popularnością}{24}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Stabilność wyników, testy statystyczne i analiza wrażliwości}{24}{section.7.6}%
+\contentsline {chapter}{\numberline {8}Dyskusja i odniesienie do literatury}{25}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Interpretacja roli czasu gry}{25}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Znaczenie przesunięcia $\beta $}{25}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Znaczenie interakcji z zerowym i niskim czasem gry}{25}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Porównanie ALS z modelami odniesienia}{25}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Odniesienie do literatury i próby replikacji}{25}{section.8.5}%
+\contentsline {section}{\numberline {8.6}Ograniczenia pracy}{25}{section.8.6}%
+\contentsline {chapter}{\numberline {9}Wnioski}{26}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Podsumowanie eksperymentów}{26}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Odpowiedź na pytania badawcze}{26}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Najważniejsze wnioski praktyczne i metodologiczne}{26}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Kierunki dalszych badań}{26}{section.9.4}%
+\contentsline {chapter}{Bibliografia}{27}{chapter*.11}%
+\contentsline {chapter}{Wykaz symboli i skrótów}{28}{chapter*.12}%
+\contentsline {chapter}{Spis rysunków}{28}{chapter*.12}%
+\contentsline {chapter}{Spis tabel}{29}{chapter*.13}%
+\contentsline {chapter}{Załączniki}{31}{chapter*.15}%
+\contentsline {chapter}{\numberline {A}Dodatkowe tabele wyników}{32}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Dodatkowe wykresy}{33}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Struktura plików projektu i reprodukowalność}{34}{appendix.C}%
 \contentsfinish 

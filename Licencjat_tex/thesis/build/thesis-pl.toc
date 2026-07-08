@@ -39,7 +39,7 @@
 \contentsline {section}{\numberline {6.2}Porównywane modele}{21}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Strojenie hiperparametrów}{22}{section.6.3}%
 \contentsline {section}{\numberline {6.4}Finalna ewaluacja testowa}{22}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Analiza stabilności, wrażliwości}{23}{section.6.5}%
+\contentsline {section}{\numberline {6.5}Analiza wrażliwości na $\alpha $ i $\beta $}{23}{section.6.5}%
 \contentsline {section}{\numberline {6.6}Ograniczenia metodologii}{23}{section.6.6}%
 \contentsline {chapter}{\numberline {7}Wyniki eksperymentów}{24}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Wyniki strojenia hiperparametrów}{24}{section.7.1}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.5)  8 JUL 2026 13:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.5)  8 JUL 2026 23:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -990,27 +990,29 @@ Package pdftex.def Info: figures/eda/filtered/filtered_top_20_games_by_interacti
 Rozdzia\l  6.
 [21
 
-{d:/texlive/2026/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{d:/texlive/2026/texmf-dist/fonts/enc/dvips/pl/plms.enc}{d:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]) (./tex/07_wyniki_eksperymentow.tex [22] [23]
+{d:/texlive/2026/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{d:/texlive/2026/texmf-dist/fonts/enc/dvips/pl/plms.enc}{d:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [22]
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 34.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <13> on input line 34.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <9.09996> on input line 34.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <6.5> on input line 34.
+
+
+LaTeX Font Warning: Font shape `U/lasy/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 34.
+
+
+LaTeX Font Warning: Font shape `U/lasy/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 34.
+
+) (./tex/07_wyniki_eksperymentow.tex [23]
 Rozdzia\l  7.
 ) (./tex/08_dyskusja_i_literatura.tex [24
 
 ]
 Rozdzia\l  8.
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 3.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <13> on input line 3.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <9.09996> on input line 3.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6.5> on input line 3.
-
-LaTeX Font Warning: Font shape `U/lasy/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 3.
-
-
-LaTeX Font Warning: Font shape `U/lasy/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 3.
-
 ) (./tex/09_wnioski.tex [25
 
 ]
@@ -1058,7 +1060,7 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 Package rerunfilecheck Info: File `thesis-pl.out' has not changed.
-(rerunfilecheck)             Checksum: 5D20C85AE97A5FB95F6D7BF19A0B810F;14341.
+(rerunfilecheck)             Checksum: 15E540940F90467CCE36B73B0FDE1EA5;14362.
 Package logreq Info: Writing requests to 'thesis-pl.run.xml'.
 \openout1 = `thesis-pl.run.xml'.
 
@@ -1072,7 +1074,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  74i,17n,90p,1569b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi12.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi6.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plr10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plr8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plsy10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on build/thesis-pl.pdf (31 pages, 1360049 bytes).
+Output written on build/thesis-pl.pdf (31 pages, 1362439 bytes).
 PDF statistics:
  705 PDF objects out of 1000 (max. 8388607)
  553 compressed objects within 6 object streams

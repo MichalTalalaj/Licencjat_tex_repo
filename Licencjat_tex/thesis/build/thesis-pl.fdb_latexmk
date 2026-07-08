@@ -1,20 +1,20 @@
 # Fdb version 4
-["biber build/thesis-pl"] 1783504689.37707 "build/thesis-pl.bcf" "build/thesis-pl.bbl" "build/thesis-pl" 1783509727.70589 0
+["biber build/thesis-pl"] 1783504689.37707 "build/thesis-pl.bcf" "build/thesis-pl.bbl" "build/thesis-pl" 1783546360.83358 0
   "bib/bibliografia.bib" 1783504667 3803 7fc9c93ade837a268781a2e0e424c0f7 ""
-  "build/thesis-pl.bcf" 1783509727 108849 733eca5f0e3ff8e0a3e094e0b86d82c0 "pdflatex"
+  "build/thesis-pl.bcf" 1783546360 108849 733eca5f0e3ff8e0a3e094e0b86d82c0 "pdflatex"
   (generated)
   "build/thesis-pl.bbl"
   "build/thesis-pl.blg"
   (rewritten before read)
-["pdflatex"] 1783509723.83338 "c:/Users/misie/Desktop/Licencjat_tex_repo/Licencjat_tex/thesis/thesis-pl.tex" "build/thesis-pl.pdf" "thesis-pl" 1783509727.7069 0
-  "build/thesis-pl.aux" 1783509727 13304 f9acd6252bff9ea4a858f4521dab754d "pdflatex"
+["pdflatex"] 1783546357.07476 "c:/Users/misie/Desktop/Licencjat_tex_repo/Licencjat_tex/thesis/thesis-pl.tex" "build/thesis-pl.pdf" "thesis-pl" 1783546360.83462 0
+  "build/thesis-pl.aux" 1783546360 13314 5c5123a90bbd5069321b1c0bc1a1d1b4 "pdflatex"
   "build/thesis-pl.bbl" 1783504692 6870 e55e7b5b55877eeff75bf530906ae88c "biber build/thesis-pl"
-  "build/thesis-pl.lof" 1783509727 1010 8ec7a1ebd16ea9902fecf289546aebe4 "pdflatex"
-  "build/thesis-pl.lot" 1783509727 775 27cbaad0ce4109cf4e0f09c887e0d873 "pdflatex"
-  "build/thesis-pl.out" 1783509727 14341 5d20c85ae97a5fb95f6d7bf19a0b810f "pdflatex"
-  "build/thesis-pl.run.xml" 1783509727 2376 e4f069d9a7375964062ffbf48d658679 "pdflatex"
-  "build/thesis-pl.toc" 1783509727 6135 3660bef7b25d5a8621d161011c39bc68 "pdflatex"
-  "c:/Users/misie/Desktop/Licencjat_tex_repo/Licencjat_tex/thesis/thesis-pl.tex" 1783371581 5777 5abb42d8c3b79b8dbc488662f503daf5 ""
+  "build/thesis-pl.lof" 1783546360 1010 8ec7a1ebd16ea9902fecf289546aebe4 "pdflatex"
+  "build/thesis-pl.lot" 1783546360 775 27cbaad0ce4109cf4e0f09c887e0d873 "pdflatex"
+  "build/thesis-pl.out" 1783546360 14362 15e540940f90467cce36b73b0fde1ea5 "pdflatex"
+  "build/thesis-pl.run.xml" 1783546360 2376 e4f069d9a7375964062ffbf48d658679 "pdflatex"
+  "build/thesis-pl.toc" 1783546360 6145 4396303cc9f05de82a8ec2d2eb3bb42b "pdflatex"
+  "c:/Users/misie/Desktop/Licencjat_tex_repo/Licencjat_tex/thesis/thesis-pl.tex" 1783537886 5777 5abb42d8c3b79b8dbc488662f503daf5 ""
   "d:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1783083389 2971 def0b6c1f0b107b3b936def894055589 ""
   "d:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1783083389 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "d:/texlive/2026/texmf-dist/fonts/enc/dvips/pl/plmi.enc" 1783254206 2005 f094775651a1386335c158fb632529f1 ""
@@ -195,13 +195,13 @@
   "tex/03_metryki_ewaluacyjne.tex" 1783260583 233 a7cf89a8574afbadd3f2977a5049c441 ""
   "tex/04_przeglad_literatury.tex" 1783260583 295 f687e95a85b3fe0d7ccc1ea006f0b9bc ""
   "tex/05_dane_i_eda.tex" 1783371581 11739 a0b56f404e43dc8ed6530235f0bb029c ""
-  "tex/06_metodologia_eksperymentalna.tex" 1783509722 6487 fa7a2852361ba1711c2809b3e462a2b6 ""
+  "tex/06_metodologia_eksperymentalna.tex" 1783546356 8616 d49b75327017c510bdec5678518d97f5 ""
   "tex/07_wyniki_eksperymentow.tex" 1783368146 347 f5732acb44534f4d14b31a575c80d3cb ""
   "tex/08_dyskusja_i_literatura.tex" 1783260583 345 a83ce95e378e93eddd8e1a88afa543a9 ""
   "tex/09_wnioski.tex" 1783260583 192 3cad960786cce7752f9b366472a0c34f ""
   "tex/90_wykaz_symboli.tex" 1783260583 143 d8e60320248d91dcd543a85cad53ac88 ""
   "tex/99_dodatki.tex" 1783260583 292 97ac8717cd4dee1d6a1a1b4f54669704 ""
-  "thesis-pl.tex" 1783371581 5777 5abb42d8c3b79b8dbc488662f503daf5 ""
+  "thesis-pl.tex" 1783537886 5777 5abb42d8c3b79b8dbc488662f503daf5 ""
   "titlepage-pl.pdf" 1783260582 652469 f50d1194f8fa315c1149479c516a0b80 ""
   (generated)
   "build/thesis-pl.aux"

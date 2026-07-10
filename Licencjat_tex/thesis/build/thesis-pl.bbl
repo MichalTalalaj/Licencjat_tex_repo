@@ -68,6 +68,33 @@
       \verb 10.1145/3292500.3330701
       \endverb
     \endentry
+    \entry{sparkals}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=1dfdf6310c72f193bf5efd3b2de7d0e3}{%
+           family={{Apache Spark Project}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{1dfdf6310c72f193bf5efd3b2de7d0e3}
+      \strng{fullhash}{1dfdf6310c72f193bf5efd3b2de7d0e3}
+      \strng{fullhashraw}{1dfdf6310c72f193bf5efd3b2de7d0e3}
+      \strng{bibnamehash}{1dfdf6310c72f193bf5efd3b2de7d0e3}
+      \strng{authorbibnamehash}{1dfdf6310c72f193bf5efd3b2de7d0e3}
+      \strng{authornamehash}{1dfdf6310c72f193bf5efd3b2de7d0e3}
+      \strng{authorfullhash}{1dfdf6310c72f193bf5efd3b2de7d0e3}
+      \strng{authorfullhashraw}{1dfdf6310c72f193bf5efd3b2de7d0e3}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Apache Spark Machine Learning Library (MLlib) - Collaborative Filtering}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.ml.recommendation.ALS.html
+      \endverb
+      \verb{url}
+      \verb https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.ml.recommendation.ALS.html
+      \endverb
+    \endentry
     \entry{frederickson2022implicit}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=ed092abebf2b3330ebe217df28f330df}{%

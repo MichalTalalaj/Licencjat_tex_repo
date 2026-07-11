@@ -1,19 +1,19 @@
 # Fdb version 4
-["biber build/thesis-pl"] 0 "build/thesis-pl.bcf" "build/thesis-pl.bbl" "build/thesis-pl" 1783696459.94461 -1
+["biber build/thesis-pl"] 1783783172.62858 "build/thesis-pl.bcf" "build/thesis-pl.bbl" "build/thesis-pl" 1783798847.03324 0
   "bib/bibliografia.bib" 1783694371 4060 3820009ac9698fc609f1ff8d77ceebec ""
-  "build/thesis-pl.bcf" 1783696459 108991 31c51f5f8bf9489b657360d21f4dc288 "pdflatex"
+  "build/thesis-pl.bcf" 1783798846 108991 31c51f5f8bf9489b657360d21f4dc288 "pdflatex"
   (generated)
   "build/thesis-pl.bbl"
   "build/thesis-pl.blg"
   (rewritten before read)
-["pdflatex"] 1783696456.10013 "c:/Users/misie/Desktop/Licencjat_tex_repo/Licencjat_tex/thesis/thesis-pl.tex" "build/thesis-pl.pdf" "thesis-pl" 1783696459.94557 0
-  "build/thesis-pl.aux" 1783696459 13864 931352dabb438e912ba3f99d39f2f811 "pdflatex"
-  "build/thesis-pl.bbl" 1783694375 8170 49de9f533f8dc0bf422404948b9ca5fc "biber build/thesis-pl"
-  "build/thesis-pl.lof" 1783696459 1010 8ec7a1ebd16ea9902fecf289546aebe4 "pdflatex"
-  "build/thesis-pl.lot" 1783696459 926 974b24a115842e312839b84b7382cb49 "pdflatex"
-  "build/thesis-pl.out" 1783696459 14362 ed53c7e0fd4c1229ca97ccd07b7214be "pdflatex"
-  "build/thesis-pl.run.xml" 1783696459 2376 e4f069d9a7375964062ffbf48d658679 "pdflatex"
-  "build/thesis-pl.toc" 1783696459 6145 1cc630e82ab4322d46e01deb88e9e69f "pdflatex"
+["pdflatex"] 1783798842.40796 "c:/Users/misie/Desktop/Licencjat_tex_repo/Licencjat_tex/thesis/thesis-pl.tex" "build/thesis-pl.pdf" "thesis-pl" 1783798847.03425 0
+  "build/thesis-pl.aux" 1783798846 14774 e737a962989d380202bd4ad1ab9b423e "pdflatex"
+  "build/thesis-pl.bbl" 1783783175 8170 49de9f533f8dc0bf422404948b9ca5fc "biber build/thesis-pl"
+  "build/thesis-pl.lof" 1783798846 1267 68ceb0a5b50cc12be9657886b5a5d611 "pdflatex"
+  "build/thesis-pl.lot" 1783798846 1073 b678eca065b94f0b2f93e833555956e4 "pdflatex"
+  "build/thesis-pl.out" 1783798846 14362 6944da04e5051d5a0c1e79b22545dee8 "pdflatex"
+  "build/thesis-pl.run.xml" 1783798846 2376 e4f069d9a7375964062ffbf48d658679 "pdflatex"
+  "build/thesis-pl.toc" 1783798846 6145 2f1f107495f6284c7b470e813696fa36 "pdflatex"
   "c:/Users/misie/Desktop/Licencjat_tex_repo/Licencjat_tex/thesis/thesis-pl.tex" 1783537886 5777 5abb42d8c3b79b8dbc488662f503daf5 ""
   "d:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1783083389 2971 def0b6c1f0b107b3b936def894055589 ""
   "d:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1783083389 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -191,6 +191,8 @@
   "figures/eda/filtered/filtered_positive_playtime_logscale_hist.png" 1783260583 81867 8c97ba8bb76598f679a410174c9cd21f ""
   "figures/eda/filtered/filtered_top_20_games_by_interactions.png" 1783260583 184644 1c255d1597a5f3eca6ea048b41c87078 ""
   "figures/eda/filtered/filtered_user_interaction_counts_hist.png" 1783260583 80496 3d819813ca97ac12fc27e17f17582475 ""
+  "figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png" 1783260583 178814 d1eb953afab6a2b0bef846dd6d719455 ""
+  "figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png" 1783260583 186537 ba834adcf9abb07db75a1e0dc404aa07 ""
   "tex/00_abstract.tex" 1783260583 176 d7cf829527e865d88ffb971fd3fc416d ""
   "tex/00_streszczenie.tex" 1783260583 148 5d7fd7ab8322673f2d69b08432995481 ""
   "tex/01_wstep.tex" 1783260583 122 3e1e7ad43abe01d5921ff9a751e10358 ""
@@ -198,8 +200,8 @@
   "tex/03_metryki_ewaluacyjne.tex" 1783260583 233 a7cf89a8574afbadd3f2977a5049c441 ""
   "tex/04_przeglad_literatury.tex" 1783260583 295 f687e95a85b3fe0d7ccc1ea006f0b9bc ""
   "tex/05_dane_i_eda.tex" 1783371581 11739 a0b56f404e43dc8ed6530235f0bb029c ""
-  "tex/06_metodologia_eksperymentalna.tex" 1783598228 8620 062face0ffac339f40f30861a762a1ac ""
-  "tex/07_wyniki_eksperymentow.tex" 1783696450 3115 24e3bb6126a4c8c82a34105274c7ba5d ""
+  "tex/06_metodologia_eksperymentalna.tex" 1783699778 8616 2b349d78b8adf620c2553aef31d18a1f ""
+  "tex/07_wyniki_eksperymentow.tex" 1783798838 6844 01d23fb1bc8b32f411479f7c92571176 ""
   "tex/08_dyskusja_i_literatura.tex" 1783260583 345 a83ce95e378e93eddd8e1a88afa543a9 ""
   "tex/09_wnioski.tex" 1783260583 192 3cad960786cce7752f9b366472a0c34f ""
   "tex/90_wykaz_symboli.tex" 1783260583 143 d8e60320248d91dcd543a85cad53ac88 ""

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.5)  10 JUL 2026 17:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.5)  11 JUL 2026 21:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1014,45 +1014,56 @@ Overfull \hbox (56.44041pt too wide) in paragraph at lines 11--21
  [][] 
  []
 
-) (./tex/08_dyskusja_i_literatura.tex [24
+<figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png, id=552, 712.5822pt x 422.2977pt>
+File: figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png Graphic file (type png)
+<use figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png>
+Package pdftex.def Info: figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png  used on input line 31.
+(pdftex.def)             Requested size: 384.10962pt x 227.63785pt.
+[24
 
-] [25]
+]
+<figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png, id=564, 712.3413pt x 422.2977pt>
+File: figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png Graphic file (type png)
+<use figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png>
+Package pdftex.def Info: figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png  used on input line 40.
+(pdftex.def)             Requested size: 384.10962pt x 227.71516pt.
+ [25 <./figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png>] [26 <./figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png>]) (./tex/08_dyskusja_i_literatura.tex [27]
 Rozdzia\l  8.
-) (./tex/09_wnioski.tex [26
+) (./tex/09_wnioski.tex [28
 
 ]
 Rozdzia\l  9.
-) [27
+) [29
 
-] (./tex/90_wykaz_symboli.tex [28
+] (./tex/90_wykaz_symboli.tex [30
 
-]) [29
+]) [31
 
 ] (build/thesis-pl.lof)
 \tf@lof=\write6
 \openout6 = `thesis-pl.lof'.
 
- [30
+ [32
 
 ] (build/thesis-pl.lot)
 \tf@lot=\write7
 \openout7 = `thesis-pl.lot'.
 
- [31
+ [33
 
-] (./tex/99_dodatki.tex [32
+] (./tex/99_dodatki.tex [34
 
 ]
 Dodatek A.
-[33
+[35
 
 ]
 Dodatek B.
-[34
+[36
 
 ]
 Dodatek C.
-) [35
+) [37
 
 ] (build/thesis-pl.aux)
  ***********
@@ -1065,24 +1076,24 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 Package rerunfilecheck Info: File `thesis-pl.out' has not changed.
-(rerunfilecheck)             Checksum: ED53C7E0FD4C1229CA97CCD07B7214BE;14362.
+(rerunfilecheck)             Checksum: 6944DA04E5051D5A0C1E79B22545DEE8;14362.
 Package logreq Info: Writing requests to 'thesis-pl.run.xml'.
 \openout1 = `thesis-pl.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24347 strings out of 467168
- 422612 string characters out of 5413706
- 1307367 words of memory out of 5000000
- 53124 multiletter control sequences out of 15000+600000
+ 24369 strings out of 467168
+ 423592 string characters out of 5413706
+ 1307617 words of memory out of 5000000
+ 53141 multiletter control sequences out of 15000+600000
  645610 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,17n,90p,1989b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi12.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi6.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plr10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plr8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plsy10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plsy8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on build/thesis-pl.pdf (32 pages, 1392806 bytes).
+Output written on build/thesis-pl.pdf (34 pages, 1729540 bytes).
 PDF statistics:
- 727 PDF objects out of 1000 (max. 8388607)
- 570 compressed objects within 6 object streams
- 112 named destinations out of 1000 (max. 500000)
- 572 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 751 PDF objects out of 1000 (max. 8388607)
+ 588 compressed objects within 6 object streams
+ 117 named destinations out of 1000 (max. 500000)
+ 582 words of extra memory for PDF output out of 10000 (max. 10000000)
 

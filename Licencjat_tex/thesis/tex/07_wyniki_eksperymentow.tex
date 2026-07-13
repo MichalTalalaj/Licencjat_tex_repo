@@ -42,7 +42,7 @@ Na wykresie \ref{fig:wrazliwosc_ndcg_vs_alpha} widać, że dla każdej funkcji p
     \label{fig:wrazliwosc_log_beta_ndcg_vs_beta}
 \end{figure}
 
-Analogiczną zależność od parametru $\beta$ przedstawiono na wykresie \ref{fig:wrazliwosc_log_beta_ndcg_vs_beta}. Widać na nim, że wraz ze wzrostem hiperparametru \ndcg{} rośnie, najprawdopodobniej ze względu na efekt tłumienia szumu w danych, następnie stabilizuje się dla wartości rzędu od $10^2$ do $10^3$. Taka wartość stanowi kompromis między efektem tłumienia, a możliwością wykorzystania wysokich wartości zmiennej \texttt{playtime\_forever} w procesie dopasowania modelu. Dalsze zwiększanie wartości hiperparametru pogarsza jakość rekomendacyjną modelu, ponieważ podobnie jak w przypadku małych wartości $\alpha$ prowadzą one do niewykorzystnia informacji o preferencji płynącej z długości interakcji. Warto podkreślić, że $\beta$ zwiększa wartość $c_{ui}$ obserwacji z \texttt{playtime\_forever} = 0, która w pozostałych modelach zawsze wynosi 1.
+Analogiczną zależność od parametru $\beta$ przedstawiono na wykresie \ref{fig:wrazliwosc_log_beta_ndcg_vs_beta}. Widać na nim, że wraz ze wzrostem hiperparametru \ndcg{} rośnie, najprawdopodobniej ze względu na efekt tłumienia szumu w danych, następnie stabilizuje się dla wartości rzędu od $10^2$ do $10^3$. Taka wartość stanowi kompromis między efektem tłumienia, a możliwością wykorzystania wysokich wartości zmiennej \texttt{playtime\_forever} w procesie dopasowania modelu. Dalsze zwiększanie wartości hiperparametru pogarsza jakość rekomendacyjną modelu, ponieważ podobnie jak w przypadku małych wartości $\alpha$ prowadzą one do niewykorzystnia informacji o preferencji płynącej z długości interakcji. Warto podkreślić, że $\beta$ zwiększa wartość $c_{ui}$ obserwacji z \texttt{playtime\_forever} = 0, która w pozostałych modelach zawsze wynosi 1. Na wykresie można również zauważyć, że hiperparametry wybrane przez algorytm Optuny nie są w pełni optymalne, jendak ze względu na marginalność różnic eksperyment był kontynuowany bez ich zmiany.
 
 Wartości hiperparametrów otrzymane w procesie strojenia modelu BPR zostały przedstawione w tabeli~\ref{tab:hiperparametry-bpr}.
 
@@ -60,10 +60,89 @@ BPR & 96 & 0.001760 & 0.003237 & 150 & 0.212 \\
 \caption*{\footnotesize Źródło: opracowanie własne na podstawie wyników Optuny.}
 \end{table}
 
-W przypadku modelu BPR nie jest możliwa tak dogłębna analiza dobranych hiperparametrów, ze względu na to, że interakcje traktowane są w sposób binarny. Regularyzacja i długość kroku uczenia wpływają wyłącznie na proces znajdywania maksimum prawdopodobieństwa aposteriori cech ukrytych. Jedynie wymiar przestszeni cech ukrytych pozwala na interpretacje złożoności relacji między użytkownikami, a produktami. 
+W przypadku modelu BPR nie jest możliwa tak dogłębna analiza dobranych hiperparametrów, ze względu na to, że interakcje traktowane są w sposób binarny. Regularyzacja i długość kroku uczenia wpływają wyłącznie na proces znajdywania maksimum prawdopodobieństwa aposteriori cech ukrytych. Jedynie wymiar przestszeni cech ukrytych pozwala na interpretacje złożoności relacji między użytkownikami, a produktami. Już na tym etapie można zauważyć znaczące różnice między metryką \ndcg{} między klasami modeli, jednak ich analizę przeprowadzono w pózniejszych rozdziałach.  
 
 \section{Analiza funkcji wag pewności}
-\section{Wyniki finalne wariantów ALS}
-\section{Porównanie z modelami odniesienia}
-\section{Trafność, pokrycie katalogu i obciążenie popularnością}
-\section{Stabilność wyników, testy statystyczne i analiza wrażliwości}
+
+Aby zweryfikować hipotezę o redukcji sygnału z \texttt{playtime\_forever} w przypadku modeli implicit ALS przeprowadzono dodatkową analizę wag pewności otrzymanych w modelach. Na wykresie~\ref{fig:confidence_levels_best_als} przedstawiono ich zakres wartości dla każdego z modeli.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/confidence/confidence_levels_best_als.png}
+    \caption{Zakres przyjmowanych wartości wag pewności}
+    \label{fig:confidence_levels_best_als}
+\end{figure}
+
+W przypadku modelu z logarytmem oraz logarytmem z saturacją wykres~\ref{fig:confidence_levels_best_als} potwierdza, że długości interakcji mają bardzo znikomy wpływ na proces uczenia. Podobnie w przypadku modelu z liniową funkcją pewności zakresy wartości są niewielkie. Jedynie model z logarytmicznym przekształceniem z przesunięciem $\beta$ po wytrenowaniu uzyskał zakres pewności, który najdłuższym interakcjom przypisuje dwukrotnie większą wartość niż tym bez zarejestrowanego czasu gry. Umożliwia to zróżnicowanie siły sygnału w zależności od zachowania użytkownika. Należy jednak podkreślić, że w procesie optymalizacji modelu Implicit ALS uwzględniane są wszystkie możliwe kombinacje par użytkownik-gra. Ze względu na niską gęstość macierzy interakcji wynoszącą 0,00887, przypadki niezaobserwowane, dla których $c_{ui} = 1$ dominują w procesie uczenia. W takim przypadku zmiana wskaźnika $c_{ui}$ do poziomu 2,8-5,5 dla nielicznych interakcji pozytywnych ma nieznaczny wpływ na globalną wartość funkcji straty. Sugeruje to, że przewaga wariantu z przesunięciem $\beta$ wynika w dużej mierze ze zdolności do jednoczesnej kompresji zmienności sygnału dla niskich wartości czasu rozgrywki oraz ograniczenia wpływu wartości skrajnych, które w pozostałych modelach jedynie pogarszają jakość rekomendacji w przypadku uwzględnienia zmienności \texttt{playtime\_forever} w procesie uczenia.
+
+Aby przedstawić tą własność stworzono wykres~\ref{fig:confidence_growth_best_als_0_2400} przedstawiający przyrost wartości wag pewności w modelach implicit ALS w zależności od zmiennej \texttt{playtime\_forever} dla pierwszych 20 godzin rozgrywki.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/confidence/confidence_growth_best_als_0_2400.png}
+    \caption{Wartości wag pewności w zależności od zmiennej \texttt{playtime\_forever}}
+    \label{fig:confidence_growth_best_als_0_2400}
+\end{figure}
+
+% ten wykres moze powinien byc nie przyrostem a po prostu wartoscią
+% może też powinien być na całej skali od 0 do 120000
+
+Przebieg krzywych na wykresie~\ref{fig:confidence_growth_best_als_0_2400}  obrazuje opisywaną stabilność wariantu z przesunięciem $\beta$. Podczas gdy dla pozostałych modeli funkcja przyrostu wartości zaufania pozostaje bliska 0, model z $c_{ui} = 1+\alpha\ln(r_{ui} + 1 + \beta)$ wykazuje wyraźny wzrost. W przedziale pierwszych kilkuset minut rozgrywki przyrost wartości $c_{ui}$ jest stosunkowo szybki, natomiast w dalszej części wykresu krzywa widocznie łagodnieje. Te dwie właśności pozwala wyciągnąć możliwie najwięcej sygnału o preferencjach z pierwszych godzin spędzonych w danym tytule, bez nadawania nieproporcjonalnych wag zarówno dla małych jak i dużych wartości \texttt{playtime\_forever}.
+
+Warto rozważyć teoretyczny przyrost pozostałych wariantów transformacji w przypadku, gdyby nie uległy one skrajnemu spłaszczeniu. Dla modelu z $c_{ui} = 1 + \alpha \log(r_{ui} + 1)$ dla standardowego hiperparametru $\alpha = 1$ zaledwie 19 minut rozgrywki wystarczy, aby wartość pewności modelu gwałtownie skoczyła od poziomu bazowego równego 1 aż do 4. Równocześnie, aby uzyskać wzrost z poziomu 7 do 8, użytkownik musi spędzić w grze w przybliżeniu dodatkowe 11 i pół godziny. Oznacza to, że ta funkcja wykazuje się znaczną czułością w wąskim przedziale małych wartości, podczas gdy zmiana wsród dużych wartości jest nieznaczna. Podobny efekt ma 
+$c_{ui} = 1 + \alpha \frac{\log(1 + r_{ui})}{1 + \log(1 + r_{ui})}$. Natomiast w przypadku liniowej funkcji pewności $c_{ui} = 1 + \alpha r_{ui}$ to zjawisko przybiera  odwrotny charakter. Ponieważ jej przyrost jest proporcjonalny do spędzonego czasu, model nie posiada efektu saturacji. W efekcie użytkownicy generujący skrajnie wysokie liczby godzin mają dominujący wpływ na wartość funkcji straty. Model w efekcie zamiast różnicować zachowania, w procesie optymalizacji ulega binaryzacji pod wpływem wartości odstających. 
+
+\section{Jakość rekomendacji na zbiorze testowym}
+
+Przedstawione różnice w procesie uczenia mają swoje odzwierciedlenie w metrykach otrzymanych na zbiorze testowym. W tabeli~\ref{tab:wyniki-glowne} przedstawiono uśrednione wyniki otrzymane dla każdego z modeli. Odchylenia standardowe metryk zostaną opisane w późniejszym podrozdzialne, gdyż zostały usunięte z tabeli na rzecz czytelności.
+
+\begin{table}[htbp]
+\centering
+\caption{Wyniki modeli na zbiorze testowym}
+\label{tab:wyniki-glowne}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrr}
+\toprule
+Model & NDCG@10 & Precision@10 & Recall@10 & Coverage@10 & Delta GAP@10 & Diversity@10\\
+\midrule
+Popularność & 0.1855 & 0.0965 & 0.1783 & 0.0087 & 1.4233 & - \\
+ALS liniowa & 0.3299 & 0.1841 & 0.2642 & 0.1178 & -0.2112 & 0.7854 \\
+ALS logarytmiczna & 0.3356 & 0.1810 & 0.3019 & 0.0762 & 0.5433 & 0.5963 \\
+ALS log. z saturacją & 0.3354 & 0.1809 & 0.3019 & 0.0761 & 0.5443 & 0.5948 \\
+ALS log. z przesunięciem $\beta$ & 0.3517 & 0.1956 & 0.3338 & 0.1313 & 0.4191 & 0.7314 \\
+BPR & 0.2703 & 0.1329 & 0.2614 & 0.3039 & -0.0789 & 0.5499 \\
+\bottomrule
+\end{tabular}%
+}
+\caption*{\footnotesize Źródło: opracowanie własne. Wartości dla ALS i BPR to średnie z pięciu uruchomień.}
+\end{table}
+
+Ze względu na dużą ilość metryk w tym podrozdziale skupiono się na metrykach rankingowych, pozostałe z nich zostaną przeanalizowane w kolejnym podrozdziale poświęconym kompromisom między nimi. Ze względu na stosowanie metryki \ndcg{} jako głównej metryki rankingowej w celu lepszego zaprezentowania różnic między modelami utworzono wykres~\ref{fig:test_ndcg_all_models_horizontal}, który przedstawia jej wartość dla każdego z testowanych modeli.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/test/test_ndcg_all_models_horizontal.png}
+    \caption{Wartości \ndcg{} każdego z modeli na zbiorze testowym}
+    \label{fig:test_ndcg_all_models_horizontal}
+\end{figure}
+
+Wykres jednoznacznie pokazuje, że model popularnościowy cechuje się niższą zdolnością rekomendacji niż modele oparte na metodach faktoryzacji macierzy. Mimo to uzyskany wynik nie jest zaniedbywalny. Model popularnościowy, efektywnie wykorzystuje silny efekt nierównomierności popularności gier w analizowanym zbiorze danych przedstawiony na wykresie~\ref{fig:filtered_item_popularity_concentration}. Ze względu na to został on wykorzystany jako punkt odniesienia w niniejszej pracy.
+
+Uzyskana przez BPR wartość \ndcg{} jest najniższa spośród wszystkich modeli faktoryzacji. Należy jednak podkreślić, że nie oznacza to, że model jest obiektywnie gorszy. W ocenie systemów rekomendacyjnych należy również uwzględniać metryki odpowiedzialne za pokrycie katalogu i podatność na bias popularności.
+
+Istotnych wniosków dostarcza porównanie poszczególnych wariantów modelu ALS między sobą. Najwyższą wartość \ndcg{} uzyskał model z przesunięciem $\beta$ (0,3517), co stanowi poprawę o 4,8\% względem wariantu logarytmicznego (0,3356) oraz o 6,6\% względem wariantu liniowego (0,3299). Uzyskana poprawa jakości rankingu względem bazowej implementacji ALS wskazuje, że zastosowana modyfikacja ma istotny wpływ na działanie modelu, mimo zachowania tej samej architektury. Przeprowadzono również testy Wilcoxona dla par obserwacji z korektą Holma-Bonferroniego, aby potwierdzić statystyczną istotność różnic. Otrzymano w nich $p < 0.001$, zatem różnice są istotne. Warto zauważyć, że podobne obserwacje zostały przedstawione w pracy~\cite{rendle2021revisiting}, gdzie autorzy pokazali, że odpowiednio dostrojone i zmodyfikowane warianty klasycznego implicit ALS mogą osiągać wyższe wyniki, a nawet konkurować z bardziej złożonymi modelami rekomendacyjnymi, w tym neuronowymi.
+
+Rola metryk precyzji i odtworzenia jest ograniczona ze względu na ich znaczne skorelowanie z \ndcg{} wynikające z faktu, że wszystkie te metryki oceniają trafność rekomendacji na podstawie ilości trafień elementów istotnych dla użytkownika. Jednak mogą one pokazać różnice w jakości rekomendacji w zależności od poziomu aktywności użytkownika. 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/test/test_precision_vs_recall_all_models.png}
+    \caption{Wartości precyzji względem odtworzenia na zbiorze testowym}
+    \label{fig:test_precision_vs_recall_all_models}
+\end{figure}
+
+Z wykresu~\ref{fig:test_precision_vs_recall_all_models} można zauważyć, że pomimo niższej wartości metryki odtworzenia od modeli z przekształceniem logarytmicznym i logarytmicznym z saturacją ma on wyższą wartość precyzji. Może to sugerować, że ten model oferuje trafniejsze rekomendacje w przypadku użytkowników z większą liczbą interakcji. Weryfikacja tej hipotezy wymagałaby podziału użytkowników według liczby posiadanych interakcji, co wykracza poza zakres niniejszej pracy.
+
+\section{Analiza kompromisów jakości rekomendacji}
+
+\section{Stabilność wyników}

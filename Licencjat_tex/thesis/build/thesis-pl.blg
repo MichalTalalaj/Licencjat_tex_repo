@@ -1,14 +1,14 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'build/thesis-pl.blg'
 [150] biber-MSWIN64:342> INFO - === 
-[205] Biber.pm:421> INFO - Reading 'build/thesis-pl.bcf'
-[368] Biber.pm:1002> INFO - Found 5 citekeys in bib section 0
-[388] Biber.pm:4487> INFO - Processing section 0
-[401] Biber.pm:4678> INFO - Looking for bibtex file 'bib/bibliografia.bib' for section 0
-[459] bibtex.pm:1713> INFO - LaTeX decoding ...
-[475] bibtex.pm:1519> INFO - Found BibTeX data source 'bib/bibliografia.bib'
-[549] UCollate.pm:68> INFO - Overriding locale 'pl-PL' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[550] UCollate.pm:68> INFO - Overriding locale 'pl-PL' defaults 'variable = shifted' with 'variable = non-ignorable'
-[550] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'pl-PL'
-[561] bbl.pm:676> INFO - Writing 'build/thesis-pl.bbl' with encoding 'UTF-8'
-[565] bbl.pm:779> INFO - Output to build/thesis-pl.bbl
+[198] Biber.pm:421> INFO - Reading 'build/thesis-pl.bcf'
+[341] Biber.pm:1002> INFO - Found 6 citekeys in bib section 0
+[359] Biber.pm:4487> INFO - Processing section 0
+[372] Biber.pm:4678> INFO - Looking for bibtex file 'bib/bibliografia.bib' for section 0
+[431] bibtex.pm:1713> INFO - LaTeX decoding ...
+[450] bibtex.pm:1519> INFO - Found BibTeX data source 'bib/bibliografia.bib'
+[542] UCollate.pm:68> INFO - Overriding locale 'pl-PL' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[542] UCollate.pm:68> INFO - Overriding locale 'pl-PL' defaults 'variable = shifted' with 'variable = non-ignorable'
+[542] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'pl-PL'
+[555] bbl.pm:676> INFO - Writing 'build/thesis-pl.bbl' with encoding 'UTF-8'
+[560] bbl.pm:779> INFO - Output to build/thesis-pl.bbl

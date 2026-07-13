@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.5)  11 JUL 2026 21:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.5)  13 JUL 2026 23:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -858,12 +858,12 @@ Package biblatex Info: Reference segment=0 on input line 129.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package babel Info: Main language set to 'polish'.
-<titlepage-pl.pdf, id=272, 597.51233pt x 845.0471pt>
+<titlepage-pl.pdf, id=268, 597.51233pt x 845.0471pt>
 File: titlepage-pl.pdf Graphic file (type pdf)
 <use titlepage-pl.pdf>
 Package pdftex.def Info: titlepage-pl.pdf  used on input line 133.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-<titlepage-pl.pdf, id=274, page=1, 597.51233pt x 845.0471pt>
+<titlepage-pl.pdf, id=270, page=1, 597.51233pt x 845.0471pt>
 File: titlepage-pl.pdf Graphic file (type pdf)
 <use titlepage-pl.pdf, page 1>
 Package pdftex.def Info: titlepage-pl.pdf , page1 used on input line 133.
@@ -962,7 +962,7 @@ Rozdzia\l  5.
 [15
 
 ]
-<figures/eda/filtered/filtered_positive_playtime_logscale_hist.png, id=479, 578.16pt x 361.35pt>
+<figures/eda/filtered/filtered_positive_playtime_logscale_hist.png, id=473, 578.16pt x 361.35pt>
 File: figures/eda/filtered/filtered_positive_playtime_logscale_hist.png Graphic file (type png)
 <use figures/eda/filtered/filtered_positive_playtime_logscale_hist.png>
 Package pdftex.def Info: figures/eda/filtered/filtered_positive_playtime_logscale_hist.png  used on input line 64.
@@ -970,18 +970,18 @@ Package pdftex.def Info: figures/eda/filtered/filtered_positive_playtime_logscal
 Package babel Info: 'polish' activates 'polish' shorthands.
 (babel)             Reported on input line 67.
  [16]
-<figures/eda/filtered/filtered_user_interaction_counts_hist.png, id=491, 578.16pt x 361.35pt>
+<figures/eda/filtered/filtered_user_interaction_counts_hist.png, id=485, 578.16pt x 361.35pt>
 File: figures/eda/filtered/filtered_user_interaction_counts_hist.png Graphic file (type png)
 <use figures/eda/filtered/filtered_user_interaction_counts_hist.png>
 Package pdftex.def Info: figures/eda/filtered/filtered_user_interaction_counts_hist.png  used on input line 96.
 (pdftex.def)             Requested size: 384.10962pt x 240.06866pt.
  [17 <./figures/eda/filtered/filtered_positive_playtime_logscale_hist.png>] [18 <./figures/eda/filtered/filtered_user_interaction_counts_hist.png>]
-<figures/eda/filtered/filtered_item_popularity_concentration.png, id=505, 578.16pt x 361.35pt>
+<figures/eda/filtered/filtered_item_popularity_concentration.png, id=499, 578.16pt x 361.35pt>
 File: figures/eda/filtered/filtered_item_popularity_concentration.png Graphic file (type png)
 <use figures/eda/filtered/filtered_item_popularity_concentration.png>
 Package pdftex.def Info: figures/eda/filtered/filtered_item_popularity_concentration.png  used on input line 109.
 (pdftex.def)             Requested size: 384.10962pt x 240.06866pt.
-<figures/eda/filtered/filtered_top_20_games_by_interactions.png, id=507, 715.2321pt x 497.6994pt>
+<figures/eda/filtered/filtered_top_20_games_by_interactions.png, id=501, 715.2321pt x 497.6994pt>
 File: figures/eda/filtered/filtered_top_20_games_by_interactions.png Graphic file (type png)
 <use figures/eda/filtered/filtered_top_20_games_by_interactions.png>
 Package pdftex.def Info: figures/eda/filtered/filtered_top_20_games_by_interactions.png  used on input line 118.
@@ -1014,7 +1014,7 @@ Overfull \hbox (56.44041pt too wide) in paragraph at lines 11--21
  [][] 
  []
 
-<figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png, id=552, 712.5822pt x 422.2977pt>
+<figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png, id=546, 712.5822pt x 422.2977pt>
 File: figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png Graphic file (type png)
 <use figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png>
 Package pdftex.def Info: figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png  used on input line 31.
@@ -1022,48 +1022,72 @@ Package pdftex.def Info: figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png  used 
 [24
 
 ]
-<figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png, id=564, 712.3413pt x 422.2977pt>
+<figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png, id=558, 712.3413pt x 422.2977pt>
 File: figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png Graphic file (type png)
 <use figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png>
 Package pdftex.def Info: figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png  used on input line 40.
 (pdftex.def)             Requested size: 384.10962pt x 227.71516pt.
- [25 <./figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png>] [26 <./figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png>]) (./tex/08_dyskusja_i_literatura.tex [27]
+ [25 <./figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png>] [26 <./figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png>]
+<figures/confidence/confidence_levels_best_als.png, id=573, 643.203pt x 425.4294pt>
+File: figures/confidence/confidence_levels_best_als.png Graphic file (type png)
+<use figures/confidence/confidence_levels_best_als.png>
+Package pdftex.def Info: figures/confidence/confidence_levels_best_als.png  used on input line 71.
+(pdftex.def)             Requested size: 384.10962pt x 254.05867pt.
+ [27 <./figures/confidence/confidence_levels_best_als.png>]
+<figures/confidence/confidence_growth_best_als_0_2400.png, id=582, 642.7212pt x 425.1885pt>
+File: figures/confidence/confidence_growth_best_als_0_2400.png Graphic file (type png)
+<use figures/confidence/confidence_growth_best_als_0_2400.png>
+Package pdftex.def Info: figures/confidence/confidence_growth_best_als_0_2400.png  used on input line 82.
+(pdftex.def)             Requested size: 384.10962pt x 254.10295pt.
+ [28 <./figures/confidence/confidence_growth_best_als_0_2400.png>]
+<figures/test/test_ndcg_all_models_horizontal.png, id=593, 644.8893pt x 389.2944pt>
+File: figures/test/test_ndcg_all_models_horizontal.png Graphic file (type png)
+<use figures/test/test_ndcg_all_models_horizontal.png>
+Package pdftex.def Info: figures/test/test_ndcg_all_models_horizontal.png  used on input line 124.
+(pdftex.def)             Requested size: 384.10962pt x 231.87361pt.
+ [29 <./figures/test/test_ndcg_all_models_horizontal.png>]
+<figures/test/test_precision_vs_recall_all_models.png, id=603, 643.9257pt x 425.1885pt>
+File: figures/test/test_precision_vs_recall_all_models.png Graphic file (type png)
+<use figures/test/test_precision_vs_recall_all_models.png>
+Package pdftex.def Info: figures/test/test_precision_vs_recall_all_models.png  used on input line 139.
+(pdftex.def)             Requested size: 384.10962pt x 253.63583pt.
+ [30 <./figures/test/test_precision_vs_recall_all_models.png>]) (./tex/08_dyskusja_i_literatura.tex [31]
 Rozdzia\l  8.
-) (./tex/09_wnioski.tex [28
+) (./tex/09_wnioski.tex [32
 
 ]
 Rozdzia\l  9.
-) [29
+) [33
 
-] (./tex/90_wykaz_symboli.tex [30
+] (./tex/90_wykaz_symboli.tex [34
 
-]) [31
+]) [35
 
 ] (build/thesis-pl.lof)
 \tf@lof=\write6
 \openout6 = `thesis-pl.lof'.
 
- [32
+ [36
 
 ] (build/thesis-pl.lot)
 \tf@lot=\write7
 \openout7 = `thesis-pl.lot'.
 
- [33
+ [37
 
-] (./tex/99_dodatki.tex [34
+] (./tex/99_dodatki.tex [38
 
 ]
 Dodatek A.
-[35
+[39
 
 ]
 Dodatek B.
-[36
+[40
 
 ]
 Dodatek C.
-) [37
+) [41
 
 ] (build/thesis-pl.aux)
  ***********
@@ -1076,24 +1100,24 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 Package rerunfilecheck Info: File `thesis-pl.out' has not changed.
-(rerunfilecheck)             Checksum: 6944DA04E5051D5A0C1E79B22545DEE8;14362.
+(rerunfilecheck)             Checksum: 473C92B5882BC274CE3E4594A20F4234;13872.
 Package logreq Info: Writing requests to 'thesis-pl.run.xml'.
 \openout1 = `thesis-pl.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24369 strings out of 467168
- 423592 string characters out of 5413706
- 1307617 words of memory out of 5000000
- 53141 multiletter control sequences out of 15000+600000
+ 24414 strings out of 467168
+ 425684 string characters out of 5413706
+ 1308120 words of memory out of 5000000
+ 53177 multiletter control sequences out of 15000+600000
  645610 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,17n,90p,1989b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi12.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi6.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plr10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plr8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plsy10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plsy8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on build/thesis-pl.pdf (34 pages, 1729540 bytes).
+Output written on build/thesis-pl.pdf (38 pages, 2292139 bytes).
 PDF statistics:
- 751 PDF objects out of 1000 (max. 8388607)
- 588 compressed objects within 6 object streams
- 117 named destinations out of 1000 (max. 500000)
- 582 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 794 PDF objects out of 1000 (max. 8388607)
+ 619 compressed objects within 7 object streams
+ 126 named destinations out of 1000 (max. 500000)
+ 594 words of extra memory for PDF output out of 10000 (max. 10000000)
 

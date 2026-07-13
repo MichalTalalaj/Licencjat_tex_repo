@@ -191,6 +191,45 @@
       \field{note}{Dostęp: 2026-06-03}
       \field{title}{Steam Video Game and Bundle Data}
     \endentry
+    \entry{rendle2021revisiting}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=4303170423b0e1fbf0462c6a59260374}{%
+           family={Rendle},
+           familyi={R\bibinitperiod},
+           given={Steffen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a030b7911cea0197aefc5216860e403c}{%
+           family={Krichene},
+           familyi={K\bibinitperiod},
+           given={Walid},
+           giveni={W\bibinitperiod}}}%
+        {{hash=32a08717e0d6dcde59bc98b96800ed6c}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+        {{hash=fce0a5d2aa4ba307f448e452e68fdbcb}{%
+           family={Koren},
+           familyi={K\bibinitperiod},
+           given={Yehuda},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{7b7d9d55a2250ef16f539e04802dd771}
+      \strng{fullhash}{b746d348dd1a5c431ae25c669bab1ab4}
+      \strng{fullhashraw}{b746d348dd1a5c431ae25c669bab1ab4}
+      \strng{bibnamehash}{b746d348dd1a5c431ae25c669bab1ab4}
+      \strng{authorbibnamehash}{b746d348dd1a5c431ae25c669bab1ab4}
+      \strng{authornamehash}{7b7d9d55a2250ef16f539e04802dd771}
+      \strng{authorfullhash}{b746d348dd1a5c431ae25c669bab1ab4}
+      \strng{authorfullhashraw}{b746d348dd1a5c431ae25c669bab1ab4}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2110.14037}
+      \field{title}{Revisiting the Performance of iALS on Item Recommendation Benchmarks}
+      \field{year}{2021}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

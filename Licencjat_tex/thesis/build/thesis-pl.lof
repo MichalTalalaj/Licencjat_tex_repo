@@ -18,6 +18,9 @@
 \contentsline {figure}{\numberline {7.4}{\ignorespaces Wartości wag pewności w zależności od zmiennej \texttt {playtime\_forever}}}{28}{figure.caption.16}%
 \contentsline {figure}{\numberline {7.5}{\ignorespaces Wartości NDCG@10{} każdego z modeli na zbiorze testowym}}{29}{figure.caption.18}%
 \contentsline {figure}{\numberline {7.6}{\ignorespaces Wartości precyzji względem odtworzenia na zbiorze testowym}}{30}{figure.caption.19}%
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Wartości pokrycia katalogu względem NDCG@10{} na zbiorze testowym}}{31}{figure.caption.20}%
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Średnie wartości różnorodności względem NDCG@10{} na zbiorze testowym}}{32}{figure.caption.21}%
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Średnie wartości $\Delta $GAP względem NDCG@10{} na zbiorze testowym}}{33}{figure.caption.22}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

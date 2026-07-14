@@ -1,19 +1,19 @@
 # Fdb version 4
-["biber build/thesis-pl"] 1783974797.33231 "build/thesis-pl.bcf" "build/thesis-pl.bbl" "build/thesis-pl" 1783977720.07305 0
+["biber build/thesis-pl"] 1783974797.33231 "build/thesis-pl.bcf" "build/thesis-pl.bbl" "build/thesis-pl" 1784053397.00076 0
   "bib/bibliografia.bib" 1783974472 4327 b4418db01a990fbe6f58cca48ff5da08 ""
-  "build/thesis-pl.bcf" 1783977719 109066 255bb2e0054353a04ed97bdad4b791c1 "pdflatex"
+  "build/thesis-pl.bcf" 1784053396 109066 255bb2e0054353a04ed97bdad4b791c1 "pdflatex"
   (generated)
   "build/thesis-pl.bbl"
   "build/thesis-pl.blg"
   (rewritten before read)
-["pdflatex"] 1783977713.15602 "c:/Users/misie/Desktop/Licencjat_tex_repo/Licencjat_tex/thesis/thesis-pl.tex" "build/thesis-pl.pdf" "thesis-pl" 1783977720.07409 0
-  "build/thesis-pl.aux" 1783977719 16299 d11be90cc822e50c7fa35a449a08b39b "pdflatex"
+["pdflatex"] 1784053389.64461 "c:/Users/misie/Desktop/Licencjat_tex_repo/Licencjat_tex/thesis/thesis-pl.tex" "build/thesis-pl.pdf" "thesis-pl" 1784053397.00169 0
+  "build/thesis-pl.aux" 1784053396 18235 30a949900800561256c7dcfc3facd5de "pdflatex"
   "build/thesis-pl.bbl" 1783974800 9862 5778bbbf82db0322a9d57eca1346b771 "biber build/thesis-pl"
-  "build/thesis-pl.lof" 1783977719 1834 3dc437b849c52920578be32e3359d420 "pdflatex"
-  "build/thesis-pl.lot" 1783977719 1186 35792cbda61fd8a1aa28f057e6596d1a "pdflatex"
-  "build/thesis-pl.out" 1783977719 13872 473c92b5882bc274ce3e4594a20f4234 "pdflatex"
-  "build/thesis-pl.run.xml" 1783977719 2376 e4f069d9a7375964062ffbf48d658679 "pdflatex"
-  "build/thesis-pl.toc" 1783977719 6000 b7e963c01f7a61dd6dcdd8d5211cb108 "pdflatex"
+  "build/thesis-pl.lof" 1784053396 2293 457c3e43dec9c4c0df2f4195ade04073 "pdflatex"
+  "build/thesis-pl.lot" 1784053396 1592 426a9db2009be8c958f504831180e4a5 "pdflatex"
+  "build/thesis-pl.out" 1784053396 13872 570172f2bcd5eb5a9f37bcaa35bb2373 "pdflatex"
+  "build/thesis-pl.run.xml" 1784053396 2376 e4f069d9a7375964062ffbf48d658679 "pdflatex"
+  "build/thesis-pl.toc" 1784053396 6000 1db65a8fdfedf2d69ef65ccda4cf8ce2 "pdflatex"
   "c:/Users/misie/Desktop/Licencjat_tex_repo/Licencjat_tex/thesis/thesis-pl.tex" 1783537886 5777 5abb42d8c3b79b8dbc488662f503daf5 ""
   "d:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1783083389 2971 def0b6c1f0b107b3b936def894055589 ""
   "d:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1783083389 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -196,6 +196,9 @@
   "figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png" 1783260583 178814 d1eb953afab6a2b0bef846dd6d719455 ""
   "figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png" 1783260583 186537 ba834adcf9abb07db75a1e0dc404aa07 ""
   "figures/test/test_ndcg_all_models_horizontal.png" 1783260583 118003 d215307e9e16791d80744fbc16cb5511 ""
+  "figures/test/test_ndcg_vs_coverage_all_models.png" 1783260583 141895 aad790c6788a53e0e5f5785fc3b64ab6 ""
+  "figures/test/test_ndcg_vs_delta_gap_without_popularity.png" 1783260583 139709 f8f9ed1cdb11c48decd7ad787e5d04a1 ""
+  "figures/test/test_ndcg_vs_diversity_without_popularity.png" 1783260583 129067 0b2a7c81df510f49d4433af28a1bfdb5 ""
   "figures/test/test_precision_vs_recall_all_models.png" 1783260583 126133 bdadd6b335d05d717e25cb454e56ee49 ""
   "tex/00_abstract.tex" 1783260583 176 d7cf829527e865d88ffb971fd3fc416d ""
   "tex/00_streszczenie.tex" 1783260583 148 5d7fd7ab8322673f2d69b08432995481 ""
@@ -205,7 +208,7 @@
   "tex/04_przeglad_literatury.tex" 1783260583 295 f687e95a85b3fe0d7ccc1ea006f0b9bc ""
   "tex/05_dane_i_eda.tex" 1783371581 11739 a0b56f404e43dc8ed6530235f0bb029c ""
   "tex/06_metodologia_eksperymentalna.tex" 1783975274 8617 67b44c68400a15c7e88fb4ad3d8ea42e ""
-  "tex/07_wyniki_eksperymentow.tex" 1783977711 16693 44ffa6c796605b954a87bceef5e79d37 ""
+  "tex/07_wyniki_eksperymentow.tex" 1784053373 27093 c0ae06cf8fe5d158d18eb6d637fc71c4 ""
   "tex/08_dyskusja_i_literatura.tex" 1783260583 345 a83ce95e378e93eddd8e1a88afa543a9 ""
   "tex/09_wnioski.tex" 1783260583 192 3cad960786cce7752f9b366472a0c34f ""
   "tex/90_wykaz_symboli.tex" 1783260583 143 d8e60320248d91dcd543a85cad53ac88 ""

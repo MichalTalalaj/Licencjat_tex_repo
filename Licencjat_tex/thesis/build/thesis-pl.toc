@@ -46,25 +46,25 @@
 \contentsline {section}{\numberline {7.2}Analiza funkcji wag pewności}{27}{section.7.2}%
 \contentsline {section}{\numberline {7.3}Jakość rekomendacji na zbiorze testowym}{29}{section.7.3}%
 \contentsline {section}{\numberline {7.4}Analiza kompromisów jakości rekomendacji}{31}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Stabilność wyników}{31}{section.7.5}%
-\contentsline {chapter}{\numberline {8}Dyskusja i odniesienie do literatury}{32}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Interpretacja roli czasu gry}{32}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Znaczenie przesunięcia $\beta $}{32}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Znaczenie interakcji z zerowym i niskim czasem gry}{32}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Porównanie ALS z modelami odniesienia}{32}{section.8.4}%
-\contentsline {section}{\numberline {8.5}Odniesienie do literatury i próby replikacji}{32}{section.8.5}%
-\contentsline {section}{\numberline {8.6}Ograniczenia pracy}{32}{section.8.6}%
-\contentsline {chapter}{\numberline {9}Wnioski}{33}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Podsumowanie eksperymentów}{33}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Odpowiedź na pytania badawcze}{33}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Najważniejsze wnioski praktyczne i metodologiczne}{33}{section.9.3}%
-\contentsline {section}{\numberline {9.4}Kierunki dalszych badań}{33}{section.9.4}%
-\contentsline {chapter}{Bibliografia}{34}{chapter*.20}%
-\contentsline {chapter}{Wykaz symboli i skrótów}{35}{chapter*.21}%
-\contentsline {chapter}{Spis rysunków}{35}{chapter*.21}%
-\contentsline {chapter}{Spis tabel}{36}{chapter*.22}%
-\contentsline {chapter}{Załączniki}{38}{chapter*.24}%
-\contentsline {chapter}{\numberline {A}Dodatkowe tabele wyników}{39}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Dodatkowe wykresy}{40}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Struktura plików projektu i reprodukowalność}{41}{appendix.C}%
+\contentsline {section}{\numberline {7.5}Stabilność wyników}{33}{section.7.5}%
+\contentsline {chapter}{\numberline {8}Dyskusja i odniesienie do literatury}{35}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Interpretacja roli czasu gry}{35}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Znaczenie przesunięcia $\beta $}{35}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Znaczenie interakcji z zerowym i niskim czasem gry}{35}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Porównanie ALS z modelami odniesienia}{35}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Odniesienie do literatury i próby replikacji}{35}{section.8.5}%
+\contentsline {section}{\numberline {8.6}Ograniczenia pracy}{35}{section.8.6}%
+\contentsline {chapter}{\numberline {9}Wnioski}{36}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Podsumowanie eksperymentów}{36}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Odpowiedź na pytania badawcze}{36}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Najważniejsze wnioski praktyczne i metodologiczne}{36}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Kierunki dalszych badań}{36}{section.9.4}%
+\contentsline {chapter}{Bibliografia}{37}{chapter*.25}%
+\contentsline {chapter}{Wykaz symboli i skrótów}{38}{chapter*.26}%
+\contentsline {chapter}{Spis rysunków}{38}{chapter*.26}%
+\contentsline {chapter}{Spis tabel}{39}{chapter*.27}%
+\contentsline {chapter}{Załączniki}{41}{chapter*.29}%
+\contentsline {chapter}{\numberline {A}Dodatkowe tabele wyników}{42}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Dodatkowe wykresy}{43}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Struktura plików projektu i reprodukowalność}{44}{appendix.C}%
 \contentsfinish 

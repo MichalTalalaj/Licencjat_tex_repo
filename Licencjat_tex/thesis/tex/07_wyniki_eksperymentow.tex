@@ -103,7 +103,7 @@ Przedstawione różnice w procesie uczenia mają swoje odzwierciedlenie w metryk
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrrr}
 \toprule
-Model & NDCG@10 & Precision@10 & Recall@10 & Coverage@10 & Delta GAP@10 & Diversity@10\\
+Model & NDCG@10 & Precision@10 & Recall@10 & Coverage@10 & $\Delta$GAP@10 & Diversity@10\\
 \midrule
 Popularność & 0.1855 & 0.0965 & 0.1783 & 0.0087 & 1.4233 & - \\
 ALS liniowa & 0.3299 & 0.1841 & 0.2642 & 0.1178 & -0.2112 & 0.7854 \\
@@ -141,8 +141,97 @@ Rola metryk precyzji i odtworzenia jest ograniczona ze względu na ich znaczne s
     \label{fig:test_precision_vs_recall_all_models}
 \end{figure}
 
-Z wykresu~\ref{fig:test_precision_vs_recall_all_models} można zauważyć, że pomimo niższej wartości metryki odtworzenia od modeli z przekształceniem logarytmicznym i logarytmicznym z saturacją ma on wyższą wartość precyzji. Może to sugerować, że ten model oferuje trafniejsze rekomendacje w przypadku użytkowników z większą liczbą interakcji. Weryfikacja tej hipotezy wymagałaby podziału użytkowników według liczby posiadanych interakcji, co wykracza poza zakres niniejszej pracy.
+Z wykresu~\ref{fig:test_precision_vs_recall_all_models} można zauważyć, że pomimo niższej wartości metryki odtworzenia od modeli z przekształceniem logarytmicznym i logarytmicznym z saturacją ma on wyższą wartość precyzji. Może to sugerować, że ten model oferuje trafniejsze rekomendacje w przypadku użytkowników z większą liczbą interakcji. Weryfikacja tej hipotezy wymagałaby podziału użytkowników według liczby posiadanych interakcji, co wykracza poza zakres niniejszej pracy. Widoczne jest również, że model implicit ALS z dodatkowym parametrem $\beta$ wypada najlepiej w kontekście obu analizowanych na wykresie metryk.
 
 \section{Analiza kompromisów jakości rekomendacji}
 
+W procesie ewaluacji systemów rekomendacyjnych istotne jest uwzględnienie również metryk wykraczających poza trafność predykcji (ang. beyond-accuracy), takich jak pokrycie katalogu, różnorodność oraz $\Delta$GAP. W niniejszym rozdziale poddano analizie kompromisy między jakością rekomendacji a wspomnianymi wyżej miarami.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/test/test_ndcg_vs_coverage_all_models.png}
+    \caption{Wartości pokrycia katalogu względem \ndcg{} na zbiorze testowym}
+    \label{fig:test_ndcg_vs_coverage_all_models}
+\end{figure}
+
+W przypadku metryki pokrycia na wykresie~\ref{fig:test_ndcg_vs_coverage_all_models} widoczna jest znacząca rozbieżność miedzy każdym z badanych typów modeli. Model BPR wykazuje się najwyższym pokryciem (0,3039), będącym ponad dwukrotnie większym niż każdy wariant ALS, jednak osiąga to kosztem niższej wartości \ndcg{}. Rodzina modeli implicit ALS tworzy wyraźne skupienie na wykresie, wewnątrz którego można zaobserwować poprawę wraz z zastosowaniem przesunięcia $\beta$. Wariant ten wypada najlepiej spośród testowanych wariantów ALS pod względem obu przedstawianych metryk. Osiąga nie tylko najwyższą wartość \ndcg{}, ale również wyższe pokrycie katalogu (0,1313) niż warianty logarytmiczne (0,0762) oraz wariant liniowy (0,1178). Niski wynik wariantu popularnościowego pod względem obu metryk jest spójny z oczekiwaniami i wynika z jego niepersonalizowanego charakteru.
+
+Po analizie pokrycia katalogu warto przeanalizować metrykę różnorodności, opisującą zróżnicowanie pozycji rekomendowanych pojedynczemu użytkownikowi, mierzone na podstawie odległości między wektorami ukrytymi rekomendowanych przedmiotów. Model popularnościowy został pominięty w tym porównianiu ze względu na brak generowanych przez niego wektorów latentnych.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/test/test_ndcg_vs_diversity_without_popularity.png}
+    \caption{Średnie wartości różnorodności względem \ndcg{} na zbiorze testowym}
+    \label{fig:test_ndcg_vs_diversity_without_popularity}
+\end{figure}
+
+Na wykresie~\ref{fig:test_ndcg_vs_diversity_without_popularity} warto zauważyć, że model z przesunięciem $\beta$ osiąga najwyższą wartość \ndcg{}, jak i wysoką wartość różnorodności, mimo wykorzystania przestrzeni o mniejszej wymiarowości (48) niż wariant liniowy (80) i model BPR (96). Zestawienie liczby czynników ukrytych z wartością różnorodności nie wskazuje na monotoniczną zależność między wymiarowością przestrzeni latentnej a zróżnicowaniem rekomendacji. W przypadku modelu BPR, mimo najwyższej liczby czynników, uzyskano najniższą wartość różnorodności wśród porównywanych modeli, podczas gdy wariant liniowy, dysponujący mniejszą przestrzenią ukrytą (80 czynników), osiągnął najwyższy wynik. Sugeruje to, że o zróżnicowaniu rekomendacji decyduje w większym stopniu charakter funkcji celu optymalizacji niż sama liczba wymiarów. Warianty logarytmiczne, mając najmniejszą liczbę czynników (24) uzyskały również najniższą wartość Diversity spośród modeli implicit ALS. W tym przypadku nie można jednoznacznie stwierdzić, czy niższe zróżnicowanie wynika ze zmniejszonej wymiarowości przestrzeni latentnej, czy z wpływu przekształcenia. Należy podkreślić, że liczba czynników dla każdego wariantu została dobrana niezależnie w procesie strojenia hiperparametrów, w związku z czym zaobserwowane różnice w wartości Diversity mogą częściowo wynikać z odmiennej wymiarowości przestrzeni ukrytej, a nie wyłącznie z charakteru zastosowanej funkcji wagowej. Rozdzielenie obu efektów wymagałoby przeprowadzenia dodatkowego eksperymentu ze stałą liczbą czynników dla wszystkich porównywanych wariantów. Dodatkowo kontrast między metryką pokrycia zbioru a różnorodnością w modelu BPR może wskazywać na to, że rekomendacje generowane przez ten model różnią się znacząco między poszczególnymi użytkownikami, natomiast w obrębie rekomendacji dla pojedyńczego użytkownika pozostają stosunkowo podobne do siebie.
+
+Na koniec pozostała do przeanalizowania zależność \ndcg{} od $\Delta$GAP, czyli miary obciążenia rekomendacji popularnością. Jej optymalna wartość wynosi 0 i odpowiada sytuacji, w której popularność rekomendowanych gier jest zbliżona do popularności gier w bibliotece użytkownika zawartych w zbiorze treningowym. Na wykresie~\ref{fig:test_ndcg_vs_delta_gap_without_popularity}, model popularnościowy został ponownie pominięty, aby zachować czytelność pozostałych wyników. Wartość $\Delta$GAP dla tego modelu wynosi 1,4233, co stanowi maksymalne możliwe obciążenie rekomendacji popularnością w badanym zbiorze.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/test/test_ndcg_vs_delta_gap_without_popularity.png}
+    \caption{Średnie wartości $\Delta$GAP względem \ndcg{} na zbiorze testowym}
+    \label{fig:test_ndcg_vs_delta_gap_without_popularity}
+\end{figure}
+
+Modele BPR oraz implicit ALS z liniową funkcją pewności uzyskały ujemną wartość $\Delta$GAP co jest nietypowym zachowaniem dla systemów rekomendacyjnych, które mają tendencję do faworyzowania popularnych produktów. Może to być efektem większej wymiarowości przestrzeni wektorów ukrytych obu modeli, która pozwala na dokładniejsze reprezentowanie niszowych cech i preferecji. Również mniejsza wartość hiperparametru $\lambda$ odpowiadającego za regularyzację na tle pozostałych modeli pozwala na znaczny wzrost norm euklidesowych wektorów reprezentacji cech gier i preferencji użytkowników. Umożliwia to tworzenie modelowi ekstremalnych dopasowań dla niszowych gier o niskiej popularności. W przypadku pozostałych modeli ALS ich metrki $\Delta$GAP są większe od zera, więc rekomendują one przedmioty popularniejsze niż w zbiorze treningowym użytkownika, ale za to cechują się większą trafnością rekomendacji. Na wykresie~\ref{fig:test_ndcg_vs_delta_gap_without_popularity} widać również, że dodany hiperparamet $\beta$ nie tylko poprawił trafność, ale również zmniejszył obciążenie popularnością. 
+
 \section{Stabilność wyników}
+
+W celu sprawdzenia stabilności wyników obliczono odchylenia standardowe na pięciu uruchomieniach algorytmów implicit ALS i BPR. Wyniki przedstawiono w tabelach~\ref{tab:stabilnosc-zbiorcza}.
+
+\begin{table}[htbp]
+\centering
+\caption{Wyniki ewaluacji modeli na zbiorze testowym w podziale na metryki dokładności oraz metryki profilowe i różnorodności}
+\label{tab:stabilnosc-zbiorcza}
+\begin{tabular}{lrrr}
+\toprule
+Wariant & Precision@10 & Recall@10 & NDCG@10 \\
+\midrule
+Liniowa & $0.1841\pm0.0003$ & $0.2642\pm0.0005$ & $0.3299\pm0.0005$ \\
+Logarytmiczna & $0.1810\pm0.0001$ & $0.3019\pm0.0002$ & $0.3356\pm0.0003$ \\
+Logarytmiczna z saturacją & $0.1809\pm0.0002$ & $0.3019\pm0.0003$ & $0.3354\pm0.0005$ \\
+Logarytmiczna z przesunięciem $\beta$ & $0.1956\pm0.0002$ & $0.3338\pm0.0003$ & $0.3517\pm0.0004$ \\
+BPR & $0.1329\pm0.0003$ & $0.2614\pm0.0005$ & $0.2703\pm0.0006$ \\
+\midrule
+Wariant & Coverage@10 & Delta GAP@10 & Diversity@10 \\
+\midrule
+Liniowa & $0.1178\pm0.0007$ & $-0.2112\pm0.0016$ & $0.7854\pm0.0063$ \\
+Logarytmiczna & $0.0762\pm0.0003$ & $0.5433\pm0.0008$ & $0.5963\pm0.0159$ \\
+Logarytmiczna z saturacją & $0.0761\pm0.0002$ & $0.5443\pm0.0009$ & $0.5948\pm0.0152$ \\
+Logarytmiczna z przesunięciem $\beta$ & $0.1313\pm0.0009$ & $0.4191\pm0.0119$ & $0.7314\pm0.0174$ \\
+BPR & $0.3039\pm0.0012$ & $-0.0789\pm0.0054$ & $0.5499\pm0.0009$ \\
+\bottomrule
+\end{tabular}
+\caption*{\footnotesize Źródło: opracowanie własne.}
+\end{table}
+
+Analiza odchyleń standardowych uzyskanych w pięciu losowych inicjalizacjach algorytmow implicit ALS i BPR potwierdza wysoką stabilność wszystkich badanych modeli. W przypadku metryk trafności rekomendacji wartości odchylenia standardowego nie przekraczają $0,05\%$. Świadczy to o tym, że przedstawione różnice jakościowe między modelami są w pełni nieprzypadkowe. Z kolei najwyższe odchylenie względne zaobserwowano przy metryce $\Delta$GAP@10 dla modelu BPR, które wynosi $6,84\%$ przy wartości średniej równej $-0,0789$. Ze względu na znikome różnice wynikające z odchyleń wykresy mające na celu je przedstawić zostały pominięte.
+
+\begin{table}[htbp]
+\centering
+\caption{Wyniki ewaluacji modeli na zbiorze walidacyjnym w podziale na metryki dokładności oraz metryki profilowe i różnorodności}
+\label{tab:stabilnosc-walidacja-zbiorcza}
+\begin{tabular}{lrrr}
+\toprule
+Wariant & Precision@10 & Recall@10 & NDCG@10 \\
+\midrule
+Liniowa & $0.1360\pm0.0006$ & $0.2302\pm0.0008$ & $0.2466\pm0.0011$ \\
+Logarytmiczna & $0.1349\pm0.0009$ & $0.2589\pm0.0019$ & $0.2534\pm0.0018$ \\
+Logarytmiczna z saturacją & $0.1350\pm0.0008$ & $0.2596\pm0.0015$ & $0.2536\pm0.0015$ \\
+Logarytmiczna z przesunięciem $\beta$ & $0.1479\pm0.0005$ & $0.2963\pm0.0012$ & $0.2744\pm0.0011$ \\
+\midrule
+Wariant & Coverage@10 & Delta GAP@10 & Diversity@10 \\
+\midrule
+Liniowa & $0.1025\pm0.0003$ & $-0.2048\pm0.0010$ & $0.7792\pm0.0064$ \\
+Logarytmiczna & $0.0636\pm0.0006$ & $0.4899\pm0.0071$ & $0.6048\pm0.0044$ \\
+Logarytmiczna z saturacją & $0.0635\pm0.0006$ & $0.4942\pm0.0047$ & $0.6045\pm0.0040$ \\
+Logarytmiczna z przesunięciem $\beta$ & $0.1138\pm0.0017$ & $0.4072\pm0.0119$ & $0.7549\pm0.0146$ \\
+\bottomrule
+\end{tabular}
+\caption*{\footnotesize Źródło: opracowanie własne.}
+\end{table}
+
+W tabeli~\ref{tab:stabilnosc-walidacja-zbiorcza} przedstawione są wartości średnie metryk i odchylenia standardowe liczone na pięciu losowych podziałach na zbiory treningowe i walidacyjne.Największą względną wartość odchylenia standardowego odnotowano dla metryki Delta GAP@10 w wariancie logarytmicznym z przesunięciem $\beta$, która wynosi $2,92\%$. Wynika to najprawdopodobniej ze znacznego rozmiaru wykorzystanego zbioru danych, który uodparnia proces uczenia modeli na różnice wynikające z podziału losowego. Ze względu na niskie wartości odchyleń wykresy mające na celu je zobrazować ponownie zostały pominięte.

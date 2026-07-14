@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.5)  13 JUL 2026 23:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.5)  14 JUL 2026 20:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1051,43 +1051,70 @@ File: figures/test/test_precision_vs_recall_all_models.png Graphic file (type pn
 <use figures/test/test_precision_vs_recall_all_models.png>
 Package pdftex.def Info: figures/test/test_precision_vs_recall_all_models.png  used on input line 139.
 (pdftex.def)             Requested size: 384.10962pt x 253.63583pt.
- [30 <./figures/test/test_precision_vs_recall_all_models.png>]) (./tex/08_dyskusja_i_literatura.tex [31]
+ [30 <./figures/test/test_precision_vs_recall_all_models.png>]
+<figures/test/test_ndcg_vs_coverage_all_models.png, id=612, 715.7139pt x 425.1885pt>
+File: figures/test/test_ndcg_vs_coverage_all_models.png Graphic file (type png)
+<use figures/test/test_ndcg_vs_coverage_all_models.png>
+Package pdftex.def Info: figures/test/test_ndcg_vs_coverage_all_models.png  used on input line 152.
+(pdftex.def)             Requested size: 384.10962pt x 228.19699pt.
+<figures/test/test_ndcg_vs_diversity_without_popularity.png, id=614, 641.0349pt x 425.1885pt>
+File: figures/test/test_ndcg_vs_diversity_without_popularity.png Graphic file (type png)
+<use figures/test/test_ndcg_vs_diversity_without_popularity.png>
+Package pdftex.def Info: figures/test/test_ndcg_vs_diversity_without_popularity.png  used on input line 163.
+(pdftex.def)             Requested size: 384.10962pt x 254.77121pt.
+ [31 <./figures/test/test_ndcg_vs_coverage_all_models.png>] [32 <./figures/test/test_ndcg_vs_diversity_without_popularity.png>]
+<figures/test/test_ndcg_vs_delta_gap_without_popularity.png, id=630, 713.7867pt x 425.1885pt>
+File: figures/test/test_ndcg_vs_delta_gap_without_popularity.png Graphic file (type png)
+<use figures/test/test_ndcg_vs_delta_gap_without_popularity.png>
+Package pdftex.def Info: figures/test/test_ndcg_vs_delta_gap_without_popularity.png  used on input line 174.
+(pdftex.def)             Requested size: 384.10962pt x 228.80684pt.
+
+Overfull \hbox (11.49246pt too wide) in paragraph at lines 189--208
+ [][] 
+ []
+
+
+Overfull \hbox (11.49246pt too wide) in paragraph at lines 217--234
+ [][] 
+ []
+
+[33 <./figures/test/test_ndcg_vs_delta_gap_without_popularity.png>]) (./tex/08_dyskusja_i_literatura.tex [34]
 Rozdzia\l  8.
-) (./tex/09_wnioski.tex [32
+) (./tex/09_wnioski.tex [35
 
 ]
 Rozdzia\l  9.
-) [33
+) [36
 
-] (./tex/90_wykaz_symboli.tex [34
+] (./tex/90_wykaz_symboli.tex [37
 
-]) [35
+]) [38
 
 ] (build/thesis-pl.lof)
 \tf@lof=\write6
 \openout6 = `thesis-pl.lof'.
 
- [36
+ [39
 
 ] (build/thesis-pl.lot)
 \tf@lot=\write7
 \openout7 = `thesis-pl.lot'.
 
- [37
+ [40
 
-] (./tex/99_dodatki.tex [38
+] (./tex/99_dodatki.tex [41
 
 ]
 Dodatek A.
-[39
+[42
 
 ]
 Dodatek B.
-[40
+[43
 
 ]
 Dodatek C.
-) [41
+) [44
 
 ] (build/thesis-pl.aux)
  ***********
@@ -1100,24 +1127,24 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 Package rerunfilecheck Info: File `thesis-pl.out' has not changed.
-(rerunfilecheck)             Checksum: 473C92B5882BC274CE3E4594A20F4234;13872.
+(rerunfilecheck)             Checksum: 570172F2BCD5EB5A9F37BCAA35BB2373;13872.
 Package logreq Info: Writing requests to 'thesis-pl.run.xml'.
 \openout1 = `thesis-pl.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24414 strings out of 467168
- 425684 string characters out of 5413706
- 1308120 words of memory out of 5000000
- 53177 multiletter control sequences out of 15000+600000
+ 24448 strings out of 467168
+ 427279 string characters out of 5413706
+ 1308723 words of memory out of 5000000
+ 53203 multiletter control sequences out of 15000+600000
  645610 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,17n,90p,1989b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,17n,90p,2195b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi12.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi6.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plmi8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plr10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plr8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plsy10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/pl/plsy8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on build/thesis-pl.pdf (38 pages, 2292139 bytes).
+Output written on build/thesis-pl.pdf (41 pages, 2700155 bytes).
 PDF statistics:
- 794 PDF objects out of 1000 (max. 8388607)
- 619 compressed objects within 7 object streams
- 126 named destinations out of 1000 (max. 500000)
- 594 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 832 PDF objects out of 1000 (max. 8388607)
+ 648 compressed objects within 7 object streams
+ 134 named destinations out of 1000 (max. 500000)
+ 609 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -230,6 +230,52 @@
       \field{title}{Revisiting the Performance of iALS on Item Recommendation Benchmarks}
       \field{year}{2021}
     \endentry
+    \entry{schnabel2016recommendations}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=73e823955ee5c9194126b4598743a619}{%
+           family={Schnabel},
+           familyi={S\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+        {{hash=af7d0e4d0095cc3456e940883204919b}{%
+           family={Swaminathan},
+           familyi={S\bibinitperiod},
+           given={Adith},
+           giveni={A\bibinitperiod}}}%
+        {{hash=278552dceaffe0bd54205d4a6d7d9ac1}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Ashudeep},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e1d1ab238653c3e09ca24ce245000738}{%
+           family={Chandak},
+           familyi={C\bibinitperiod},
+           given={Navin},
+           giveni={N\bibinitperiod}}}%
+        {{hash=0e5ae7e30da87e8ba62ced27d4e6f2aa}{%
+           family={Joachims},
+           familyi={J\bibinitperiod},
+           given={Thorsten},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{4d2a1a74b5bb15a8f9cf149f2e682d93}
+      \strng{fullhash}{8fc2ebf83f47ec8f3cddc3a3cf869281}
+      \strng{fullhashraw}{8fc2ebf83f47ec8f3cddc3a3cf869281}
+      \strng{bibnamehash}{8fc2ebf83f47ec8f3cddc3a3cf869281}
+      \strng{authorbibnamehash}{8fc2ebf83f47ec8f3cddc3a3cf869281}
+      \strng{authornamehash}{4d2a1a74b5bb15a8f9cf149f2e682d93}
+      \strng{authorfullhash}{8fc2ebf83f47ec8f3cddc3a3cf869281}
+      \strng{authorfullhashraw}{8fc2ebf83f47ec8f3cddc3a3cf869281}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 33rd International Conference on Machine Learning (ICML)}
+      \field{title}{Recommendations as Treatments: Debiasing Learning and Evaluation}
+      \field{year}{2016}
+      \field{pages}{1670\bibrangedash 1679}
+      \range{pages}{10}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

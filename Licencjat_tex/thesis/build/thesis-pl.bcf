@@ -2380,6 +2380,8 @@
     <bcf:citekey order="5" intorder="1">sparkals</bcf:citekey>
     <bcf:citekey order="5" intorder="2">frederickson2022implicit</bcf:citekey>
     <bcf:citekey order="6" intorder="1">rendle2021revisiting</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">schnabel2016recommendations</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">rendle2021revisiting</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

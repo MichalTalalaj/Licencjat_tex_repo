@@ -6,16 +6,16 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Podstawowe statystyki surowego zbioru danych}}{16}{table.caption.4}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Wpływ kolejnych etapów przygotowania danych na rozmiar zbioru}}{16}{table.caption.5}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Rozkład liczby interakcji użytkowników i popularności gier w przygotowanym zbiorze}}{18}{table.caption.7}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Podstawowe statystyki surowego zbioru danych}}{18}{table.caption.4}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Wpływ kolejnych etapów przygotowania danych na rozmiar zbioru}}{18}{table.caption.5}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Rozkład liczby interakcji użytkowników i popularności gier w przygotowanym zbiorze}}{20}{table.caption.7}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Najlepsze hiperparametry wariantów ALS wybrane na zbiorze walidacyjnym}}{24}{table.caption.11}%
-\contentsline {table}{\numberline {7.2}{\ignorespaces Najlepsze hiperparametry modelu BPR wybrane na zbiorze walidacyjnym}}{26}{table.caption.14}%
-\contentsline {table}{\numberline {7.3}{\ignorespaces Wyniki modeli na zbiorze testowym}}{29}{table.caption.17}%
-\contentsline {table}{\numberline {7.4}{\ignorespaces Wyniki ewaluacji modeli na zbiorze testowym w podziale na metryki dokładności oraz metryki profilowe i różnorodności}}{34}{table.caption.23}%
-\contentsline {table}{\numberline {7.5}{\ignorespaces Wyniki ewaluacji modeli na zbiorze walidacyjnym w podziale na metryki dokładności oraz metryki profilowe i różnorodności}}{34}{table.caption.24}%
+\contentsline {table}{\numberline {7.1}{\ignorespaces Najlepsze hiperparametry wariantów ALS wybrane na zbiorze walidacyjnym}}{26}{table.caption.11}%
+\contentsline {table}{\numberline {7.2}{\ignorespaces Najlepsze hiperparametry modelu BPR wybrane na zbiorze walidacyjnym}}{28}{table.caption.14}%
+\contentsline {table}{\numberline {7.3}{\ignorespaces Wyniki modeli na zbiorze testowym}}{31}{table.caption.17}%
+\contentsline {table}{\numberline {7.4}{\ignorespaces Wyniki ewaluacji modeli na zbiorze testowym w podziale na metryki dokładności oraz metryki profilowe i różnorodności}}{36}{table.caption.23}%
+\contentsline {table}{\numberline {7.5}{\ignorespaces Wyniki ewaluacji modeli na zbiorze walidacyjnym w podziale na metryki dokładności oraz metryki profilowe i różnorodności}}{36}{table.caption.24}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

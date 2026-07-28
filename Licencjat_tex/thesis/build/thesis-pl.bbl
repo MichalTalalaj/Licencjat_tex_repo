@@ -19,6 +19,39 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global/global}
+    \entry{aggarwal2016recommender}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=86d11a07b1bfeac58dc68f7a419b3039}{%
+           family={Aggarwal},
+           familyi={A\bibinitperiod},
+           given={Charu\bibnamedelima C.},
+           giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham, Switzerland}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{86d11a07b1bfeac58dc68f7a419b3039}
+      \strng{fullhash}{86d11a07b1bfeac58dc68f7a419b3039}
+      \strng{fullhashraw}{86d11a07b1bfeac58dc68f7a419b3039}
+      \strng{bibnamehash}{86d11a07b1bfeac58dc68f7a419b3039}
+      \strng{authorbibnamehash}{86d11a07b1bfeac58dc68f7a419b3039}
+      \strng{authornamehash}{86d11a07b1bfeac58dc68f7a419b3039}
+      \strng{authorfullhash}{86d11a07b1bfeac58dc68f7a419b3039}
+      \strng{authorfullhashraw}{86d11a07b1bfeac58dc68f7a419b3039}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-319-29657-9}
+      \field{title}{Recommender Systems: The Textbook}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.1007/978-3-319-29659-3
+      \endverb
+    \endentry
     \entry{akiba2019optuna}{inproceedings}{}{}
       \name{author}{5}{}{%
         {{hash=2939d0d5b491018f7cc7812609071a79}{%
@@ -95,6 +128,53 @@
       \verb https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.ml.recommendation.ALS.html
       \endverb
     \endentry
+    \entry{cremonesi2010performance}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=ffacab86cd0c43d68349737683cb756a}{%
+           family={Cremonesi},
+           familyi={C\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=fce0a5d2aa4ba307f448e452e68fdbcb}{%
+           family={Koren},
+           familyi={K\bibinitperiod},
+           given={Yehuda},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=27aa6a82b03db83f0a19dad47616e195}{%
+           family={Turrin},
+           familyi={T\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{21b58c3bd79940f5d85d481b64d8384b}
+      \strng{fullhash}{21b58c3bd79940f5d85d481b64d8384b}
+      \strng{fullhashraw}{21b58c3bd79940f5d85d481b64d8384b}
+      \strng{bibnamehash}{21b58c3bd79940f5d85d481b64d8384b}
+      \strng{authorbibnamehash}{21b58c3bd79940f5d85d481b64d8384b}
+      \strng{authornamehash}{21b58c3bd79940f5d85d481b64d8384b}
+      \strng{authorfullhash}{21b58c3bd79940f5d85d481b64d8384b}
+      \strng{authorfullhashraw}{21b58c3bd79940f5d85d481b64d8384b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Fourth ACM Conference on Recommender Systems}
+      \field{isbn}{978-1-60558-906-0}
+      \field{series}{RecSys '10}
+      \field{title}{Performance of Recommender Algorithms on Top-N Recommendation Tasks}
+      \field{year}{2010}
+      \field{pages}{39\bibrangedash 46}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1145/1864708.1864721
+      \endverb
+    \endentry
     \entry{frederickson2022implicit}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=ed092abebf2b3330ebe217df28f330df}{%
@@ -162,6 +242,47 @@
       \range{pages}{10}
       \verb{doi}
       \verb 10.1109/ICDM.2008.22
+      \endverb
+    \endentry
+    \entry{koren2009matrix}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=fce0a5d2aa4ba307f448e452e68fdbcb}{%
+           family={Koren},
+           familyi={K\bibinitperiod},
+           given={Yehuda},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=4ff3ffca1a595b355b42c528ad4e37a9}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=57bb7f21fb4a415436a1ab85ff5288c9}{%
+           family={Volinsky},
+           familyi={V\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{d54573fe2b0878de7720297338fc4f5b}
+      \strng{fullhash}{d54573fe2b0878de7720297338fc4f5b}
+      \strng{fullhashraw}{d54573fe2b0878de7720297338fc4f5b}
+      \strng{bibnamehash}{d54573fe2b0878de7720297338fc4f5b}
+      \strng{authorbibnamehash}{d54573fe2b0878de7720297338fc4f5b}
+      \strng{authornamehash}{d54573fe2b0878de7720297338fc4f5b}
+      \strng{authorfullhash}{d54573fe2b0878de7720297338fc4f5b}
+      \strng{authorfullhashraw}{d54573fe2b0878de7720297338fc4f5b}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computer}
+      \field{number}{8}
+      \field{title}{Matrix Factorization Techniques for Recommender Systems}
+      \field{volume}{42}
+      \field{year}{2009}
+      \field{pages}{30\bibrangedash 37}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/MC.2009.263
       \endverb
     \endentry
     \entry{mcauleySteamData}{misc}{}{}

@@ -1,6 +1,135 @@
 \chapter{Podstawy teoretyczne systemów rekomendacyjnych}
-\section{Zadanie rekomendacji top-N}
-\section{Explicit feedback, implicit feedback i czas gry}
-\section{Filtrowanie kolaboratywne i faktoryzacja macierzy}
-\section{Model implicit ALS}
-\section{Bayesian Personalized Ranking}
+
+\section{Sformułowanie problemu}
+% to ewentualnie poleci do wstepu
+
+% Tutaj opisz (wyłącznie opisowo/intuicyjnie):
+% - Cel systemu: redukcja zjawiska przeciążenia informacyjnego (information overload) i filtrowanie szumu informacyjnego
+% - Rola systemu: ułatwienie użytkownikowi odkrywania obiektów/gier dopasowanych do jego indywidualnych gustów
+% - Intuicja biznesowa i użytkowa: system jako wirtualny doradca, który na podstawie dotychczasowej aktywności przewiduje przyszłe zainteresowania
+% - Wyzwanie skali: ogromna liczba dostępnych obiektów vs. ograniczony czas i uwaga użytkownika
+% (Uwaga: formalną definicję matematyczną, zbiory U, I oraz macierz R opiszesz w kolejnym podrozdziale 2.1.1)
+
+%Według definicji Ricci i in. \cite{ricci2015recommender}, systemy rekomendacyjne to algorytmy i narzędzia, które podpowiadają użytkownikom obiekty mogące ich zainteresować. Tego typu sugestie pomagają w podejmowaniu codziennych decyzji w sieci — od wyboru produktów w sklepach i muzyki na platformach streamingowych, po dobór artykułów prasowych czy gier komputerowych.
+
+\section{Zadanie rekomendacji Top-N}
+% Tutaj opisz:
+% - Definicję problemu (zbior uzytkowników, obiektów)
+% - Czym jest macierz interakcji
+% - Dlaczego w praktyce stosuje się ranking zamiast predykcji konkretnych ocen (np. RMSE vs Precision@K)
+
+Niech $\mathcal{U} = \{u_1, u_2, \dots, u_m\}$ oznacza zbiór $m$ użytkowników w systemie, a $\mathcal{I} = \{i_1, i_2, \dots, i_n\}$ zbiór $n$ dostępnych obiektów.
+
+Relacje zachodzące pomiędzy użytkownikami a obiektami reprezentowane są za pomocą macierzy obserwacji $\mathbf{R} \in \mathbb{R}^{m \times n}$. Pojedynczy element tej macierzy, oznaczany jako $r_{ui}$, reprezentuje zarejestrowaną aktywność użytkownika $u \in \mathcal{U}$ wobec obiektu $i \in \mathcal{I}$. W zależności od specyfiki przetwarzanych danych, $r_{ui}$ może przyjmować wartości z określonej wcześniej skali (np. ocena w skali 1-5) lub wartości nieograniczone (np. liczba zakupionych produktów, czas odtwarzania danego utworu). Istotną w praktyce cechą macierzy $\mathbf{R}$ jest wysoki stopień rzadkości oznaczający odsetek niezaobserwowanych interakcji. Jest to efekt przytłaczającej ilości dostępnych obiektów powodującej, że pojedynczy użytkownik wchodzi w interakcję jedynie z niewielkim ułamkiem całego asortymentu.
+
+Wczesne sformułowania problemu rekomendacyjnego, oparte na danych jawnych (ang. \textit{explicit feedback}), sprowadzały zadanie do predykcji ocen, gdzie celem algorytmu było odwzorowanie znanych wartości macierzy $\mathbf{R}$ \cite{aggarwal2016recommender}. Jakość takich modeli oceniano za pomocą miar błędu ciągłego opartych na odchyleniu przewidywanej wartości od rzeczywistej oceny, takich jak błąd średniokwadratowy:
+
+\begin{equation}
+    \text{RMSE} = \sqrt{\frac{1}{|\mathcal{K}|} \sum_{(u,i) \in \mathcal{K}} \left(r_{ui} - \mathbf{x}_u^T \mathbf{y}_i\right)^2},
+\end{equation}
+
+lub średni błąd bezwzględny:
+
+\begin{equation}
+    \text{MAE} = \frac{1}{|\mathcal{K}|} \sum_{(u,i) \in \mathcal{K}} \left| r_{ui} - \mathbf{x}_u^T \mathbf{y}_i \right|,
+\end{equation}
+
+gdzie $\mathcal{K}$ oznacza zbiór znanych par $(u,i)$, dla których zarejestrowano obserwacje $r_{ui}$.
+
+W praktycznych zastosowaniach predykcja dokładnej wartości oceny okazała się jednak niewystarczająca i często niespójna z rzeczywistym celem systemu \cite{cremonesi2010performance}. Z perspektywy użytkownika istotna jest kolejność rekomendowanych obiektów, a nie dokładna wartość $\hat{r}_{ui}$. Dodatkowo niska wartość RMSE i MAE nie gwarantuje wysokiej trafności, ponieważ model może precyzyjnie przewidywać oceny mało atrakcyjnych obiektów, jednocześnie popełniając błędy przy wyznaczaniu najlepiej dopasowanych rekomendacji. Z tego powodu współcześnie problem jest formułowany jako zadanie rekomendacji Top-$N$. Celem algorytmu jest wygenerowanie dla danego użytkownika $u$ spersonalizowanej oraz uporządkowanej listy $N$ obiektów z zestawu pozycji dotąd przez niego niezaobserwowanych:
+
+\begin{equation}
+    \text{Top-}N(u) = \left( i_1^{(u)}, i_2^{(u)}, \dots, i_N^{(u)} \right) \quad \text{gdzie} \quad i_k^{(u)} \in \mathcal{I} \setminus \mathcal{I}_u
+\end{equation}
+
+gdzie $\mathcal{I}_u$ oznacza zbiór obiektów, z którymi użytkownik $u$ wszedł w interakcję. Lista ta jest sortowana według malejącej przewidywanej wartości $\hat{r}_{ui}$ będącej miarą użyteczności obiektu $i$ dla użytkownika $u$. W tak sformułowanym zadaniu ocena jakości algorytmów opiera się na miarach rankingowych opartych na pozycji obiektu na liście, takich jak precyzja na poziomie $K$ ($\text{Precision}@K$), pełność ($\text{Recall}@K$) czy znormalizowany zdyskontowany zysk skumulowany ($\text{NDCG}@K$).
+
+\section{Klasyczna faktoryzacja macierzy dla danych jawnych}
+
+\subsection{Model Funk SVD i funkcja celu}
+
+W niniejszej pracy wszystkie porównywane modele należą do rodziny modeli opartych na czynnikach ukrytych. Wykorzystują one metody faktoryzacji macierzy, które zostały spopularyzowane przez Simona Funka w ramach konkursu \textit{Netflix Prize}. Podejście to zakłada, że relacje pomiędzy użytkownikami i obiektami mogą być modelowane poprzez ich reprezentacje w przestrzeni czynników ukrytych o wymiarze $f \ll \min(n,m)$. W przeciwieństwie do metod opartych na treści, wymagających jawnego zdefiniowania cech opisujących użytkowników oraz obiekty, faktoryzacja macierzy umożliwia automatyczne uczenie reprezentacji na podstawie historii interakcji. Dzięki temu ogranicza zależność od ręcznie projektowanych cech specyficznych dla danej domeny i pozwala stosować jednolity schemat modelowania w różnych dziedzinach. Szczegółowy opis modelu Funk SVD oraz wynikającej z niego funkcji celu przedstawiono na podstawie pracy \cite{koren2009matrix}.
+
+Macierz obserwacji $\mathbf{R} \in \mathbb{R}^{m \times n}$ jest aproksymowana poprzez iloczyn dwóch macierzy niskiego rzędu: macierzy reprezentacji użytkowników $\mathbf{X} \in \mathbb{R}^{m \times f}$ oraz macierzy reprezentacji obiektów $\mathbf{Y} \in \mathbb{R}^{n \times f}$. Wiersz $\mathbf{x}_u \in \mathbb{R}^f$ macierzy $\mathbf{X}$ określa stopień zainteresowania użytkownika $u$ poszczególnymi cechami ukrytymi, natomiast wiersz $\mathbf{y}_i \in \mathbb{R}^f$ macierzy $\mathbf{Y}$ opisuje obiekt $i$ pod kątem tych samych cech. W najprostszym wariancie modelu prognozowana wartość oceny $\hat{r}_{ui}$ wyznaczana jest jako iloczyn skalarny odpowiadających im wektorów:
+
+\begin{equation}
+    \hat{r}_{ui} = \mathbf{x}_u^T \mathbf{y}_i = \sum_{k=1}^{f} x_{uk} y_{ik}
+\end{equation}
+
+W praktyce model ten rozszerza się o wyrazy wolne, które odpowiadają za systematyczne odchylenia takie jak ogólny poziom oceniania w systemie, tendencja konkretnego użytkownika do dawania wyższych/niższych ocen oraz średnia ocena danego obiektu:
+
+\begin{equation}
+    \hat{r}_{ui} = \mu + b_u + b_i + \mathbf{x}_u^T \mathbf{y}_i
+\end{equation}
+
+gdzie $\mu \in \mathbb{R}$ oznacza średnią ocenę ze wszystkich obserwacji w zbiorze treningowym, $b_u \in \mathbb{R}$ jest odchyleniem użytkownika $u$, a $b_i \in \mathbb{R}$ odchyleniem obiektu $i$ od $\mu$. Należy podkreślić, że odchylenia nie są bezpośrednio liczone na podstawie danych treningowych, lecz są parametrami modelu.
+
+Parametry modelu są dobierane na podstawie minimalizacji funkcji straty zdefiniowanej na zbiorze zaobserwowanych ocen $\mathcal{K} = \{(u, i) : r_{ui} \neq \text{null}\}$. Jako podstawowe kryterium dopasowania stosuje się błąd średniokwadratowy. Ze względu na wysoki stopień rzadkości macierzy $\mathbf{R}$ oraz dużą liczbę parametrów ($m \times f + n \times f + m + n$), model bezpośrednio optymalizowany pod kątem minimalizacji błędu na danych treningowych wykazuje silną tendencję do przeuczenia. Aby aby temu zapobiec, do funkcji celu wprowadza się człony regularyzacyjne oparte na normie $L_2$. Karzą one wysokie wartości współczynników w wektorach $\mathbf{x}_u$ oraz $\mathbf{y}_i$, a także w wyrazach wolnych $b_u, b_i$. Zapobiega to dominacji pojedynczych cech i zmniejsza wariancję modelu. Ostateczna funkcja celu $\mathcal{L}$ przyjmuje postać:
+
+\begin{equation}
+\begin{aligned}
+\mathcal{L}(\mathbf{X}, \mathbf{Y}, \mathbf{b})
+={}&
+\sum_{(u,i) \in \mathcal{K}}
+\left( r_{ui} - \mu - b_u - b_i - \mathbf{x}_u^T \mathbf{y}_i \right)^2 \\
+&+
+\lambda \left(
+\sum_{u} \|\mathbf{x}_u\|_2^2
++
+\sum_{i} \|\mathbf{y}_i\|_2^2
++
+\sum_{u} b_u^2
++
+\sum_{i} b_i^2
+\right)
+\end{aligned}
+\end{equation}
+
+gdzie parametr regularyzacji $\lambda \ge 0$ kontroluje siłę kary za złożoność modelu. Celem procesu optymalizacji jest znalezienie macierzy $\mathbf{X}$ i $\mathbf{Y}$ oraz wektorów $\mathbf{b}$, które minimalizują wartość $\mathcal{L}$.
+
+\subsection{Optymalizacja metodą stochastycznego spadku po gradiencie (SGD)}
+% Tutaj opisz:
+% - Intuicję działania SGD: iteracyjna aktualizacja parametrów po każdej zaobserwowanej próbce (u, i, r_{ui})
+% - Definicję błędu predykcji e_{ui} = r_{ui} - \hat{r}_{ui}
+% - Wyprowadzenie gradientów funkcji straty względem wektorów x_u oraz y_i
+% - Reguły aktualizacji parametrów x_u i y_i z wykorzystaniem współczynnika uczenia (learning rate \gamma)
+% - Zalety i ograniczenia SGD (szybkość i prostota vs. trudność w równolegleniu i wrażliwość na dobór \gamma)
+
+\subsection{Ograniczenia tradycyjnego podejścia w kontekście sygnałów implicit}
+% Tutaj opisz:
+% - Dlaczego klasyczne SVD nie działa dobrze na danych implicit
+% - Kwestię brakujących danych i tego, jak modele explicit je ignorują (co prowadzi do błędów przy danych implicit)
+
+\section{Implicit Alternating Least Squares}
+
+\subsection{Formalizacja dwuzmiennej struktury: preferencja a zaufanie}
+% Tutaj opisz:
+% - Wprowadzenie zmiennych $p_{ui}$ (binarna preferencja) oraz $c_{ui}$ (ciągłe zaufanie)
+% - Wzory na to, jak z czasu gry wyliczyć te zmienne (np. c_{ui} = 1 + alpha * r_{ui})
+
+\subsection{Funkcja celu i ważona kwadratowa utrata}
+% Tutaj opisz:
+% - Weighted Regularized Matrix Factorization (WRMF)
+% - Pełny wzór na funkcję celu uwzględniającą wszystkie pary i wagi zaufania
+
+\subsection{Optymalizacja metodą naprzemiennych najmniejszych kwadratów}
+% Tutaj opisz:
+% - Dlaczego używamy naprzemiennych najmniejszych kwadratów (brak wypukłości funkcji przy obu zmiennych, wypukłość przy zamrożeniu jednej)
+% - Złożoność obliczeniową i jak radzić sobie z problemem rzadkości macierzy przy obliczeniach
+
+\section{Bayesian Personalized Ranking (BPR)}
+
+\subsection{Podejście oparte na porównywaniu par (pairwise ranking)}
+% Tutaj opisz:
+% - Ideę pairwise ranking zamiast point-wise predykcji
+% - Sposób tworzenia trójek (u, i, j), gdzie 'i' to element zaobserwowany, a 'j' niezaobserwowany
+
+\subsection{Bayesowska funkcja celu i kryterium BPR-OPT}
+% Tutaj opisz:
+% - Maksymalizację prawdopodobieństwa a posteriori (MAP)
+% - Wzór na kryterium optymalizacyjne BPR-OPT
+
+\subsection{Optymalizacja z wykorzystaniem LEARNBPR}
+% Tutaj opisz:
+% - Stochastyczny spadek wzdłuż gradientu (SGD) dostosowany do BPR
+% - Mechanizm losowania par podczas uczenia

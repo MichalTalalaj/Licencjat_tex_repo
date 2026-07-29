@@ -1,17 +1,5 @@
 \chapter{Podstawy teoretyczne systemów rekomendacyjnych}
 
-\section{Sformułowanie problemu}
-% to ewentualnie poleci do wstepu
-
-% Tutaj opisz (wyłącznie opisowo/intuicyjnie):
-% - Cel systemu: redukcja zjawiska przeciążenia informacyjnego (information overload) i filtrowanie szumu informacyjnego
-% - Rola systemu: ułatwienie użytkownikowi odkrywania obiektów/gier dopasowanych do jego indywidualnych gustów
-% - Intuicja biznesowa i użytkowa: system jako wirtualny doradca, który na podstawie dotychczasowej aktywności przewiduje przyszłe zainteresowania
-% - Wyzwanie skali: ogromna liczba dostępnych obiektów vs. ograniczony czas i uwaga użytkownika
-% (Uwaga: formalną definicję matematyczną, zbiory U, I oraz macierz R opiszesz w kolejnym podrozdziale 2.1.1)
-
-%Według definicji Ricci i in. \cite{ricci2015recommender}, systemy rekomendacyjne to algorytmy i narzędzia, które podpowiadają użytkownikom obiekty mogące ich zainteresować. Tego typu sugestie pomagają w podejmowaniu codziennych decyzji w sieci — od wyboru produktów w sklepach i muzyki na platformach streamingowych, po dobór artykułów prasowych czy gier komputerowych.
-
 \section{Zadanie rekomendacji Top-N}
 % Tutaj opisz:
 % - Definicję problemu (zbior uzytkowników, obiektów)
@@ -36,7 +24,7 @@ lub średni błąd bezwzględny:
 
 gdzie $\mathcal{K}$ oznacza zbiór znanych par $(u,i)$, dla których zarejestrowano obserwacje $r_{ui}$.
 
-W praktycznych zastosowaniach predykcja dokładnej wartości oceny okazała się jednak niewystarczająca i często niespójna z rzeczywistym celem systemu \cite{cremonesi2010performance}. Z perspektywy użytkownika istotna jest kolejność rekomendowanych obiektów, a nie dokładna wartość $\hat{r}_{ui}$. Dodatkowo niska wartość RMSE i MAE nie gwarantuje wysokiej trafności, ponieważ model może precyzyjnie przewidywać oceny mało atrakcyjnych obiektów, jednocześnie popełniając błędy przy wyznaczaniu najlepiej dopasowanych rekomendacji. Z tego powodu współcześnie problem jest formułowany jako zadanie rekomendacji Top-$N$. Celem algorytmu jest wygenerowanie dla danego użytkownika $u$ spersonalizowanej oraz uporządkowanej listy $N$ obiektów z zestawu pozycji dotąd przez niego niezaobserwowanych:
+W praktycznych zastosowaniach predykcja dokładnej wartości oceny okazała się jednak niewystarczająca \cite{cremonesi2010performance}. Z perspektywy użytkownika istotna jest kolejność rekomendowanych obiektów, a nie dokładna wartość $\hat{r}_{ui}$. Dodatkowo niska wartość RMSE i MAE nie gwarantuje wysokiej trafności, ponieważ model może precyzyjnie przewidywać oceny mało atrakcyjnych obiektów, jednocześnie popełniając błędy przy wyznaczaniu najlepiej dopasowanych rekomendacji. Z tego powodu współcześnie problem jest formułowany jako zadanie rekomendacji Top-$N$. Celem algorytmu jest wygenerowanie dla danego użytkownika $u$ spersonalizowanej oraz uporządkowanej listy $N$ obiektów z zestawu pozycji dotąd przez niego niezaobserwowanych:
 
 \begin{equation}
     \text{Top-}N(u) = \left( i_1^{(u)}, i_2^{(u)}, \dots, i_N^{(u)} \right) \quad \text{gdzie} \quad i_k^{(u)} \in \mathcal{I} \setminus \mathcal{I}_u
@@ -52,7 +40,7 @@ W niniejszej pracy wszystkie porównywane modele należą do rodziny modeli opar
 
 Macierz obserwacji $\mathbf{R} \in \mathbb{R}^{m \times n}$ jest aproksymowana poprzez iloczyn dwóch macierzy niskiego rzędu: macierzy reprezentacji użytkowników $\mathbf{X} \in \mathbb{R}^{m \times f}$ oraz macierzy reprezentacji obiektów $\mathbf{Y} \in \mathbb{R}^{n \times f}$. Wiersz $\mathbf{x}_u \in \mathbb{R}^f$ macierzy $\mathbf{X}$ określa stopień zainteresowania użytkownika $u$ poszczególnymi cechami ukrytymi, natomiast wiersz $\mathbf{y}_i \in \mathbb{R}^f$ macierzy $\mathbf{Y}$ opisuje obiekt $i$ pod kątem tych samych cech. W najprostszym wariancie modelu prognozowana wartość oceny $\hat{r}_{ui}$ wyznaczana jest jako iloczyn skalarny odpowiadających im wektorów:
 
-\begin{equation}
+\begin{equation}    
     \hat{r}_{ui} = \mathbf{x}_u^T \mathbf{y}_i = \sum_{k=1}^{f} x_{uk} y_{ik}
 \end{equation}
 
@@ -62,7 +50,7 @@ W praktyce model ten rozszerza się o wyrazy wolne, które odpowiadają za syste
     \hat{r}_{ui} = \mu + b_u + b_i + \mathbf{x}_u^T \mathbf{y}_i
 \end{equation}
 
-gdzie $\mu \in \mathbb{R}$ oznacza średnią ocenę ze wszystkich obserwacji w zbiorze treningowym, $b_u \in \mathbb{R}$ jest odchyleniem użytkownika $u$, a $b_i \in \mathbb{R}$ odchyleniem obiektu $i$ od $\mu$. Należy podkreślić, że odchylenia nie są bezpośrednio liczone na podstawie danych treningowych, lecz są parametrami modelu.
+gdzie $\mu \in \mathbb{R}$ oznacza średnią ocenę ze wszystkich obserwacji w zbiorze treningowym, $b_u \in \mathbb{R}$ jest odchyleniem użytkownika $u$, a $b_i \in \mathbb{R}$ odchyleniem obiektu $i$ od $\mu$. Należy podkreślić, że odchylenia nie są bezpośrednio liczone na podstawie danych treningowych, lecz dobierane przez model.
 
 Parametry modelu są dobierane na podstawie minimalizacji funkcji straty zdefiniowanej na zbiorze zaobserwowanych ocen $\mathcal{K} = \{(u, i) : r_{ui} \neq \text{null}\}$. Jako podstawowe kryterium dopasowania stosuje się błąd średniokwadratowy. Ze względu na wysoki stopień rzadkości macierzy $\mathbf{R}$ oraz dużą liczbę parametrów ($m \times f + n \times f + m + n$), model bezpośrednio optymalizowany pod kątem minimalizacji błędu na danych treningowych wykazuje silną tendencję do przeuczenia. Aby aby temu zapobiec, do funkcji celu wprowadza się człony regularyzacyjne oparte na normie $L_2$. Karzą one wysokie wartości współczynników w wektorach $\mathbf{x}_u$ oraz $\mathbf{y}_i$, a także w wyrazach wolnych $b_u, b_i$. Zapobiega to dominacji pojedynczych cech i zmniejsza wariancję modelu. Ostateczna funkcja celu $\mathcal{L}$ przyjmuje postać:
 
@@ -87,7 +75,10 @@ Parametry modelu są dobierane na podstawie minimalizacji funkcji straty zdefini
 
 gdzie parametr regularyzacji $\lambda \ge 0$ kontroluje siłę kary za złożoność modelu. Celem procesu optymalizacji jest znalezienie macierzy $\mathbf{X}$ i $\mathbf{Y}$ oraz wektorów $\mathbf{b}$, które minimalizują wartość $\mathcal{L}$.
 
-\subsection{Optymalizacja metodą stochastycznego spadku po gradiencie (SGD)}
+
+% JESLI BEDZIE MALO STRON
+
+%\subsection{Optymalizacja metodą stochastycznego spadku po gradiencie (SGD)}
 % Tutaj opisz:
 % - Intuicję działania SGD: iteracyjna aktualizacja parametrów po każdej zaobserwowanej próbce (u, i, r_{ui})
 % - Definicję błędu predykcji e_{ui} = r_{ui} - \hat{r}_{ui}
@@ -96,26 +87,140 @@ gdzie parametr regularyzacji $\lambda \ge 0$ kontroluje siłę kary za złożono
 % - Zalety i ograniczenia SGD (szybkość i prostota vs. trudność w równolegleniu i wrażliwość na dobór \gamma)
 
 \subsection{Ograniczenia tradycyjnego podejścia w kontekście sygnałów implicit}
-% Tutaj opisz:
-% - Dlaczego klasyczne SVD nie działa dobrze na danych implicit
-% - Kwestię brakujących danych i tego, jak modele explicit je ignorują (co prowadzi do błędów przy danych implicit)
 
-\section{Implicit Alternating Least Squares}
+Tradycyjne metody faktoryzacji macierzy, takie jak Funk SVD, zostały zaprojektowane z myślą o przetwarzaniu informacji jawnych (ang. \textit{explicit feedback}), opartych na ocenach w skali punktowej. W rzeczywistych systemach produkcyjnych stosowanie tego podejścia wiąże się jednak z istotnymi ograniczeniami. Niektórzy użytkownicy rzadko decydują się na pozostawienie opinii, co utrudnia modelowi dobranie dla nich trafnych rekomendacji. Co więcej, wiele platform nie posiada mechanizmu oceniania, co uniemożliwia działanie klasycznych algorytmów. W konsekwencji uzasadnione staje się wykorzystanie modeli opartych na niejawnych sygnałach zwrotnych (ang. \textit{implicit feedback}), takich jak liczba kliknięć, zarejestrowany czas interakcji pomiędzy użytkownikiem a obiektem czy historia zakupów.
+
+Bezpośrednie zastosowanie klasycznych algorytmów faktoryzacji macierzy do danych niejawnych prowadzi do znacznych problemów, wynikających z różnic między typami sygnałów:
+
+\begin{enumerate}
+    \item \textbf{Brak bezpośrednich sygnałów negatywnych oraz dwuznaczność braku interakcji:} W przypadku danych jawnych niska ocena jednoznacznie wskazuje na negatywną preferencję użytkownika. Natomiast dane niejawne dostarczają wyłącznie sygnałów pozytywnych. Długie lub częste interakcje świadczą o zainteresowaniu danym obiektem, podczas gdy brak interakcji ($r_{ui}=0$) lub interakcje o niewielkiej intensywności mają charakter niejednoznaczny. Mogą one wynikać zarówno z braku zainteresowania obiektem, jak i z faktu, że użytkownik nie wiedział o jego istnieniu.
+    
+    \item \textbf{Problem ignorowania wartości zerowych:} Funkcja celu w Funk SVD optymalizowana jest wyłącznie na zbiorze zaobserwowanych ocen $\mathcal{K}$, całkowicie ignorując pozycje niezaobserwowane. Traktowanie wszystkich brakujących wartości jako obserwacji o wartości $r_{ui}=0$ prowadziłoby do zdominowania procesu uczenia przez niezaobserwowane interakcje, których liczba wielokrotnie przewyższa liczbę rzeczywistych obserwacji ze względu na wysoką rzadkość macierzy $\mathbf{R}$. Jednocześnie przypisanie im takiej samej wagi jak obserwowanym interakcjom byłoby nieuzasadnione, ponieważ brak interakcji nie oznacza jednoznacznie negatywnej preferencji użytkownika. Z kolei całkowite pominięcie tych wartości powoduje, że model nie wykorzystuje informacji zawartej w niezaobserwowanych interakcjach podczas procesu uczenia.
+    
+    \item \textbf{Różnica między preferencją a wartością obserwacji:} W modelu Funk SVD każda obserwowana wartość $r_{ui}$ wpływa na funkcję celu proporcjonalnie do swojej wartości. W przypadku danych niejawnych liczba interakcji nie odzwierciedla jednak bezpośrednio stopnia preferencji użytkownika. Model nie zawiera mechanizmu pozwalającego oddzielić długość interakcji od preferencji, co sprawia, że obserwacje o dużych wartościach dominują proces uczenia.
+\end{enumerate}
+
+Powyższe ograniczenia wymusiły opracowanie dedykowanych modeli dla danych niejawnych. Najważniejsze z nich to implicit ALS (ang. \textit{implicit Alternating Least Squares}), wprowadzający model oparty na rozdzieleniu sygnału preferencji oraz poziomu zaufania do obserwacji, oraz model BPR (ang. \textit{Bayesian Personalised Ranking}), który formułuje problem rekomendacji jako zadanie optymalizacji rankingu. Szczegółowy opis wyżej wymienionych modeli znajduje się w następnych rozdziałach
+
+\section{Implicit Alternating Least Squares (iALS)}
 
 \subsection{Formalizacja dwuzmiennej struktury: preferencja a zaufanie}
-% Tutaj opisz:
-% - Wprowadzenie zmiennych $p_{ui}$ (binarna preferencja) oraz $c_{ui}$ (ciągłe zaufanie)
-% - Wzory na to, jak z czasu gry wyliczyć te zmienne (np. c_{ui} = 1 + alpha * r_{ui})
 
-\subsection{Funkcja celu i ważona kwadratowa utrata}
-% Tutaj opisz:
-% - Weighted Regularized Matrix Factorization (WRMF)
-% - Pełny wzór na funkcję celu uwzględniającą wszystkie pary i wagi zaufania
+W przeciwieństwie do modeli przeznaczonych dla danych jawnych, algorytm \textit{Implicit Alternating Least Squares} (iALS), zaproponowany przez Hu, Korena i Volinsky'ego \cite{hu2008implicit}, rozdziela zarejestrowaną aktywność $r_{ui}$ na dwie zmienne: binarną preferencję $p_{ui}$ oraz ciągłą wagę zaufania $c_{ui}$ (ang. \textit{confidence}).
+
+Oryginalnie preferencję $p_{ui}$ definiuje się jako zmienną binarną informującą o tym, czy użytkownik $u$ wszedł w interakcję z obiektem $i$:
+\begin{equation}
+    p_{ui} = 
+    \begin{cases} 
+      1 & \text{dla } r_{ui} > 0, \\
+      0 & \text{dla } r_{ui} = 0.
+    \end{cases}
+\end{equation}
+
+W niniejszej pracy przyjęto odmienną definicję dostosowaną do specyfiki zbioru danych platformy Steam. Zmienna $p_{ui}$ przyjmuje wartość $1$, jeśli użytkownik $u$ posiada daną grę w swojej bibliotece, a $0$ w przeciwnym wypadku. Oznacza to, że gracz posiadający tytuł w bibliotece, lecz nieposiadający dla niego jeszcze zarejestrowanego czasu gry ($r_{ui} = 0$), nadal ma przypisaną preferencję $p_{ui} = 1$.
+
+Ponieważ zmienna $p_{ui}$ nie uwzględnia intensywności interakcji, do modelu wprowadza się zmienną $c_{ui}$ (w dalszej części pracy określaną jako waga pewności lub confidence). Zwiększa ona swoją wartość wraz ze wzrostem $r_{ui}$, sygnalizując wyższą pewność algorytmu co do prawdziwości przypisanej preferencji. W pracy Hu et al. podstawowa metoda wyznaczania $c_{ui}$ ma postać:
+
+\begin{equation}
+    c_{ui} = 1 + \alpha r_{ui}
+\end{equation}
+
+gdzie $\alpha$ stanowi hiperparametr kontrolujący tempo wzrostu wagi zaufania. 
+
+Warto zaznaczyć, że sposób transformacji surowych sygnałów $r_{ui}$ w wagę $c_{ui}$ ma kluczowy wpływ na zachowanie całego systemu. Wprowadzenie modyfikacji tych funkcji lub dodanie nowych hiperparametrów zmienia sposób, w jaki model traktuje intensywność interakcji, co stanowi główny przedmiot rozważań i analiz w niniejszej pracy.
+
+
+\subsection{Funkcja straty iALS}
+
+Model iALS wyznacza wektory cech ukrytych $\mathbf{x}_u \in \mathbb{R}^f$ oraz $\mathbf{y}_i \in \mathbb{R}^f$ poprzez minimalizację ważonej funkcji straty kwadratowej. W przeciwieństwie do modelu Funk SVD, który optymalizuje parametry jedynie na podstawie obserwowanych ocen, implicit ALS uwzględnia wszystkie pary użytkownik-obiekt obejmujące zarówno zaobserwowane, jak i niezaobserwowane interakcje. Jednocześnie każdej parze przypisywana jest waga pewności $c_{ui}$, która określa znaczenie danej obserwacji podczas procesu uczenia.
+
+Formalnie funkcja celu implicit ALS przyjmuje postać:
+\begin{equation}
+    \mathcal{L}_{\text{iALS}}(\mathbf{X}, \mathbf{Y}) = \sum_{(u,i)} c_{ui} \left( p_{ui} - \mathbf{x}_u^T \mathbf{y}_i \right)^2 + \lambda \left( \sum_{u=1}^{m} \|\mathbf{x}_u\|_2^2 + \sum_{i=1}^{n} \|\mathbf{y}_i\|_2^2 \right),
+\end{equation}
+gdzie $\lambda$ jest parametrem odpowiedzialnym za regularyzację.
 
 \subsection{Optymalizacja metodą naprzemiennych najmniejszych kwadratów}
-% Tutaj opisz:
-% - Dlaczego używamy naprzemiennych najmniejszych kwadratów (brak wypukłości funkcji przy obu zmiennych, wypukłość przy zamrożeniu jednej)
-% - Złożoność obliczeniową i jak radzić sobie z problemem rzadkości macierzy przy obliczeniach
+
+Ze względu na występowanie $m \times n$ par użytkownik-obiekt w funkcji straty modelu iALS, minimalizacja funkcji straty stanowi duże wyzwanie obliczeniowe. Zastosowanie stochastycznego spadku po gradiencie jest w tym przypadku niewydajne, gdyż uwzględnienie wszystkich niezaobserwowanych interakcji wymagałoby przeglądania pełnej macierzy dla każdej epoki. Z tego powodu stosuje się naprzemienne najmniejsze kwadraty jako standardową metodę optymalizacji.
+
+Funkcja celu $\mathcal{L}_{\text{iALS}}(\mathbf{X}, \mathbf{Y})$ nie jest globalnie wypukła względem obu macierzy $\mathbf{X}$ oraz $\mathbf{Y}$ jednocześnie. Sytuacja ulega jednak zmianie, gdy jedną z macierzy traktujemy jako stałą. Gdy macierz $\mathbf{Y}$ traktowana jest jako stała, funkcja straty staje się kwadratowa względem każdego wektora reprezentacji użytkownika $\mathbf{x}_u$ niezależnie, zatem jest również wypukła. Analogicznie, przy ustalonej macierzy $\mathbf{X}$, funkcja staje się wypukła względem każdego wektora reprezentacji obiektu $\mathbf{y}_i$. Własność ta umożliwia analityczne rozwiązanie problemu jako ciągu niezależnych problemów najmniejszych kwadratów.
+
+Algorytm działa iteracyjnie, naprzemiennie wyznaczając optymalne reprezentacje użytkowników przy stałych reprezentacjach obiektów, a następnie optymalne reprezentacje obiektów przy stałych reprezentacjach użytkowników. Aby wyznaczyć wzór aktualizacji dla konkretnego użytkownika $u$, wyznacza się gradient części funkcji straty zależnej od wektora $\mathbf{x}_u$:
+\begin{equation}
+    \mathcal{L}(u) = \sum_{i=1}^{n} c_{ui} \left( p_{ui} - \mathbf{x}_u^T \mathbf{y}_i \right)^2 + \lambda \|\mathbf{x}_u\|_2^2.
+\end{equation}
+Różniczkując powyższe wyrażenie względem wektora $\mathbf{x}_u$, otrzymuje się gradient:
+\begin{equation}
+    \frac{\partial \mathcal{L}(u)}{\partial \mathbf{x}_u} = -2 \sum_{i=1}^{n} c_{ui} \left( p_{ui} - \mathbf{x}_u^T \mathbf{y}_i \right) \mathbf{y}_i + 2 \lambda \mathbf{x}_u.
+\end{equation}
+Po zapisaniu powyższego wyrażenia w postaci macierzowej przyjmuje ono formę:
+\begin{equation}
+    \frac{\partial \mathcal{L}(u)}{\partial \mathbf{x}_u} = -2 \mathbf{Y}^T \mathbf{C}^u \left( \mathbf{p}(u) - \mathbf{Y} \mathbf{x}_u \right) + 2 \lambda \mathbf{x}_u,
+\end{equation}
+gdzie $\mathbf{C}^u \in \mathbb{R}^{n \times n}$ jest macierzą diagonalną, w której element $(i,i)$ wynosi $c_{ui}$, a $\mathbf{p}(u) \in \mathbb{R}^n$ jest wektorem binarnych preferencji użytkownika $u$. Przyrównując tak wyznaczony gradient do zera:
+\begin{equation}
+    -2 \mathbf{Y}^T \mathbf{C}^u \mathbf{p}(u) + 2 \mathbf{Y}^T \mathbf{C}^u \mathbf{Y} \mathbf{x}_u + 2 \lambda \mathbf{x}_u = 0
+\end{equation}
+oraz grupując wyrażenia względem $\mathbf{x}_u$:
+\begin{equation}
+    \left( \mathbf{Y}^T \mathbf{C}^u \mathbf{Y} + \lambda \mathbf{I} \right) \mathbf{x}_u = \mathbf{Y}^T \mathbf{C}^u \mathbf{p}(u),
+    \label{eq:ials_user_update}
+\end{equation}
+uzyskuje się analityczne rozwiązanie na optymalny wektor $\mathbf{x}_u$:
+\begin{equation}
+    \mathbf{x}_u = \left( \mathbf{Y}^T \mathbf{C}^u \mathbf{Y} + \lambda \mathbf{I} \right)^{-1} \mathbf{Y}^T \mathbf{C}^u \mathbf{p}(u),
+\end{equation}
+gdzie $\mathbf{I} \in \mathbb{R}^{f \times f}$ oznacza macierz jednostkową.
+
+Przeprowadzając analogiczne wyprowadzenie dla obiektu $i$, wyznacza się gradient części funkcji straty zależnej od wektora $\mathbf{y}_i$:
+\begin{equation}
+    \frac{\partial \mathcal{L}(i)}{\partial \mathbf{y}_i} = -2 \mathbf{X}^T \mathbf{C}^i \left( \mathbf{p}(i) - \mathbf{X} \mathbf{y}_i \right) + 2 \lambda \mathbf{y}_i,
+\end{equation}
+gdzie $\mathbf{C}^i \in \mathbb{R}^{m \times m}$ jest macierzą diagonalną z wartościami $c_{ui}$ na przekątnej, a $\mathbf{p}(i) \in \mathbb{R}^m$ reprezentuje preferencje wszystkich użytkowników wobec obiektu $i$. Przyrównanie tego gradientu do zera daje wzór aktualizacji wektora $\mathbf{y}_i$:
+\begin{equation}
+    \mathbf{y}_i = \left( \mathbf{X}^T \mathbf{C}^i \mathbf{X} + \lambda \mathbf{I} \right)^{-1} \mathbf{X}^T \mathbf{C}^i \mathbf{p}(i).
+\end{equation}
+
+Ze względu na to, że każdy krok naprzemiennej optymalizacji stanowi dokładne rozwiązanie wypukłego podproblemu, funkcja straty $\mathcal{L}_{\text{iALS}}$ charakteryzuje się własnością monotonicznego spadku w każdej iteracji:
+\begin{equation}
+    \mathcal{L}_{\text{iALS}}(\mathbf{X}^{(t+1)}, \mathbf{Y}^{(t+1)}) \le \mathcal{L}_{\text{iALS}}(\mathbf{X}^{(t+1)}, \mathbf{Y}^{(t)}) \le \mathcal{L}_{\text{iALS}}(\mathbf{X}^{(t)}, \mathbf{Y}^{(t)}).
+\end{equation}
+Gwarantuje to zbieżność algorytmu do lokalnego minimum.
+
+Obliczenie składnika $\mathbf{Y}^T \mathbf{C}^u \mathbf{Y}$ podczas aktualizacji $\mathbf{x}_u$ wymagałoby czasu $\mathcal{O}(n \cdot f^2)$ dla każdego użytkownika, co prowadziłoby do nieakceptowalnego kosztu obliczeniowego dla dużych zbiorów danych. Można jednak wykorzystać fakt, że macierz pewności może zostać zapisana jako:
+\[
+\mathbf{C}^u = \mathbf{I} + (\mathbf{C}^u-\mathbf{I}),
+\]
+co pozwala przekształcić iloczyn do postaci:
+\begin{equation}
+    \mathbf{Y}^T\mathbf{C}^u\mathbf{Y}
+    =
+    \mathbf{Y}^T\mathbf{Y}
+    +
+    \mathbf{Y}^T(\mathbf{C}^u-\mathbf{I})\mathbf{Y}.
+\end{equation}
+
+Pierwszy składnik $\mathbf{Y}^T\mathbf{Y}$ jest niezależny od użytkownika, dlatego może zostać obliczony jednokrotnie na początku iteracji w czasie $\mathcal{O}(n\cdot f^2)$. Z kolei drugi składnik uwzględnia jedynie te pary użytkownik--obiekt, dla których wartość pewności różni się od wartości domyślnej ($c_{ui} \neq 1$). Definiując zbiór takich obserwacji jako:
+\[
+\mathcal{K}_{\text{conf}}=\{(u,i):c_{ui}\neq1\},
+\]
+macierz $(\mathbf{C}^u-\mathbf{I})$ pozostaje rzadka, a koszt obliczenia tego drugiego składnika dla wszystkich użytkowników wynosi $\mathcal{O}(|\mathcal{K}_{\text{conf}}|\cdot f^2)$.
+
+Rozwiązanie układu równań (\ref{eq:ials_user_update}) wymaga wyznaczenia wektora $\mathbf{x}_u$ poprzez rozwiązanie problemu liniowego o wymiarze $f \times f$. Koszt pojedynczej operacji wynosi $\mathcal{O}(f^3)$, a wykonanie jej dla wszystkich $m$ użytkowników prowadzi do składnika $\mathcal{O}(m\cdot f^3)$.
+
+W konsekwencji złożoność aktualizacji całej macierzy użytkowników $\mathbf{X}$ wynosi:
+\begin{equation}
+    \mathcal{O}\left(
+    m\cdot f^3
+    +
+    |\mathcal{K}_{\text{conf}}|\cdot f^2
+    +
+    n\cdot f^2
+    \right).
+\end{equation}
+
+Analogiczna procedura jest stosowana podczas aktualizacji macierzy obiektów $\mathbf{Y}$. W pełnej iteracji algorytmu iALS oba kroki są wykonywane naprzemiennie, co prowadzi do symetrycznego kosztu względem liczby użytkowników i obiektów.
 
 \section{Bayesian Personalized Ranking (BPR)}
 

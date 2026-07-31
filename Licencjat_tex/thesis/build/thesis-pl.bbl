@@ -312,6 +312,48 @@
       \field{note}{Dostęp: 2026-06-03}
       \field{title}{Steam Video Game and Bundle Data}
     \endentry
+    \entry{rendle2009bpr}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=4303170423b0e1fbf0462c6a59260374}{%
+           family={Rendle},
+           familyi={R\bibinitperiod},
+           given={Steffen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=bf5ea52b3b3a1dd51018de4ce676b840}{%
+           family={Freudenthaler},
+           familyi={F\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8189be274bfe3fa86e605aea73a076f7}{%
+           family={Gantner},
+           familyi={G\bibinitperiod},
+           given={Zeno},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=6bd1e34895061f42175a4e3ec60b0ea6}{%
+           family={Schmidt-Thieme},
+           familyi={S\bibinithyphendelim T\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{7b7d9d55a2250ef16f539e04802dd771}
+      \strng{fullhash}{227b6e6aa3c0bb1f1e41cc1c5d0b00e8}
+      \strng{fullhashraw}{227b6e6aa3c0bb1f1e41cc1c5d0b00e8}
+      \strng{bibnamehash}{227b6e6aa3c0bb1f1e41cc1c5d0b00e8}
+      \strng{authorbibnamehash}{227b6e6aa3c0bb1f1e41cc1c5d0b00e8}
+      \strng{authornamehash}{7b7d9d55a2250ef16f539e04802dd771}
+      \strng{authorfullhash}{227b6e6aa3c0bb1f1e41cc1c5d0b00e8}
+      \strng{authorfullhashraw}{227b6e6aa3c0bb1f1e41cc1c5d0b00e8}
+      \field{extraname}{1}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Twenty-Fifth Conference on Uncertainty in Artificial Intelligence}
+      \field{title}{BPR: Bayesian Personalized Ranking from Implicit Feedback}
+      \field{year}{2009}
+      \field{pages}{452\bibrangedash 461}
+      \range{pages}{10}
+    \endentry
     \entry{rendle2021revisiting}{article}{}{}
       \name{author}{4}{}{%
         {{hash=4303170423b0e1fbf0462c6a59260374}{%
@@ -343,6 +385,7 @@
       \strng{authornamehash}{7b7d9d55a2250ef16f539e04802dd771}
       \strng{authorfullhash}{b746d348dd1a5c431ae25c669bab1ab4}
       \strng{authorfullhashraw}{b746d348dd1a5c431ae25c669bab1ab4}
+      \field{extraname}{2}
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{labelnamesource}{author}

@@ -6,21 +6,21 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Rozkład dodatniego czasu gry w skali logarytmicznej w przygotowanym zbiorze}}{23}{figure.caption.6}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Rozkład liczby interakcji przypadających na użytkownika w przygotowanym zbiorze danych}}{24}{figure.caption.8}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Koncentracja interakcji według popularności gier w przygotowanym zbiorze danych}}{25}{figure.caption.9}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Dwadzieścia najpopularniejszych gier według liczby interakcji w przygotowanym zbiorze danych}}{26}{figure.caption.10}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Rozkład dodatniego czasu gry w skali logarytmicznej w przygotowanym zbiorze}}{28}{figure.caption.6}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Rozkład liczby interakcji przypadających na użytkownika w przygotowanym zbiorze danych}}{29}{figure.caption.8}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Koncentracja interakcji według popularności gier w przygotowanym zbiorze danych}}{30}{figure.caption.9}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Dwadzieścia najpopularniejszych gier według liczby interakcji w przygotowanym zbiorze danych}}{31}{figure.caption.10}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Wrażliwość modeli na hiperparametr $\alpha $}}{31}{figure.caption.12}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Wrażliwość modelu na hiperparametr $\beta $}}{32}{figure.caption.13}%
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Zakres przyjmowanych wartości wag pewności}}{33}{figure.caption.15}%
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Wartości wag pewności w zależności od zmiennej \texttt {playtime\_forever}}}{34}{figure.caption.16}%
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Wartości NDCG@10{} każdego z modeli na zbiorze testowym}}{35}{figure.caption.18}%
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Wartości precyzji względem odtworzenia na zbiorze testowym}}{36}{figure.caption.19}%
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Wartości pokrycia katalogu względem NDCG@10{} na zbiorze testowym}}{37}{figure.caption.20}%
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Średnie wartości różnorodności względem NDCG@10{} na zbiorze testowym}}{38}{figure.caption.21}%
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Średnie wartości $\Delta $GAP względem NDCG@10{} na zbiorze testowym}}{39}{figure.caption.22}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Wrażliwość modeli na hiperparametr $\alpha $}}{36}{figure.caption.12}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Wrażliwość modelu na hiperparametr $\beta $}}{37}{figure.caption.13}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Zakres przyjmowanych wartości wag pewności}}{38}{figure.caption.15}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Wartości wag pewności w zależności od zmiennej \texttt {playtime\_forever}}}{39}{figure.caption.16}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Wartości NDCG@10{} każdego z modeli na zbiorze testowym}}{40}{figure.caption.18}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Wartości precyzji względem odtworzenia na zbiorze testowym}}{41}{figure.caption.19}%
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Wartości pokrycia katalogu względem NDCG@10{} na zbiorze testowym}}{42}{figure.caption.20}%
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Średnie wartości różnorodności względem NDCG@10{} na zbiorze testowym}}{43}{figure.caption.21}%
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Średnie wartości $\Delta $GAP względem NDCG@10{} na zbiorze testowym}}{44}{figure.caption.22}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

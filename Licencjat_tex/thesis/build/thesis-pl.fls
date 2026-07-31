@@ -171,6 +171,8 @@ INPUT D:\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
 INPUT D:\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
 INPUT D:\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
 INPUT D:\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT D:\MiKTeX\tex\latex\bbm\bbm.sty
+INPUT D:\MiKTeX\tex\latex\bbm\bbm.sty
 INPUT D:\MiKTeX\tex\latex\biblatex\biblatex.sty
 INPUT D:\MiKTeX\tex\latex\biblatex\biblatex.sty
 INPUT D:\MiKTeX\tex\latex\logreq\logreq.sty
@@ -351,6 +353,7 @@ INPUT D:\MiKTeX\fonts\enc\dvips\pl\plms.enc
 INPUT D:\MiKTeX\fonts\enc\dvips\pl\plrm.enc
 INPUT D:\MiKTeX\fonts\enc\dvips\pl\plme.enc
 INPUT D:\MiKTeX\fonts\tfm\jknappen\ec\eccc1095.tfm
+INPUT D:\MiKTeX\fonts\tfm\jknappen\ec\tcrm1095.tfm
 INPUT .\tex\03_metryki_ewaluacyjne.tex
 INPUT .\tex\03_metryki_ewaluacyjne.tex
 INPUT .\tex\03_metryki_ewaluacyjne.tex
@@ -400,7 +403,6 @@ INPUT .\tex\06_metodologia_eksperymentalna.tex
 INPUT .\tex\06_metodologia_eksperymentalna.tex
 INPUT .\tex\06_metodologia_eksperymentalna.tex
 INPUT tex\06_metodologia_eksperymentalna.tex
-INPUT D:\MiKTeX\fonts\tfm\jknappen\ec\tcrm1095.tfm
 INPUT D:\MiKTeX\fonts\tfm\public\pl\plr12.tfm
 INPUT D:\MiKTeX\fonts\tfm\public\pl\plr9.tfm
 INPUT D:\MiKTeX\fonts\tfm\public\pl\plr7.tfm
@@ -520,10 +522,10 @@ INPUT d:\Studiowe\Licencjat\Licencjat_tex_repo\Licencjat_tex\thesis\build\thesis
 OUTPUT d:\Studiowe\Licencjat\Licencjat_tex_repo\Licencjat_tex\thesis\build\thesis-pl.run.xml
 INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk
 INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk
-INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1095.pk
-INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1095.pk
 INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
 INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
+INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1095.pk
+INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1095.pk
 INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
 INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
 INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1095.pk
@@ -542,6 +544,8 @@ INPUT D:\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
 INPUT D:\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
 INPUT D:\MiKTeX\fonts\type1\public\pl\plbx10.pfb
 INPUT D:\MiKTeX\fonts\type1\public\pl\plbx10.pfb
+INPUT D:\MiKTeX\fonts\type1\public\pl\plbx8.pfb
+INPUT D:\MiKTeX\fonts\type1\public\pl\plbx8.pfb
 INPUT D:\MiKTeX\fonts\type1\public\pl\plex10.pfb
 INPUT D:\MiKTeX\fonts\type1\public\pl\plex10.pfb
 INPUT D:\MiKTeX\fonts\type1\public\pl\plmi10.pfb
@@ -554,9 +558,13 @@ INPUT D:\MiKTeX\fonts\type1\public\pl\plmi8.pfb
 INPUT D:\MiKTeX\fonts\type1\public\pl\plmi8.pfb
 INPUT D:\MiKTeX\fonts\type1\public\pl\plr10.pfb
 INPUT D:\MiKTeX\fonts\type1\public\pl\plr10.pfb
+INPUT D:\MiKTeX\fonts\type1\public\pl\plr6.pfb
+INPUT D:\MiKTeX\fonts\type1\public\pl\plr6.pfb
 INPUT D:\MiKTeX\fonts\type1\public\pl\plr8.pfb
 INPUT D:\MiKTeX\fonts\type1\public\pl\plr8.pfb
 INPUT D:\MiKTeX\fonts\type1\public\pl\plsy10.pfb
 INPUT D:\MiKTeX\fonts\type1\public\pl\plsy10.pfb
+INPUT D:\MiKTeX\fonts\type1\public\pl\plsy6.pfb
+INPUT D:\MiKTeX\fonts\type1\public\pl\plsy6.pfb
 INPUT D:\MiKTeX\fonts\type1\public\pl\plsy8.pfb
 INPUT D:\MiKTeX\fonts\type1\public\pl\plsy8.pfb

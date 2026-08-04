@@ -19,6 +19,56 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global/global}
+    \entry{abdollahpouri2019unfairness}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=89965f95d54051bc0d471e6b6b5d4cfd}{%
+           family={Abdollahpouri},
+           familyi={A\bibinitperiod},
+           given={Himan},
+           giveni={H\bibinitperiod}}}%
+        {{hash=4412c93756d0d4935bc40fbe7e60e0b2}{%
+           family={Mansoury},
+           familyi={M\bibinitperiod},
+           given={Masoud},
+           giveni={M\bibinitperiod}}}%
+        {{hash=927ab4206ced595b50d2ac5fb4535b88}{%
+           family={Burke},
+           familyi={B\bibinitperiod},
+           given={Robin},
+           giveni={R\bibinitperiod}}}%
+        {{hash=bc49a49df190f326623d1fb6fb125301}{%
+           family={Mobasher},
+           familyi={M\bibinitperiod},
+           given={Bamshad},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{64424df5e9a72251e87149a031807279}
+      \strng{fullhash}{8aebd669f4a4d071313b86864b759a8a}
+      \strng{fullhashraw}{8aebd669f4a4d071313b86864b759a8a}
+      \strng{bibnamehash}{8aebd669f4a4d071313b86864b759a8a}
+      \strng{authorbibnamehash}{8aebd669f4a4d071313b86864b759a8a}
+      \strng{authornamehash}{64424df5e9a72251e87149a031807279}
+      \strng{authorfullhash}{8aebd669f4a4d071313b86864b759a8a}
+      \strng{authorfullhashraw}{8aebd669f4a4d071313b86864b759a8a}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 13th ACM Conference on Recommender Systems (RecSys '19)}
+      \field{title}{The Unfairness of Popularity Bias in Recommendation}
+      \field{year}{2019}
+      \field{pages}{518\bibrangedash 519}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1145/3298689.3347014
+      \endverb
+    \endentry
     \entry{aggarwal2016recommender}{book}{}{}
       \name{author}{1}{}{%
         {{hash=86d11a07b1bfeac58dc68f7a419b3039}{%
@@ -128,6 +178,82 @@
       \verb https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.ml.recommendation.ALS.html
       \endverb
     \endentry
+    \entry{bunga2021implicit}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=df794e7cc522299fe8f02cc715577574}{%
+           family={Bunga},
+           familyi={B\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f49a8abb99bbe8221b7e7ac5df146e25}{%
+           family={Batista},
+           familyi={B\bibinitperiod},
+           given={Fernando},
+           giveni={F\bibinitperiod}}}%
+        {{hash=7466f0ff38cc74bf36162314370ff428}{%
+           family={Ribeiro},
+           familyi={R\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{83bc7e5a94c6eb500d25268b14e4bc3b}
+      \strng{fullhash}{83bc7e5a94c6eb500d25268b14e4bc3b}
+      \strng{fullhashraw}{83bc7e5a94c6eb500d25268b14e4bc3b}
+      \strng{bibnamehash}{83bc7e5a94c6eb500d25268b14e4bc3b}
+      \strng{authorbibnamehash}{83bc7e5a94c6eb500d25268b14e4bc3b}
+      \strng{authornamehash}{83bc7e5a94c6eb500d25268b14e4bc3b}
+      \strng{authorfullhash}{83bc7e5a94c6eb500d25268b14e4bc3b}
+      \strng{authorfullhashraw}{83bc7e5a94c6eb500d25268b14e4bc3b}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 13th International Conference on Knowledge Discovery and Information Retrieval}
+      \field{title}{From Implicit Preferences to Ratings: Video Games Recommendation based on Collaborative Filtering}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.5220/0010655900003064
+      \endverb
+    \endentry
+    \entry{cheuque2019steam}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=5920332b9ff5bd34baeda3db76dbda62}{%
+           family={Cheuque},
+           familyi={C\bibinitperiod},
+           given={Germán},
+           giveni={G\bibinitperiod}}}%
+        {{hash=38672bda1dcf9618f6e5563258bb2436}{%
+           family={Guzmán},
+           familyi={G\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0fbdbaf474f2b0f8817c35c1999bf593}{%
+           family={Parra},
+           familyi={P\bibinitperiod},
+           given={Denis},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{a3e4d77f78f253276df5873053401764}
+      \strng{fullhash}{a3e4d77f78f253276df5873053401764}
+      \strng{fullhashraw}{a3e4d77f78f253276df5873053401764}
+      \strng{bibnamehash}{a3e4d77f78f253276df5873053401764}
+      \strng{authorbibnamehash}{a3e4d77f78f253276df5873053401764}
+      \strng{authornamehash}{a3e4d77f78f253276df5873053401764}
+      \strng{authorfullhash}{a3e4d77f78f253276df5873053401764}
+      \strng{authorfullhashraw}{a3e4d77f78f253276df5873053401764}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Companion Proceedings of The 2019 World Wide Web Conference}
+      \field{title}{Recommender Systems for Online Video Game Platforms: The Case of STEAM}
+      \field{year}{2019}
+      \field{pages}{763\bibrangedash 771}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1145/3308560.3316457
+      \endverb
+    \endentry
     \entry{cremonesi2010performance}{inproceedings}{}{}
       \name{author}{3}{}{%
         {{hash=ffacab86cd0c43d68349737683cb756a}{%
@@ -205,6 +331,63 @@
       \verb https://github.com/benfred/implicit
       \endverb
     \endentry
+    \entry{he2017neural}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=cf3f1b6bfe8e9131a8c719c1af0dce5d}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Xiangnan},
+           giveni={X\bibinitperiod}}}%
+        {{hash=98c2b47a69b228e811390ee98c8d81f4}{%
+           family={Liao},
+           familyi={L\bibinitperiod},
+           given={Lizi},
+           giveni={L\bibinitperiod}}}%
+        {{hash=6f410a596e335c299e3550a4e9990bb4}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Hanwang},
+           giveni={H\bibinitperiod}}}%
+        {{hash=bc7884a5203c192ab9125f81d18db97d}{%
+           family={Nie},
+           familyi={N\bibinitperiod},
+           given={Liqiang},
+           giveni={L\bibinitperiod}}}%
+        {{hash=13be76d254e7c2f65cfc92bc75bb18fd}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Xia},
+           giveni={X\bibinitperiod}}}%
+        {{hash=57e4257ea3484acff91be2a3df96d16b}{%
+           family={Chua},
+           familyi={C\bibinitperiod},
+           given={Tat-Seng},
+           giveni={T\bibinithyphendelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {International World Wide Web Conferences Steering Committee}%
+      }
+      \strng{namehash}{5288584512ef6ddfdb0f4e97d3bced50}
+      \strng{fullhash}{9ae5af45ea1e621baea878b357a6a477}
+      \strng{fullhashraw}{9ae5af45ea1e621baea878b357a6a477}
+      \strng{bibnamehash}{9ae5af45ea1e621baea878b357a6a477}
+      \strng{authorbibnamehash}{9ae5af45ea1e621baea878b357a6a477}
+      \strng{authornamehash}{5288584512ef6ddfdb0f4e97d3bced50}
+      \strng{authorfullhash}{9ae5af45ea1e621baea878b357a6a477}
+      \strng{authorfullhashraw}{9ae5af45ea1e621baea878b357a6a477}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 26th International Conference on World Wide Web}
+      \field{title}{Neural Collaborative Filtering}
+      \field{year}{2017}
+      \field{pages}{173\bibrangedash 182}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/3038912.3052569
+      \endverb
+    \endentry
     \entry{hu2008implicit}{inproceedings}{}{}
       \name{author}{3}{}{%
         {{hash=855f3b81b4485b5f0dcd527f5803bb66}{%
@@ -242,6 +425,84 @@
       \range{pages}{10}
       \verb{doi}
       \verb 10.1109/ICDM.2008.22
+      \endverb
+    \endentry
+    \entry{jannach2011recommender}{book}{}{}
+      \name{author}{4}{}{%
+        {{hash=8044b9528a8ea937291cf64035350877}{%
+           family={Jannach},
+           familyi={J\bibinitperiod},
+           given={Dietmar},
+           giveni={D\bibinitperiod}}}%
+        {{hash=cb922243615d2e342d795021fe955909}{%
+           family={Zanker},
+           familyi={Z\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=81655836ef41c3264e367ccbbd394701}{%
+           family={Felfernig},
+           familyi={F\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8c14fa59a9c511fd1b3a0c36b8d30d17}{%
+           family={Friedrich},
+           familyi={F\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{e2265483a9bc04429e81ffd2896e35e4}
+      \strng{fullhash}{362c789ae70dff5075fc00954e61c169}
+      \strng{fullhashraw}{362c789ae70dff5075fc00954e61c169}
+      \strng{bibnamehash}{362c789ae70dff5075fc00954e61c169}
+      \strng{authorbibnamehash}{362c789ae70dff5075fc00954e61c169}
+      \strng{authornamehash}{e2265483a9bc04429e81ffd2896e35e4}
+      \strng{authorfullhash}{362c789ae70dff5075fc00954e61c169}
+      \strng{authorfullhashraw}{362c789ae70dff5075fc00954e61c169}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Recommender Systems: An Introduction}
+      \field{year}{2011}
+      \verb{doi}
+      \verb 10.1017/CBO9780511763113
+      \endverb
+    \endentry
+    \entry{kang2018self}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=1ba0a2d8e5160ee3f4898348d49f9f92}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Wang-Cheng},
+           giveni={W\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=24f98302ee924662159ce29687c18e4e}{%
+           family={McAuley},
+           familyi={M\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{8ed35647d7ffd7df791a601bdffb62c4}
+      \strng{fullhash}{8ed35647d7ffd7df791a601bdffb62c4}
+      \strng{fullhashraw}{8ed35647d7ffd7df791a601bdffb62c4}
+      \strng{bibnamehash}{8ed35647d7ffd7df791a601bdffb62c4}
+      \strng{authorbibnamehash}{8ed35647d7ffd7df791a601bdffb62c4}
+      \strng{authornamehash}{8ed35647d7ffd7df791a601bdffb62c4}
+      \strng{authorfullhash}{8ed35647d7ffd7df791a601bdffb62c4}
+      \strng{authorfullhashraw}{8ed35647d7ffd7df791a601bdffb62c4}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE International Conference on Data Mining}
+      \field{title}{Self-Attentive Sequential Recommendation}
+      \field{year}{2018}
+      \field{pages}{197\bibrangedash 206}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ICDM.2018.00035
       \endverb
     \endentry
     \entry{koren2009matrix}{article}{}{}
@@ -285,6 +546,107 @@
       \verb 10.1109/MC.2009.263
       \endverb
     \endentry
+    \entry{li2023recent}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=2af761d9bef859ea29248418adce0dd7}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=119898bfd66d70542616ded018fa281f}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Kangbo},
+           giveni={K\bibinitperiod}}}%
+        {{hash=8dfa78845c5ab595a7c22eeb5335af1b}{%
+           family={Satapathy},
+           familyi={S\bibinitperiod},
+           given={Ranjan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d51786a0dffbd8ee68a63e5263f05e7f}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Suhang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=db089768b8819956d932b3c8db18d498}{%
+           family={Cambria},
+           familyi={C\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{6f58cd95635bdfcb3ebf0091d0da045f}
+      \strng{fullhash}{5c5996ed114228613c821626fe5fd1a8}
+      \strng{fullhashraw}{5c5996ed114228613c821626fe5fd1a8}
+      \strng{bibnamehash}{5c5996ed114228613c821626fe5fd1a8}
+      \strng{authorbibnamehash}{5c5996ed114228613c821626fe5fd1a8}
+      \strng{authornamehash}{6f58cd95635bdfcb3ebf0091d0da045f}
+      \strng{authorfullhash}{5c5996ed114228613c821626fe5fd1a8}
+      \strng{authorfullhashraw}{5c5996ed114228613c821626fe5fd1a8}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{CoRR}
+      \field{title}{Recent Developments in Recommender Systems: A Survey}
+      \field{volume}{abs/2306.12680}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.48550/arXiv.2306.12680
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2306.12680
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2306.12680
+      \endverb
+    \endentry
+    \entry{liang2018variational}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=015d43a5e0332e107ccf47bfc37b25ca}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Dawen},
+           giveni={D\bibinitperiod}}}%
+        {{hash=42ece4d56d778de4fd7df4dc482d8a61}{%
+           family={Krishnan},
+           familyi={K\bibinitperiod},
+           given={Rahul\bibnamedelima G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=937991c72400f4d0e0252027c8c03f67}{%
+           family={Hoffman},
+           familyi={H\bibinitperiod},
+           given={Matthew\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=b60ee7d2fae24ba9546e322d5471d27f}{%
+           family={Jebara},
+           familyi={J\bibinitperiod},
+           given={Tony},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{ffd0ff99f8db3d15c6891a99be12a8cb}
+      \strng{fullhash}{d3c6c5908ca03d50369212de81ab61a9}
+      \strng{fullhashraw}{d3c6c5908ca03d50369212de81ab61a9}
+      \strng{bibnamehash}{d3c6c5908ca03d50369212de81ab61a9}
+      \strng{authorbibnamehash}{d3c6c5908ca03d50369212de81ab61a9}
+      \strng{authornamehash}{ffd0ff99f8db3d15c6891a99be12a8cb}
+      \strng{authorfullhash}{d3c6c5908ca03d50369212de81ab61a9}
+      \strng{authorfullhashraw}{d3c6c5908ca03d50369212de81ab61a9}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2018 World Wide Web Conference (WWW '18)}
+      \field{title}{Variational Autoencoders for Collaborative Filtering}
+      \field{year}{2018}
+      \field{pages}{687\bibrangedash 696}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/3178876.3186150
+      \endverb
+    \endentry
     \entry{mcauleySteamData}{misc}{}{}
       \name{author}{2}{}{%
         {{hash=24f98302ee924662159ce29687c18e4e}{%
@@ -311,6 +673,39 @@
       \field{howpublished}{\url{https://cseweb.ucsd.edu/~jmcauley/datasets.html}}
       \field{note}{Dostęp: 2026-06-03}
       \field{title}{Steam Video Game and Bundle Data}
+    \endentry
+    \entry{mencia2016epfl}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=7cc046579f0caea6e832715d03bd275e}{%
+           family={Mencía},
+           familyi={M\bibinitperiod},
+           given={Eneldo\bibnamedelima Martínez},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {École Polytechnique Fédérale de Lausanne (EPFL)}%
+      }
+      \strng{namehash}{7cc046579f0caea6e832715d03bd275e}
+      \strng{fullhash}{7cc046579f0caea6e832715d03bd275e}
+      \strng{fullhashraw}{7cc046579f0caea6e832715d03bd275e}
+      \strng{bibnamehash}{7cc046579f0caea6e832715d03bd275e}
+      \strng{authorbibnamehash}{7cc046579f0caea6e832715d03bd275e}
+      \strng{authornamehash}{7cc046579f0caea6e832715d03bd275e}
+      \strng{authorfullhash}{7cc046579f0caea6e832715d03bd275e}
+      \strng{authorfullhashraw}{7cc046579f0caea6e832715d03bd275e}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Evaluation of Recommender Systems in Implicit Feedback Scenarios}
+      \field{type}{techreport}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://infoscience.epfl.ch/server/api/core/bitstreams/819ed007-0113-4904-8f01-33488b11c3aa/content
+      \endverb
+      \verb{url}
+      \verb https://infoscience.epfl.ch/server/api/core/bitstreams/819ed007-0113-4904-8f01-33488b11c3aa/content
+      \endverb
     \endentry
     \entry{rendle2009bpr}{inproceedings}{}{}
       \name{author}{4}{}{%
@@ -354,6 +749,50 @@
       \field{pages}{452\bibrangedash 461}
       \range{pages}{10}
     \endentry
+    \entry{rendle2020neural}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=4303170423b0e1fbf0462c6a59260374}{%
+           family={Rendle},
+           familyi={R\bibinitperiod},
+           given={Steffen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a030b7911cea0197aefc5216860e403c}{%
+           family={Krichene},
+           familyi={K\bibinitperiod},
+           given={Walid},
+           giveni={W\bibinitperiod}}}%
+        {{hash=32a08717e0d6dcde59bc98b96800ed6c}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+        {{hash=fec5ecb2986d46cd1d53ab2f051ec153}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{7b7d9d55a2250ef16f539e04802dd771}
+      \strng{fullhash}{5f11d2d0f2ee95338394c08ed9d0f0a3}
+      \strng{fullhashraw}{5f11d2d0f2ee95338394c08ed9d0f0a3}
+      \strng{bibnamehash}{5f11d2d0f2ee95338394c08ed9d0f0a3}
+      \strng{authorbibnamehash}{5f11d2d0f2ee95338394c08ed9d0f0a3}
+      \strng{authornamehash}{7b7d9d55a2250ef16f539e04802dd771}
+      \strng{authorfullhash}{5f11d2d0f2ee95338394c08ed9d0f0a3}
+      \strng{authorfullhashraw}{5f11d2d0f2ee95338394c08ed9d0f0a3}
+      \field{extraname}{2}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv preprint arXiv:2005.09683}
+      \field{title}{Neural Collaborative Filtering vs. Matrix Factorization Revisited}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2005.09683
+      \endverb
+    \endentry
     \entry{rendle2021revisiting}{article}{}{}
       \name{author}{4}{}{%
         {{hash=4303170423b0e1fbf0462c6a59260374}{%
@@ -385,7 +824,7 @@
       \strng{authornamehash}{7b7d9d55a2250ef16f539e04802dd771}
       \strng{authorfullhash}{b746d348dd1a5c431ae25c669bab1ab4}
       \strng{authorfullhashraw}{b746d348dd1a5c431ae25c669bab1ab4}
-      \field{extraname}{2}
+      \field{extraname}{3}
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{labelnamesource}{author}
@@ -393,6 +832,50 @@
       \field{journaltitle}{arXiv preprint arXiv:2110.14037}
       \field{title}{Revisiting the Performance of iALS on Item Recommendation Benchmarks}
       \field{year}{2021}
+    \endentry
+    \entry{ricci2015recommender}{book}{}{}
+      \name{editor}{3}{}{%
+        {{hash=5abb1d77d80f46918651a5bbc5ee8371}{%
+           family={Ricci},
+           familyi={R\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=e583bae19511d6aca7ecc9e44953ed07}{%
+           family={Rokach},
+           familyi={R\bibinitperiod},
+           given={Lior},
+           giveni={L\bibinitperiod}}}%
+        {{hash=4610f4e9c8ec107e9ad7dfe04a1d7c30}{%
+           family={Shapira},
+           familyi={S\bibinitperiod},
+           given={Bracha},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{525613e36e598515af20951b79d373e1}
+      \strng{fullhash}{525613e36e598515af20951b79d373e1}
+      \strng{fullhashraw}{525613e36e598515af20951b79d373e1}
+      \strng{bibnamehash}{525613e36e598515af20951b79d373e1}
+      \strng{editorbibnamehash}{525613e36e598515af20951b79d373e1}
+      \strng{editornamehash}{525613e36e598515af20951b79d373e1}
+      \strng{editorfullhash}{525613e36e598515af20951b79d373e1}
+      \strng{editorfullhashraw}{525613e36e598515af20951b79d373e1}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd}
+      \field{isbn}{978-1-4899-7636-9}
+      \field{title}{Recommender Systems Handbook}
+      \field{year}{2015}
+      \verb{doi}
+      \verb 10.1007/978-1-4899-7637-6
+      \endverb
     \endentry
     \entry{schnabel2016recommendations}{inproceedings}{}{}
       \name{author}{5}{}{%
@@ -439,6 +922,65 @@
       \field{year}{2016}
       \field{pages}{1670\bibrangedash 1679}
       \range{pages}{10}
+    \endentry
+    \entry{sun2019bert4rec}{inproceedings}{}{}
+      \name{author}{7}{}{%
+        {{hash=0fff2d014f575fc5d680e70e02e8ce38}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Fei},
+           giveni={F\bibinitperiod}}}%
+        {{hash=c3c72b33338b8ef6c1fca8b2abc557ac}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jia},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bb371597af3d6d97a656e6f879c0189d}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=46518ae7e34858f82e417641272a1393}{%
+           family={Pei},
+           familyi={P\bibinitperiod},
+           given={Changhua},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8bd77c05192decfa1a28f0261a6041ba}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Xiao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=929d106dcb7cd193785f5aea5ada5006}{%
+           family={Ou},
+           familyi={O\bibinitperiod},
+           given={Wenwu},
+           giveni={W\bibinitperiod}}}%
+        {{hash=a6cd330d65a61e5776df47ea793c79e3}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Peng},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{3194e1556ebc5c352042c0969b68e903}
+      \strng{fullhash}{ad6cebe651ac302cb0f4edd144f1dd74}
+      \strng{fullhashraw}{ad6cebe651ac302cb0f4edd144f1dd74}
+      \strng{bibnamehash}{ad6cebe651ac302cb0f4edd144f1dd74}
+      \strng{authorbibnamehash}{ad6cebe651ac302cb0f4edd144f1dd74}
+      \strng{authornamehash}{3194e1556ebc5c352042c0969b68e903}
+      \strng{authorfullhash}{ad6cebe651ac302cb0f4edd144f1dd74}
+      \strng{authorfullhashraw}{ad6cebe651ac302cb0f4edd144f1dd74}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 28th ACM International Conference on Information and Knowledge Management}
+      \field{title}{BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer}
+      \field{year}{2019}
+      \field{pages}{1441\bibrangedash 1450}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/3357384.3357895
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

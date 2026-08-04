@@ -63,6 +63,7 @@ BPR & 96 & 0.001760 & 0.003237 & 150 & 0.212 \\
 W przypadku modelu BPR nie jest możliwa tak dogłębna analiza dobranych hiperparametrów, ze względu na to, że interakcje traktowane są w sposób binarny. Regularyzacja i długość kroku uczenia wpływają wyłącznie na proces znajdywania maksimum prawdopodobieństwa aposteriori cech ukrytych. Jedynie wymiar przestszeni cech ukrytych pozwala na interpretacje złożoności relacji między użytkownikami, a produktami. Już na tym etapie można zauważyć znaczące różnice między metryką \ndcg{} między klasami modeli, jednak ich analizę przeprowadzono w pózniejszych rozdziałach.  
 
 \section{Analiza funkcji wag pewności}
+\label{sec:confidence_analysis}
 
 Aby zweryfikować hipotezę o redukcji sygnału z \texttt{playtime\_forever} w przypadku modeli implicit ALS przeprowadzono dodatkową analizę wag pewności otrzymanych w modelach. Na wykresie~\ref{fig:confidence_levels_best_als} przedstawiono ich zakres wartości dla każdego z modeli.
 

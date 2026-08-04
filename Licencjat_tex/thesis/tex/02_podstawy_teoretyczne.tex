@@ -1,6 +1,7 @@
 \chapter{Podstawy teoretyczne systemów rekomendacyjnych}
 
 \section{Zadanie rekomendacji Top-N}
+\label{sec:top_n_formulation}
 % Tutaj opisz:
 % - Definicję problemu (zbior uzytkowników, obiektów)
 % - Czym jest macierz interakcji
@@ -376,7 +377,7 @@ Wyprowadzone kryterium $\mathcal{L}_{\text{BPR}}(\mathbf{X}, \mathbf{Y})$ nie po
 gdzie $\alpha$ oznacza współczynnik uczenia.
 Zastosowanie tej reguły w postaci pełnej wymaga jednak wyznaczenia gradientu sumy po wszystkich elementach zbioru treningowego w każdej iteracji algorytmu. Problem ten jest w praktyce czasochłonny dla realistycznych zbiorów danych. Sam zbiór $D_S$ zdefiniowany jest jako iloczyn kartezjański par pozytywnych i negatywnych dla każdego użytkownika, a więc jego liczność wynosi:
 \begin{equation}
-    |D_S| \approx \sum_{u \in U} |I_u^+| \cdot \left( |I| - |I_u^+| \right),
+    |D_S| = \sum_{u \in U} |I_u^+| \cdot \left( |I| - |I_u^+| \right),
 \end{equation}
 co oznacza, że dla typowego użytkownika liczba trójek treningowych jest w przybliżeniu liniowa względem całego katalogu obiektów $I$. Nawet dla umiarkowanej liczby użytkowników i obiektów zbiór $D_S$ osiąga rozmiary rzędu milionów lub miliardów trójek, co czyni wyznaczanie pełnego gradientu w każdej iteracji zbyt kosztownym obliczeniowo.
 

@@ -5,19 +5,15 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Podstawowe statystyki surowego zbioru danych}}{27}{table.caption.4}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Wpływ kolejnych etapów przygotowania danych na rozmiar zbioru}}{27}{table.caption.5}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Rozkład liczby interakcji użytkowników i popularności gier w przygotowanym zbiorze}}{29}{table.caption.7}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Najlepsze hiperparametry wariantów ALS wybrane na zbiorze walidacyjnym}}{35}{table.caption.11}%
-\contentsline {table}{\numberline {7.2}{\ignorespaces Najlepsze hiperparametry modelu BPR wybrane na zbiorze walidacyjnym}}{37}{table.caption.14}%
-\contentsline {table}{\numberline {7.3}{\ignorespaces Wyniki modeli na zbiorze testowym}}{40}{table.caption.17}%
-\contentsline {table}{\numberline {7.4}{\ignorespaces Wyniki ewaluacji modeli na zbiorze testowym w podziale na metryki dokładności oraz metryki profilowe i różnorodności}}{45}{table.caption.23}%
-\contentsline {table}{\numberline {7.5}{\ignorespaces Wyniki ewaluacji modeli na zbiorze walidacyjnym w podziale na metryki dokładności oraz metryki profilowe i różnorodności}}{45}{table.caption.24}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Podstawowe statystyki surowego zbioru danych}}{29}{table.caption.4}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Wpływ kolejnych etapów przygotowania danych na rozmiar zbioru}}{29}{table.caption.5}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Rozkład liczby interakcji użytkowników i popularności gier w przygotowanym zbiorze}}{31}{table.caption.7}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Najlepsze hiperparametry wariantów ALS wybrane na zbiorze walidacyjnym}}{38}{table.caption.11}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Najlepsze hiperparametry modelu BPR wybrane na zbiorze walidacyjnym}}{40}{table.caption.14}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Wyniki modeli na zbiorze testowym}}{43}{table.caption.17}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Wyniki ewaluacji modeli na zbiorze testowym w podziale na metryki dokładności oraz metryki profilowe i różnorodności}}{48}{table.caption.23}%
+\contentsline {table}{\numberline {6.5}{\ignorespaces Wyniki ewaluacji modeli na zbiorze walidacyjnym w podziale na metryki dokładności oraz metryki profilowe i różnorodności}}{48}{table.caption.24}%
 \addvspace {10\p@ }
 \contentsfinish 

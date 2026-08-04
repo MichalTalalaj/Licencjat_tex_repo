@@ -359,11 +359,6 @@ INPUT .\tex\03_metryki_ewaluacyjne.tex
 INPUT .\tex\03_metryki_ewaluacyjne.tex
 INPUT .\tex\03_metryki_ewaluacyjne.tex
 INPUT tex\03_metryki_ewaluacyjne.tex
-INPUT .\tex\04_przeglad_literatury.tex
-INPUT .\tex\04_przeglad_literatury.tex
-INPUT .\tex\04_przeglad_literatury.tex
-INPUT .\tex\04_przeglad_literatury.tex
-INPUT tex\04_przeglad_literatury.tex
 INPUT .\tex\05_dane_i_eda.tex
 INPUT .\tex\05_dane_i_eda.tex
 INPUT .\tex\05_dane_i_eda.tex
@@ -510,11 +505,6 @@ INPUT d:\Studiowe\Licencjat\Licencjat_tex_repo\Licencjat_tex\thesis\build\thesis
 INPUT d:\Studiowe\Licencjat\Licencjat_tex_repo\Licencjat_tex\thesis\build\thesis-pl.lot
 INPUT d:\Studiowe\Licencjat\Licencjat_tex_repo\Licencjat_tex\thesis\build\thesis-pl.lot
 OUTPUT d:\Studiowe\Licencjat\Licencjat_tex_repo\Licencjat_tex\thesis\build\thesis-pl.lot
-INPUT .\tex\99_dodatki.tex
-INPUT .\tex\99_dodatki.tex
-INPUT .\tex\99_dodatki.tex
-INPUT .\tex\99_dodatki.tex
-INPUT tex\99_dodatki.tex
 INPUT d:\Studiowe\Licencjat\Licencjat_tex_repo\Licencjat_tex\thesis\build\thesis-pl.aux
 INPUT d:\Studiowe\Licencjat\Licencjat_tex_repo\Licencjat_tex\thesis\build\thesis-pl.out
 INPUT d:\Studiowe\Licencjat\Licencjat_tex_repo\Licencjat_tex\thesis\build\thesis-pl.out
@@ -524,6 +514,8 @@ INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecr
 INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk
 INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
 INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
+INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0600.pk
+INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0600.pk
 INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1095.pk
 INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1095.pk
 INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk

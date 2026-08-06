@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.3)  6 AUG 2026 19:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.3)  6 AUG 2026 19:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -964,7 +964,7 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 \openout5 = `thesis-pl.toc'.
 
  [6{D:/MiKTeX/fonts/enc/dvips/pl/plmi.enc}] (tex/01_wstep.tex
-Chapter 1.
+Rozdzia\l  1.
 
 LaTeX Font Warning: Font shape `T1/cmss/bx/n' in size <13> not available
 (Font)              size <12> substituted on input line 7.
@@ -972,36 +972,19 @@ LaTeX Font Warning: Font shape `T1/cmss/bx/n' in size <13> not available
 [7
 
 
-]) (tex/02_podstawy_teoretyczne.tex [8]
-Chapter 2.
+]) (tex/02_podstawy_teoretyczne.tex
+Package babel Info: 'polish' activates 'polish' shorthands.
+(babel)             Reported on input line 1.
+ [8]
+Rozdzia\l  2.
 [9
 
-{D:/MiKTeX/fonts/enc/dvips/pl/plms.enc}{D:/MiKTeX/fonts/enc/dvips/pl/plrm.enc}{D:/MiKTeX/fonts/enc/dvips/pl/plme.enc}] [10] [11] [12]
-Underfull \hbox (badness 1178) in paragraph at lines 147--148
-[]\T1/cmr/m/n/10.95 Algorytm dzi-aªa it-er-a-cyjnie, naprzemi-en-nie wyz-nacza-j¡c op-ty-malne reprezen-tacje
- []
-
-[13]
-Underfull \hbox (badness 2970) in paragraph at lines 208--209
-[]\T1/cmr/m/n/10.95 Rozwi¡zanie ukªadu rów-na« ([]2.14[]) wymaga wyz-naczenia wek-tora $\OT4/cmr/bx/n/10.95 x[]$ \T1/cmr/m/n/10.95 poprzez
- []
-
-[14] [15] [16] [17] [18] [19]) (tex/03_metryki_ewaluacyjne.tex [20]
-Chapter 3.
-
-Underfull \hbox (badness 1527) in paragraph at lines 26--27
-\T1/cmr/m/n/10.95 mi-arami s¡ pre-cyzja ($[]\OT4/cmr/m/n/10.95 @\OML/plm/m/it/10.95 N$\T1/cmr/m/n/10.95 ), odt-worze-nie ($[]\OT4/cmr/m/n/10.95 @\OML/plm/m/it/10.95 N$\T1/cmr/m/n/10.95 ) oraz znor-mal-i-zowany
- []
-
+{D:/MiKTeX/fonts/enc/dvips/pl/plms.enc}{D:/MiKTeX/fonts/enc/dvips/pl/plrm.enc}{D:/MiKTeX/fonts/enc/dvips/pl/plme.enc}] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19]) (tex/03_metryki_ewaluacyjne.tex [20]
+Rozdzia\l  3.
 [21
 
-]
-Underfull \hbox (badness 5939) in paragraph at lines 40--41
-[]\T1/cmr/m/n/10.95 Mimo sze-rok-iego za-s-tosowa-nia obie przed-staw-ione me-tryki posi-adaj¡ is-totne
- []
-
-[22] [23] [24]) (tex/05_dane_i_eda.tex [25]
-Chapter 4.
+] [22] [23] [24]) (tex/05_dane_i_eda.tex [25]
+Rozdzia\l  4.
 [26
 
 ] [27]
@@ -1027,7 +1010,7 @@ File: figures/eda/filtered/filtered_top_20_games_by_interactions.png Graphic fil
 Package pdftex.def Info: figures/eda/filtered/filtered_top_20_games_by_interactions.png  used on input line 118.
 (pdftex.def)             Requested size: 384.10962pt x 267.28798pt.
  [30 <./figures/eda/filtered/filtered_item_popularity_concentration.png>]) (tex/06_metodologia_eksperymentalna.tex [31 <./figures/eda/filtered/filtered_top_20_games_by_interactions.png>]
-Chapter 5.
+Rozdzia\l  5.
 [32
 
 ] [33]
@@ -1049,11 +1032,11 @@ LaTeX Font Warning: Font shape `U/lasy/m/n' in size <6.5> not available
 
 [34]) (tex/07_wyniki_eksperymentow.tex
 Underfull \hbox (badness 10000) in paragraph at lines 50--1
-[]\T1/cmr/m/n/10.95 Pozostaªe ograniczenia doty-cz¡ syg-naªu oraz pro-cesu stro-je-nia. Zmi-enna
+[]\T1/cmr/m/n/10.95 Pozostaªe ogra-ni-cze-nia do-ty-cz¡ sy-gnaªu oraz pro-cesu stro-je-nia. Zmienna
  []
 
 [35]
-Chapter 6.
+Rozdzia\l  6.
 
 Overfull \hbox (56.44041pt too wide) in paragraph at lines 11--23
  [][] 
@@ -1068,16 +1051,6 @@ LaTeX Font Info:    External font `plex10' loaded for size
 ]
 
 LaTeX Warning: Reference `fig:wrazliwosc_constant_ndcg_vs_gamma' on page 37 undefined on input line 32.
-
-
-Underfull \hbox (badness 1360) in paragraph at lines 32--33
-[]\T1/cmr/m/n/10.95 W celu lep-szego zo-bra-zowa-nia wpªywu omaw-ianych hiper-parametrów na jako±¢
- []
-
-
-Underfull \hbox (badness 2726) in paragraph at lines 32--33
-\T1/cmr/m/n/10.95 rekomen-dacji wygen-erowano wykresy []6.1[], []6.2[] oraz [], przed-staw-ia-j¡ce za-le»no±¢
- []
 
 <figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png, id=724, 712.5822pt x 422.2977pt>
 File: figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png Graphic file (type png)
@@ -1113,12 +1086,7 @@ File: figures/test_fix/test_ndcg_all_models_horizontal.png Graphic file (type pn
 <use figures/test_fix/test_ndcg_all_models_horizontal.png>
 Package pdftex.def Info: figures/test_fix/test_ndcg_all_models_horizontal.png  used on input line 144.
 (pdftex.def)             Requested size: 384.10962pt x 232.31319pt.
- [42 <./figures/test_fix/test_ndcg_all_models_horizontal.png>]
-Underfull \hbox (badness 1286) in paragraph at lines 161--162
-\T1/cmr/m/n/10.95 dowanych pozy-cji nie okazaªa si¦ trafiona. W wari-an-cie lin-iowym ze-row¡ warto±¢
- []
-
-[43]
+ [42 <./figures/test_fix/test_ndcg_all_models_horizontal.png>] [43]
 <figures/test_fix/test_precision_vs_recall_all_models.png, id=788, 638.8668pt x 425.1885pt>
 File: figures/test_fix/test_precision_vs_recall_all_models.png Graphic file (type png)
 <use figures/test_fix/test_precision_vs_recall_all_models.png>
@@ -1135,12 +1103,7 @@ File: figures/test_fix/test_ndcg_vs_ild_cooccurrence.png Graphic file (type png)
 <use figures/test_fix/test_ndcg_vs_ild_cooccurrence.png>
 Package pdftex.def Info: figures/test_fix/test_ndcg_vs_ild_cooccurrence.png  used on input line 193.
 (pdftex.def)             Requested size: 384.10962pt x 254.20253pt.
-
-Underfull \hbox (badness 1231) in paragraph at lines 198--199
-[]\T1/cmr/m/n/10.95 Na wykre-sie []6.9[] zwraca uwag¦ odr¦bna pozy-cja mod-elu BPR, który przy na-
- []
-
-[45 <./figures/test_fix/test_ndcg_vs_coverage_all_models.png>]
+ [45 <./figures/test_fix/test_ndcg_vs_coverage_all_models.png>]
 <figures/test_fix/test_ndcg_vs_delta_gap_without_popularity.png, id=808, 703.9098pt x 423.7431pt>
 File: figures/test_fix/test_ndcg_vs_delta_gap_without_popularity.png Graphic file (type png)
 <use figures/test_fix/test_ndcg_vs_delta_gap_without_popularity.png>
@@ -1157,22 +1120,12 @@ Overfull \hbox (11.49246pt too wide) in paragraph at lines 253--274
  []
 
 ) (tex/08_podsumowanie.tex [47 <./figures/test_fix/test_ndcg_vs_delta_gap_without_popularity.png>] [48] [49]
-Chapter 7.
+Rozdzia\l  7.
 [50
 
 ] [51] [52] [53]) [54] [55
 
-] [56]
-Underfull \hbox (badness 1028) in paragraph at lines 165--165
-[]\T1/cmr/m/n/10.95 Tobias Schn-abel, Adith Swami-nathan, Ashudeep Singh, Navin Chan-dak, and
- []
-
-(tex/90_wykaz_symboli.tex [57]
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
-[]|\T1/cmr/m/n/10.95 ró»nica ±red-niej pop-u-larno±ci rekomen-dacji wzgl¦-dem pro-filu
- []
-
-
+] [56] (tex/90_wykaz_symboli.tex [57]
 ignored: Infinite glue shrinkage found in box being split [58
 
 ]) [59] (d:\Studiowe\Licencjat\Licencjat_tex_repo\Licencjat_tex\thesis\build\thesis-pl.lof)
@@ -1207,17 +1160,17 @@ Package logreq Info: Writing requests to 'thesis-pl.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24982 strings out of 467683
- 434446 string characters out of 5431557
+ 24989 strings out of 467683
+ 434539 string characters out of 5431557
  1311901 words of memory out of 5000000
- 53410 multiletter control sequences out of 15000+600000
+ 53417 multiletter control sequences out of 15000+600000
  654411 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,17n,90p,2119b,2362s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk><D:/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/MiKTeX/fonts/type1/public/pl/plbx10.pfb><D:/MiKTeX/fonts/type1/public/pl/plbx8.pfb><D:/MiKTeX/fonts/type1/public/pl/plex10.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi10.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi12.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi6.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi8.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi9.pfb><D:/MiKTeX/fonts/type1/public/pl/plr10.pfb><D:/MiKTeX/fonts/type1/public/pl/plr6.pfb><D:/MiKTeX/fonts/type1/public/pl/plr8.pfb><D:/MiKTeX/fonts/type1/public/pl/plsy10.pfb><D:/MiKTeX/fonts/type1/public/pl/plsy6.pfb><D:/MiKTeX/fonts/type1/public/pl/plsy8.pfb>
-Output written on d:\Studiowe\Licencjat\Licencjat_tex_repo\Licencjat_tex\thesis\build\thesis-pl.pdf (61 pages, 3070748 bytes).
+Output written on d:\Studiowe\Licencjat\Licencjat_tex_repo\Licencjat_tex\thesis\build\thesis-pl.pdf (61 pages, 3069070 bytes).
 PDF statistics:
- 1626 PDF objects out of 1728 (max. 8388607)
+ 1621 PDF objects out of 1728 (max. 8388607)
  244 named destinations out of 1000 (max. 500000)
  574 words of extra memory for PDF output out of 10000 (max. 10000000)
 

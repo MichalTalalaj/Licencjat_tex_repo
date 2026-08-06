@@ -1,6 +1,7 @@
 \babel@toc {polish}{}\relax 
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{Abstract}{4}{chapter*.2}%
+\babel@toc {polish}{}\relax 
 \contentsline {chapter}{\numberline {1}Wstęp}{7}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Motywacja i problem badawczy}{7}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Cel, zakres i pytania badawcze}{7}{section.1.2}%
@@ -16,8 +17,8 @@
 \contentsline {section}{\numberline {2.4}Bayesian Personalized Ranking (BPR)}{15}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Podejście oparte na porównywaniu par (pairwise ranking)}{15}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Funkcja celu modelu BPR}{16}{subsection.2.4.2}%
-\contentsline {subsubsection}{Sformułowanie funkcji wiarygodności}{17}{equation.2.28}%
-\contentsline {subsubsection}{Sformułowanie rozkładu apriori i regularyzacji}{18}{equation.2.32}%
+\contentsline {subsubsection}{Sformułowanie funkcji wiarygodności}{16}{equation.2.28}%
+\contentsline {subsubsection}{Sformułowanie rozkładu apriori i regularyzacji}{17}{equation.2.32}%
 \contentsline {subsubsection}{Końcowa postać kryterium}{18}{equation.2.36}%
 \contentsline {subsection}{\numberline {2.4.3}Optymalizacja z wykorzystaniem LearnBPR}{18}{subsection.2.4.3}%
 \contentsline {subsubsection}{Wyprowadzenie reguł aktualizacji}{19}{equation.2.40}%

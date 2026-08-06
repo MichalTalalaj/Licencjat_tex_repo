@@ -301,6 +301,45 @@
       \verb 10.1145/1864708.1864721
       \endverb
     \endentry
+    \entry{dacrema2019progress}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=86eabd1e6041eb66069c7892d61b7098}{%
+           family={Dacrema},
+           familyi={D\bibinitperiod},
+           given={Maurizio\bibnamedelima Ferrari},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=ffacab86cd0c43d68349737683cb756a}{%
+           family={Cremonesi},
+           familyi={C\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=8044b9528a8ea937291cf64035350877}{%
+           family={Jannach},
+           familyi={J\bibinitperiod},
+           given={Dietmar},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{ac84f8ce6ac970b5e5b6c29c39546588}
+      \strng{fullhash}{ac84f8ce6ac970b5e5b6c29c39546588}
+      \strng{fullhashraw}{ac84f8ce6ac970b5e5b6c29c39546588}
+      \strng{bibnamehash}{ac84f8ce6ac970b5e5b6c29c39546588}
+      \strng{authorbibnamehash}{ac84f8ce6ac970b5e5b6c29c39546588}
+      \strng{authornamehash}{ac84f8ce6ac970b5e5b6c29c39546588}
+      \strng{authorfullhash}{ac84f8ce6ac970b5e5b6c29c39546588}
+      \strng{authorfullhashraw}{ac84f8ce6ac970b5e5b6c29c39546588}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 13th ACM Conference on Recommender Systems}
+      \field{title}{Are We Really Making Much Progress? A Worrying Analysis of Recent Neural Recommendation Approaches}
+      \field{year}{2019}
+      \field{pages}{101\bibrangedash 109}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1145/3298689.3347058
+      \endverb
+    \endentry
     \entry{frederickson2022implicit}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=ed092abebf2b3330ebe217df28f330df}{%
@@ -425,6 +464,40 @@
       \range{pages}{10}
       \verb{doi}
       \verb 10.1109/ICDM.2008.22
+      \endverb
+    \endentry
+    \entry{hurley2011novelty}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=ffe7004cc091f0f5d771b34bfd062787}{%
+           family={Hurley},
+           familyi={H\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod}}}%
+        {{hash=01a32e9e8e0c214c2962c768dcc820dd}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Mi},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{6c94611823483656dae9cf3b5b6b3682}
+      \strng{fullhash}{6c94611823483656dae9cf3b5b6b3682}
+      \strng{fullhashraw}{6c94611823483656dae9cf3b5b6b3682}
+      \strng{bibnamehash}{6c94611823483656dae9cf3b5b6b3682}
+      \strng{authorbibnamehash}{6c94611823483656dae9cf3b5b6b3682}
+      \strng{authornamehash}{6c94611823483656dae9cf3b5b6b3682}
+      \strng{authorfullhash}{6c94611823483656dae9cf3b5b6b3682}
+      \strng{authorfullhashraw}{6c94611823483656dae9cf3b5b6b3682}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on Internet Technology}
+      \field{number}{4}
+      \field{title}{Novelty and Diversity in Top-N Recommendation -- Analysis and Evaluation}
+      \field{volume}{10}
+      \field{year}{2011}
+      \verb{doi}
+      \verb 10.1145/1944339.1944341
       \endverb
     \endentry
     \entry{jannach2011recommender}{book}{}{}

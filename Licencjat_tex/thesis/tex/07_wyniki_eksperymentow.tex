@@ -10,15 +10,17 @@ Wyniki strojenia hiperparametrów dla każdego z modeli implicit ALS zostały pr
 \label{tab:hiperparametry-als}
 \begin{tabular}{lrrrrr}
 \toprule
-Wariant & Czynniki & $\alpha$ & $\beta$ & Regularyzacja & \ndcg{} \\
+Wariant & Czynniki & $\alpha$ & $\beta$ / $\gamma$ & Regularyzacja & \ndcg{} \\
 \midrule
 Liniowa & 80 & $9.948\cdot 10^{-7}$ & - & 0.003588 & 0.249\\
 Logarytmiczna & 24 & 0.000571 & - & 0.130920 & 0.261\\
 Logarytmiczna z saturacją & 24 & 0.024390 & - & 0.169714 & 0.261\\
 Logarytmiczna z przesunięciem $\beta$ & 48 & 0.389185 & 108.284 & 0.010565 & 0.275\\
+Stała & 48 & - & 2.364 & 0.057607 & 0.280\\
 \bottomrule
 \end{tabular}
-\caption*{\footnotesize Źródło: opracowanie własne na podstawie wyników Optuny.}
+\caption*{\footnotesize Kolumna $\beta$ / $\gamma$ zawiera parametr dodatkowy właściwy dla danego wariantu.
+Źródło: opracowanie własne na podstawie wyników Optuny.}
 \end{table}
 
 Warto zwrócić szczególną uwagę na niskie wartości parametru

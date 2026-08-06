@@ -343,6 +343,7 @@ INPUT .\tex\02_podstawy_teoretyczne.tex
 INPUT .\tex\02_podstawy_teoretyczne.tex
 INPUT .\tex\02_podstawy_teoretyczne.tex
 INPUT tex\02_podstawy_teoretyczne.tex
+INPUT D:\MiKTeX\fonts\tfm\jknappen\ec\eccc1095.tfm
 INPUT D:\MiKTeX\fonts\tfm\public\pl\plbx10.tfm
 INPUT D:\MiKTeX\fonts\tfm\public\pl\plbx8.tfm
 INPUT D:\MiKTeX\fonts\tfm\public\pl\plbx6.tfm
@@ -352,7 +353,6 @@ INPUT D:\MiKTeX\fonts\tfm\jknappen\ec\ecrm0600.tfm
 INPUT D:\MiKTeX\fonts\enc\dvips\pl\plms.enc
 INPUT D:\MiKTeX\fonts\enc\dvips\pl\plrm.enc
 INPUT D:\MiKTeX\fonts\enc\dvips\pl\plme.enc
-INPUT D:\MiKTeX\fonts\tfm\jknappen\ec\eccc1095.tfm
 INPUT D:\MiKTeX\fonts\tfm\jknappen\ec\tcrm1095.tfm
 INPUT .\tex\03_metryki_ewaluacyjne.tex
 INPUT .\tex\03_metryki_ewaluacyjne.tex
@@ -424,6 +424,19 @@ INPUT .\tex\07_wyniki_eksperymentow.tex
 INPUT .\tex\07_wyniki_eksperymentow.tex
 INPUT tex\07_wyniki_eksperymentow.tex
 INPUT D:\MiKTeX\fonts\tfm\jknappen\ec\ecrm0900.tfm
+INPUT D:\MiKTeX\fonts\tfm\public\pl\plr9.tfm
+INPUT D:\MiKTeX\fonts\tfm\public\pl\plr5.tfm
+INPUT D:\MiKTeX\fonts\tfm\public\pl\plmi9.tfm
+INPUT D:\MiKTeX\fonts\tfm\public\pl\plmi5.tfm
+INPUT D:\MiKTeX\fonts\tfm\public\pl\plsy9.tfm
+INPUT D:\MiKTeX\fonts\tfm\public\pl\plsy5.tfm
+INPUT D:\MiKTeX\fonts\tfm\public\pl\plbx9.tfm
+INPUT D:\MiKTeX\fonts\tfm\public\pl\plbx5.tfm
+INPUT D:\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT D:\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT D:\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT D:\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT D:\MiKTeX\fonts\tfm\public\latex-fonts\lasy5.tfm
 INPUT .\figures\sensitivity\wrazliwosc_ndcg_vs_alpha.png
 INPUT .\figures\sensitivity\wrazliwosc_ndcg_vs_alpha.png
 INPUT .\figures\sensitivity\wrazliwosc_ndcg_vs_alpha.png
@@ -520,10 +533,10 @@ INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcr
 INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1095.pk
 INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
 INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
-INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1095.pk
-INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1095.pk
 INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk
 INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk
+INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1095.pk
+INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1095.pk
 INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1200.pk
 INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1200.pk
 INPUT C:\Users\misie\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk
@@ -548,6 +561,8 @@ INPUT D:\MiKTeX\fonts\type1\public\pl\plmi6.pfb
 INPUT D:\MiKTeX\fonts\type1\public\pl\plmi6.pfb
 INPUT D:\MiKTeX\fonts\type1\public\pl\plmi8.pfb
 INPUT D:\MiKTeX\fonts\type1\public\pl\plmi8.pfb
+INPUT D:\MiKTeX\fonts\type1\public\pl\plmi9.pfb
+INPUT D:\MiKTeX\fonts\type1\public\pl\plmi9.pfb
 INPUT D:\MiKTeX\fonts\type1\public\pl\plr10.pfb
 INPUT D:\MiKTeX\fonts\type1\public\pl\plr10.pfb
 INPUT D:\MiKTeX\fonts\type1\public\pl\plr6.pfb

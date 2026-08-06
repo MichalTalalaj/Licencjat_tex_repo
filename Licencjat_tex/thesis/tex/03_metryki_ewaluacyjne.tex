@@ -100,18 +100,29 @@ Wartość $\Delta\text{GAP} > 0$ oznacza, że średnia popularność rekomendowa
 
 \subsection{Różnorodność wewnątrzlistowa}
 
-Różnorodność wewnątrzlistowa mierzy stopień zróżnicowania obiektów znajdujących się na pojedynczej liście Top-$N$. W kontekście modeli opartych na czynnikach ukrytych, zróżnicowanie pomiędzy dwoma obiektami $i$ oraz $j$ definiuje się jako odległość cosinusową ich wektorów cech utajonych $\mathbf{y}_i, \mathbf{y}_j \in \mathbb{R}^f$:
+Różnorodność wewnątrzlistowa (\textit{Intra-List Diversity}, ILD) mierzy stopień zróżnicowania obiektów znajdujących się na pojedynczej liście Top-$N$. W takim podejściu istotny jest wybór przestrzeni, w której wyznaczane jest podobieństwo pomiędzy obiektami. Naturalnym kandydatem wydają się wektory czynników ukrytych wyuczone przez model, jednak takie podejście uniemożliwia porównywanie wyników pomiędzy modelami. Przestrzeń czynników każdego modelu konstruowana jest niezależnie, jej wymiarowość może się różnić, a wektory ukryte zależą zarówno od algorytmu uczenia, jak i przyjętej regularyzacji. Wartości uzyskane w różnych przestrzeniach nie są z tego powodu porównywalne.
+
+Z tego powodu w niniejszej pracy podobieństwo obiektów wyznaczane jest na podstawie ich współwystępowania w zbiorze treningowym. Podstawą obliczeń jest binarna macierz preferencji $\mathbf{P} \in \{0, 1\}^{|\mathcal{U}| \times |\mathcal{I}|}$, w której $p_{u,i} = 1$ wtedy i tylko wtedy, gdy użytkownik $u$ wszedł w interakcję z obiektem $i$. Kolumna $\mathbf{p}_i \in \{0,1\}^{|\mathcal{U}|}$ stanowi wówczas wektor obecności obiektu $i$ w profilach wszystkich użytkowników. Podobieństwo dwóch obiektów definiuje się jako podobieństwo cosinusowe odpowiadających im kolumn, a odpowiadającą mu odległość jako:
+
 \begin{equation}
-    d_{\text{cos}}(i, j) = 1 - \frac{\mathbf{y}_i \cdot \mathbf{y}_j}{\|\mathbf{y}_i\|_2 \|\mathbf{y}_j\|_2}
+    d_{\text{cos}}(i, j) = 1 - \frac{\mathbf{p}_i \cdot \mathbf{p}_j}{\|\mathbf{p}_i\|_2 \|\mathbf{p}_j\|_2}
 \end{equation}
 
-Średnia różnorodność dla pojedynczego użytkownika $u$ wyznaczana jest jako uśredniona odległość cosinusowa dla wszystkich unikalnych par obiektów znajdujących się na jego liście rekomendacyjnej Top-$N$:
+Miara ta przyjmuje wartość $0$ dla obiektów występujących zawsze razem oraz $1$ dla obiektów, które nie mają ani jednego wspólnego użytkownika.
+
+Średnia różnorodność dla pojedynczego użytkownika $u$ wyznaczana jest jako uśredniona odległość dla wszystkich unikalnych par obiektów znajdujących się na jego liście rekomendacyjnej Top-$N$:
+
 \begin{equation}
-    \text{Div}_u@N = \frac{2}{N(N - 1)} \sum_{i=1}^{N-1} \sum_{j=i+1}^{N} d_{\text{cos}}\left( i_i^{(u)}, i_j^{(u)} \right)
+    \label{eq:ild_u}
+    \text{ILD}_u@N = \frac{2}{N(N - 1)} \sum_{i=1}^{N-1} \sum_{j=i+1}^{N} d_{\text{cos}}\left( i_i^{(u)}, i_j^{(u)} \right)
 \end{equation}
 
-Ostateczna wartość metryki $\text{Diversity}@N$ stanowi średnią arytmetyczną z wartości różnorodności wyznaczonych dla wszystkich użytkowników:
-\begin{equation}
-    \text{Diversity}@N = \frac{1}{|\mathcal{U}|} \sum_{u \in \mathcal{U}} \text{Div}_u@N
+Wzór \ref{eq:ild_u} stanowi wariant miary różnorodności analizowanej przez Hurleya i Zhanga \cite{hurley2011novelty}. Ostateczna wartość metryki $\text{ILD}@N$ stanowi średnią arytmetyczną z wartości wyznaczonych dla wszystkich użytkowników:
+
+\begin{equation} 
+    \text{ILD}@N = \frac{1}{|\mathcal{U}|} \sum_{u \in \mathcal{U}} \text{ILD}_u@N
 \end{equation}
-Wyższa wartość metryki wskazuje na większe zróżnicowanie cech obiektów prezentowanych na pojedynczej liście rekomendacji, co ogranicza ryzyko rekomendowania podobnych obiektów. Należy jednak pamiętać o istotnych ograniczeniach tak zdefiniowanej różnorodności. Wskaźnik ten nie bazuje na rzeczywistych cechach obiektów, lecz na ich reprezentacjach w utajonej przestrzeni czynników, uzyskanych w procesie uczenia. Z tego powodu ta metryka nie pozwala na bezpośrednie porównywanie różnych modeli. Przestrzeń czynników ukrytych każdego z modeli jest konstruowana niezależnie oraz wymiar może różnić się między modelami. Metryka ta stanowi natomiast narzędzie diagnostyczne, pozwalające na wykrywanie degeneracji przestrzeni czynników. Wartości $\text{Diversity}@N$ zbliżające się do zera oznaczają, że wektory obiektów uległy koncentracji wokół jednego kierunku w przestrzeni $\mathbb{R}^f$. To zjawisko prowadzi do utraty zdolności modelu do różnicowania obiektów i w konsekwencji do generowania list rekomendacyjnych zdominowanych przez obiekty najbardziej popularne.
+
+Wyższa wartość metryki oznacza, że obiekty prezentowane na pojedynczej liście rzadziej występują wspólnie w profilach użytkowników, co ogranicza ryzyko rekomendowania podobnych obiektów. Ponieważ podobieństwo wyznaczane jest we wspólnej dla wszystkich modeli przestrzeni współwystępowania, wartości $\text{ILD}@N$ pozostają bezpośrednio porównywalne pomiędzy modelami różniącymi się zarówno algorytmem uczenia, jak i liczbą czynników ukrytych.
+
+Ta miara stanowi dopełnienie pokrycia katalogu. Podczas gdy pokrycie mierzy wykorzystanie katalogu dla całej bazy użytkowników, różnorodność wewnątrzlistowa skupia się na zróżnicowaniu pojedynczego zestawu rekomendacji. Ponieważ obie metryki bazują na tym samym zbiorze produktów, pozostają ze sobą w pełni spójne.

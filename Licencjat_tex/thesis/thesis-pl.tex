@@ -143,17 +143,14 @@
 \null\thispagestyle{empty}\newpage
 
 % ------------------- Spis treści ---------------------
-\pagenumbering{gobble}
+\pagestyle{empty}
 \tableofcontents
 \thispagestyle{empty}
 
-\newpage
+\cleardoublepage
 
 % -------------- Zasadnicza część pracy --------------------
-\null\thispagestyle{empty}\newpage
 \pagestyle{fancy}
-\pagenumbering{arabic}
-\setcounter{page}{11}
 
 \input{tex/01_wstep}
 \input{tex/02_podstawy_teoretyczne}

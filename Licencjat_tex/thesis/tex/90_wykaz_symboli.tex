@@ -1,4 +1,44 @@
 \chapter*{Wykaz symboli i skrótów}
 \addcontentsline{toc}{chapter}{Wykaz symboli i skrótów}
 
-% TODO: uzupełnić wykaz symboli i skrótów.
+\section*{Skróty}
+
+\begin{longtable}{@{}p{0.18\textwidth}p{0.78\textwidth}@{}}
+ALS & naprzemienna metoda najmniejszych kwadratów (\textit{Alternating Least Squares}) \\
+iALS & ALS dla danych niejawnych (\textit{implicit ALS}) \\
+BPR & spersonalizowany ranking bayesowski (\textit{Bayesian Personalised Ranking}) \\
+CF & filtracja kolaboratywna (\textit{collaborative filtering}) \\
+MF & faktoryzacja macierzy (\textit{matrix factorization}) \\
+SVD & rozkład według wartości osobliwych (\textit{singular value decomposition}) \\
+DCG & skumulowany zysk z dyskontowaniem (\textit{discounted cumulative gain}) \\
+IDCG & idealny DCG (\textit{ideal DCG}) \\
+NDCG & znormalizowany DCG (\textit{normalized DCG}) \\
+ILD & różnorodność wewnątrzlistowa (\textit{intra-list distance}) \\
+GAP & średnia popularność grupy (\textit{group average popularity}) \\
+$\Delta$GAP & różnica średniej popularności rekomendacji względem profilu użytkownika
+\end{longtable}
+
+\section*{Symbole}
+
+\begin{longtable}{@{}p{0.18\textwidth}p{0.78\textwidth}@{}}
+$\mathcal{U}$ & zbiór użytkowników \\
+$\mathcal{I}$ & zbiór obiektów (gier) \\
+$u$ & indeks użytkownika, $u \in \mathcal{U}$ \\
+$i$, $j$ & indeksy obiektów, $i, j \in \mathcal{I}$ \\
+$r_{ui}$ & zarejestrowana intensywność interakcji użytkownika $u$ z obiektem $i$ (czas gry) \\
+$\mathbf{P}$ & binarna macierz preferencji \\
+$p_{ui}$ & element macierzy preferencji, $p_{ui} = 1$ gdy zaobserwowano grę w bibliotece \\
+$\mathbf{p}_i$ & kolumna macierzy preferencji odpowiadająca obiektowi $i$ \\
+$\mathbf{C}$ & macierz wag pewności \\
+$c_{ui}$ & waga pewności przypisana parze użytkownik-obiekt \\
+$\mathbf{x}_u$ & wektor czynników ukrytych użytkownika $u$, $\mathbf{x}_u \in \mathbb{R}^f$ \\
+$\mathbf{y}_i$ & wektor czynników ukrytych obiektu $i$, $\mathbf{y}_i \in \mathbb{R}^f$ \\
+$f$ & wymiar przestrzeni czynników ukrytych \\
+$\alpha$ & parametr skalujący wagi pewności \\
+$\beta$ & parametr przesunięcia w przekształceniu logarytmicznym \\
+$\gamma$ & stała wartość wzrostu wagi pewności w wariancie niezależnym od czasu gry \\
+$\lambda$ & współczynnik regularyzacji \\
+$N$, $K$ & długość listy rekomendacyjnej \\
+$d_{\text{cos}}(i,j)$ & odległość cosinusowa między obiektami $i$ oraz $j$ \\
+$\mathbf{1}(\cdot)$ & funkcja wskaźnikowa \\
+\end{longtable}

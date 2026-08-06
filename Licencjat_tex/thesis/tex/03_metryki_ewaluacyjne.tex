@@ -23,21 +23,21 @@ Zbiór obiektów rekomendowanych użytkownikowi $u$, pozbawiony informacji o ich
 
 \section{Metryki trafności rankingu}
 
-Metryki trafności oceniają zdolność systemu rekomendacyjnego do identyfikacji obiektów zawartych w zbiorze testowym. W kontekście rekomendacji Top-$N$ najpopularniejszymi miarami są precyzja ($\text{Precision}@N$), pełność ($\text{Recall}@N$) oraz znormalizowany zdyskontowany zysk skumulowany ($\text{NDCG}@N$) \cite{jannach2011recommender, aggarwal2016recommender}.
+Metryki trafności oceniają zdolność systemu rekomendacyjnego do identyfikacji obiektów zawartych w zbiorze testowym. W kontekście rekomendacji Top-$N$ najpopularniejszymi miarami są precyzja ($\text{Precision}@N$), odtworzenie ($\text{Recall}@N$) oraz znormalizowany zdyskontowany zysk skumulowany ($\text{NDCG}@N$) \cite{jannach2011recommender, aggarwal2016recommender}.
 
-\subsection{Precyzja i Pełność}
+\subsection{Precyzja i Odtworzenie}
 
 Precyzja na poziomie $N$ określa uśredniony stosunek liczby trafnych rekomendacji do całkowitej liczby obiektów zaprezentowanych na rekomendowanej liście \cite{jannach2011recommender}:
 \begin{equation}
     \text{Precision}@N = \frac{1}{|\mathcal{U}|} \sum_{u \in \mathcal{U}} \frac{\text{Hits}_u@N}{N} = \frac{1}{|\mathcal{U}|} \sum_{u \in \mathcal{U}} \frac{\left| \mathcal{R}_u^N \cap \mathcal{I}_u^{\text{test}} \right|}{N}
 \end{equation}
 
-Pełność na poziomie $N$ mierzy natomiast, jaka część obiektów istotnych dla użytkownika zawartych w zbiorze testowym została uwzględniona na wygenerowanej liście Top-$N$ \cite{jannach2011recommender}:
+Odtworzenie na poziomie $N$ mierzy natomiast, jaka część obiektów istotnych dla użytkownika zawartych w zbiorze testowym została uwzględniona na wygenerowanej liście Top-$N$ \cite{jannach2011recommender}:
 \begin{equation}
     \text{Recall}@N = \frac{1}{|\mathcal{U}|} \sum_{u \in \mathcal{U}} \frac{\text{Hits}_u@N}{\left| \mathcal{I}_u^{\text{test}} \right|} = \frac{1}{|\mathcal{U}|} \sum_{u \in \mathcal{U}} \frac{\left| \mathcal{R}_u^N \cap \mathcal{I}_u^{\text{test}} \right|}{\left| \mathcal{I}_u^{\text{test}} \right|}
 \end{equation}
 
-Mimo szerokiego zastosowania obie przedstawione metryki posiadają istotne ograniczenia. $\text{Precision}@N$ jest silnie uzależniona od liczby dostępnych interakcji testowych użytkownika. W przypadku gdy $|\mathcal{I}_u^{\text{test}}| < N$, maksymalna teoretyczna wartość precyzji dla takiego użytkownika jest mniejsza niż $1$ i maleje wraz ze wzrostem długości listy $N$. Z kolei $\text{Recall}@N$ monotonicznie rośnie wraz ze wzrostem długości listy $N$, co oznacza, że ustawienie zbyt dużego parametru $N$ może prowadzić do sztucznie wysokich wartości pełności.
+Mimo szerokiego zastosowania obie przedstawione metryki posiadają istotne ograniczenia. $\text{Precision}@N$ jest silnie uzależniona od liczby dostępnych interakcji testowych użytkownika. W przypadku gdy $|\mathcal{I}_u^{\text{test}}| < N$, maksymalna teoretyczna wartość precyzji dla takiego użytkownika jest mniejsza niż $1$ i maleje wraz ze wzrostem długości listy $N$. Z kolei $\text{Recall}@N$ monotonicznie rośnie wraz ze wzrostem długości listy $N$, co oznacza, że ustawienie zbyt dużego parametru $N$ może prowadzić do sztucznie wysokich wartości odtworzenia.
 
 \subsection{Znormalizowany Zdyskontowany Zysk Skumulowany}
 \label{subsec:ndcg}

@@ -18,7 +18,7 @@ Porównano siedem modeli rekomendacyjnych, w tym pięć modeli implicit ALS z r�
     \item $c_{ui} = 1 + \alpha r_{ui}$,
     \item $c_{ui} = 1 + \alpha \log(1 + r_{ui})$,
     \item $c_{ui} = 1 + \alpha \frac{\log(1 + r_{ui})}{1 + \log(1 + r_{ui})}$,
-    \item $c_{ui} = 1 + \alpha \log(1 + r_{ui} + \beta)$,
+    \item $c_{ui} = 1 + \alpha \log(1 + r_{ui} + \beta) \cdot \mathbf{1}(p_{ui} = 1)$,
     \item $c_{ui} = 1 + \gamma \cdot \mathbf{1}(p_{ui} = 1)$,
 \end{itemize}
 gdzie $r_{ui}$ oznacza wartość zmiennej \texttt{playtime\_forever} dla użytkownika $u$ i gry $i$, a $\alpha$ stanowi skalar regulujący siłę wpływu czasu gry. Dwie pierwsze funkcje stanowią klasyczne sformułowania zaproponowane w pracy \cite{hu2008implicit}. Pozostałe trzy funkcje są autorską propozycją modyfikacji, opracowaną na podstawie analizy rozkładu zmiennej \texttt{playtime\_forever} oraz wyników eksperymentów.

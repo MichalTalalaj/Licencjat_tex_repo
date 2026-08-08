@@ -13,7 +13,7 @@
 \contentsline {table}{\numberline {6.1}{\ignorespaces Najlepsze hiperparametry wariantów ALS wybrane na zbiorze walidacyjnym}}{36}{table.caption.11}%
 \contentsline {table}{\numberline {6.2}{\ignorespaces Najlepsze hiperparametry modelu BPR wybrane na zbiorze walidacyjnym}}{39}{table.caption.15}%
 \contentsline {table}{\numberline {6.3}{\ignorespaces Wyniki modeli na zbiorze testowym}}{42}{table.caption.18}%
-\contentsline {table}{\numberline {6.4}{\ignorespaces Wyniki ewaluacji modeli na zbiorze testowym w podziale na metryki dokładności oraz metryki profilowe}}{48}{table.caption.24}%
-\contentsline {table}{\numberline {6.5}{\ignorespaces Wyniki ewaluacji modeli na zbiorze walidacyjnym w podziale na metryki dokładności oraz metryki profilowe}}{48}{table.caption.25}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Odchylenia standardowe metryk na zbiorze testowym w~pięciu uruchomieniach}}{48}{table.caption.24}%
+\contentsline {table}{\numberline {6.5}{\ignorespaces Odchylenia standardowe metryk w~pięciu losowych podziałach na zbiór treningowy i~walidacyjny}}{48}{table.caption.25}%
 \addvspace {10\p@ }
 \contentsfinish 

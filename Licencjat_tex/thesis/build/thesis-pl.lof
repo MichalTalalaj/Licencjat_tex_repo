@@ -14,10 +14,10 @@
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Wrażliwość modeli na hiperparametr $\alpha $}}{37}{figure.caption.12}%
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Wrażliwość modelu na hiperparametr $\beta $}}{38}{figure.caption.13}%
 \contentsline {figure}{\numberline {6.3}{\ignorespaces Wrażliwość modelu na hiperparametr $\gamma $}}{39}{figure.caption.14}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Zakres przyjmowanych wartości wag pewności}}{40}{figure.caption.16}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Wartości wag pewności w zależności od zmiennej \texttt {playtime\_forever}}}{41}{figure.caption.17}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Zakres przyjmowanych wartości funkcji pewności}}{40}{figure.caption.16}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Wartości pewności w zależności od zmiennej \texttt {playtime\_forever}}}{41}{figure.caption.17}%
 \contentsline {figure}{\numberline {6.6}{\ignorespaces Wartości NDCG@10{} każdego z modeli na zbiorze testowym}}{42}{figure.caption.19}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Wartości precyzji względem odtworzenia na zbiorze testowym}}{44}{figure.caption.20}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Wartości precyzji względem pełności na zbiorze testowym}}{44}{figure.caption.20}%
 \contentsline {figure}{\numberline {6.8}{\ignorespaces Wartości pokrycia katalogu względem NDCG@10{} na zbiorze testowym}}{45}{figure.caption.21}%
 \contentsline {figure}{\numberline {6.9}{\ignorespaces Średnie wartości różnorodności wewnątrzlistowej względem NDCG@10{} na zbiorze testowym}}{46}{figure.caption.22}%
 \contentsline {figure}{\numberline {6.10}{\ignorespaces Średnie wartości $\Delta $GAP względem NDCG@10{} na zbiorze testowym}}{47}{figure.caption.23}%

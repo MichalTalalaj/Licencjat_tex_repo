@@ -2402,18 +2402,19 @@
     <bcf:citekey order="22" intorder="2">cheuque2019steam</bcf:citekey>
     <bcf:citekey order="23" intorder="1">bunga2021implicit</bcf:citekey>
     <bcf:citekey order="23" intorder="2">cheuque2019steam</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">liang2018variational</bcf:citekey>
-    <bcf:citekey order="24" intorder="2">mencia2016epfl</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">frederickson2022implicit</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">hu2008implicit</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">akiba2019optuna</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">he2017neural</bcf:citekey>
-    <bcf:citekey order="28" intorder="2">rendle2020neural</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">sparkals</bcf:citekey>
-    <bcf:citekey order="29" intorder="2">frederickson2022implicit</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">rendle2021revisiting</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">schnabel2016recommendations</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">rendle2021revisiting</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">wang2019neural</bcf:citekey>
+    <bcf:citekey order="24" intorder="2">moscati2026networked</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">recbole</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">frederickson2022implicit</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">hu2008implicit</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">akiba2019optuna</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">he2017neural</bcf:citekey>
+    <bcf:citekey order="29" intorder="2">rendle2020neural</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">sparkals</bcf:citekey>
+    <bcf:citekey order="30" intorder="2">frederickson2022implicit</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">rendle2021revisiting</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">schnabel2016recommendations</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">rendle2021revisiting</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

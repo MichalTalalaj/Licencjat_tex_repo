@@ -1,5 +1,5 @@
 @misc{mcauleySteamData,
-  author       = {Julian McAuley and UCSD},
+  author       = {McAuley, Julian},
   title        = {Steam Video Game and Bundle Data},
   howpublished = {\url{https://cseweb.ucsd.edu/~jmcauley/datasets.html}},
   note         = {Dostęp: 2026-06-03}
@@ -19,12 +19,13 @@
   title     = {BPR: Bayesian Personalized Ranking from Implicit Feedback},
   booktitle = {Proceedings of the Twenty-Fifth Conference on Uncertainty in Artificial Intelligence},
   year      = {2009},
-  pages     = {452--461}
+  pages     = {452--461},
+  doi       = {10.48550/arXiv.1205.2618}
 }
 
 @inproceedings{cheuque2019steam,
-  author    = {Cheuque, Germ{\'a}n and Guzm{\'a}n, Javier and Parra, Denis},
-  title     = {Recommender Systems for Online Video Game Platforms: The Case of STEAM},
+  author    = {Cheuque, Germ{\'a}n and Guzm{\'a}n, Jos{\'e} and Parra, Denis},
+  title     = {Recommender Systems for Online Video Game Platforms: the Case of STEAM},
   booktitle = {Companion Proceedings of The 2019 World Wide Web Conference},
   year      = {2019},
   pages     = {763--771},
@@ -40,10 +41,12 @@
 }
 
 @inproceedings{bunga2021implicit,
-  author    = {Bunga, Ricardo and Batista, Fernando and Ribeiro, Ricardo},
+  author    = {Bunga, Ros{\'a}ria and Batista, Fernando and Ribeiro, Ricardo},
   title     = {From Implicit Preferences to Ratings: Video Games Recommendation based on Collaborative Filtering},
-  booktitle = {Proceedings of the 13th International Conference on Knowledge Discovery and Information Retrieval},
+  booktitle = {Proceedings of the 13th International Joint Conference on Knowledge Discovery, Knowledge Engineering and Knowledge Management (IC3K 2021) --- Volume 1: KDIR},
   year      = {2021},
+  pages     = {209--216},
+  publisher = {SciTePress},
   doi       = {10.5220/0010655900003064}
 }
 
@@ -65,11 +68,16 @@
   doi       = {10.1145/3298689.3347058}
 }
 
-@inproceedings{abdollahpouri2019popularity,
-  author    = {Abdollahpouri, Himan and Burke, Robin and Mobasher, Bamshad},
+@inproceedings{abdollahpouri2019unfairness,
+  author    = {Abdollahpouri, Himan and Mansoury, Masoud and Burke, Robin and Mobasher, Bamshad},
   title     = {The Unfairness of Popularity Bias in Recommendation},
-  booktitle = {Proceedings of the Workshop on Recommendation in Multistakeholder Environments},
-  year      = {2019}
+  booktitle = {Proceedings of the Workshop on Recommendation in Multistakeholder Environments (RMSE) co-located with RecSys 2019},
+  series    = {CEUR Workshop Proceedings},
+  volume    = {2440},
+  year      = {2019},
+  publisher = {CEUR-WS.org},
+  eprint    = {1907.13286},
+  archivePrefix = {arXiv}
 }
 
 @misc{frederickson2022implicit,
@@ -96,19 +104,23 @@
   url={https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.ml.recommendation.ALS.html}
 }
 
-@article{rendle2021revisiting,
-  author  = {Rendle, Steffen and Krichene, Walid and Zhang, Li and Koren, Yehuda},
-  title   = {Revisiting the Performance of iALS on Item Recommendation Benchmarks},
-  journal = {arXiv preprint arXiv:2110.14037},
-  year    = {2021}
+@inproceedings{rendle2021revisiting,
+  author    = {Rendle, Steffen and Krichene, Walid and Zhang, Li and Koren, Yehuda},
+  title     = {Revisiting the Performance of {iALS} on Item Recommendation Benchmarks},
+  booktitle = {Proceedings of the 16th ACM Conference on Recommender Systems},
+  series    = {RecSys '22},
+  year      = {2022},
+  pages     = {427--435},
+  publisher = {ACM},
+  doi       = {10.1145/3523227.3548486}
 }
 
 @inproceedings{schnabel2016recommendations,
   author    = {Schnabel, Tobias and Swaminathan, Adith and Singh, Ashudeep and Chandak, Navin and Joachims, Thorsten},
   title     = {Recommendations as Treatments: Debiasing Learning and Evaluation},
   booktitle = {Proceedings of the 33rd International Conference on Machine Learning (ICML)},
-  pages     = {1670--1679},
-  year      = {2016}
+  year      = {2016},
+  doi       = {10.48550/arXiv.1602.05352}
 }
 
 @book{ricci2015recommender,
@@ -156,7 +168,7 @@
   doi       = {10.1109/MC.2009.263}
 }
 
-@article{li2023recent,
+@misc{li2023recent,
   title={Recent Developments in Recommender Systems: A Survey},
   author={Li, Yang and Liu, Kangbo and Satapathy, Ranjan and Wang, Suhang and Cambria, Erik},
   journal={CoRR},
@@ -192,35 +204,6 @@
   doi={10.1145/3357384.3357895}
 }
 
-@inproceedings{abdollahpouri2019unfairness,
-  author    = {Abdollahpouri, Himan and Mansoury, Masoud and Burke, Robin and Mobasher, Bamshad},
-  title     = {The Unfairness of Popularity Bias in Recommendation},
-  booktitle = {Proceedings of the 13th ACM Conference on Recommender Systems (RecSys '19)},
-  pages     = {518--519},
-  publisher = {Association for Computing Machinery},
-  address   = {New York, NY, USA},
-  year      = {2019},
-  doi       = {10.1145/3298689.3347014}
-}
-
-@inproceedings{liang2018variational,
-  author    = {Liang, Dawen and Krishnan, Rahul G. and Hoffman, Matthew D. and Jebara, Tony},
-  title     = {Variational Autoencoders for Collaborative Filtering},
-  booktitle = {Proceedings of the 2018 World Wide Web Conference (WWW '18)},
-  pages     = {687--696},
-  year      = {2018},
-  publisher = {ACM},
-  doi       = {10.1145/3178876.3186150}
-}
-
-@techreport{mencia2016epfl,
-  author      = {Mencía, Eneldo Martínez},
-  title       = {Evaluation of Recommender Systems in Implicit Feedback Scenarios},
-  institution = {École Polytechnique Fédérale de Lausanne (EPFL)},
-  year        = {2016},
-  url         = {https://infoscience.epfl.ch/server/api/core/bitstreams/819ed007-0113-4904-8f01-33488b11c3aa/content}
-}
-
 @inproceedings{he2017neural,
   title={Neural Collaborative Filtering},
   author={He, Xiangnan and Liao, Lizi and Zhang, Hanwang and Nie, Liqiang and Hu, Xia and Chua, Tat-Seng},
@@ -232,12 +215,13 @@
 }
 
 @article{rendle2020neural,
-  title={Neural Collaborative Filtering vs. Matrix Factorization Revisited},
-  author={Rendle, Steffen and Krichene, Walid and Zhang, Li and Anderson, John},
-  journal={arXiv preprint arXiv:2005.09683},
-  year={2020},
-  eprint={2005.09683},
-  archivePrefix={arXiv}
+  title        = {Neural Collaborative Filtering vs. Matrix Factorization Revisited},
+  author       = {Rendle, Steffen and Krichene, Walid and Zhang, Li and Anderson, John},
+  journal      = {arXiv preprint arXiv:2005.09683},
+  year         = {2020},
+  eprint       = {2005.09683},
+  archivePrefix = {arXiv},
+  doi          = {10.48550/arXiv.2005.09683}
 }
 
 @article{hurley2011novelty,
@@ -250,4 +234,33 @@
   numpages  = {30},
   year      = {2011},
   doi       = {10.1145/1944339.1944341},
+}
+
+@inproceedings{wang2019neural,
+  author    = {Wang, Xiang and He, Xiangnan and Wang, Meng and Feng, Fuli and Chua, Tat-Seng},
+  title     = {Neural Graph Collaborative Filtering},
+  booktitle = {Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  pages     = {165--174},
+  year      = {2019},
+  publisher = {ACM},
+  doi       = {10.1145/3331184.3331267}
+}
+
+@inproceedings{moscati2026networked,
+  author    = {Moscati, Marta and Xu, Xinwei and Schedl, Markus},
+  title     = {Networked Tastes: Homophily for Music Recommendation},
+  booktitle = {Joint Proceedings of the ACM UMAP Workshops 2026},
+  series    = {CEUR Workshop Proceedings},
+  volume    = {4206},
+  year      = {2026},
+  publisher = {CEUR-WS.org},
+  address   = {Gothenburg, Sweden}
+}
+
+@misc{recbole,
+  title        = {RecBole: A Unified, Comprehensive and Efficient Recommendation Library},
+  author       = {Wayne Xin Zhao and Shanlei Mu and Yupeng Hou and Zihan Lin and Yushuo Chen and Xinyan Fan and Tianben Kang and Chen Ma and Liang Pang and Yaliang Li and Xiaoling Wang and Ji-Rong Wen},
+  year         = {2020},
+  howpublished = {\url{https://github.com/RUCAIBox/RecBole}},
+  note         = {GitHub repository}
 }

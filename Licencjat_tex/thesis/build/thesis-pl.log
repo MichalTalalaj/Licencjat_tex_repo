@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.3)  8 AUG 2026 22:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.3)  9 AUG 2026 01:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -885,41 +885,32 @@ Package biblatex Info: Reference segment=0 on input line 130.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-
-pdfTeX warning: pdflatex (file ./titlepage-pl.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<titlepage-pl.pdf, id=247, 597.51233pt x 845.0471pt>
+<titlepage-pl.pdf, id=247, 597.50829pt x 845.0471pt>
 File: titlepage-pl.pdf Graphic file (type pdf)
 <use titlepage-pl.pdf>
 Package pdftex.def Info: titlepage-pl.pdf  used on input line 134.
-(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-
-
-pdfTeX warning: pdflatex (file ./titlepage-pl.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-
-
-pdfTeX warning: pdflatex (file ./titlepage-pl.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<titlepage-pl.pdf, id=249, page=1, 597.51233pt x 845.0471pt>
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+<titlepage-pl.pdf, id=249, page=1, 597.50829pt x 845.0471pt>
 File: titlepage-pl.pdf Graphic file (type pdf)
 <use titlepage-pl.pdf, page 1>
 Package pdftex.def Info: titlepage-pl.pdf , page1 used on input line 134.
-(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: titlepage-pl.pdf Graphic file (type pdf)
 <use titlepage-pl.pdf, page 1>
 Package pdftex.def Info: titlepage-pl.pdf , page1 used on input line 134.
-(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: titlepage-pl.pdf Graphic file (type pdf)
 <use titlepage-pl.pdf, page 1>
 Package pdftex.def Info: titlepage-pl.pdf , page1 used on input line 134.
-(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: titlepage-pl.pdf Graphic file (type pdf)
 <use titlepage-pl.pdf, page 1>
 Package pdftex.def Info: titlepage-pl.pdf , page1 used on input line 134.
-(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: titlepage-pl.pdf Graphic file (type pdf)
 <use titlepage-pl.pdf, page 1>
 Package pdftex.def Info: titlepage-pl.pdf , page1 used on input line 134.
-(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 [1
 
 
@@ -1045,62 +1036,59 @@ Rozdzia\l  6.
 [36
 
 ]
-
-LaTeX Warning: Reference `fig:wrazliwosc_constant_ndcg_vs_gamma' on page 37 undefined on input line 32.
-
-<figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png, id=732, 712.5822pt x 422.2977pt>
+<figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png, id=735, 712.5822pt x 422.2977pt>
 File: figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png Graphic file (type png)
 <use figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png>
 Package pdftex.def Info: figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png  used on input line 36.
 (pdftex.def)             Requested size: 384.10962pt x 227.63785pt.
-[37 <./figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png>]
-<figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png, id=742, 712.3413pt x 422.2977pt>
+ [37 <./figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png>]
+<figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png, id=746, 712.3413pt x 422.2977pt>
 File: figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png Graphic file (type png)
 <use figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png>
 Package pdftex.def Info: figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png  used on input line 45.
 (pdftex.def)             Requested size: 384.10962pt x 227.71516pt.
-<figures/sensitivity/wrazliwosc_constant_ndcg_vs_gamma.png, id=744, 712.3413pt x 422.2977pt>
+<figures/sensitivity/wrazliwosc_constant_ndcg_vs_gamma.png, id=748, 712.3413pt x 422.2977pt>
 File: figures/sensitivity/wrazliwosc_constant_ndcg_vs_gamma.png Graphic file (type png)
 <use figures/sensitivity/wrazliwosc_constant_ndcg_vs_gamma.png>
 Package pdftex.def Info: figures/sensitivity/wrazliwosc_constant_ndcg_vs_gamma.png  used on input line 53.
 (pdftex.def)             Requested size: 384.10962pt x 227.71516pt.
  [38 <./figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png>]
-<figures/confidence/confidence_levels_best_als.png, id=755, 643.203pt x 425.4294pt>
+<figures/confidence/confidence_levels_best_als.png, id=758, 643.203pt x 425.4294pt>
 File: figures/confidence/confidence_levels_best_als.png Graphic file (type png)
 <use figures/confidence/confidence_levels_best_als.png>
 Package pdftex.def Info: figures/confidence/confidence_levels_best_als.png  used on input line 86.
 (pdftex.def)             Requested size: 384.10962pt x 254.05867pt.
  [39 <./figures/sensitivity/wrazliwosc_constant_ndcg_vs_gamma.png>]
-<figures/confidence/confidence_growth_best_als_0_2400.png, id=765, 642.7212pt x 425.1885pt>
+<figures/confidence/confidence_growth_best_als_0_2400.png, id=768, 642.7212pt x 425.1885pt>
 File: figures/confidence/confidence_growth_best_als_0_2400.png Graphic file (type png)
 <use figures/confidence/confidence_growth_best_als_0_2400.png>
 Package pdftex.def Info: figures/confidence/confidence_growth_best_als_0_2400.png  used on input line 101.
 (pdftex.def)             Requested size: 384.10962pt x 254.10295pt.
  [40 <./figures/confidence/confidence_levels_best_als.png>] [41 <./figures/confidence/confidence_growth_best_als_0_2400.png>]
-<figures/test_fix/test_ndcg_all_models_horizontal.png, id=781, 643.6848pt x 389.2944pt>
+<figures/test_fix/test_ndcg_all_models_horizontal.png, id=784, 643.6848pt x 389.2944pt>
 File: figures/test_fix/test_ndcg_all_models_horizontal.png Graphic file (type png)
 <use figures/test_fix/test_ndcg_all_models_horizontal.png>
 Package pdftex.def Info: figures/test_fix/test_ndcg_all_models_horizontal.png  used on input line 145.
 (pdftex.def)             Requested size: 384.10962pt x 232.31319pt.
  [42 <./figures/test_fix/test_ndcg_all_models_horizontal.png>] [43]
-<figures/test_fix/test_precision_vs_recall_all_models.png, id=797, 638.8668pt x 425.1885pt>
+<figures/test_fix/test_precision_vs_recall_all_models.png, id=800, 638.8668pt x 425.1885pt>
 File: figures/test_fix/test_precision_vs_recall_all_models.png Graphic file (type png)
 <use figures/test_fix/test_precision_vs_recall_all_models.png>
 Package pdftex.def Info: figures/test_fix/test_precision_vs_recall_all_models.png  used on input line 170.
 (pdftex.def)             Requested size: 384.10962pt x 255.64706pt.
  [44 <./figures/test_fix/test_precision_vs_recall_all_models.png>]
-<figures/test_fix/test_ndcg_vs_coverage_all_models.png, id=805, 715.7139pt x 425.1885pt>
+<figures/test_fix/test_ndcg_vs_coverage_all_models.png, id=808, 715.7139pt x 425.1885pt>
 File: figures/test_fix/test_ndcg_vs_coverage_all_models.png Graphic file (type png)
 <use figures/test_fix/test_ndcg_vs_coverage_all_models.png>
 Package pdftex.def Info: figures/test_fix/test_ndcg_vs_coverage_all_models.png  used on input line 184.
 (pdftex.def)             Requested size: 384.10962pt x 228.19699pt.
-<figures/test_fix/test_ndcg_vs_ild_cooccurrence.png, id=807, 643.203pt x 425.6703pt>
+<figures/test_fix/test_ndcg_vs_ild_cooccurrence.png, id=810, 643.203pt x 425.6703pt>
 File: figures/test_fix/test_ndcg_vs_ild_cooccurrence.png Graphic file (type png)
 <use figures/test_fix/test_ndcg_vs_ild_cooccurrence.png>
 Package pdftex.def Info: figures/test_fix/test_ndcg_vs_ild_cooccurrence.png  used on input line 195.
 (pdftex.def)             Requested size: 384.10962pt x 254.20253pt.
  [45 <./figures/test_fix/test_ndcg_vs_coverage_all_models.png>]
-<figures/test_fix/test_ndcg_vs_delta_gap_without_popularity.png, id=817, 703.9098pt x 423.7431pt>
+<figures/test_fix/test_ndcg_vs_delta_gap_without_popularity.png, id=820, 703.9098pt x 423.7431pt>
 File: figures/test_fix/test_ndcg_vs_delta_gap_without_popularity.png Graphic file (type png)
 <use figures/test_fix/test_ndcg_vs_delta_gap_without_popularity.png>
 Package pdftex.def Info: figures/test_fix/test_ndcg_vs_delta_gap_without_popularity.png  used on input line 208.
@@ -1146,9 +1134,6 @@ L3 programming layer <2026-04-28>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `thesis-pl.out' has not changed.
 (rerunfilecheck)             Checksum: 289A80ED47B3A849A00DCE68C39E637F;12921.
 Package logreq Info: Writing requests to 'thesis-pl.run.xml'.
@@ -1156,17 +1141,17 @@ Package logreq Info: Writing requests to 'thesis-pl.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24986 strings out of 467683
- 434524 string characters out of 5431557
- 1323005 words of memory out of 5000000
+ 24987 strings out of 467683
+ 434587 string characters out of 5431557
+ 1323055 words of memory out of 5000000
  53414 multiletter control sequences out of 15000+600000
  654411 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,17n,90p,2114b,2362s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk><D:/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/MiKTeX/fonts/type1/public/pl/plbx10.pfb><D:/MiKTeX/fonts/type1/public/pl/plbx8.pfb><D:/MiKTeX/fonts/type1/public/pl/plex10.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi10.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi12.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi6.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi8.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi9.pfb><D:/MiKTeX/fonts/type1/public/pl/plr10.pfb><D:/MiKTeX/fonts/type1/public/pl/plr6.pfb><D:/MiKTeX/fonts/type1/public/pl/plr8.pfb><D:/MiKTeX/fonts/type1/public/pl/plsy10.pfb><D:/MiKTeX/fonts/type1/public/pl/plsy6.pfb><D:/MiKTeX/fonts/type1/public/pl/plsy8.pfb>
-Output written on d:\Studiowe\Licencjat\Licencjat_tex_repo\Licencjat_tex\thesis\build\thesis-pl.pdf (61 pages, 3081100 bytes).
+Output written on d:\Studiowe\Licencjat\Licencjat_tex_repo\Licencjat_tex\thesis\build\thesis-pl.pdf (61 pages, 3168567 bytes).
 PDF statistics:
- 1641 PDF objects out of 1728 (max. 8388607)
- 244 named destinations out of 1000 (max. 500000)
+ 1649 PDF objects out of 1728 (max. 8388607)
+ 245 named destinations out of 1000 (max. 500000)
  574 words of extra memory for PDF output out of 10000 (max. 10000000)
 

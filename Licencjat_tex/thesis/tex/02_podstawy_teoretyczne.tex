@@ -265,7 +265,7 @@ Wszystkie uczone parametry modelu zawarte w macierzach cech ukrytych użytkownik
     \operatorname{vec}(\mathbf{X},\mathbf{Y}),
 \end{equation}
 
-gdzie operator $\operatorname{vec}(\cdot)$ oznacza przekształcenie elementów macierzydo jednego wektora parametrów.
+gdzie operator $\operatorname{vec}(\cdot)$ oznacza przekształcenie elementów macierzy do jednego wektora parametrów.
 
 Aby przekształcić ciągłą różnicę predykcji $\hat{s}_{uij} \in (-\infty, +\infty)$ na prawdopodobieństwo tego, że użytkownik $u$ preferuje obiekt $i$ nad $j$, stosuje się funkcję sigmoidalną $\sigma(z) = \frac{1}{1 + e^{-z}}$:
 \begin{equation}
@@ -291,7 +291,7 @@ gdzie $p(D_S \mid \Theta)$ stanowi funkcję wiarogodności zbioru obserwacji prz
     p(\Theta \mid D_S) \propto p(D_S \mid \Theta) \cdot p(\Theta).
 \end{equation}
 
-Ze względów stabilności obliczeniowej dokonuje się transformacji powyższego kryterium za pomocą logarytmu naturalnego. Ścisła monotoniczność logarytmu sprawia, że przekształcenie to nie zmienia położenia ekstremów funkcji, apozwala zamienić iloczyny prawdopodobieństw na sumy i zdefiniować funkcję celu:
+Ze względów stabilności obliczeniowej dokonuje się transformacji powyższego kryterium za pomocą logarytmu naturalnego. Ścisła monotoniczność logarytmu sprawia, że przekształcenie to nie zmienia położenia ekstremów funkcji, a pozwala zamienić iloczyny prawdopodobieństw na sumy i zdefiniować funkcję celu:
 
 \begin{equation}
     \mathcal{L}_{\text{BPR}}(\Theta) = \ln p(\Theta \mid D_S) = \ln p(D_S \mid \Theta) + \ln p(\Theta) + C,
@@ -303,7 +303,7 @@ gdzie $C$ jest nieistotną z punktu widzenia optymalizacji stałą. W odróżnie
 Przy założeniu, że użytkownicy działają niezależnie od siebie oraz że poszczególne relacje preferencji w~obrębie jednego użytkownika traktowane są jako wzajemnie niezależne, łączną wiarogodność ukrytej struktury preferencji można zapisać jako iloczyn po parach nieuporządkowanych:
 
 \begin{equation}
-p(> \mid \Theta) = \prod_{u \in \mathcal{U}} \prod_{\substack{\{i,j\} \subseteq \mathcal{I} \\ i \neq j}} p(i >_u j \mid \Theta)^{\mathbf{1}(i >_u j)} \cdot \bigl( 1 - p(i >_u j \mid \Theta) \bigr)^{\mathbf{1}(j >_u i)}.
+p(> \mid \Theta) := \prod_{u \in \mathcal{U}} \prod_{\substack{\{i,j\} \subseteq \mathcal{I} \\ i \neq j}} p(i >_u j \mid \Theta)^{\mathbf{1}(i >_u j)} \cdot \bigl( 1 - p(i >_u j \mid \Theta) \bigr)^{\mathbf{1}(j >_u i)}.
 \end{equation}
 
 Zapis ten upraszcza się dzięki własnościom relacji $>_u$. Jest ona spójna i~antysymetryczna, wobec czego dla każdej pary różnych obiektów zachodzą zależności:
@@ -315,10 +315,10 @@ Zapis ten upraszcza się dzięki własnościom relacji $>_u$. Jest ona spójna i
 Dla ustalonej pary $\{i,j\}$ dokładnie jeden z~dwóch wykładników jest równy jedności, a~drugi zeru, przy czym oba czynniki opisują to samo zdarzenie. W~konsekwencji każda para wnosi dokładnie jeden czynnik:
 
 \begin{equation}
-p(> \mid \Theta) = \prod_{u \in \mathcal{U}} \prod_{\substack{\{i,j\} \subseteq \mathcal{I} \\ i \neq j}} p(i >_u j \mid \Theta)^{\mathbf{1}(i >_u j)}.
+p(> \mid \Theta) = \prod_{u \in \mathcal{U}} \prod_{\substack{\{i,j\} \subseteq \mathcal{I},\ i \neq j \\ i >_u j}} p(i >_u j \mid \Theta).
 \end{equation}
 
-Indeksowanie po parach nieuporządkowanych jest tu istotne: iloczyn po parach uporządkowanych uwzględniałby każdą relację dwukrotnie, co w~logarytmie wiarogodności dawałoby dwukrotność sumy i~zaburzało proporcję między członem danych a~członem regularyzacyjnym. Relacja $>_u$ nie jest jednak obserwowana bezpośrednio. Model BPR przyjmuje założenie, że sygnał pozytywny wskazuje preferencję nad obiektem nieobserwowanym, tj. $i >_u j$ dla każdej trójki $(u,i,j) \in D_S$; o~pozostałych parach model nie formułuje sądów i~są one pomijane. Ograniczając iloczyn do tak przyjętych relacji, otrzymuje się:
+Indeksowanie po parach nieuporządkowanych jest tu istotne: iloczyn po parach uporządkowanych uwzględniałby każdą relację dwukrotnie, co w~logarytmie wiarogodności dawałoby dwukrotność sumy i~zaburzało proporcję między członem danych a~członem regularyzacyjnym. Relacja $>_u$ nie jest jednak obserwowana bezpośrednio. Ograniczenie iloczynu do zbioru $D_S$, zawierającego wyłącznie trójki o orientacji zgodnej z sygnałem pozytywnym, zapewnia takie jednokrotne zliczanie. Ograniczając iloczyn do tak przyjętych relacji, otrzymuje się:
 
 \begin{equation}
 p(D_S \mid \Theta) = \prod_{(u,i,j)\in D_S} p(i >_u j \mid \Theta) = \prod_{(u,i,j)\in D_S} \sigma(\hat{s}_{uij}),

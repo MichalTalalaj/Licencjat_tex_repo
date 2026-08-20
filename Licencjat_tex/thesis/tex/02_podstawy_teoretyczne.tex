@@ -76,22 +76,11 @@ Parametry modelu są dobierane na podstawie minimalizacji funkcji straty zdefini
 
 gdzie parametr regularyzacji $\lambda \ge 0$ kontroluje siłę kary za złożoność modelu. Celem procesu optymalizacji jest znalezienie macierzy $\mathbf{X}$ i $\mathbf{Y}$ oraz wektorów $\mathbf{b}$, które minimalizują wartość $\mathcal{L}$.
 
-
-% JESLI BEDZIE MALO STRON
-
-%\subsection{Optymalizacja metodą stochastycznego spadku po gradiencie (SGD)}
-% Tutaj opisz:
-% - Intuicję działania SGD: iteracyjna aktualizacja parametrów po każdej zaobserwowanej próbce (u, i, r_{ui})
-% - Definicję błędu predykcji e_{ui} = r_{ui} - \hat{r}_{ui}
-% - Wyprowadzenie gradientów funkcji straty względem wektorów x_u oraz y_i
-% - Reguły aktualizacji parametrów x_u i y_i z wykorzystaniem współczynnika uczenia (learning rate \gamma)
-% - Zalety i ograniczenia SGD (szybkość i prostota vs. trudność w równolegleniu i wrażliwość na dobór \gamma)
-
 \subsection{Ograniczenia tradycyjnego podejścia dla niejawnej informacji zwrotnej}
 
 Tradycyjne metody faktoryzacji macierzy, takie jak Funk SVD, zostały zaprojektowane z myślą o przetwarzaniu jawnej informacji zwrotnej (ang. \textit{explicit feedback}), opartej na ocenach w skali punktowej. W rzeczywistych systemach produkcyjnych stosowanie tego podejścia wiąże się jednak z istotnymi ograniczeniami. Niektórzy użytkownicy rzadko decydują się na pozostawienie opinii, co utrudnia modelowi dobranie dla nich trafnych rekomendacji. Co więcej, wiele platform nie posiada mechanizmu oceniania, co uniemożliwia działanie klasycznych algorytmów. W konsekwencji uzasadnione staje się wykorzystanie modeli opartych na niejawnej informacji zwrotnej (ang. \textit{implicit feedback}), której przykładami są liczba kliknięć, zarejestrowany czas interakcji pomiędzy użytkownikiem a obiektem czy historia zakupów.
 
-Bezpośrednie zastosowanie klasycznych algorytmów faktoryzacji macierzy do danych niejawnych prowadzi do znacznych problemów, wynikających z różnic między typami sygnałów:
+Bezpośrednie zastosowanie klasycznych algorytmów faktoryzacji macierzy do danych niejawnych prowadzi do znacznych problemów, wynikających z różnic między typami sygnałów, wskazanych w~pracy~\cite{hu2008implicit}:
 
 \begin{enumerate}
     \item \textbf{Brak bezpośrednich sygnałów negatywnych oraz dwuznaczność braku interakcji:} W przypadku danych jawnych niska ocena jednoznacznie wskazuje na negatywną preferencję użytkownika. Natomiast niejawna informacja zwrotna dostarcza wyłącznie sygnałów pozytywnych. Długie lub częste interakcje świadczą o zainteresowaniu danym obiektem, podczas gdy brak interakcji ($r_{ui}=0$) lub interakcje o niewielkiej intensywności mają charakter niejednoznaczny. Mogą one wynikać zarówno z braku zainteresowania obiektem, jak i z faktu, że użytkownik nie wiedział o jego istnieniu.

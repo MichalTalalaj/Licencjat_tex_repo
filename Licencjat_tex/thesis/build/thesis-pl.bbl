@@ -176,6 +176,48 @@
       \verb https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.ml.recommendation.ALS.html
       \endverb
     \endentry
+    \entry{bayram2021game}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=11991d3b1ed9aff0f47ea9b9b498555d}{%
+           family={Bayram},
+           familyi={B\bibinitperiod},
+           given={Serhan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {MEF University}%
+      }
+      \list{location}{1}{%
+        {İstanbul}%
+      }
+      \strng{namehash}{11991d3b1ed9aff0f47ea9b9b498555d}
+      \strng{fullhash}{11991d3b1ed9aff0f47ea9b9b498555d}
+      \strng{fullhashraw}{11991d3b1ed9aff0f47ea9b9b498555d}
+      \strng{bibnamehash}{11991d3b1ed9aff0f47ea9b9b498555d}
+      \strng{authorbibnamehash}{11991d3b1ed9aff0f47ea9b9b498555d}
+      \strng{authornamehash}{11991d3b1ed9aff0f47ea9b9b498555d}
+      \strng{authorfullhash}{11991d3b1ed9aff0f47ea9b9b498555d}
+      \strng{authorfullhashraw}{11991d3b1ed9aff0f47ea9b9b498555d}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Capstone Project, MEF University, İstanbul}
+      \field{note}{Promotor: Semra Ağralı}
+      \field{title}{Game Recommendation System for {Steam} Platform}
+      \field{type}{Capstone Project}
+      \field{urlday}{19}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://gcris.mef.edu.tr/server/api/core/bitstreams/0cd1a0b7-dad6-46be-9705-8e6740e1339e/content
+      \endverb
+      \verb{url}
+      \verb https://gcris.mef.edu.tr/server/api/core/bitstreams/0cd1a0b7-dad6-46be-9705-8e6740e1339e/content
+      \endverb
+    \endentry
     \entry{bunga2021implicit}{inproceedings}{}{}
       \name{author}{3}{}{%
         {{hash=09201528492f4fb3bcd527b0a8ee1204}{%

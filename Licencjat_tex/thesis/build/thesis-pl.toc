@@ -3,68 +3,69 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{Abstract}{4}{chapter*.2}%
 \babel@toc {polish}{}\relax 
-\contentsline {chapter}{\numberline {1}Wstęp}{7}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Motywacja i problem badawczy}{7}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Cel, zakres i pytania badawcze}{7}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Struktura pracy}{8}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Podstawy teoretyczne systemów rekomendacyjnych}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Zadanie rekomendacji Top-N}{9}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Klasyczna faktoryzacja macierzy dla danych jawnych}{10}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Model Funk SVD i funkcja celu}{10}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Ograniczenia tradycyjnego podejścia dla niejawnej informacji zwrotnej}{11}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Implicit Alternating Least Squares (iALS)}{12}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Struktura preferencji i funkcja celu}{12}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Optymalizacja metodą naprzemiennych najmniejszych kwadratów}{13}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Bayesian Personalized Ranking (BPR)}{15}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Podejście oparte na porównywaniu par (pairwise ranking)}{15}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Funkcja celu modelu BPR}{16}{subsection.2.4.2}%
-\contentsline {subsubsection}{Sformułowanie funkcji wiarogodności}{17}{equation.2.28}%
-\contentsline {subsubsection}{Sformułowanie rozkładu a priori i regularyzacji}{18}{equation.2.34}%
-\contentsline {subsubsection}{Końcowa postać kryterium}{18}{equation.2.38}%
-\contentsline {subsection}{\numberline {2.4.3}Optymalizacja z wykorzystaniem LearnBPR}{19}{subsection.2.4.3}%
-\contentsline {subsubsection}{Wyprowadzenie reguł aktualizacji}{19}{equation.2.42}%
-\contentsline {subsubsection}{Reguły aktualizacji algorytmu LearnBPR}{20}{equation.2.49}%
-\contentsline {chapter}{\numberline {3}Metryki ewaluacyjne}{21}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Ewaluacja rekomendacji Top-N}{21}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Metryki trafności rankingu}{21}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Precyzja i Pełność}{22}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Znormalizowany zdyskontowany zysk skumulowany}{22}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Metryki pokrycia katalogu, popularności i różnorodności}{23}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Pokrycie katalogu}{23}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Obciążenie popularnością}{23}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Różnorodność wewnątrzlistowa}{24}{subsection.3.3.3}%
-\contentsline {chapter}{\numberline {4}Dane i analiza eksploracyjna}{26}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Źródło i struktura danych}{26}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Dane jako niejawna informacja zwrotna}{26}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Podstawowe statystyki surowego zbioru}{26}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Wpływ przygotowania danych na strukturę zbioru}{27}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Rozkład czasu gry i interakcje z zerowym czasem gry}{27}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Aktywność użytkowników i popularność gier}{28}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Aktywność użytkowników}{28}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}Popularność gier}{30}{subsection.4.6.2}%
-\contentsline {section}{\numberline {4.7}Wnioski z analizy eksploracyjnej}{31}{section.4.7}%
-\contentsline {chapter}{\numberline {5}Metodologia eksperymentalna}{32}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Przygotowanie danych}{32}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Porównywane modele}{32}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Strojenie hiperparametrów}{33}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Finalna ewaluacja testowa}{34}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Analiza wrażliwości na $\alpha $, $\beta $ i $\gamma $}{35}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Ograniczenia metodologii}{35}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Wyniki eksperymentów}{36}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Wyniki strojenia hiperparametrów}{36}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Analiza funkcji pewności}{39}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Jakość rekomendacji na zbiorze testowym}{42}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Analiza kompromisów jakości rekomendacji}{44}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Stabilność wyników}{47}{section.6.5}%
-\contentsline {chapter}{\numberline {7}Wnioski}{50}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Podsumowanie eksperymentów}{50}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Odpowiedź na pytania badawcze}{51}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Najważniejsze wnioski praktyczne i metodologiczne}{52}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Wnioski praktyczne}{52}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Wnioski metodologiczne}{53}{subsection.7.3.2}%
-\contentsline {section}{\numberline {7.4}Kierunki dalszych badań}{53}{section.7.4}%
-\contentsline {chapter}{Bibliografia}{55}{chapter*.26}%
-\contentsline {chapter}{Wykaz symboli i skrótów}{58}{chapter*.27}%
-\contentsline {chapter}{Spis rysunków}{59}{table.7.2}%
-\contentsline {chapter}{Spis tabel}{60}{chapter*.28}%
+\contentsline {chapter}{\numberline {1}Wstęp}{9}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motywacja i problem badawczy}{9}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Cel, zakres i pytania badawcze}{9}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Struktura pracy}{10}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Podstawy teoretyczne systemów rekomendacyjnych}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Zadanie rekomendacji Top-N}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Klasyczna faktoryzacja macierzy dla danych jawnych}{12}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Model Funk SVD i funkcja celu}{12}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Ograniczenia tradycyjnego podejścia dla niejawnej informacji zwrotnej}{13}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Implicit Alternating Least Squares (iALS)}{14}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Struktura preferencji i funkcja celu}{14}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Optymalizacja metodą naprzemiennych najmniejszych kwadratów}{15}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Bayesian Personalized Ranking (BPR)}{17}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Podejście oparte na porównywaniu par (pairwise ranking)}{17}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Funkcja celu modelu BPR}{18}{subsection.2.4.2}%
+\contentsline {subsubsection}{Sformułowanie funkcji wiarogodności}{19}{equation.2.28}%
+\contentsline {subsubsection}{Sformułowanie rozkładu a priori i regularyzacji}{20}{equation.2.34}%
+\contentsline {subsubsection}{Końcowa postać kryterium}{20}{equation.2.38}%
+\contentsline {subsection}{\numberline {2.4.3}Optymalizacja z wykorzystaniem LearnBPR}{21}{subsection.2.4.3}%
+\contentsline {subsubsection}{Wyprowadzenie reguł aktualizacji}{21}{equation.2.42}%
+\contentsline {subsubsection}{Reguły aktualizacji algorytmu LearnBPR}{22}{equation.2.49}%
+\contentsline {chapter}{\numberline {3}Metryki ewaluacyjne}{23}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Ewaluacja rekomendacji Top-N}{23}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Metryki trafności rankingu}{23}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Precyzja i Pełność}{24}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Znormalizowany zdyskontowany zysk skumulowany}{24}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Metryki pokrycia katalogu, popularności i różnorodności}{25}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Pokrycie katalogu}{25}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Obciążenie popularnością}{25}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Różnorodność wewnątrzlistowa}{26}{subsection.3.3.3}%
+\contentsline {chapter}{\numberline {4}Dane i analiza eksploracyjna}{28}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Źródło i struktura danych}{28}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Dane jako niejawna informacja zwrotna}{28}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Podstawowe statystyki surowego zbioru}{28}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Wpływ przygotowania danych na strukturę zbioru}{29}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Rozkład czasu gry i interakcje z zerowym czasem gry}{29}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Aktywność użytkowników i popularność gier}{30}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Aktywność użytkowników}{30}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Popularność gier}{32}{subsection.4.6.2}%
+\contentsline {section}{\numberline {4.7}Wnioski z analizy eksploracyjnej}{33}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Metodologia eksperymentalna}{34}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Przygotowanie danych}{34}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Porównywane modele}{34}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Strojenie hiperparametrów}{35}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Finalna ewaluacja testowa}{36}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Analiza wrażliwości na $\alpha $, $\beta $ i $\gamma $}{37}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Ograniczenia metodologii}{37}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Wyniki eksperymentów}{38}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Wyniki strojenia hiperparametrów}{38}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Analiza funkcji pewności}{41}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Jakość rekomendacji na zbiorze testowym}{44}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Analiza kompromisów jakości rekomendacji}{46}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Stabilność wyników}{49}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Odniesienie wyników do literatury}{51}{section.6.6}%
+\contentsline {chapter}{\numberline {7}Wnioski}{52}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Podsumowanie eksperymentów}{52}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Odpowiedź na pytania badawcze}{53}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Najważniejsze wnioski praktyczne i metodologiczne}{54}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Wnioski praktyczne}{54}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Wnioski metodologiczne}{55}{subsection.7.3.2}%
+\contentsline {section}{\numberline {7.4}Kierunki dalszych badań}{55}{section.7.4}%
+\contentsline {chapter}{Bibliografia}{57}{chapter*.26}%
+\contentsline {chapter}{Wykaz symboli i skrótów}{60}{chapter*.27}%
+\contentsline {chapter}{Spis rysunków}{61}{table.7.2}%
+\contentsline {chapter}{Spis tabel}{62}{chapter*.28}%
 \contentsfinish 

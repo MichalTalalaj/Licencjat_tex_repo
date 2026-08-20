@@ -62,7 +62,7 @@
 \contentsline {section}{\numberline {7.2}Odpowiedzi na pytania badawcze}{51}{section.7.2}%
 \contentsline {section}{\numberline {7.3}Najważniejsze wnioski praktyczne i metodologiczne}{52}{section.7.3}%
 \contentsline {subsection}{\numberline {7.3.1}Wnioski praktyczne}{52}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Wnioski metodologiczne}{53}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.2}Wnioski metodologiczne}{52}{subsection.7.3.2}%
 \contentsline {section}{\numberline {7.4}Kierunki dalszych badań}{53}{section.7.4}%
 \contentsline {chapter}{Bibliografia}{55}{chapter*.26}%
 \contentsline {chapter}{Wykaz symboli i skrótów}{58}{chapter*.27}%

@@ -5,15 +5,15 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Podstawowe statystyki surowego zbioru danych}}{29}{table.caption.4}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Wpływ kolejnych etapów przygotowania danych na rozmiar zbioru}}{29}{table.caption.5}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Rozkład liczby interakcji użytkowników i popularności gier w przygotowanym zbiorze}}{31}{table.caption.7}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Podstawowe statystyki surowego zbioru danych}}{27}{table.caption.4}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Wpływ kolejnych etapów przygotowania danych na rozmiar zbioru}}{27}{table.caption.5}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Rozkład liczby interakcji użytkowników i popularności gier w przygotowanym zbiorze}}{29}{table.caption.7}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Najlepsze hiperparametry wariantów ALS wybrane na zbiorze walidacyjnym}}{38}{table.caption.11}%
-\contentsline {table}{\numberline {6.2}{\ignorespaces Najlepsze hiperparametry modelu BPR wybrane na zbiorze walidacyjnym}}{41}{table.caption.15}%
-\contentsline {table}{\numberline {6.3}{\ignorespaces Wyniki modeli na zbiorze testowym}}{44}{table.caption.18}%
-\contentsline {table}{\numberline {6.4}{\ignorespaces Odchylenia standardowe metryk na zbiorze testowym w~pięciu uruchomieniach}}{50}{table.caption.24}%
-\contentsline {table}{\numberline {6.5}{\ignorespaces Odchylenia standardowe metryk w~pięciu losowych podziałach na zbiór treningowy i~walidacyjny}}{50}{table.caption.25}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces Najlepsze hiperparametry wariantów ALS wybrane na zbiorze walidacyjnym}}{36}{table.caption.11}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Najlepsze hiperparametry modelu BPR wybrane na zbiorze walidacyjnym}}{39}{table.caption.15}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Wyniki modeli na zbiorze testowym}}{42}{table.caption.18}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Odchylenia standardowe metryk na zbiorze testowym w~pięciu uruchomieniach}}{48}{table.caption.24}%
+\contentsline {table}{\numberline {6.5}{\ignorespaces Odchylenia standardowe metryk w~pięciu losowych podziałach na zbiór treningowy i~walidacyjny}}{48}{table.caption.25}%
 \addvspace {10\p@ }
 \contentsfinish 

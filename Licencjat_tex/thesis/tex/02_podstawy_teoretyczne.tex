@@ -11,7 +11,7 @@ Niech $\mathcal{U} = \{u_1, u_2, \dots, u_m\}$ oznacza zbiór $m$ użytkowników
 
 Relacje zachodzące pomiędzy użytkownikami a obiektami reprezentowane są za pomocą macierzy obserwacji $\mathbf{R} \in \mathbb{R}^{m \times n}$. Pojedynczy element tej macierzy, oznaczany jako $r_{ui}$, reprezentuje zarejestrowaną aktywność użytkownika $u \in \mathcal{U}$ wobec obiektu $i \in \mathcal{I}$. W zależności od specyfiki przetwarzanych danych, $r_{ui}$ może przyjmować wartości z określonej wcześniej skali (np. ocena w skali 1--5) lub wartości nieograniczone (np. liczba zakupionych produktów, czas odtwarzania danego utworu). Istotną w praktyce cechą macierzy $\mathbf{R}$ jest wysoki stopień rzadkości rozumiany jako odsetek niezaobserwowanych interakcji. Jest to efekt przytłaczającej liczby dostępnych obiektów powodującej, że pojedynczy użytkownik wchodzi w interakcję jedynie z niewielkim ułamkiem całego asortymentu.
 
-Wczesne sformułowania problemu rekomendacyjnego, oparte na danych jawnych (ang. \textit{explicit feedback}), sprowadzały zadanie do predykcji ocen, gdzie celem algorytmu było odwzorowanie znanych wartości macierzy $\mathbf{R}$ \cite{aggarwal2016recommender}. Jakość takich modeli oceniano za pomocą miar błędu ciągłego opartych na odchyleniu przewidywanej wartości od rzeczywistej oceny, takich jak błąd średniokwadratowy:
+Wczesne sformułowania problemu rekomendacyjnego, oparte na danych jawnych (ang. \textit{explicit feedback}), sprowadzały zadanie do predykcji ocen, gdzie celem algorytmu było odwzorowanie znanych wartości macierzy $\mathbf{R}$ \cite{aggarwal2016recommender}. Jakość takich modeli oceniano za pomocą miar błędu opartych na odchyleniu przewidywanej wartości od rzeczywistej oceny, takich jak błąd średniokwadratowy:
 
 \begin{equation}
     \text{RMSE} = \sqrt{\frac{1}{|\mathcal{K}|} \sum_{(u,i) \in \mathcal{K}} \left(r_{ui} - \hat{r}_{ui}\right)^2},
@@ -37,7 +37,7 @@ gdzie $\mathcal{I}_u$ oznacza zbiór obiektów, z którymi użytkownik $u$ wszed
 
 \subsection{Model Funk SVD i funkcja celu}
 
-W pracy wszystkie porównywane modele należą do rodziny modeli opartych na czynnikach ukrytych. Wykorzystują one metody faktoryzacji macierzy, które zostały spopularyzowane przez Simona Funka w ramach konkursu \textit{Netflix Prize}. Podejście to zakłada, że relacje pomiędzy użytkownikami i obiektami mogą być modelowane poprzez ich reprezentacje w przestrzeni czynników ukrytych o wymiarze $f \ll \min(n,m)$. W przeciwieństwie do metod opartych na treści, wymagających jawnego zdefiniowania cech opisujących użytkowników oraz obiekty, faktoryzacja macierzy umożliwia automatyczne uczenie reprezentacji na podstawie historii interakcji. Dzięki temu ogranicza zależność od ręcznie projektowanych cech specyficznych dla danej domeny i pozwala stosować jednolity schemat modelowania w różnych dziedzinach. Szczegółowy opis modelu Funk SVD oraz wynikającej z niego funkcji celu przedstawiono na podstawie pracy \cite{koren2009matrix}.
+W niniejszej pracy wszystkie porównywane modele należą do rodziny modeli opartych na czynnikach ukrytych. Wykorzystują one metody faktoryzacji macierzy, które zostały spopularyzowane przez Simona Funka w ramach konkursu \textit{Netflix Prize}. Podejście to zakłada, że relacje pomiędzy użytkownikami i obiektami mogą być modelowane poprzez ich reprezentacje w przestrzeni czynników ukrytych o wymiarze $f \ll \min(n,m)$. W przeciwieństwie do metod opartych na treści, wymagających jawnego zdefiniowania cech opisujących użytkowników oraz obiekty, faktoryzacja macierzy umożliwia automatyczne uczenie reprezentacji na podstawie historii interakcji. Dzięki temu ogranicza zależność od ręcznie projektowanych cech specyficznych dla danej domeny i pozwala stosować jednolity schemat modelowania w różnych dziedzinach. Szczegółowy opis modelu Funk SVD oraz wynikającej z niego funkcji celu przedstawiono na podstawie pracy \cite{koren2009matrix}.
 
 Macierz obserwacji $\mathbf{R} \in \mathbb{R}^{m \times n}$ jest aproksymowana poprzez iloczyn dwóch macierzy niskiego rzędu: macierzy reprezentacji użytkowników $\mathbf{X} \in \mathbb{R}^{m \times f}$ oraz macierzy reprezentacji obiektów $\mathbf{Y} \in \mathbb{R}^{n \times f}$. Wiersz $\mathbf{x}_u \in \mathbb{R}^f$ macierzy $\mathbf{X}$ określa stopień zainteresowania użytkownika $u$ poszczególnymi cechami ukrytymi, natomiast wiersz $\mathbf{y}_i \in \mathbb{R}^f$ macierzy $\mathbf{Y}$ opisuje obiekt $i$ pod kątem tych samych cech. W najprostszym wariancie modelu prognozowana wartość oceny $\hat{r}_{ui}$ wyznaczana jest jako iloczyn skalarny odpowiadających im wektorów:
 
@@ -78,7 +78,7 @@ gdzie parametr regularyzacji $\lambda \ge 0$ kontroluje siłę kary za złożono
 
 \subsection{Ograniczenia tradycyjnego podejścia dla niejawnej informacji zwrotnej}
 
-Tradycyjne metody faktoryzacji macierzy, takie jak Funk SVD, zostały zaprojektowane z myślą o przetwarzaniu jawnej informacji zwrotnej (ang. \textit{explicit feedback}), opartej na ocenach w skali punktowej. W rzeczywistych systemach produkcyjnych stosowanie tego podejścia wiąże się jednak z istotnymi ograniczeniami. Niektórzy użytkownicy rzadko decydują się na pozostawienie opinii, co utrudnia modelowi dobranie dla nich trafnych rekomendacji. Co więcej, wiele platform nie posiada mechanizmu oceniania, co uniemożliwia działanie klasycznych algorytmów. W konsekwencji uzasadnione staje się wykorzystanie modeli opartych na niejawnej informacji zwrotnej (ang. \textit{implicit feedback}), której przykładami są liczba kliknięć, zarejestrowany czas interakcji pomiędzy użytkownikiem a obiektem czy historia zakupów.
+Tradycyjne metody faktoryzacji macierzy, takie jak Funk SVD, zostały zaprojektowane z myślą o przetwarzaniu jawnej informacji zwrotnej, opartej na ocenach w skali punktowej. W rzeczywistych systemach produkcyjnych stosowanie tego podejścia wiąże się jednak z istotnymi ograniczeniami. Niektórzy użytkownicy rzadko decydują się na pozostawienie opinii, co utrudnia modelowi dobranie dla nich trafnych rekomendacji. Co więcej, wiele platform nie posiada mechanizmu oceniania, co uniemożliwia działanie klasycznych algorytmów. W konsekwencji uzasadnione staje się wykorzystanie modeli opartych na niejawnej informacji zwrotnej (ang. \textit{implicit feedback}), której przykładami są liczba kliknięć, zarejestrowany czas interakcji pomiędzy użytkownikiem a obiektem czy historia zakupów.
 
 Bezpośrednie zastosowanie klasycznych algorytmów faktoryzacji macierzy do danych niejawnych prowadzi do znacznych problemów, wynikających z różnic między typami sygnałów, wskazanych w~pracy~\cite{hu2008implicit}:
 
@@ -90,7 +90,7 @@ Bezpośrednie zastosowanie klasycznych algorytmów faktoryzacji macierzy do dany
     \item \textbf{Różnica między preferencją a wartością obserwacji:} W modelu Funk SVD każda obserwowana wartość $r_{ui}$ wpływa na funkcję celu proporcjonalnie do swojej wartości. W przypadku danych niejawnych liczba interakcji nie odzwierciedla jednak bezpośrednio stopnia preferencji użytkownika. Model nie zawiera mechanizmu pozwalającego oddzielić długość interakcji od preferencji, co sprawia, że obserwacje o dużych wartościach dominują proces uczenia.
 \end{enumerate}
 
-Powyższe ograniczenia wymusiły opracowanie dedykowanych modeli dla danych niejawnych. Najważniejsze z nich to implicit ALS (ang. \textit{implicit Alternating Least Squares}), wprowadzający model oparty na rozdzieleniu sygnału preferencji oraz poziomu pewności przypisanego obserwacji, oraz model BPR (ang. \textit{Bayesian Personalized Ranking}), który formułujeproblem rekomendacji jako zadanie optymalizacji rankingu. Szczegółowy opis obu modeli przedstawiono w kolejnych podrozdziałach
+Powyższe ograniczenia wymusiły opracowanie dedykowanych modeli dla danych niejawnych. Najważniejsze z nich to implicit ALS (ang. \textit{implicit Alternating Least Squares}), wprowadzający model oparty na rozdzieleniu sygnału preferencji oraz poziomu pewności przypisanego obserwacji, oraz model BPR (ang. \textit{Bayesian Personalized Ranking}), który formułuje problem rekomendacji jako zadanie optymalizacji rankingu. Szczegółowy opis obu modeli przedstawiono w kolejnych podrozdziałach
 
 \section{Implicit Alternating Least Squares (iALS)}
 
@@ -107,7 +107,7 @@ W oryginalnym sformułowaniu preferencję $p_{ui}$ zdefiniowano jako zmienną bi
     \end{cases}
 \end{equation}
 
-W pracy przyjęto odmienną definicję dostosowaną do specyfiki zbioru danych platformy Steam. Zmienna $p_{ui}$ przyjmuje wartość $1$, jeśli użytkownik $u$ posiada daną grę w swojej bibliotece, a $0$ w przeciwnym wypadku. Oznacza to, że gracz posiadający tytuł w bibliotece, lecz nieposiadający dla niego jeszcze zarejestrowanego czasu gry ($r_{ui} = 0$), nadal ma przypisaną preferencję $p_{ui} = 1$.
+W niniejszej pracy przyjęto odmienną definicję dostosowaną do specyfiki zbioru danych platformy Steam. Zmienna $p_{ui}$ przyjmuje wartość $1$, jeśli użytkownik $u$ posiada daną grę w swojej bibliotece, a $0$ w przeciwnym wypadku. Oznacza to, że gracz posiadający tytuł w bibliotece, lecz nieposiadający dla niego jeszcze zarejestrowanego czasu gry ($r_{ui} = 0$), nadal ma przypisaną preferencję $p_{ui} = 1$.
 
 Ponieważ zmienna $p_{ui}$ nie uwzględnia intensywności interakcji, do modelu wprowadza się zmienną $c_{ui}$ (w dalszej części pracy określaną jako waga pewności). Zwiększa ona swoją wartość wraz ze wzrostem $r_{ui}$, sygnalizując wyższą pewność algorytmu co do prawdziwości przypisanej preferencji. W pracy Hu i in.~\cite{hu2008implicit} podstawowa metoda wyznaczania $c_{ui}$ ma postać:
 
@@ -129,9 +129,9 @@ gdzie $\lambda$ jest parametrem odpowiedzialnym za regularyzację.
 
 \subsection{Optymalizacja metodą naprzemiennych najmniejszych kwadratów}
 
-Ze względu na występowanie $m \times n$ par użytkownik--obiekt w funkcji straty modelu iALS, jej minimalizacja stanowi duże wyzwanie obliczeniowe. Zastosowanie stochastycznego spadku po gradiencie jest w tym przypadku niewydajne, gdyż uwzględnienie wszystkich niezaobserwowanych interakcji wymagałoby przeglądania pełnej macierzy dla każdej epoki. Z tego powodu stosuje się naprzemienne najmniejsze kwadraty jako standardową metodę optymalizacji.
+Ze względu na występowanie $m \times n$ par użytkownik--obiekt w funkcji straty modelu iALS, jej minimalizacja stanowi duże wyzwanie obliczeniowe. W szczególności uwzględnienie niezaobserwowanych interakcji w standardowym podejściu opartym na stochastycznym spadku po gradiencie wiązałoby się z koniecznością przetwarzania bardzo dużej liczby par użytkownik--obiekt. Z tego powodu stosuje się metodę naprzemiennych najmniejszych kwadratów jako standardową metodę optymalizacji.
 
-Funkcja celu $\mathcal{L}_{\text{iALS}}(\mathbf{X}, \mathbf{Y})$ nie jest globalnie wypukła względem obu macierzy $\mathbf{X}$ oraz $\mathbf{Y}$ jednocześnie. Sytuacja ulega jednak zmianie, gdy jedną z macierzy traktuje się stałą. Gdy macierz $\mathbf{Y}$ traktowana jest jako stała, funkcja straty staje się kwadratowa względem każdego wektora reprezentacji użytkownika $\mathbf{x}_u$ niezależnie. Hesjan tego podproblemu wynosi $2\left(\mathbf{Y}^T\mathbf{C}^u\mathbf{Y} + \lambda\mathbf{I}\right)$ i dla $c_{ui} > 0$ oraz $\lambda > 0$ jest dodatnio określony, co przesądza o ścisłej wypukłości podproblemu. Analogicznie, przy ustalonej macierzy $\mathbf{X}$, funkcja staje się wypukła względem każdego wektora reprezentacji obiektu $\mathbf{y}_i$. Własność ta umożliwia analityczne rozwiązanie problemu jako ciągu niezależnych problemów najmniejszych kwadratów.
+Funkcja celu $\mathcal{L}_{\text{iALS}}(\mathbf{X}, \mathbf{Y})$ nie jest globalnie wypukła względem obu macierzy $\mathbf{X}$ oraz $\mathbf{Y}$ jednocześnie. Sytuacja ulega jednak zmianie, gdy jedną z macierzy traktuje się jako stałą. Gdy macierz $\mathbf{Y}$ traktowana jest jako stała, funkcja straty staje się kwadratowa względem każdego wektora reprezentacji użytkownika $\mathbf{x}_u$ niezależnie. Hesjan tego podproblemu wynosi $2\left(\mathbf{Y}^T\mathbf{C}^u\mathbf{Y} + \lambda\mathbf{I}\right)$ i dla $c_{ui} > 0$ oraz $\lambda > 0$ jest dodatnio określony, co przesądza o ścisłej wypukłości podproblemu. Analogicznie, przy ustalonej macierzy $\mathbf{X}$, funkcja staje się wypukła względem każdego wektora reprezentacji obiektu $\mathbf{y}_i$. Własność ta umożliwia analityczne rozwiązanie problemu jako ciągu niezależnych problemów najmniejszych kwadratów.
 
 Algorytm działa iteracyjnie, naprzemiennie wyznaczając optymalne reprezentacje użytkowników przy stałych reprezentacjach obiektów, a następnie optymalne reprezentacje obiektów przy stałych reprezentacjach użytkowników. Aby wyprowadzić wzór aktualizacji dla użytkownika $u$, rozpatruje się część funkcji straty zależną od wektora $\mathbf{x}_u$:
 \begin{equation}
@@ -292,7 +292,12 @@ gdzie $C$ jest nieistotną z punktu widzenia optymalizacji stałą. W odróżnie
 Przy założeniu, że użytkownicy działają niezależnie od siebie oraz że poszczególne relacje preferencji w~obrębie jednego użytkownika traktowane są jako wzajemnie niezależne, łączną wiarogodność ukrytej struktury preferencji można zapisać jako iloczyn po parach nieuporządkowanych:
 
 \begin{equation}
-p(> \mid \Theta) := \prod_{u \in \mathcal{U}} \prod_{\substack{\{i,j\} \subseteq \mathcal{I} \\ i \neq j}} p(i >_u j \mid \Theta)^{\mathbf{1}(i >_u j)} \cdot \bigl( 1 - p(i >_u j \mid \Theta) \bigr)^{\mathbf{1}(j >_u i)}.
+p(> \mid \Theta)
+:= \prod_{u \in \mathcal{U}} p(>_u \mid \Theta)
+= \prod_{u \in \mathcal{U}} \prod_{\substack{\{i,j\} \subseteq \mathcal{I} \\ i \neq j}}
+p(i >_u j \mid \Theta)^{\mathbf{1}(i >_u j)}
+\cdot
+\bigl(1 - p(i >_u j \mid \Theta)\bigr)^{\mathbf{1}(\neg(i >_u j))}.
 \end{equation}
 
 Zapis ten upraszcza się dzięki własnościom relacji $>_u$. Jest ona spójna i~antysymetryczna, wobec czego dla każdej pary różnych obiektów zachodzą zależności:
@@ -319,7 +324,7 @@ a~po zlogarytmowaniu:
 \ln p(D_S \mid \Theta) = \sum_{(u,i,j)\in D_S} \ln \sigma(\hat{s}_{uij}),
 \end{equation}
 
-co odpowiada członowi dopasowania w~funkcji celu maksymalizowanej przez BPR. Należy zaznaczyć, że przyjęte założenia mają charakter upraszczający. Założenie o~niezależności relacji parowych pozostaje w~formalnej sprzeczności z~postulowaną wcześniej przechodniością $>_u$: w~faktoryzacji obejmującej wszystkie pary obiektów część relacji jest jednoznacznie zdeterminowana przez pozostałe. Ograniczenie iloczynu do zbioru $D_S$ osłabia ten problem, ponieważ wszystkie założone relacje prowadzą od obiektów z~$\mathcal{I}_u^+$ do obiektów spoza tego zbioru i~nie tworzą łańcuchów, w~których przechodniość wymuszałaby dodatkowe zależności. Nie oznacza to jednak niezależności w~sensie probabilistycznym~--- wymóg, aby $>_u$ stanowiła porządek całkowity, oraz przyjęta parametryzacja oparta na wynikach $\hat{s}_{ui}$ nadal wiążą prawdopodobieństwa poszczególnych par. Faktoryzacja wiarogodności po parach stanowi zatem uproszczenie obliczeniowe, a~nie konsekwencję przyjętych aksjomatów porządku.
+co odpowiada członowi dopasowania w~funkcji celu maksymalizowanej przez BPR. Należy zaznaczyć, że przyjęte założenia mają charakter upraszczający. Założenie o~niezależności relacji parowych pozostaje w sprzeczności z~postulowaną wcześniej przechodniością $>_u$. Ograniczenie iloczynu do zbioru $D_S$ osłabia ten problem, ponieważ wszystkie założone relacje prowadzą od obiektów z~$\mathcal{I}_u^+$ do obiektów spoza tego zbioru i~nie tworzą łańcuchów, w~których przechodniość wymuszałaby dodatkowe zależności. Jednak ze względu na parametryzację opartą na wynikach $\hat{s}_{ui}$ prawdopodobieństwa poszczególnych par pozostają ze sobą powiązane. Faktoryzacja wiarogodności po parach stanowi zatem uproszczenie obliczeniowe, a~nie konsekwencję przyjętych aksjomatów.
 
 \subsubsection{Sformułowanie rozkładu a priori i regularyzacji}
 

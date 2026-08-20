@@ -69,13 +69,7 @@ $\text{NDCG}@N$ jest współcześnie jedną z najczęściej stosowanych metryk e
 
 \section{Metryki pokrycia katalogu, popularności i różnorodności}
 
-Maksymalizacja trafności rekomendacji nie jest jedynym kryterium decydującym o sukcesie systemu rekomendacyjnego. Algorytmy optymalizujące metryki rankingowe mają tendencję do generowania
-rekomendacji zachowawczych. W~efekcie system może ograniczać się do wąskiego
-podzbioru katalogu, złożonego z~najpopularniejszych pozycji, bądź oferować
-listę obiektów bardzo do siebie podobnych. Przykładowo, przedstawienie
-użytkownikowi listy złożonej wyłącznie z~kolejnych odsłon tej samej serii,
-mimo wysokiego prawdopodobieństwa ich trafności, ogranicza możliwość
-odkrywania nowych treści. Z tego powodu ewaluacja systemów rekomendacyjnych wymaga uwzględnienia miar oceniających pokrycie katalogu, obciążenie popularnością oraz różnorodność wygenerowanych rekomendacji.
+Maksymalizacja trafności rekomendacji nie jest jedynym kryterium decydującym o sukcesie systemu rekomendacyjnego. Algorytmy optymalizujące metryki rankingowe mają tendencję do generowania rekomendacji zachowawczych. W~efekcie system może ograniczać się do wąskiego podzbioru katalogu, złożonego z~najpopularniejszych pozycji, bądź oferować listę obiektów bardzo do siebie podobnych. Przykładowo, przedstawienie użytkownikowi listy złożonej wyłącznie z~kolejnych odsłon tej samej serii, mimo wysokiego prawdopodobieństwa ich trafności, ogranicza możliwość odkrywania nowych treści. Z tego powodu ewaluacja systemów rekomendacyjnych wymaga uwzględnienia miar oceniających pokrycie katalogu, obciążenie popularnością oraz różnorodność wygenerowanych rekomendacji.
 
 \subsection{Pokrycie katalogu}
 
@@ -87,30 +81,30 @@ Niska wartość tej metryki wskazuje na zjawisko, w którym znaczna część aso
 
 \subsection{Obciążenie popularnością}
 
-Do oceny stopnia obciążenia systemu popularnością stosuje się metrykę $\Delta\text{GAP}$ (ang. \textit{delta group average popularity})~\cite{abdollahpouri2019unfairness}. Wyznacza ona względną różnicę pomiędzy średnią popularnością obiektów występujących na wygenerowanych listach rekomendacji Top-$N$ a średnią popularnością obiektów znajdujących się w historycznych profilach użytkowników. Jej zdefiniowanie wymaga wcześniejszego wprowadzenia kilku powiązanych pojęć.
+Do oceny stopnia obciążenia systemu popularnością stosuje się metrykę $\Delta\text{GAP}@N$ (ang. \textit{delta group average popularity})~\cite{abdollahpouri2019unfairness}. Wyznacza ona względną różnicę pomiędzy średnią popularnością obiektów występujących na wygenerowanych listach rekomendacji Top-$N$ a średnią popularnością obiektów znajdujących się w~historycznych profilach użytkowników. Jej zdefiniowanie wymaga wcześniejszego wprowadzenia kilku powiązanych pojęć.
 
-Popularność pojedynczego obiektu $i \in \mathcal{I}$ definiuje się jako stosunek liczby użytkowników, którzy weszli z nim w interakcję w zbiorze treningowym, do całkowitej liczby użytkowników:
+Popularność pojedynczego obiektu $i \in \mathcal{I}$ definiuje się jako stosunek liczby użytkowników, którzy weszli z~nim w~interakcję w~zbiorze treningowym, do całkowitej liczby użytkowników:
 \begin{equation}
     \text{pop}(i) = \frac{\left| \{ u \in \mathcal{U} \;\mid\; i \in \mathcal{I}_u^{\text{train}} \} \right|}{|\mathcal{U}|}.
 \end{equation}
 
-Na podstawie tak zdefiniowanej popularności pojedynczych obiektów wyznacza się średnią popularność rekomendacji ($\text{GAP}_{\text{rec}}$) oraz średnią popularność profili użytkowników ($\text{GAP}_{\text{profile}}$):
+Na podstawie tak zdefiniowanej popularności pojedynczych obiektów wyznacza się średnią popularność rekomendacji ($\text{GAP}_{\text{rec}}@N$) oraz średnią popularność profili użytkowników ($\text{GAP}_{\text{profile}}$):
 \begin{equation}
-    \text{GAP}_{\text{rec}} = \frac{1}{|\mathcal{U}|} \sum_{u \in \mathcal{U}} \frac{1}{N} \sum_{i \in \mathcal{R}_u^N} \text{pop}(i),
+    \text{GAP}_{\text{rec}}@N = \frac{1}{|\mathcal{U}|} \sum_{u \in \mathcal{U}} \frac{1}{N} \sum_{i \in \mathcal{R}_u^N} \text{pop}(i),
 \end{equation}
 
 \begin{equation}
     \text{GAP}_{\text{profile}} = \frac{1}{|\mathcal{U}|} \sum_{u \in \mathcal{U}} \frac{1}{\left| \mathcal{I}_u^{\text{train}} \right|} \sum_{i \in \mathcal{I}_u^{\text{train}}} \text{pop}(i).
 \end{equation}
 
-Ostateczna wartość wskaźnika $\Delta\text{GAP}$ stanowi względną zmianę średniej popularności wygenerowanych rekomendacji w odniesieniu do dotychczasowych preferencji użytkowników:
+Ostateczna wartość wskaźnika $\Delta\text{GAP}@N$ stanowi względną zmianę średniej popularności wygenerowanych rekomendacji w~odniesieniu do dotychczasowych preferencji użytkowników:
 \begin{equation}
-    \Delta\text{GAP} = \frac{\text{GAP}_{\text{rec}} - \text{GAP}_{\text{profile}}}{\text{GAP}_{\text{profile}}}.
+    \Delta\text{GAP}@N = \frac{\text{GAP}_{\text{rec}}@N - \text{GAP}_{\text{profile}}}{\text{GAP}_{\text{profile}}}.
 \end{equation}
 
-Warto zaznaczyć, że w oryginalnej pracy~\cite{abdollahpouri2019unfairness} wartość $\Delta\text{GAP}$ obliczana jest osobno dla zdefiniowanego wcześniej podziału użytkowników na grupy. W pracy metrykę tę stosuje się w ujęciu globalnym, obliczając ją dla całego zbioru użytkowników $\mathcal{U}$.
+Warto zaznaczyć, że w~oryginalnej pracy~\cite{abdollahpouri2019unfairness} wartość $\Delta\text{GAP}@N$ obliczana jest osobno dla zdefiniowanego wcześniej podziału użytkowników na grupy. W~pracy metrykę tę stosuje się w~ujęciu globalnym, obliczając ją dla całego zbioru użytkowników $\mathcal{U}$.
 
-Wartość $\Delta\text{GAP} > 0$ oznacza, że średnia popularność rekomendowanych obiektów jest wyższa niż średnia popularność pozycji obecnych w profilach użytkowników, co wskazuje na tendencję systemu do faworyzowania pozycji popularnych. Wartość $\Delta\text{GAP} < 0$ świadczy natomiast o tym, że algorytm częściej rekomenduje pozycje bardziej niszowe niż te występujące dotychczas w historii interakcji. Należy podkreślić, że wartość zerowa stanowi punkt odniesienia, w~którym poziom popularności rekomendacji odpowiada poziomowi obserwowanemu w~profilach użytkowników, nie zaś optimum tej metryki. Odchylenia w~obie strony wymagają interpretacji w~kontekście pozostałych miar, ponieważ zarówno nadmierne faworyzowanie pozycji popularnych, jak i~systematyczne przesunięcie rekomendacji w~stronę pozycji niszowych mogą obniżać ich użyteczność.
+Wartość $\Delta\text{GAP}@N > 0$ oznacza, że średnia popularność rekomendowanych obiektów jest wyższa niż średnia popularność pozycji obecnych w~profilach użytkowników, co wskazuje na tendencję systemu do faworyzowania pozycji popularnych. Wartość $\Delta\text{GAP}@N < 0$ świadczy natomiast o~tym, że algorytm częściej rekomenduje pozycje bardziej niszowe niż te występujące dotychczas w~historii interakcji. Należy podkreślić, że wartość zerowa stanowi punkt odniesienia, w~którym poziom popularności rekomendacji odpowiada poziomowi obserwowanemu w~profilach użytkowników, nie zaś optimum tej metryki. Odchylenia w~obie strony wymagają interpretacji w~kontekście pozostałych miar, ponieważ zarówno nadmierne faworyzowanie pozycji popularnych, jak i~systematyczne przesunięcie rekomendacji w~stronę pozycji niszowych mogą obniżać ich użyteczność.
 
 \subsection{Różnorodność wewnątrzlistowa}
 

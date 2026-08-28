@@ -12,11 +12,11 @@ Wyniki strojenia hiperparametrów dla każdego z modeli implicit ALS zostały pr
 \toprule
 Wariant & $f$ & $\alpha$ & $\beta$ / $\gamma$ & $\lambda$ & \ndcg{} \\
 \midrule
-Liniowa & 80 & $9.948\cdot 10^{-7}$ & --- & 0.003588 & 0.249\\
-Logarytmiczna & 24 & 0.000571 & --- & 0.130920 & 0.261\\
-Logarytmiczna z saturacją & 24 & 0.024390 & --- & 0.169714 & 0.261\\
-Logarytmiczna z przesunięciem $\beta$ & 48 & 0.389185 & 108.284 & 0.010565 & 0.275\\
-Stała & 48 & --- & 2.364 & 0.057607 & 0.280\\
+Liniowa & $80$ & $9{,}948\cdot 10^{-7}$ & --- & $0{,}003588$ & $0{,}249$\\
+Logarytmiczna & $24$ & $0{,}000571$ & --- & $0{,}130920$ & $0{,}261$\\
+Logarytmiczna z saturacją & $24$ & $0{,}024390$ & --- & $0{,}169714$ & $0{,}261$\\
+Logarytmiczna z przesunięciem $\beta$ & $48$ & $0{,}389185$ & $108{,}284$ & $0{,}010565$ & $0{,}275$\\
+Stała & $48$ & --- & $2{,}364$ & $0{,}057607$ & $0{,}280$\\
 \bottomrule
 \end{tabular}
 \caption*{\footnotesize Kolumna $\beta$ / $\gamma$ zawiera parametr dodatkowy właściwy dla danego wariantu.
@@ -67,7 +67,7 @@ Wartości hiperparametrów otrzymane w procesie strojenia modelu BPR zostały pr
 \toprule
 Wariant & $f$ & $\eta$ & $\lambda_\Theta$ & Iteracje & \ndcg{} \\
 \midrule
-BPR & 96 & 0.001760 & 0.003237 & 150 & 0.212 \\
+BPR & $96$ & $0{,}001760$ & $0{,}003237$ & $150$ & $0{,}212$ \\
 \bottomrule
 \end{tabular}
 \caption*{\footnotesize Źródło: opracowanie własne na podstawie wyników optymalizacji hiperparametrów.}
@@ -125,17 +125,17 @@ przedstawiono je w~podrozdziale~\ref{sec:stabilnosc}.
 \toprule
 Model & NDCG@10 & Precision@10 & Recall@10 & Coverage@10 & $\Delta$GAP@10 & ILD@10\\
 \midrule
-Popularność & 0.1855 & 0.0965 & 0.1783 & 0.0087 & 1.4233 & - \\
-ALS liniowa & 0.3299 & 0.1841 & 0.2642 & 0.1178 & -0.2112 & 0.7528 \\
-ALS logarytmiczna & 0.3356 & 0.1810 & 0.3019 & 0.0762 & 0.5433 & 0.6469 \\
-ALS log. z saturacją & 0.3354 & 0.1809 & 0.3019 & 0.0761 & 0.5443 & 0.6470 \\
-ALS log. z przesunięciem $\beta$ & 0.3517 & 0.1956 & 0.3338 & 0.1313 & 0.4191 & 0.6841 \\
-ALS stała & 0.3565 & 0.1978 & 0.3370 & 0.1374 & 0.4210 & 0.6825 \\
-BPR & 0.2703 & 0.1329 & 0.2614 & 0.3039 & -0.0789 & 0.7363 \\
+Popularność & $0{,}1855$ & $0{,}0965$ & $0{,}1783$ & $0{,}0087$ & $1{,}4233$ & --- \\
+ALS liniowa & $0{,}3299$ & $0{,}1841$ & $0{,}2642$ & $0{,}1178$ & $-0{,}2112$ & $0{,}7528$ \\
+ALS logarytmiczna & $0{,}3356$ & $0{,}1810$ & $0{,}3019$ & $0{,}0762$ & $0{,}5433$ & $0{,}6469$ \\
+ALS log. z saturacją & $0{,}3354$ & $0{,}1809$ & $0{,}3019$ & $0{,}0761$ & $0{,}5443$ & $0{,}6470$ \\
+ALS log. z przesunięciem $\beta$ & $0{,}3517$ & $0{,}1956$ & $0{,}3338$ & $0{,}1313$ & $0{,}4191$ & $0{,}6841$ \\
+ALS stała & $\mathbf{0{,}3565}$ & $\mathbf{0{,}1978}$ & $\mathbf{0{,}3370}$ & $0{,}1374$ & $0{,}4210$ & $0{,}6825$ \\
+BPR & $0{,}2703$ & $0{,}1329$ & $0{,}2614$ & $\mathbf{0{,}3039}$ & $-0{,}0789$ & $0{,}7363$ \\
 \bottomrule
 \end{tabular}%
 }
-\caption*{\footnotesize Źródło: opracowanie własne. Wartości dla ALS i BPR to średnie z pięciu uruchomień, z wyjątkiem ILD@10, wyznaczonej dla pojedynczego uruchomienia.}
+\caption*{\footnotesize Źródło: opracowanie własne. Wartości dla ALS i BPR to średnie z~pięciu uruchomień, z~wyjątkiem ILD@10, wyznaczonej dla pojedynczego uruchomienia. Pogrubieniem oznaczono najlepszy wynik w~każdej kolumnie.}
 \end{table}
 
 Ze względu na dużą liczbę metryk w tym podrozdziale skupiono się na metrykach rankingowych, pozostałe z nich zostaną przeanalizowane w kolejnym podrozdziale poświęconym kompromisom między nimi. Ze względu na stosowanie metryki \ndcg{} jako głównej metryki rankingowej w celu lepszego zaprezentowania różnic między modelami utworzono wykres~\ref{fig:test_ndcg_all_models_horizontal}, który przedstawia jej wartość dla każdego z testowanych modeli.
@@ -201,7 +201,7 @@ Na wykresie~\ref{fig:test_ndcg_vs_ild_cooccurrence} zwraca uwagę odrębna pozyc
 
 W obrębie rodziny implicit ALS wartości różnorodności układają się natomiast zgodnie z liczbą czynników ukrytych: warianty logarytmiczne, dysponujące przestrzenią 24-wymiarową, osiągają najniższe wartości (0,6469 oraz 0,6470), warianty stały i z przesunięciem $\beta$ przy 48 czynnikach uzyskują odpowiednio 0,6825 i 0,6841, natomiast wariant liniowy przy 80 czynnikach osiąga wartość najwyższą (0,7528). Warto przy tym zauważyć, że warianty o tej samej wymiarowości uzyskują niemal identyczne wartości, co sugeruje, że wymiar przestrzeni latentnej ma decydujący wpływ na tę metrykę.
 
-Na koniec pozostała do przeanalizowania zależność \ndcg{} od $\Delta\text{GAP}@10$, czyli miary obciążenia rekomendacji popularnością. Wartość zerowa stanowi punkt odniesienia i odpowiada sytuacji, w której popularność rekomendowanych gier jest zbliżona do popularności gier w bibliotece użytkownika zawartych w zbiorze treningowym. Odchylenia w obie strony oznaczają natomiast rekomendowanie pozycji odpowiednio popularniejszych bądź mniej popularnych niż wynikałoby to z profilu użytkownika, przy czym żaden z tych kierunków nie jest sam w sobie pożądany. Na wykresie~\ref{fig:test_ndcg_vs_delta_gap_without_popularity} model popularnościowy został ponownie pominięty, aby zachować czytelność pozostałych wyników. Wartość $\Delta\text{GAP}@10$ dla tego modelu wynosi 1,4233, co stanowi maksymalne możliwe obciążenie rekomendacji popularnością w badanym zbiorze.
+Na koniec pozostała do przeanalizowania zależność \ndcg{} od $\Delta\text{GAP}@10$, czyli miary obciążenia rekomendacji popularnością. Wartość zerowa stanowi punkt odniesienia i odpowiada sytuacji, w której popularność rekomendowanych gier jest zbliżona do popularności gier w bibliotece użytkownika zawartych w zbiorze treningowym. Odchylenia w obie strony oznaczają natomiast rekomendowanie pozycji odpowiednio popularniejszych bądź mniej popularnych niż wynikałoby to z profilu użytkownika, przy czym odchylenie w każdą ze stron oznacza rozbieżność z profilem użytkownika. Na wykresie~\ref{fig:test_ndcg_vs_delta_gap_without_popularity} model popularnościowy został ponownie pominięty, aby zachować czytelność pozostałych wyników. Wartość $\Delta\text{GAP}@10$ dla tego modelu wynosi 1,4233, co stanowi maksymalne możliwe obciążenie rekomendacji popularnością w badanym zbiorze.
 
 \begin{figure}[htbp]
     \centering
@@ -225,56 +225,56 @@ W celu sprawdzenia stabilności wyników obliczono odchylenia standardowe na pi�
 \toprule
 Wariant & Precision@10 & Recall@10 & NDCG@10 \\
 \midrule
-Popularność & $0.0965$ & $0.1783$ & $0.1855$ \\
-Liniowa & $0.1841\pm0.0003$ & $0.2642\pm0.0005$ & $0.3299\pm0.0005$ \\
-Logarytmiczna & $0.1810\pm0.0001$ & $0.3019\pm0.0002$ & $0.3356\pm0.0003$ \\
-Logarytmiczna z saturacją & $0.1809\pm0.0002$ & $0.3019\pm0.0003$ & $0.3354\pm0.0005$ \\
-Logarytmiczna z przesunięciem $\beta$ & $0.1956\pm0.0002$ & $0.3338\pm0.0003$ & $0.3517\pm0.0004$ \\
-Stała & $0.1978\pm0.0001$ & $0.3370\pm0.0002$ & $0.3565\pm0.0005$ \\
-BPR & $0.1329\pm0.0003$ & $0.2614\pm0.0005$ & $0.2703\pm0.0006$ \\
+Popularność & $0{,}0965$ & $0{,}1783$ & $0{,}1855$ \\
+Liniowa & $0{,}1841\pm0{,}0003$ & $0{,}2642\pm0{,}0005$ & $0{,}3299\pm0{,}0005$ \\
+Logarytmiczna & $0{,}1810\pm0{,}0001$ & $0{,}3019\pm0{,}0002$ & $0{,}3356\pm0{,}0003$ \\
+Logarytmiczna z saturacją & $0{,}1809\pm0{,}0002$ & $0{,}3019\pm0{,}0003$ & $0{,}3354\pm0{,}0005$ \\
+Logarytmiczna z przesunięciem $\beta$ & $0{,}1956\pm0{,}0002$ & $0{,}3338\pm0{,}0003$ & $0{,}3517\pm0{,}0004$ \\
+Stała & $0{,}1978\pm0{,}0001$ & $0{,}3370\pm0{,}0002$ & $0{,}3565\pm0{,}0005$ \\
+BPR & $0{,}1329\pm0{,}0003$ & $0{,}2614\pm0{,}0005$ & $0{,}2703\pm0{,}0006$ \\
 \midrule
 Wariant & Coverage@10 & $\Delta$GAP@10 & \\
 \midrule
-Popularność & $0.0087$ & $1.4233$ & \\
-Liniowa & $0.1178\pm0.0007$ & $-0.2112\pm0.0016$ & \\
-Logarytmiczna & $0.0762\pm0.0003$ & $0.5433\pm0.0008$ & \\
-Logarytmiczna z saturacją & $0.0761\pm0.0002$ & $0.5443\pm0.0009$ & \\
-Logarytmiczna z przesunięciem $\beta$ & $0.1313\pm0.0009$ & $0.4191\pm0.0023$ & \\
-Stała & $0.1374\pm0.0004$ & $0.4210\pm0.0008$ & \\
-BPR & $0.3039\pm0.0012$ & $-0.0789\pm0.0054$ & \\
+Popularność & $0{,}0087$ & $1{,}4233$ & \\
+Liniowa & $0{,}1178\pm0{,}0007$ & $-0{,}2112\pm0{,}0016$ & \\
+Logarytmiczna & $0{,}0762\pm0{,}0003$ & $0{,}5433\pm0{,}0008$ & \\
+Logarytmiczna z saturacją & $0{,}0761\pm0{,}0002$ & $0{,}5443\pm0{,}0009$ & \\
+Logarytmiczna z przesunięciem $\beta$ & $0{,}1313\pm0{,}0009$ & $0{,}4191\pm0{,}0023$ & \\
+Stała & $0{,}1374\pm0{,}0004$ & $0{,}4210\pm0{,}0008$ & \\
+BPR & $0{,}3039\pm0{,}0012$ & $-0{,}0789\pm0{,}0054$ & \\
 \bottomrule
 \end{tabular}
-\caption*{\footnotesize Wartości dla modeli implicit ALS oraz BPR stanowią średnie z pięciu uruchomień o różnym ziarnie inicjalizacji. Model popularnościowy jest deterministyczny, dlatego podano dla niego pojedynczy wynik. Źródło: opracowanie własne.}
+\caption*{\footnotesize Wartości dla modeli implicit ALS oraz BPR stanowią średnie z~pięciu uruchomień o~różnym ziarnie inicjalizacji. Model popularnościowy jest deterministyczny, dlatego podano dla niego pojedynczy wynik. Źródło: opracowanie własne.}
 \end{table}
 
 Analiza odchyleń standardowych uzyskanych w pięciu losowych inicjalizacjach algorytmów implicit ALS i BPR potwierdza wysoką stabilność wszystkich badanych modeli. W przypadku metryk trafności rekomendacji odchylenia standardowe nie przekraczają $0{,}0006$, co odpowiada mniej niż $0{,}2\%$ wartości średniej. Świadczy to o tym, że przedstawione różnice jakościowe między modelami nie wynikają z losowości inicjalizacji. Z kolei najwyższe odchylenie względne zaobserwowano przy metryce $\Delta$GAP@10 dla modelu BPR, które wynosi $6{,}84\%$ przy wartości średniej równej $-0{,}0789$. Ze względu na znikome różnice wynikające z odchyleń wykresy mające na celu je przedstawić zostały pominięte.
 
 \begin{table}[htbp]
 \centering
-\caption{Odchylenia standardowe metryk w~pięciu losowych podziałach na zbiór treningowy i~walidacyjny}
+\caption{Wyniki na zbiorze walidacyjnym wraz z~odchyleniami standardowymi w~pięciu losowych podziałach danych}
 \label{tab:stabilnosc-walidacja-zbiorcza}
 \begin{tabular}{lrrr}
 \toprule
 Wariant & Precision@10 & Recall@10 & NDCG@10 \\
 \midrule
-Popularność & $0.0811\pm0.0002$ & $0.1719\pm0.0002$ & $0.1615\pm0.0004$ \\
-Liniowa & $0.1360\pm0.0006$ & $0.2302\pm0.0008$ & $0.2466\pm0.0011$ \\
-Logarytmiczna & $0.1349\pm0.0009$ & $0.2589\pm0.0019$ & $0.2534\pm0.0018$ \\
-Logarytmiczna z saturacją & $0.1350\pm0.0008$ & $0.2596\pm0.0015$ & $0.2536\pm0.0015$ \\
-Logarytmiczna z przesunięciem $\beta$ & $0.1479\pm0.0005$ & $0.2963\pm0.0012$ & $0.2744\pm0.0011$ \\
-Stała & $0.1502\pm0.0003$ & $0.3007\pm0.0010$ & $0.2792\pm0.0007$ \\
+Popularność & $0{,}0811\pm0{,}0002$ & $0{,}1719\pm0{,}0002$ & $0{,}1615\pm0{,}0004$ \\
+Liniowa & $0{,}1360\pm0{,}0006$ & $0{,}2302\pm0{,}0008$ & $0{,}2466\pm0{,}0011$ \\
+Logarytmiczna & $0{,}1349\pm0{,}0009$ & $0{,}2589\pm0{,}0019$ & $0{,}2534\pm0{,}0018$ \\
+Logarytmiczna z saturacją & $0{,}1350\pm0{,}0008$ & $0{,}2596\pm0{,}0015$ & $0{,}2536\pm0{,}0015$ \\
+Logarytmiczna z przesunięciem $\beta$ & $0{,}1479\pm0{,}0005$ & $0{,}2963\pm0{,}0012$ & $0{,}2744\pm0{,}0011$ \\
+Stała & $0{,}1502\pm0{,}0003$ & $0{,}3007\pm0{,}0010$ & $0{,}2792\pm0{,}0007$ \\
 \midrule
 Wariant & Coverage@10 & $\Delta$GAP@10 & \\
 \midrule
-Popularność & $0.0069\pm0.0002$ & $1.5138\pm0.0011$ & \\
-Liniowa & $0.1025\pm0.0003$ & $-0.2048\pm0.0010$ & \\
-Logarytmiczna & $0.0636\pm0.0006$ & $0.4899\pm0.0071$ & \\
-Logarytmiczna z saturacją & $0.0635\pm0.0006$ & $0.4942\pm0.0047$ & \\
-Logarytmiczna z przesunięciem $\beta$ & $0.1138\pm0.0017$ & $0.4072\pm0.0119$ & \\
-Stała & $0.1208\pm0.0006$ & $0.4256\pm0.0079$ & \\
+Popularność & $0{,}0069\pm0{,}0002$ & $1{,}5138\pm0{,}0011$ & \\
+Liniowa & $0{,}1025\pm0{,}0003$ & $-0{,}2048\pm0{,}0010$ & \\
+Logarytmiczna & $0{,}0636\pm0{,}0006$ & $0{,}4899\pm0{,}0071$ & \\
+Logarytmiczna z saturacją & $0{,}0635\pm0{,}0006$ & $0{,}4942\pm0{,}0047$ & \\
+Logarytmiczna z przesunięciem $\beta$ & $0{,}1138\pm0{,}0017$ & $0{,}4072\pm0{,}0119$ & \\
+Stała & $0{,}1208\pm0{,}0006$ & $0{,}4256\pm0{,}0079$ & \\
 \bottomrule
 \end{tabular}
-\caption*{\footnotesize Analizę przeprowadzono na pięciu losowych podziałach na zbiór treningowy i walidacyjny przy ustalonym ziarnie inicjalizacji modelu. Źródło: opracowanie własne.}
+\caption*{\footnotesize Analizę przeprowadzono na pięciu losowych podziałach na zbiór treningowy i~walidacyjny przy ustalonym ziarnie inicjalizacji modelu. Źródło: opracowanie własne.}
 \end{table}
 
 W związku z zastosowaniem wydzielonego zbioru testowego zamiast procedury walidacji krzyżowej przeprowadzono analizę stabilności względem losowego podziału danych. W tabeli~\ref{tab:stabilnosc-walidacja-zbiorcza} przedstawiono wartości średnie metryk oraz odchylenia standardowe liczone na pięciu losowych podziałach na zbiory treningowe i walidacyjne. Analizę tę ograniczono do modeli implicit ALS oraz modelu popularnościowego. Największą względną wartość odchylenia standardowego odnotowano dla metryki $\Delta$GAP@10 w~wariancie logarytmicznym z~przesunięciem $\beta$, gdzie wynosi ona $2{,}92\%$. Tak niski poziom zmienności wynika najprawdopodobniej ze znacznego rozmiaru wykorzystanego zbioru danych, który uodparnia proces uczenia na~różnice wynikające z~losowego podziału. Ze względu na niewielką skalę odchyleń zrezygnowano z~ich graficznej prezentacji.

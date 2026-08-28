@@ -260,6 +260,65 @@
       \verb 10.5220/0010655900003064
       \endverb
     \endentry
+    \entry{burges2005learning}{inproceedings}{}{}
+      \name{author}{7}{}{%
+        {{hash=ae76624e081d683dca89a3edb7900221}{%
+           family={Burges},
+           familyi={B\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8e25f4617a4e96096278a4abcf8e61de}{%
+           family={Shaked},
+           familyi={S\bibinitperiod},
+           given={Tal},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b40f08a8bc1b77508b6e0d225be4e123}{%
+           family={Renshaw},
+           familyi={R\bibinitperiod},
+           given={Erin},
+           giveni={E\bibinitperiod}}}%
+        {{hash=b34aa84749f83deab7aed978756d3cfe}{%
+           family={Lazier},
+           familyi={L\bibinitperiod},
+           given={Ari},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6337df0967be702072841082388a4a70}{%
+           family={Deeds},
+           familyi={D\bibinitperiod},
+           given={Matt},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4e518eed8844f7239e440695f059d309}{%
+           family={Hamilton},
+           familyi={H\bibinitperiod},
+           given={Nicole},
+           giveni={N\bibinitperiod}}}%
+        {{hash=c919979ea46f12656aef3b18a2997314}{%
+           family={Hullender},
+           familyi={H\bibinitperiod},
+           given={Greg},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{95e4afd63bc2a3bc8f4bf66f3da342c4}
+      \strng{fullhash}{f1c222d96e3a070f8037841386a8cf15}
+      \strng{fullhashraw}{f1c222d96e3a070f8037841386a8cf15}
+      \strng{bibnamehash}{f1c222d96e3a070f8037841386a8cf15}
+      \strng{authorbibnamehash}{f1c222d96e3a070f8037841386a8cf15}
+      \strng{authornamehash}{95e4afd63bc2a3bc8f4bf66f3da342c4}
+      \strng{authorfullhash}{f1c222d96e3a070f8037841386a8cf15}
+      \strng{authorfullhashraw}{f1c222d96e3a070f8037841386a8cf15}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 22nd International Conference on Machine Learning}
+      \field{title}{Learning to Rank Using Gradient Descent}
+      \field{year}{2005}
+      \field{pages}{89\bibrangedash 96}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1145/1102351.1102363
+      \endverb
+    \endentry
     \entry{cheuque2019steam}{inproceedings}{}{}
       \name{author}{3}{}{%
         {{hash=5920332b9ff5bd34baeda3db76dbda62}{%
@@ -414,6 +473,62 @@
       \verb{url}
       \verb https://github.com/benfred/implicit
       \endverb
+    \endentry
+    \entry{funk2006netflix}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=9acbbcd7944d645138f96c0809c672ac}{%
+           family={Funk},
+           familyi={F\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{9acbbcd7944d645138f96c0809c672ac}
+      \strng{fullhash}{9acbbcd7944d645138f96c0809c672ac}
+      \strng{fullhashraw}{9acbbcd7944d645138f96c0809c672ac}
+      \strng{bibnamehash}{9acbbcd7944d645138f96c0809c672ac}
+      \strng{authorbibnamehash}{9acbbcd7944d645138f96c0809c672ac}
+      \strng{authornamehash}{9acbbcd7944d645138f96c0809c672ac}
+      \strng{authorfullhash}{9acbbcd7944d645138f96c0809c672ac}
+      \strng{authorfullhashraw}{9acbbcd7944d645138f96c0809c672ac}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://sifter.org/~simon/journal/20061211.html}}
+      \field{title}{Netflix Update: Try This at Home}
+      \field{urlday}{27}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{year}{2006}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{grayson2019bots}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=5df9bcb4ff64c785c61d7777842d9175}{%
+           family={Grayson},
+           familyi={G\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{5df9bcb4ff64c785c61d7777842d9175}
+      \strng{fullhash}{5df9bcb4ff64c785c61d7777842d9175}
+      \strng{fullhashraw}{5df9bcb4ff64c785c61d7777842d9175}
+      \strng{bibnamehash}{5df9bcb4ff64c785c61d7777842d9175}
+      \strng{authorbibnamehash}{5df9bcb4ff64c785c61d7777842d9175}
+      \strng{authornamehash}{5df9bcb4ff64c785c61d7777842d9175}
+      \strng{authorfullhash}{5df9bcb4ff64c785c61d7777842d9175}
+      \strng{authorfullhashraw}{5df9bcb4ff64c785c61d7777842d9175}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://kotaku.com/trading-card-bots-sent-a-small-indie-game-rocketing-up-1832273784}}
+      \field{title}{Trading Card Bots Sent A Small Indie Game Rocketing Up The Steam Charts}
+      \field{urlday}{27}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{year}{2019}
+      \field{urldateera}{ce}
     \endentry
     \entry{he2017neural}{inproceedings}{}{}
       \name{author}{6}{}{%
@@ -587,6 +702,42 @@
       \field{year}{2011}
       \verb{doi}
       \verb 10.1017/CBO9780511763113
+      \endverb
+    \endentry
+    \entry{kaminskas2016diversity}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=8da4b686f65f9811f6a701465e1f4148}{%
+           family={Kaminskas},
+           familyi={K\bibinitperiod},
+           given={Marius},
+           giveni={M\bibinitperiod}}}%
+        {{hash=163d6a98c1c0e16bd5d9fbba9a70bf30}{%
+           family={Bridge},
+           familyi={B\bibinitperiod},
+           given={Derek},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{f209c5fab74e7c4d66794f4334e39f0d}
+      \strng{fullhash}{f209c5fab74e7c4d66794f4334e39f0d}
+      \strng{fullhashraw}{f209c5fab74e7c4d66794f4334e39f0d}
+      \strng{bibnamehash}{f209c5fab74e7c4d66794f4334e39f0d}
+      \strng{authorbibnamehash}{f209c5fab74e7c4d66794f4334e39f0d}
+      \strng{authornamehash}{f209c5fab74e7c4d66794f4334e39f0d}
+      \strng{authorfullhash}{f209c5fab74e7c4d66794f4334e39f0d}
+      \strng{authorfullhashraw}{f209c5fab74e7c4d66794f4334e39f0d}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on Interactive Intelligent Systems}
+      \field{number}{1}
+      \field{title}{Diversity, Serendipity, Novelty, and Coverage: A~Survey and Empirical Analysis of Beyond-Accuracy Objectives in Recommender Systems}
+      \field{volume}{7}
+      \field{year}{2016}
+      \field{pages}{1\bibrangedash 42}
+      \range{pages}{42}
+      \verb{doi}
+      \verb 10.1145/2926720
       \endverb
     \endentry
     \entry{kang2018self}{inproceedings}{}{}

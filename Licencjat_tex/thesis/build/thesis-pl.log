@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.3)  21 AUG 2026 01:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.3)  28 AUG 2026 11:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -970,13 +970,13 @@ Package babel Info: 'polish' activates 'polish' shorthands.
 Rozdzia\l  2.
 [9
 
-{D:/MiKTeX/fonts/enc/dvips/pl/plms.enc}{D:/MiKTeX/fonts/enc/dvips/pl/plrm.enc}{D:/MiKTeX/fonts/enc/dvips/pl/plme.enc}] [10] [11] [12] [13] [14]
+{D:/MiKTeX/fonts/enc/dvips/pl/plms.enc}{D:/MiKTeX/fonts/enc/dvips/pl/plrm.enc}{D:/MiKTeX/fonts/enc/dvips/pl/plme.enc}] [10] [11] [12] [13] [14] [15]
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <9> on input line 238.
+(Font)              <9> on input line 242.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <5> on input line 238.
- [15]
-Underfull \hbox (badness 2302) in paragraph at lines 243--244
+(Font)              <5> on input line 242.
+
+Underfull \hbox (badness 2302) in paragraph at lines 247--248
 \T1/cmr/m/n/10.95 Spójno±¢ za-pew-nia po-rów-ny-wal-no±¢ ka»-dej pary obiek-tów, an-ty-sy-me-tria wy-klu-cza
  []
 
@@ -984,37 +984,43 @@ Underfull \hbox (badness 2302) in paragraph at lines 243--244
 Rozdzia\l  3.
 [21
 
-] [22] [23] [24]) (tex/05_dane_i_eda.tex [25]
+] [22] [23] [24]
+Underfull \hbox (badness 1173) in paragraph at lines 130--131
+[]\T1/cmr/m/n/10.95 Wzór [] sta-nowi wa-riant miary ró»-no-rod-no-±ci ana-li-zo-wa-nej przez Hur-leya i
+ []
+
+) (tex/05_dane_i_eda.tex [25]
 Rozdzia\l  4.
 [26
 
 ] [27]
-<figures/eda/filtered/filtered_positive_playtime_logscale_hist.png, id=661, 578.16pt x 361.35pt>
+<figures/eda/filtered/filtered_positive_playtime_logscale_hist.png, id=681, 578.16pt x 361.35pt>
 File: figures/eda/filtered/filtered_positive_playtime_logscale_hist.png Graphic file (type png)
 <use figures/eda/filtered/filtered_positive_playtime_logscale_hist.png>
-Package pdftex.def Info: figures/eda/filtered/filtered_positive_playtime_logscale_hist.png  used on input line 65.
+Package pdftex.def Info: figures/eda/filtered/filtered_positive_playtime_logscale_hist.png  used on input line 67.
 (pdftex.def)             Requested size: 384.10962pt x 240.06866pt.
-<figures/eda/filtered/filtered_user_interaction_counts_hist.png, id=665, 578.16pt x 361.35pt>
+ [28 <./figures/eda/filtered/filtered_positive_playtime_logscale_hist.png>]
+<figures/eda/filtered/filtered_user_interaction_counts_hist.png, id=693, 578.16pt x 361.35pt>
 File: figures/eda/filtered/filtered_user_interaction_counts_hist.png Graphic file (type png)
 <use figures/eda/filtered/filtered_user_interaction_counts_hist.png>
-Package pdftex.def Info: figures/eda/filtered/filtered_user_interaction_counts_hist.png  used on input line 98.
+Package pdftex.def Info: figures/eda/filtered/filtered_user_interaction_counts_hist.png  used on input line 100.
 (pdftex.def)             Requested size: 384.10962pt x 240.06866pt.
- [28 <./figures/eda/filtered/filtered_positive_playtime_logscale_hist.png>] [29 <./figures/eda/filtered/filtered_user_interaction_counts_hist.png>]
-<figures/eda/filtered/filtered_item_popularity_concentration.png, id=680, 578.16pt x 361.35pt>
+<figures/eda/filtered/filtered_item_popularity_concentration.png, id=695, 578.16pt x 361.35pt>
 File: figures/eda/filtered/filtered_item_popularity_concentration.png Graphic file (type png)
 <use figures/eda/filtered/filtered_item_popularity_concentration.png>
-Package pdftex.def Info: figures/eda/filtered/filtered_item_popularity_concentration.png  used on input line 111.
+Package pdftex.def Info: figures/eda/filtered/filtered_item_popularity_concentration.png  used on input line 113.
 (pdftex.def)             Requested size: 384.10962pt x 240.06866pt.
-<figures/eda/filtered/filtered_top_20_games_by_interactions.png, id=682, 715.2321pt x 497.6994pt>
+ [29 <./figures/eda/filtered/filtered_user_interaction_counts_hist.png>]
+<figures/eda/filtered/filtered_top_20_games_by_interactions.png, id=704, 715.2321pt x 497.6994pt>
 File: figures/eda/filtered/filtered_top_20_games_by_interactions.png Graphic file (type png)
 <use figures/eda/filtered/filtered_top_20_games_by_interactions.png>
-Package pdftex.def Info: figures/eda/filtered/filtered_top_20_games_by_interactions.png  used on input line 120.
+Package pdftex.def Info: figures/eda/filtered/filtered_top_20_games_by_interactions.png  used on input line 122.
 (pdftex.def)             Requested size: 384.10962pt x 267.28798pt.
- [30 <./figures/eda/filtered/filtered_item_popularity_concentration.png>]) (tex/06_metodologia_eksperymentalna.tex [31 <./figures/eda/filtered/filtered_top_20_games_by_interactions.png>]
+) (tex/06_metodologia_eksperymentalna.tex [30 <./figures/eda/filtered/filtered_item_popularity_concentration.png>] [31 <./figures/eda/filtered/filtered_top_20_games_by_interactions.png>]
 Rozdzia\l  5.
 [32
 
-] [33]
+] [33] [34]
 LaTeX Font Info:    Calculating math sizes for size <13> on input line 43.
 LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <13> on input line 43.
@@ -1031,69 +1037,69 @@ LaTeX Font Warning: Font shape `U/lasy/m/n' in size <13> not available
 LaTeX Font Warning: Font shape `U/lasy/m/n' in size <6.5> not available
 (Font)              size <6> substituted on input line 43.
 
-[34]) (tex/07_wyniki_eksperymentow.tex [35]
+[35]) (tex/07_wyniki_eksperymentow.tex [36]
 Rozdzia\l  6.
-[36
+[37
 
 ]
-<figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png, id=747, 712.5822pt x 422.2977pt>
+<figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png, id=778, 712.5822pt x 422.2977pt>
 File: figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png Graphic file (type png)
 <use figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png>
 Package pdftex.def Info: figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png  used on input line 36.
 (pdftex.def)             Requested size: 384.10962pt x 227.63785pt.
- [37 <./figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png>]
-<figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png, id=758, 712.3413pt x 422.2977pt>
+ [38 <./figures/sensitivity/wrazliwosc_ndcg_vs_alpha.png>]
+<figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png, id=788, 712.3413pt x 422.2977pt>
 File: figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png Graphic file (type png)
 <use figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png>
 Package pdftex.def Info: figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png  used on input line 45.
 (pdftex.def)             Requested size: 384.10962pt x 227.71516pt.
-<figures/sensitivity/wrazliwosc_constant_ndcg_vs_gamma.png, id=760, 712.3413pt x 422.2977pt>
+<figures/sensitivity/wrazliwosc_constant_ndcg_vs_gamma.png, id=790, 712.3413pt x 422.2977pt>
 File: figures/sensitivity/wrazliwosc_constant_ndcg_vs_gamma.png Graphic file (type png)
 <use figures/sensitivity/wrazliwosc_constant_ndcg_vs_gamma.png>
 Package pdftex.def Info: figures/sensitivity/wrazliwosc_constant_ndcg_vs_gamma.png  used on input line 53.
 (pdftex.def)             Requested size: 384.10962pt x 227.71516pt.
- [38 <./figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png>]
-<figures/confidence/confidence_levels_best_als.png, id=770, 643.203pt x 425.4294pt>
+ [39 <./figures/sensitivity/wrazliwosc_log_beta_ndcg_vs_beta.png>]
+<figures/confidence/confidence_levels_best_als.png, id=800, 643.203pt x 425.4294pt>
 File: figures/confidence/confidence_levels_best_als.png Graphic file (type png)
 <use figures/confidence/confidence_levels_best_als.png>
 Package pdftex.def Info: figures/confidence/confidence_levels_best_als.png  used on input line 86.
 (pdftex.def)             Requested size: 384.10962pt x 254.05867pt.
- [39 <./figures/sensitivity/wrazliwosc_constant_ndcg_vs_gamma.png>]
-<figures/confidence/confidence_growth_best_als_0_2400.png, id=780, 642.7212pt x 425.1885pt>
+ [40 <./figures/sensitivity/wrazliwosc_constant_ndcg_vs_gamma.png>]
+<figures/confidence/confidence_growth_best_als_0_2400.png, id=810, 642.7212pt x 425.1885pt>
 File: figures/confidence/confidence_growth_best_als_0_2400.png Graphic file (type png)
 <use figures/confidence/confidence_growth_best_als_0_2400.png>
 Package pdftex.def Info: figures/confidence/confidence_growth_best_als_0_2400.png  used on input line 101.
 (pdftex.def)             Requested size: 384.10962pt x 254.10295pt.
- [40 <./figures/confidence/confidence_levels_best_als.png>] [41 <./figures/confidence/confidence_growth_best_als_0_2400.png>]
-<figures/test_fix/test_ndcg_all_models_horizontal.png, id=796, 643.6848pt x 389.2944pt>
+ [41 <./figures/confidence/confidence_levels_best_als.png>] [42 <./figures/confidence/confidence_growth_best_als_0_2400.png>]
+<figures/test_fix/test_ndcg_all_models_horizontal.png, id=826, 643.6848pt x 389.2944pt>
 File: figures/test_fix/test_ndcg_all_models_horizontal.png Graphic file (type png)
 <use figures/test_fix/test_ndcg_all_models_horizontal.png>
 Package pdftex.def Info: figures/test_fix/test_ndcg_all_models_horizontal.png  used on input line 145.
 (pdftex.def)             Requested size: 384.10962pt x 232.31319pt.
- [42 <./figures/test_fix/test_ndcg_all_models_horizontal.png>] [43]
-<figures/test_fix/test_precision_vs_recall_all_models.png, id=812, 638.8668pt x 425.1885pt>
+ [43 <./figures/test_fix/test_ndcg_all_models_horizontal.png>] [44]
+<figures/test_fix/test_precision_vs_recall_all_models.png, id=842, 638.8668pt x 425.1885pt>
 File: figures/test_fix/test_precision_vs_recall_all_models.png Graphic file (type png)
 <use figures/test_fix/test_precision_vs_recall_all_models.png>
 Package pdftex.def Info: figures/test_fix/test_precision_vs_recall_all_models.png  used on input line 170.
 (pdftex.def)             Requested size: 384.10962pt x 255.64706pt.
- [44 <./figures/test_fix/test_precision_vs_recall_all_models.png>]
-<figures/test_fix/test_ndcg_vs_coverage_all_models.png, id=820, 715.7139pt x 425.1885pt>
+ [45 <./figures/test_fix/test_precision_vs_recall_all_models.png>]
+<figures/test_fix/test_ndcg_vs_coverage_all_models.png, id=850, 715.7139pt x 425.1885pt>
 File: figures/test_fix/test_ndcg_vs_coverage_all_models.png Graphic file (type png)
 <use figures/test_fix/test_ndcg_vs_coverage_all_models.png>
 Package pdftex.def Info: figures/test_fix/test_ndcg_vs_coverage_all_models.png  used on input line 184.
 (pdftex.def)             Requested size: 384.10962pt x 228.19699pt.
-<figures/test_fix/test_ndcg_vs_ild_cooccurrence.png, id=822, 643.203pt x 425.6703pt>
+<figures/test_fix/test_ndcg_vs_ild_cooccurrence.png, id=852, 643.203pt x 425.6703pt>
 File: figures/test_fix/test_ndcg_vs_ild_cooccurrence.png Graphic file (type png)
 <use figures/test_fix/test_ndcg_vs_ild_cooccurrence.png>
 Package pdftex.def Info: figures/test_fix/test_ndcg_vs_ild_cooccurrence.png  used on input line 195.
 (pdftex.def)             Requested size: 384.10962pt x 254.20253pt.
- [45 <./figures/test_fix/test_ndcg_vs_coverage_all_models.png>]
-<figures/test_fix/test_ndcg_vs_delta_gap_without_popularity.png, id=832, 703.9098pt x 423.7431pt>
+ [46 <./figures/test_fix/test_ndcg_vs_coverage_all_models.png>]
+<figures/test_fix/test_ndcg_vs_delta_gap_without_popularity.png, id=862, 703.9098pt x 423.7431pt>
 File: figures/test_fix/test_ndcg_vs_delta_gap_without_popularity.png Graphic file (type png)
 <use figures/test_fix/test_ndcg_vs_delta_gap_without_popularity.png>
 Package pdftex.def Info: figures/test_fix/test_ndcg_vs_delta_gap_without_popularity.png  used on input line 208.
 (pdftex.def)             Requested size: 384.10962pt x 231.22313pt.
- [46 <./figures/test_fix/test_ndcg_vs_ild_cooccurrence.png>]
+ [47 <./figures/test_fix/test_ndcg_vs_ild_cooccurrence.png>]
 Overfull \hbox (11.49246pt too wide) in paragraph at lines 224--247
  [][] 
  []
@@ -1103,26 +1109,26 @@ Overfull \hbox (11.49246pt too wide) in paragraph at lines 256--277
  [][] 
  []
 
-[47 <./figures/test_fix/test_ndcg_vs_delta_gap_without_popularity.png>] [48]) (tex/08_podsumowanie.tex [49]
+[48 <./figures/test_fix/test_ndcg_vs_delta_gap_without_popularity.png>] [49]) (tex/08_podsumowanie.tex [50]
 Rozdzia\l  7.
-[50
+[51
 
-] [51] [52] [53]) [54] [55
+] [52] [53] [54] [55]) [56] [57
 
-] [56] (tex/90_wykaz_symboli.tex [57]
-ignored: Infinite glue shrinkage found in box being split [58
+] [58] (tex/90_wykaz_symboli.tex [59]
+ignored: Infinite glue shrinkage found in box being split [60
 
-]) [59] (d:\Studiowe\Licencjat\Licencjat_tex_repo\Licencjat_tex\thesis\build\thesis-pl.lof)
+]) [61] (d:\Studiowe\Licencjat\Licencjat_tex_repo\Licencjat_tex\thesis\build\thesis-pl.lof)
 \tf@lof=\write6
 \openout6 = `thesis-pl.lof'.
 
- [60
+ [62
 
 ] (d:\Studiowe\Licencjat\Licencjat_tex_repo\Licencjat_tex\thesis\build\thesis-pl.lot)
 \tf@lot=\write7
 \openout7 = `thesis-pl.lot'.
 
- [61
+ [63
 
 ] (d:\Studiowe\Licencjat\Licencjat_tex_repo\Licencjat_tex\thesis\build\thesis-pl.aux)
  ***********
@@ -1135,23 +1141,23 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 Package rerunfilecheck Info: File `thesis-pl.out' has not changed.
-(rerunfilecheck)             Checksum: 05393F1B9D72B2B653F0B8395C069F61;13155.
+(rerunfilecheck)             Checksum: B16431B6B140A1D28577385B4F76EA9D;13128.
 Package logreq Info: Writing requests to 'thesis-pl.run.xml'.
 \openout1 = `thesis-pl.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24995 strings out of 467683
- 434825 string characters out of 5431557
- 1323181 words of memory out of 5000000
- 53420 multiletter control sequences out of 15000+600000
+ 25015 strings out of 467683
+ 435599 string characters out of 5431557
+ 1324523 words of memory out of 5000000
+ 53433 multiletter control sequences out of 15000+600000
  654411 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,17n,90p,2112b,2362s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk><D:/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/MiKTeX/fonts/type1/public/pl/plbx10.pfb><D:/MiKTeX/fonts/type1/public/pl/plbx8.pfb><D:/MiKTeX/fonts/type1/public/pl/plex10.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi10.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi12.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi6.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi8.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi9.pfb><D:/MiKTeX/fonts/type1/public/pl/plr10.pfb><D:/MiKTeX/fonts/type1/public/pl/plr6.pfb><D:/MiKTeX/fonts/type1/public/pl/plr8.pfb><D:/MiKTeX/fonts/type1/public/pl/plsy10.pfb><D:/MiKTeX/fonts/type1/public/pl/plsy6.pfb><D:/MiKTeX/fonts/type1/public/pl/plsy8.pfb>
-Output written on d:\Studiowe\Licencjat\Licencjat_tex_repo\Licencjat_tex\thesis\build\thesis-pl.pdf (61 pages, 3174803 bytes).
+ <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk><D:/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/MiKTeX/fonts/type1/public/pl/plbx10.pfb><D:/MiKTeX/fonts/type1/public/pl/plbx8.pfb><D:/MiKTeX/fonts/type1/public/pl/plex10.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi10.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi12.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi5.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi6.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi8.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi9.pfb><D:/MiKTeX/fonts/type1/public/pl/plr10.pfb><D:/MiKTeX/fonts/type1/public/pl/plr6.pfb><D:/MiKTeX/fonts/type1/public/pl/plr8.pfb><D:/MiKTeX/fonts/type1/public/pl/plr9.pfb><D:/MiKTeX/fonts/type1/public/pl/plsy10.pfb><D:/MiKTeX/fonts/type1/public/pl/plsy6.pfb><D:/MiKTeX/fonts/type1/public/pl/plsy8.pfb><D:/MiKTeX/fonts/type1/public/pl/plsy9.pfb>
+Output written on d:\Studiowe\Licencjat\Licencjat_tex_repo\Licencjat_tex\thesis\build\thesis-pl.pdf (63 pages, 3199608 bytes).
 PDF statistics:
- 1670 PDF objects out of 1728 (max. 8388607)
- 247 named destinations out of 1000 (max. 500000)
+ 1728 PDF objects out of 1728 (max. 8388607)
+ 254 named destinations out of 1000 (max. 500000)
  582 words of extra memory for PDF output out of 10000 (max. 10000000)
 

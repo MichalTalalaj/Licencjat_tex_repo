@@ -56,6 +56,8 @@ W analizie należy również uwzględnić testy stabilności modelu ze względu 
 
 Kierunkiem wynikającym bezpośrednio z uzyskanych wyników, stanowiącym autorską propozycję, jest zbadanie niemonotonicznych funkcji pewności. Wszystkie przekształcenia rozważane w niniejszej pracy były monotonicznie rosnące, przyjmując założenie, że dłuższy czas gry oznacza silniejszą preferencję. Założenie to może jednak nie odpowiadać rzeczywistym zachowaniom użytkowników. W szczególności krótka interakcja, obejmująca kilkanaście czy kilkadziesiąt minut rozgrywki, może świadczyć nie o słabej preferencji, lecz o uruchomieniu gry i szybkiej rezygnacji z niej, stanowiąc tym samym sygnał negatywny. W takim ujęciu obserwacje o zerowym czasie gry, odpowiadające samemu posiadaniu tytułu w bibliotece, niosłyby silniejszy sygnał preferencji niż obserwacje o bardzo krótkim czasie rozgrywki. Funkcja pewności odzwierciedlająca ten wzorzec musiałaby przypisywać obniżone wagi w wąskim przedziale niskich wartości \texttt{playtime\_forever}, a rosnące dopiero powyżej pewnego progu. Zbadanie takiego wariantu pozwoliłoby zweryfikować, czy brak wartości dodanej z czasu gry zaobserwowany w niniejszej pracy wynika z samej zmiennej, czy z założenia o monotonicznym charakterze jej związku z preferencją.
 
+Rozwinięciem tej propozycji jest konstrukcja funkcji pewności, w~której poziom bazowy oraz człon zależny od czasu gry sterowane byłyby niezależnymi parametrami. W~wariancie z~przesunięciem $\beta$ obie składowe pozostają sprzężone: ten sam parametr wyznacza wartość przypisaną obserwacjom zerowym i~stopień kompresji różnic między pozostałymi. Nie pozwala to rozstrzygnąć, czy człon zależny od czasu gry obniżał jakość rekomendacji, czy jedynie nie wnosił poprawy przy jednoczesnym ustawieniu poziomu bazowego poniżej wartości optymalnej. Rozdzielenie tych parametrów, w~połączeniu z~dopuszczeniem niemonotonicznej postaci członu zależnego od czasu gry, umożliwiłoby zbadanie obu mechanizmów osobno.
+
 Wyniki metryk $\Delta$GAP i pokrycia pokazały, że modele ALS (poza wariantem liniowym) mają tendencję do faworyzowania popularnych pozycji. Potencjalnym rozwiązaniem byłoby wprowadzenie do funkcji $c_{ui}$ lub do funkcji straty czynnika odwrotnie proporcjonalnego do popularności danego obiektu. Metody tego typu są opisywane w literaturze jako debiasing z wykorzystaniem odwrotnego ważenia prawdopodobieństwa ekspozycji (ang. \textit{inverse propensity scoring}, IPS), gdzie waga interakcji jest skalowana odwrotnie do prawdopodobieństwa, że dany obiekt zostałby zaobserwowany przez użytkownika niezależnie od jego rzeczywistych preferencji~\cite{schnabel2016recommendations}. W praktyce prawdopodobieństwo to jest zwykle estymowane na podstawie popularności obiektu, ponieważ użytkownicy z większym prawdopodobieństwem wchodzą w interakcję z obiektami popularnymi niezależnie od indywidualnych preferencji. Taka transformacja mogłaby podnosić wagę interakcji z niszowymi grami, kompensując mechanizm, przez który obecne funkcje marginalizują rzadkie obserwacje.
 
 Poza modyfikacją samej funkcji pewności, alternatywnym kierunkiem jest wykorzystanie dopełniających się właściwości testowanych rodzin modeli poprzez ich połączenie w model hybrydowy. Przykładowo model BPR generowałby szeroki wachlarz kandydatów ze względu na większe pokrycie zbioru, a następnie przeprowadzany byłby ponowny ranking przez model iALS cechujący się większą trafnością.
@@ -67,14 +69,13 @@ Uzupełnieniem kierunków wynikających z~głównych wniosków pracy są badania
     umożliwiającą zweryfikowanie hipotezy o~wyższej precyzji wariantu liniowego
     dla użytkowników o~większej aktywności;
 
+    \item uwzględnienie różnic w~zaangażowaniu wynikających ze specyfiki gatunków. Godzina spędzona w~krótkiej produkcji niezależnej oznacza inny poziom zainteresowania niż godzina w~grze wieloosobowej o~dużej regrywalności, tymczasem rozważane funkcje pewności przypisują obu tym obserwacjom identyczną wagę;
+
     \item eksperyment przy ustalonej, jednakowej liczbie czynników ukrytych dla
     wszystkich wariantów, pozwalający rozdzielić wpływ wymiarowości od wpływu
-    samej funkcji pewności na metryki różnorodności i~pokrycia;
+    samej funkcji pewności na metryki różnorodności i~pokrycia. Przeszukanie przestrzeni obejmującej łącznie parametry funkcji pewności, siłę regularyzacji oraz liczbę czynników ukrytych umożliwiłoby ponadto ustalenie, w~jakim stopniu wielkości te oddziałują na siebie wzajemnie;
 
-    \item powtórzenie eksperymentu na danych ograniczonych do interakcji
-    z~niezerowym czasem rozgrywki, stanowiących około dwóch trzecich zbioru,
-    w~celu weryfikacji, czy brak wartości dodanej wynika z~właściwości samej
-    zmiennej, czy ze sposobu jej wykorzystania;
+    \item powtórzenie eksperymentu na danych ograniczonych do interakcji z niezerowym czasem rozgrywki, stanowiących około dwóch trzecich zbioru, oraz zbadanie wrażliwości wyników na przyjęte progi filtracji. Pozwoliłoby to ustalić, czy brak wartości dodanej wynika z~właściwości samej zmiennej, czy z~decyzji podjętych na etapie przygotowania danych;
 
     \item porównanie dostrojonego wariantu implicit ALS z~modelami neuronowymi,
     nawiązujące do wyników przedstawionych w~pracy~\cite{rendle2021revisiting};

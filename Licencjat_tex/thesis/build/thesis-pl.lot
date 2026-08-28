@@ -10,10 +10,10 @@
 \contentsline {table}{\numberline {4.3}{\ignorespaces Rozkład liczby interakcji użytkowników i popularności gier w przygotowanym zbiorze}}{29}{table.caption.7}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Najlepsze hiperparametry wariantów ALS wybrane na zbiorze walidacyjnym}}{36}{table.caption.11}%
-\contentsline {table}{\numberline {6.2}{\ignorespaces Najlepsze hiperparametry modelu BPR wybrane na zbiorze walidacyjnym}}{39}{table.caption.15}%
-\contentsline {table}{\numberline {6.3}{\ignorespaces Wyniki modeli na zbiorze testowym}}{42}{table.caption.18}%
-\contentsline {table}{\numberline {6.4}{\ignorespaces Odchylenia standardowe metryk na zbiorze testowym w~pięciu uruchomieniach}}{48}{table.caption.24}%
-\contentsline {table}{\numberline {6.5}{\ignorespaces Odchylenia standardowe metryk w~pięciu losowych podziałach na zbiór treningowy i~walidacyjny}}{48}{table.caption.25}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces Najlepsze hiperparametry wariantów ALS wybrane na zbiorze walidacyjnym}}{37}{table.caption.11}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Najlepsze hiperparametry modelu BPR wybrane na zbiorze walidacyjnym}}{40}{table.caption.15}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Wyniki modeli na zbiorze testowym}}{43}{table.caption.18}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Odchylenia standardowe metryk na zbiorze testowym w~pięciu uruchomieniach}}{49}{table.caption.24}%
+\contentsline {table}{\numberline {6.5}{\ignorespaces Wyniki na zbiorze walidacyjnym wraz z~odchyleniami standardowymi w~pięciu losowych podziałach danych}}{49}{table.caption.25}%
 \addvspace {10\p@ }
 \contentsfinish 

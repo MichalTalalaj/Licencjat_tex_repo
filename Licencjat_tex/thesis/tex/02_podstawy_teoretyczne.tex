@@ -37,7 +37,7 @@ gdzie $\mathcal{I}_u$ oznacza zbiór obiektów, z którymi użytkownik $u$ wszed
 
 \subsection{Model Funk SVD i funkcja celu}
 
-W niniejszej pracy wszystkie porównywane modele należą do rodziny modeli opartych na czynnikach ukrytych. Wykorzystują one metody faktoryzacji macierzy, które zostały spopularyzowane przez Simona Funka w ramach konkursu \textit{Netflix Prize}. Podejście to zakłada, że relacje pomiędzy użytkownikami i obiektami mogą być modelowane poprzez ich reprezentacje w przestrzeni czynników ukrytych o wymiarze $f \ll \min(n,m)$. W przeciwieństwie do metod opartych na treści, wymagających jawnego zdefiniowania cech opisujących użytkowników oraz obiekty, faktoryzacja macierzy umożliwia automatyczne uczenie reprezentacji na podstawie historii interakcji. Dzięki temu ogranicza zależność od ręcznie projektowanych cech specyficznych dla danej domeny i pozwala stosować jednolity schemat modelowania w różnych dziedzinach. Szczegółowy opis modelu Funk SVD oraz wynikającej z niego funkcji celu przedstawiono na podstawie pracy \cite{koren2009matrix}.
+W niniejszej pracy wszystkie porównywane modele należą do rodziny modeli opartych na czynnikach ukrytych. Wykorzystują one metody faktoryzacji macierzy, które zostały spopularyzowane przez Simona Funka w ramach konkursu \textit{Netflix Prize}~\cite{funk2006netflix}. Podejście to zakłada, że relacje pomiędzy użytkownikami i obiektami mogą być modelowane poprzez ich reprezentacje w przestrzeni czynników ukrytych o wymiarze $f \ll \min(n,m)$. W przeciwieństwie do metod opartych na treści, wymagających jawnego zdefiniowania cech opisujących użytkowników oraz obiekty, faktoryzacja macierzy umożliwia automatyczne uczenie reprezentacji na podstawie historii interakcji. Dzięki temu ogranicza zależność od ręcznie projektowanych cech specyficznych dla danej domeny i pozwala stosować jednolity schemat modelowania w różnych dziedzinach. Szczegółowy opis modelu Funk SVD oraz wynikającej z niego funkcji celu przedstawiono na podstawie pracy \cite{koren2009matrix}.
 
 Macierz obserwacji $\mathbf{R} \in \mathbb{R}^{m \times n}$ jest aproksymowana poprzez iloczyn dwóch macierzy niskiego rzędu: macierzy reprezentacji użytkowników $\mathbf{X} \in \mathbb{R}^{m \times f}$ oraz macierzy reprezentacji obiektów $\mathbf{Y} \in \mathbb{R}^{n \times f}$. Wiersz $\mathbf{x}_u \in \mathbb{R}^f$ macierzy $\mathbf{X}$ określa stopień zainteresowania użytkownika $u$ poszczególnymi cechami ukrytymi, natomiast wiersz $\mathbf{y}_i \in \mathbb{R}^f$ macierzy $\mathbf{Y}$ opisuje obiekt $i$ pod kątem tych samych cech. W najprostszym wariancie modelu prognozowana wartość oceny $\hat{r}_{ui}$ wyznaczana jest jako iloczyn skalarny odpowiadających im wektorów:
 
@@ -80,10 +80,10 @@ gdzie parametr regularyzacji $\lambda \ge 0$ kontroluje siłę kary za złożono
 
 Tradycyjne metody faktoryzacji macierzy, takie jak Funk SVD, zostały zaprojektowane z myślą o przetwarzaniu jawnej informacji zwrotnej, opartej na ocenach w skali punktowej. W rzeczywistych systemach produkcyjnych stosowanie tego podejścia wiąże się jednak z istotnymi ograniczeniami. Niektórzy użytkownicy rzadko decydują się na pozostawienie opinii, co utrudnia modelowi dobranie dla nich trafnych rekomendacji. Co więcej, wiele platform nie posiada mechanizmu oceniania, co uniemożliwia działanie klasycznych algorytmów. W konsekwencji uzasadnione staje się wykorzystanie modeli opartych na niejawnej informacji zwrotnej (ang. \textit{implicit feedback}), której przykładami są liczba kliknięć, zarejestrowany czas interakcji pomiędzy użytkownikiem a obiektem czy historia zakupów.
 
-Bezpośrednie zastosowanie klasycznych algorytmów faktoryzacji macierzy do danych niejawnych prowadzi do znacznych problemów, wynikających z różnic między typami sygnałów, wskazanych w~pracy~\cite{hu2008implicit}:
+Bezpośrednie zastosowanie klasycznych algorytmów faktoryzacji macierzy do danych niejawnych prowadzi do problemów, wynikających z różnic między typami sygnałów, wskazanych w~pracy~\cite{hu2008implicit}:
 
 \begin{enumerate}
-    \item \textbf{Brak bezpośrednich sygnałów negatywnych oraz dwuznaczność braku interakcji:} W przypadku danych jawnych niska ocena jednoznacznie wskazuje na negatywną preferencję użytkownika. Natomiast niejawna informacja zwrotna dostarcza wyłącznie sygnałów pozytywnych. Długie lub częste interakcje świadczą o zainteresowaniu danym obiektem, podczas gdy brak interakcji ($r_{ui}=0$) lub interakcje o niewielkiej intensywności mają charakter niejednoznaczny. Mogą one wynikać zarówno z braku zainteresowania obiektem, jak i z faktu, że użytkownik nie wiedział o jego istnieniu.
+    \item \textbf{Brak bezpośrednich sygnałów negatywnych oraz dwuznaczność braku interakcji:} W przypadku danych jawnych niska ocena jednoznacznie wskazuje na negatywną preferencję użytkownika. Natomiast niejawna informacja zwrotna dostarcza wyłącznie sygnałów pozytywnych. Długie lub częste interakcje świadczą o zainteresowaniu danym obiektem, przy założeniu, że zarejestrowana aktywność została wygenerowana przez zaangażowanego użytkownika. W praktyce założenie to nie zawsze jest spełnione, czego przykładem jest tzw. idling, czyli utrzymywanie gry uruchomionej bez faktycznego udziału użytkownika, stosowane zarówno przez właścicieli kont, jak i~przez automaty gromadzące zbywalne przedmioty~\cite{grayson2019bots}. Brak interakcji ($r_{ui}=0$) lub interakcje o niewielkiej intensywności mają charakter niejednoznaczny. Mogą one wynikać zarówno z braku zainteresowania obiektem, jak i z faktu, że użytkownik nie wiedział o jego istnieniu.
     
     \item \textbf{Problem ignorowania wartości zerowych:} Funkcja celu w Funk SVD optymalizowana jest wyłącznie na zbiorze zaobserwowanych ocen $\mathcal{K}$, całkowicie ignorując pozycje niezaobserwowane. Traktowanie wszystkich brakujących wartości jako obserwacji o wartości $r_{ui}=0$ prowadziłoby do zdominowania procesu uczenia przez niezaobserwowane interakcje, których liczba wielokrotnie przewyższa liczbę rzeczywistych obserwacji ze względu na wysoką rzadkość macierzy $\mathbf{R}$. Jednocześnie przypisanie im takiej samej wagi jak obserwowanym interakcjom byłoby nieuzasadnione, ponieważ brak interakcji nie oznacza jednoznacznie negatywnej preferencji użytkownika. Z kolei całkowite pominięcie tych wartości powoduje, że model nie wykorzystuje informacji zawartej w niezaobserwowanych interakcjach podczas procesu uczenia.
     
@@ -107,7 +107,7 @@ W oryginalnym sformułowaniu preferencję $p_{ui}$ zdefiniowano jako zmienną bi
     \end{cases}
 \end{equation}
 
-W niniejszej pracy przyjęto odmienną definicję dostosowaną do specyfiki zbioru danych platformy Steam. Zmienna $p_{ui}$ przyjmuje wartość $1$, jeśli użytkownik $u$ posiada daną grę w swojej bibliotece, a $0$ w przeciwnym wypadku. Oznacza to, że gracz posiadający tytuł w bibliotece, lecz nieposiadający dla niego jeszcze zarejestrowanego czasu gry ($r_{ui} = 0$), nadal ma przypisaną preferencję $p_{ui} = 1$.
+W niniejszej pracy przyjęto odmienną definicję dostosowaną do specyfiki zbioru danych platformy Steam. Zmienna $p_{ui}$ przyjmuje wartość $1$, jeśli użytkownik $u$ posiada daną grę w swojej bibliotece, a $0$ w przeciwnym wypadku. Oznacza to, że gracz posiadający tytuł w bibliotece, lecz nieposiadający dla niego jeszcze zarejestrowanego czasu gry ($r_{ui} = 0$), nadal ma przypisaną preferencję $p_{ui} = 1$. Rozwiązanie to odbiega od praktyki przyjmowanej w~pracach wykorzystujących ten sam zbiór danych~\cite{bunga2021implicit,cheuque2019steam}, w~których interakcje bez zarejestrowanego czasu gry są usuwane.
 
 Ponieważ zmienna $p_{ui}$ nie uwzględnia intensywności interakcji, do modelu wprowadza się zmienną $c_{ui}$ (w dalszej części pracy określaną jako waga pewności). Zwiększa ona swoją wartość wraz ze wzrostem $r_{ui}$, sygnalizując wyższą pewność algorytmu co do prawdziwości przypisanej preferencji. W pracy Hu i in.~\cite{hu2008implicit} podstawowa metoda wyznaczania $c_{ui}$ ma postać:
 
@@ -129,7 +129,9 @@ gdzie $\lambda$ jest parametrem odpowiedzialnym za regularyzację.
 
 \subsection{Optymalizacja metodą naprzemiennych najmniejszych kwadratów}
 
-Ze względu na występowanie $m \times n$ par użytkownik--obiekt w funkcji straty modelu iALS, jej minimalizacja stanowi duże wyzwanie obliczeniowe. W szczególności uwzględnienie niezaobserwowanych interakcji w standardowym podejściu opartym na stochastycznym spadku po gradiencie wiązałoby się z koniecznością przetwarzania bardzo dużej liczby par użytkownik--obiekt. Z tego powodu stosuje się metodę naprzemiennych najmniejszych kwadratów jako standardową metodę optymalizacji.
+Przedstawione poniżej wyprowadzenie oraz analizę złożoności obliczeniowej opracowano na podstawie pracy~\cite{hu2008implicit}.
+
+Ze względu na występowanie $m \times n$ par użytkownik--obiekt w funkcji straty modelu iALS, jej minimalizacja stanowi duże wyzwanie obliczeniowe. W szczególności uwzględnienie niezaobserwowanych interakcji w standardowym podejściu opartym na stochastycznym spadku po gradiencie wiązałoby się z koniecznością przetwarzania bardzo dużej liczby par użytkownik--obiekt. Z tego powodu stosuje się metodę naprzemiennych najmniejszych kwadratów jako standardową metodę optymalizacji~\cite{hu2008implicit}.
 
 Funkcja celu $\mathcal{L}_{\text{iALS}}(\mathbf{X}, \mathbf{Y})$ nie jest globalnie wypukła względem obu macierzy $\mathbf{X}$ oraz $\mathbf{Y}$ jednocześnie. Sytuacja ulega jednak zmianie, gdy jedną z macierzy traktuje się jako stałą. Gdy macierz $\mathbf{Y}$ traktowana jest jako stała, funkcja straty staje się kwadratowa względem każdego wektora reprezentacji użytkownika $\mathbf{x}_u$ niezależnie. Hesjan tego podproblemu wynosi $2\left(\mathbf{Y}^T\mathbf{C}^u\mathbf{Y} + \lambda\mathbf{I}\right)$ i dla $c_{ui} > 0$ oraz $\lambda > 0$ jest dodatnio określony, co przesądza o ścisłej wypukłości podproblemu. Analogicznie, przy ustalonej macierzy $\mathbf{X}$, funkcja staje się wypukła względem każdego wektora reprezentacji obiektu $\mathbf{y}_i$. Własność ta umożliwia analityczne rozwiązanie problemu jako ciągu niezależnych problemów najmniejszych kwadratów.
 
@@ -210,6 +212,8 @@ W konsekwencji złożoność aktualizacji całej macierzy użytkowników $\mathb
 Analogiczna procedura jest stosowana podczas aktualizacji macierzy obiektów $\mathbf{Y}$, której koszt wynosi $\mathcal{O}(n\cdot f^3 + |\mathcal{K}_{\text{conf}}|\cdot f^2 + m\cdot f^2)$. W pełnej iteracji algorytmu iALS oba kroki wykonywane są naprzemiennie.
 
 \section{Bayesian Personalized Ranking (BPR)}
+
+Przedstawione w~tym podrozdziale sformułowanie modelu, wyprowadzenie kryterium optymalizacyjnego oraz algorytm uczenia opracowano na podstawie pracy~\cite{rendle2009bpr}.
 
 \subsection{Podejście oparte na porównywaniu par (pairwise ranking)}
 
@@ -389,7 +393,7 @@ Z tego powodu w pracy Rendlego i in. \cite{rendle2009bpr} zaproponowano algorytm
 
 \subsubsection{Wyprowadzenie reguł aktualizacji}
 
-Rozpatruje się pojedynczy składnik funkcji celu odpowiadający wylosowanej trójce $(u,i,j)$, ograniczony do występujących w niej parametrów:
+Dla pojedynczego kroku stochastycznego optymalizacji, odpowiadającego wylosowanej trójce $(u,i,j)$, rozważane jest lokalne kryterium ograniczone do występujących w~niej parametrów:
 \begin{equation}
     l(u,i,j) = \ln \sigma(\hat{s}_{uij}) - \lambda_\Theta \left( \|\mathbf{x}_u\|_2^2 + \|\mathbf{y}_i\|_2^2 + \|\mathbf{y}_j\|_2^2 \right).
 \end{equation}
@@ -412,7 +416,7 @@ Aby wyznaczyć gradienty względem poszczególnych wektorów cech ukrytych, korz
     \label{eq:sgrad}
 \end{equation}
 
-Łącząc \eqref{eq:dsigma} i \eqref{eq:sgrad} z pochodną członu regularyzacyjnego ($\nabla_{\mathbf{v}} \|\mathbf{v}\|_2^2 = 2\mathbf{v}$), otrzymuje się pełne gradienty pojedynczego składnika $l(u,i,j)$ względem wszystkich trzech występujących w nim parametrów:
+Łącząc \eqref{eq:dsigma} i \eqref{eq:sgrad} z pochodną członu regularyzacyjnego ($\nabla_{\mathbf{v}} \|\mathbf{v}\|_2^2 = 2\mathbf{v}$), otrzymuje się pełne gradienty lokalnego kryterium $l(u,i,j)$ względem wszystkich trzech występujących w nim parametrów:
 \begin{align}
     \nabla_{\mathbf{x}_u} l(u,i,j) &= \sigma(-\hat{s}_{uij})(\mathbf{y}_i - \mathbf{y}_j) - 2\lambda_\Theta \mathbf{x}_u, \label{eq:gradxu}\\
     \nabla_{\mathbf{y}_i} l(u,i,j) &= \sigma(-\hat{s}_{uij})\,\mathbf{x}_u - 2\lambda_\Theta \mathbf{y}_i, \label{eq:gradyi}\\
@@ -421,7 +425,7 @@ Aby wyznaczyć gradienty względem poszczególnych wektorów cech ukrytych, korz
 
 \subsubsection{Reguły aktualizacji algorytmu LearnBPR}
 
-Na podstawie \eqref{eq:gradxu}--\eqref{eq:gradyj} oraz reguły gradientu wznoszącego dla pojedynczej próbki, algorytm LearnBPR w każdej iteracji losuje ze zwracaniem trójkę $(u,i,j) \sim D_S$ i wykonuje aktualizację trzech wektorów cech ukrytych:
+Na podstawie wzorów \eqref{eq:gradxu}--\eqref{eq:gradyj} oraz reguły gradientu wznoszącego dla pojedynczej próbki, algorytm LearnBPR w każdej iteracji losuje ze zwracaniem trójkę $(u,i,j) \sim D_S$ i wykonuje aktualizację trzech wektorów cech ukrytych:
 \begin{align}
     \mathbf{x}_u &\leftarrow \mathbf{x}_u + \eta \Big( \sigma(-\hat{s}_{uij})(\mathbf{y}_i - \mathbf{y}_j) - 2\lambda_\Theta \mathbf{x}_u \Big), \\
     \mathbf{y}_i &\leftarrow \mathbf{y}_i + \eta \Big( \sigma(-\hat{s}_{uij})\,\mathbf{x}_u - 2\lambda_\Theta \mathbf{y}_i \Big), \\

@@ -15,7 +15,7 @@ Wykorzystane dane nie zawierają jawnych ocen przypisanych przez użytkowników,
 
 \section{Podstawowe statystyki surowego zbioru}
 
-Przed filtracją analizowany zbiór zawierał 5\,153\,209 interakcji, obejmujących 70\,912 użytkowników oraz 10\,978 gier. Wynika stąd, że obserwowana macierz użytkownik--gra była bardzo rzadka: jej gęstość wynosiła około 0{,}00662, co oznacza, że zaobserwowane zostało zaledwie 0{,}662\% wszystkich możliwych interakcji w macierzy. Niska gęstość macierzy jest powszechna w dziedzinie systemów rekomendacyjnych, ponieważ przeciętny użytkownik wchodzi w~interakcję z~niewielkim ułamkiem katalogu liczącego tysiące lub miliony pozycji.
+Podstawowe statystyki surowego zbioru zestawiono w~tabeli~\ref{tab:raw_data_basic_stats}. Przed filtracją analizowany zbiór zawierał 5\,153\,209 interakcji, obejmujących 70\,912 użytkowników oraz 10\,978 gier. Wynika stąd, że obserwowana macierz użytkownik--gra była bardzo rzadka: jej gęstość wynosiła około 0{,}00662, co oznacza, że zaobserwowane zostało zaledwie 0{,}662\% wszystkich możliwych interakcji w macierzy. Niska gęstość macierzy jest powszechna w dziedzinie systemów rekomendacyjnych, ponieważ przeciętny użytkownik wchodzi w~interakcję z~niewielkim ułamkiem katalogu liczącego tysiące lub miliony pozycji.
 
 \begin{table}[htbp]
 \centering
@@ -35,7 +35,7 @@ Gęstość macierzy & 0{,}00662 \\
 
 \section{Wpływ przygotowania danych na strukturę zbioru}
 
-Przed treningiem i ewaluacją modeli dane zostały poddane filtracji. Szczegółowy opis i uzasadnienie tych decyzji przedstawiono w rozdziale~\ref{chap:metodologia}. W tym podrozdziale omówiono jedynie ich wpływ na rozmiar oraz strukturę finalnego zbioru.
+Przed treningiem i ewaluacją modeli dane zostały poddane filtracji. Szczegółowy opis i uzasadnienie tych decyzji przedstawiono w rozdziale~\ref{chap:metodologia}. W tym podrozdziale omówiono jedynie ich wpływ na rozmiar oraz strukturę finalnego zbioru, zestawiony w~tabeli~\ref{tab:data_preparation_effect}.
 
 \begin{table}[htbp]
 \centering
@@ -52,7 +52,9 @@ Po filtracji użytkowników & 5\,132\,610 & 62\,944 & 9\,198 \\
 \end{tabular}
 \end{table}
 
-Usunięto 20\,599 interakcji, co odpowiada około 0{,}40\% początkowego zbioru. Jednocześnie liczba użytkowników zmniejszyła się o~7\,968, czyli o 11{,}24\%, a liczba gier o 1\,780, czyli o 16{,}21\%. Świadczy to o tym, że przygotowanie danych usunęło przede wszystkim niepopularne gry i mało aktywnych użytkowników, zachowując niemal cały zasób informacji o obserwowanych interakcjach. Gęstość macierzy użytkownik--gra wzrosła z 0{,}00662 do około 0{,}00887, jednak nadal pozostała bardzo niska. Zatem zbiór po przygotowaniu nadal ma charakter rzadkich danych rekomendacyjnych, ale jest mniej obciążony przypadkami o małej liczbie interakcji.
+Usunięto 20\,599 interakcji, co odpowiada około 0{,}40\% początkowego zbioru. Jednocześnie liczba użytkowników zmniejszyła się o~7\,968, czyli o~11{,}24\%, a~liczba gier o~1\,780, czyli o~16{,}21\%. Gęstość macierzy użytkownik--gra wzrosła z~0{,}00662 do około 0{,}00887, jednak nadal pozostała bardzo niska. Zatem zbiór po przygotowaniu nadal ma charakter rzadkich danych rekomendacyjnych, ale jest mniej obciążony przypadkami o~małej liczbie interakcji.
+
+Dysproporcja między odsetkiem usuniętych interakcji a~odsetkiem usuniętych obiektów wskazuje, że filtracja objęła przede wszystkim gry występujące u~pojedynczych użytkowników oraz konta o~znikomej historii. Dla takich przypadków wyznaczenie reprezentacji w~przestrzeni czynników ukrytych jest utrudnione. Rekomendacje dla użytkowników o~kilku interakcjach opierałyby się w~praktyce na rozkładzie popularności, a~gry obecne w~pojedynczych bibliotekach miałyby małą szansę pojawić się na listach rekomendacyjnych, obniżając przy tym pokrycie katalogu. Należy jednak zaznaczyć, że filtracja sprowadza zbiór do gęstszej postaci, ułatwiając tym samym zadanie rekomendacyjne. Przyjęte progi mogą zatem wpływać na wartości uzyskiwanych metryk oraz na wnioski płynące z~porównania modeli.
 
 \section{Rozkład czasu gry i interakcje z zerowym czasem gry}
 
@@ -74,7 +76,7 @@ Skośność rozkładu czasu gry stanowi przesłankę do rozważenia funkcji pewn
 \subsection{Aktywność użytkowników}
 
 Rozkład liczby interakcji przypadających na użytkownika jest prawostronnie
-skośny, co przedstawiono na rysunku~\ref{fig:filtered_user_interaction_counts}. Widoczne skupienie przy niskich wartościach oraz długi ogon pokazują, że zbiór łączy dużą liczbę użytkowników o umiarkowanej aktywności z niewielką grupą kont posiadających bardzo rozbudowane biblioteki. W przygotowanym zbiorze średnia liczba interakcji na użytkownika wynosiła 81{,}54, podczas gdy mediana była równa 48.
+skośny, co przedstawiono na rysunku~\ref{fig:filtered_user_interaction_counts}. Widoczne skupienie przy niskich wartościach oraz długi ogon pokazują, że zbiór łączy dużą liczbę użytkowników o umiarkowanej aktywności z niewielką grupą kont posiadających bardzo rozbudowane biblioteki. W przygotowanym zbiorze średnia liczba interakcji na użytkownika wynosiła 81{,}54, podczas gdy mediana była równa 48. Pełne zestawienie statystyk rozkładu przedstawiono w~tabeli~\ref{tab:user_item_activity_stats}.
 
 \begin{table}[htbp]
 \centering
@@ -102,7 +104,7 @@ Maksimum & 7\,337 & 45\,699 \\
 
 \subsection{Popularność gier}
 
-Jeszcze silniejszą nierównomierność widać po stronie gier. Mediana liczby interakcji przypadających na grę wynosiła 71, podczas gdy średnia była równa 558{,}01. Wynika stąd, że większość gier występowała w bibliotekach stosunkowo małej liczby użytkowników, natomiast niewielka grupa najpopularniejszych tytułów odpowiadała za bardzo dużą część wszystkich interakcji.
+Jeszcze większe zróżnicowanie widać po stronie gier. Mediana liczby interakcji przypadających na grę wynosiła 71, podczas gdy średnia była równa 558{,}01. Wynika stąd, że większość gier występowała w~bibliotekach stosunkowo małej liczby użytkowników, natomiast niewielka grupa najpopularniejszych tytułów odpowiadała za bardzo dużą część wszystkich interakcji.
 
 Koncentrację popularności przedstawiono na rysunku~\ref{fig:filtered_item_popularity_concentration}. Najpopularniejszy 1\% gier odpowiadał za około 27{,}16\% wszystkich interakcji, najpopularniejsze 5\% za 59{,}55\%, a najpopularniejsze 10\% za 74{,}71\%.
 
@@ -122,10 +124,10 @@ Dodatkową ilustracją tej nierównomierności jest zestawienie najpopularniejsz
     \label{fig:filtered_top_games}
 \end{figure}
 
-Zaobserwowana koncentracja popularności ma znaczenie dla interpretacji późniejszych wyników eksperymentalnych. Modele rekomendacyjne mogą osiągać dobrą trafność, często rekomendując najpopularniejsze tytuły, ale takie zachowanie prowadzi do niskiego pokrycia katalogu i silnego obciążenia rekomendacji popularnością. Z tego powodu w dalszej części pracy, obok metryk trafności rankingowej, analizowane są również miary pokrycia katalogu oraz popularności rekomendowanych gier.
+Zaobserwowana koncentracja popularności ma znaczenie dla interpretacji późniejszych wyników eksperymentalnych. Modele rekomendacyjne mogą osiągać dobrą trafność, często rekomendując najpopularniejsze tytuły, ale takie zachowanie prowadzi do niskiego pokrycia katalogu i silnego obciążenia rekomendacji popularnością. Z tego powodu w dalszej części pracy, obok metryk trafności rankingowej, analizowane są również miary pokrycia katalogu oraz popularności rekomendowanych gier~\cite{kaminskas2016diversity,abdollahpouri2019unfairness}.
 
 \section{Wnioski z analizy eksploracyjnej}
 
 Najważniejsze cechy analizowanego zbioru danych, które bezpośrednio wpłynęły na przyjętą metodologię badawczą, to silnie prawostronnie skośny rozkład czasu gry użytkowników oraz wyraźna koncentracja popularności gier. Rozkład zmiennej \texttt{playtime\_forever} charakteryzuje się długim ogonem, co wymaga odpowiedniego przekształcenia tej zmiennej w wagę pewności wykorzystywaną w modelu. Z kolei nierównomierny rozkład popularności gier oznacza, że niewielka część katalogu generuje znaczną część interakcji, co należy uwzględnić w ocenie jakości rekomendacji poprzez analizę miar pokrycia katalogu oraz obciążenia popularnością.
 
-Kolejnym istotnym aspektem jest rola obserwacji z wartością \texttt{playtime\_forever = 0}, które odmiennie od dominującego w literaturze trendu ich usuwania~\cite{bunga2021implicit, cheuque2019steam} zostały zachowane w procesie uczenia jako istotny sygnał behawioralny. Ich uwzględnienie wymaga takiej postaci funkcji pewności, która przypisuje tym obserwacjom niezerowy poziom bazowy. Pytanie o~to, czy jednoczesne spowolnienie przyrostu wagi dla rosnących czasów gry przekłada się na jakość rekomendacji, stanowi jeden z~przedmiotów badania przedstawionego w~dalszej części pracy.
+Kolejnym istotnym aspektem jest rola obserwacji z wartością \texttt{playtime\_forever = 0}, które odmiennie od dominującego w literaturze trendu ich usuwania~\cite{bunga2021implicit, cheuque2019steam} zostały zachowane w procesie uczenia jako istotny sygnał behawioralny. Ich uwzględnienie wymaga funkcji pewności, która przypisuje takim obserwacjom wagę podwyższoną względem wartości domyślnej. Osobną kwestią pozostaje, czy jednoczesne spowolnienie przyrostu wagi dla rosnących czasów gry poprawia jakość rekomendacji. Odpowiedź na to pytanie przedstawiono w~dalszej części pracy.

@@ -32,6 +32,7 @@ liczbę trafnych rekomendacji:
 Metryki trafności oceniają zdolność systemu rekomendacyjnego do identyfikacji obiektów zawartych w zbiorze testowym. W kontekście rekomendacji Top-$N$ najpopularniejszymi miarami są precyzja ($\text{Precision}@N$), pełność ($\text{Recall}@N$) oraz znormalizowany zdyskontowany zysk skumulowany ($\text{NDCG}@N$)~\cite{jannach2011recommender, aggarwal2016recommender}.
 
 \subsection{Precyzja i Pełność}
+\label{subsec:precyzja-pelnosc}
 
 Precyzja na poziomie $N$ określa uśredniony stosunek liczby trafnych rekomendacji do całkowitej liczby obiektów zaprezentowanych na rekomendowanej liście~\cite{jannach2011recommender}:
 \begin{equation}
@@ -50,10 +51,11 @@ mianownika. Mimo szerokiego zastosowania obie przedstawione metryki mają istotn
 \subsection{Znormalizowany zdyskontowany zysk skumulowany}
 \label{subsec:ndcg}
 
-W celu wyeliminowania ograniczeń wyżej opisanych miar stosuje się znormalizowany zdyskontowany zysk skumulowany ($\text{NDCG}@N$)~\cite{aggarwal2016recommender}. Metryka ta nagradza wyższe pozycje trafnych obiektów na liście poprzez wprowadzenie logarytmicznego czynnika dyskontującego:
+W celu wyeliminowania ograniczeń wyżej opisanych miar stosuje się znormalizowany zdyskontowany zysk skumulowany \footnote{W~literaturze funkcjonują dwa warianty tej miary, różniące się postacią funkcji zysku w~liczniku: liniowy, wykorzystany powyżej, oraz wykładniczy, w~którym zysk przyjmuje postać $2^{\mathrm{rel}_k}-1$~\cite{burges2005learning}. Dla rozważanej w niniejszej pracy binarnej oceny oba warianty są równoważne.} ($\text{NDCG}@N$)~\cite{aggarwal2016recommender}. Metryka ta nagradza wyższe pozycje trafnych obiektów na liście poprzez wprowadzenie logarytmicznego czynnika dyskontującego:
 \begin{equation}
     \text{DCG}_u@N = \sum_{k=1}^{N} \frac{\mathbf{1}\left( i_k^{(u)} \in \mathcal{I}_u^{\text{test}} \right)}{\log_2(k + 1)}.
 \end{equation}
+
 
 Aby umożliwić porównywanie wyników pomiędzy użytkownikami o różnej liczbie istotnych obiektów, wartość $\text{DCG}_u@N$ normalizuje się poprzez idealną wartość tej metryki ($\text{IDCG}_u@N$), będącą wynikiem dla optymalnego uporządkowania, w którym wszystkie trafne obiekty znajdują się na najwyższych pozycjach listy:
 \begin{equation}
@@ -69,7 +71,7 @@ $\text{NDCG}@N$ jest współcześnie jedną z najczęściej stosowanych metryk e
 
 \section{Metryki pokrycia katalogu, popularności i różnorodności}
 
-Maksymalizacja trafności rekomendacji nie jest jedynym kryterium decydującym o sukcesie systemu rekomendacyjnego. Algorytmy optymalizujące metryki rankingowe mają tendencję do generowania rekomendacji zachowawczych. W~efekcie system może ograniczać się do wąskiego podzbioru katalogu, złożonego z~najpopularniejszych pozycji, bądź oferować listę obiektów bardzo do siebie podobnych. Przykładowo, przedstawienie użytkownikowi listy złożonej wyłącznie z~kolejnych odsłon tej samej serii, mimo wysokiego prawdopodobieństwa ich trafności, ogranicza możliwość odkrywania nowych treści. Z tego powodu ewaluacja systemów rekomendacyjnych wymaga uwzględnienia miar oceniających pokrycie katalogu, obciążenie popularnością oraz różnorodność wygenerowanych rekomendacji.
+Maksymalizacja trafności rekomendacji nie jest jedynym kryterium decydującym o sukcesie systemu rekomendacyjnego~\cite{kaminskas2016diversity}. Algorytmy optymalizujące metryki rankingowe mają tendencję do generowania rekomendacji zachowawczych. W~efekcie system może ograniczać się do wąskiego podzbioru katalogu, złożonego z~najpopularniejszych pozycji, bądź oferować listę obiektów bardzo do siebie podobnych. Przykładowo, przedstawienie użytkownikowi listy złożonej wyłącznie z~kolejnych odsłon tej samej serii, mimo wysokiego prawdopodobieństwa ich trafności, ogranicza możliwość odkrywania nowych treści. Z tego powodu ewaluacja systemów rekomendacyjnych wymaga uwzględnienia miar oceniających pokrycie katalogu, obciążenie popularnością oraz różnorodność wygenerowanych rekomendacji.
 
 \subsection{Pokrycie katalogu}
 
@@ -104,11 +106,11 @@ Ostateczna wartość wskaźnika $\Delta\text{GAP}@N$ stanowi względną zmianę 
 
 Warto zaznaczyć, że w~oryginalnej pracy~\cite{abdollahpouri2019unfairness} wartość $\Delta\text{GAP}@N$ obliczana jest osobno dla zdefiniowanego wcześniej podziału użytkowników na grupy. W~pracy metrykę tę stosuje się w~ujęciu globalnym, obliczając ją dla całego zbioru użytkowników $\mathcal{U}$.
 
-Wartość $\Delta\text{GAP}@N > 0$ oznacza, że średnia popularność rekomendowanych obiektów jest wyższa niż średnia popularność pozycji obecnych w~profilach użytkowników, co wskazuje na tendencję systemu do faworyzowania pozycji popularnych. Wartość $\Delta\text{GAP}@N < 0$ świadczy natomiast o~tym, że algorytm częściej rekomenduje pozycje bardziej niszowe niż te występujące dotychczas w~historii interakcji. Należy podkreślić, że wartość zerowa stanowi punkt odniesienia, w~którym poziom popularności rekomendacji odpowiada poziomowi obserwowanemu w~profilach użytkowników, nie zaś optimum tej metryki. Odchylenia w~obie strony wymagają interpretacji w~kontekście pozostałych miar, ponieważ zarówno nadmierne faworyzowanie pozycji popularnych, jak i~systematyczne przesunięcie rekomendacji w~stronę pozycji niszowych mogą obniżać ich użyteczność.
+Wartość $\Delta\text{GAP}@N > 0$ oznacza, że średnia popularność rekomendowanych obiektów jest wyższa niż średnia popularność pozycji obecnych w~profilach użytkowników, co wskazuje na tendencję systemu do faworyzowania pozycji popularnych. Wartość $\Delta\text{GAP}@N < 0$ świadczy natomiast o~tym, że algorytm częściej rekomenduje pozycje bardziej niszowe niż te występujące dotychczas w~historii interakcji. Wartość zerowa jest wartością neutralną i~pożądaną, oznacza bowiem zgodność poziomu popularności rekomendacji z~profilem użytkownika. Wartości dodatnie i~ujemne oznaczają odchylenie w~przeciwnych kierunkach, a~ich interpretacja wymaga uwzględnienia pozostałych miar, ponieważ zarówno nadmierne faworyzowanie pozycji popularnych, jak i~systematyczne przesunięcie rekomendacji w~stronę pozycji niszowych mogą obniżać ich użyteczność.
 
 \subsection{Różnorodność wewnątrzlistowa}
 
-Różnorodność wewnątrzlistowa (\textit{Intra-List Diversity}, ILD) mierzy stopień zróżnicowania obiektów znajdujących się na pojedynczej liście Top-$N$. W takim podejściu istotny jest wybór przestrzeni, w której wyznaczane jest podobieństwo pomiędzy obiektami. Naturalnym kandydatem wydają się wektory czynników ukrytych wyuczone przez model, jednak takie podejście uniemożliwia porównywanie wyników pomiędzy modelami. Przestrzeń czynników każdego modelu konstruowana jest niezależnie, jej wymiarowość może się różnić, a wektory ukryte zależą zarówno od algorytmu uczenia, jak i przyjętej regularyzacji. Wartości uzyskane w różnych przestrzeniach nie są z tego powodu porównywalne.
+Różnorodność wewnątrzlistowa (ang. \textit{Intra-List Diversity}, ILD) mierzy stopień zróżnicowania obiektów znajdujących się na pojedynczej liście Top-$N$. W takim podejściu istotny jest wybór przestrzeni, w której wyznaczane jest podobieństwo pomiędzy obiektami. Naturalnym kandydatem wydają się wektory czynników ukrytych wyuczone przez model, jednak takie podejście uniemożliwia porównywanie wyników pomiędzy modelami. Przestrzeń czynników każdego modelu konstruowana jest niezależnie, jej wymiarowość może się różnić, a wektory ukryte zależą zarówno od algorytmu uczenia, jak i przyjętej regularyzacji. Wartości uzyskane w różnych przestrzeniach nie są z tego powodu porównywalne.
 
 Z tego powodu w pracy podobieństwo obiektów wyznaczane jest na podstawie ich współwystępowania w zbiorze treningowym. Podstawą obliczeń jest binarna macierz preferencji $\mathbf{P} \in \{0, 1\}^{|\mathcal{U}| \times |\mathcal{I}|}$, w~której $p_{ui} = 1$ wtedy i~tylko wtedy, gdy użytkownik $u$ wszedł w interakcję z obiektem $i$. Kolumna $\mathbf{p}_i \in \{0,1\}^{|\mathcal{U}|}$ stanowi wówczas wektor obecności obiektu $i$ w profilach wszystkich użytkowników. Podobieństwo dwóch obiektów definiuje się jako podobieństwo cosinusowe odpowiadających im kolumn, a odpowiadającą mu odległość jako:
 
@@ -125,7 +127,7 @@ Miara ta przyjmuje wartość $0$ dla obiektów obecnych w~profilach dokładnie t
     \text{ILD}_u@N = \frac{2}{N(N - 1)} \sum_{k=1}^{N-1} \sum_{l=k+1}^{N} d_{\text{cos}}\left( i_k^{(u)}, i_l^{(u)} \right).
 \end{equation}
 
-Wzór \ref{eq:ild_u} stanowi wariant miary różnorodności analizowanej przez Hurleya i Zhanga ~\cite{hurley2011novelty}. Ostateczna wartość metryki $\text{ILD}@N$ stanowi średnią arytmetyczną z wartości wyznaczonych dla wszystkich użytkowników:
+Wzór \eqref{eq:ild_u} stanowi wariant miary różnorodności analizowanej przez Hurleya i Zhanga~\cite{hurley2011novelty}. Ostateczna wartość metryki $\text{ILD}@N$ stanowi średnią arytmetyczną z wartości wyznaczonych dla wszystkich użytkowników:
 
 \begin{equation} 
     \text{ILD}@N = \frac{1}{|\mathcal{U}|} \sum_{u \in \mathcal{U}} \text{ILD}_u@N.

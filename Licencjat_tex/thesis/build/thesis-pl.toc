@@ -43,7 +43,7 @@
 \contentsline {subsection}{\numberline {4.6.1}Aktywność użytkowników}{28}{subsection.4.6.1}%
 \contentsline {subsection}{\numberline {4.6.2}Popularność gier}{29}{subsection.4.6.2}%
 \contentsline {section}{\numberline {4.7}Wnioski z analizy eksploracyjnej}{30}{section.4.7}%
-\contentsline {chapter}{\numberline {5}Metodyka ekperymentów}{32}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Metodyka eksperymentów}{32}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Przygotowanie danych}{32}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Porównywane modele}{33}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Strojenie hiperparametrów}{33}{section.5.3}%

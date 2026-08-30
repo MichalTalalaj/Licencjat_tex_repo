@@ -51,7 +51,7 @@ W praktyce model ten rozszerza się o wyrazy wolne, które odpowiadają za syste
     \hat{r}_{ui} = \mu + b_u + b_i + \mathbf{x}_u^T \mathbf{y}_i,
 \end{equation}
 
-gdzie $\mu \in \mathbb{R}$ oznacza średnią ocenę ze wszystkich obserwacji w zbiorze treningowym, $b_u \in \mathbb{R}$ jest odchyleniem użytkownika $u$, a $b_i \in \mathbb{R}$ odchyleniem obiektu $i$ od $\mu$. Należy podkreślić, że odchylenia nie są wyznaczane wprost jako średnie empiryczne, lecz estymowane łącznie z pozostałymi parametrami w procesie optymalizacji
+gdzie $\mu \in \mathbb{R}$ oznacza średnią ocenę ze wszystkich obserwacji w zbiorze treningowym, $b_u \in \mathbb{R}$ jest odchyleniem użytkownika $u$, a $b_i \in \mathbb{R}$ odchyleniem obiektu $i$ od $\mu$. Należy podkreślić, że odchylenia nie są wyznaczane wprost jako średnie empiryczne, lecz estymowane łącznie z pozostałymi parametrami w procesie optymalizacji.
 
 Parametry modelu są dobierane na podstawie minimalizacji funkcji straty zdefiniowanej na zbiorze zaobserwowanych ocen $\mathcal{K} = \{(u, i) : r_{ui} \neq \text{null}\}$. Jako podstawowe kryterium dopasowania stosuje się błąd średniokwadratowy. Ze względu na wysoki stopień rzadkości macierzy $\mathbf{R}$ oraz dużą liczbę parametrów ($m \times f + n \times f + m + n$), model bezpośrednio optymalizowany pod kątem minimalizacji błędu na danych treningowych wykazuje silną tendencję do przeuczenia. Aby temu zapobiec, do funkcji celu wprowadza się człony regularyzacyjne oparte na normie $L_2$. Karzą one wysokie wartości współczynników w wektorach $\mathbf{x}_u$ oraz $\mathbf{y}_i$, a także w wyrazach wolnych $b_u, b_i$. Zapobiega to dominacji pojedynczych cech i zmniejsza wariancję modelu. Ostateczna funkcja celu $\mathcal{L}$ przyjmuje postać:
 
@@ -90,7 +90,7 @@ Bezpośrednie zastosowanie klasycznych algorytmów faktoryzacji macierzy do dany
     \item \textbf{Różnica między preferencją a wartością obserwacji:} W modelu Funk SVD każda obserwowana wartość $r_{ui}$ wpływa na funkcję celu proporcjonalnie do swojej wartości. W przypadku danych niejawnych liczba interakcji nie odzwierciedla jednak bezpośrednio stopnia preferencji użytkownika. Model nie zawiera mechanizmu pozwalającego oddzielić długość interakcji od preferencji, co sprawia, że obserwacje o dużych wartościach dominują proces uczenia.
 \end{enumerate}
 
-Powyższe ograniczenia wymusiły opracowanie dedykowanych modeli dla danych niejawnych. Najważniejsze z nich to implicit ALS (ang. \textit{implicit Alternating Least Squares}), wprowadzający model oparty na rozdzieleniu sygnału preferencji oraz poziomu pewności przypisanego obserwacji, oraz model BPR (ang. \textit{Bayesian Personalized Ranking}), który formułuje problem rekomendacji jako zadanie optymalizacji rankingu. Szczegółowy opis obu modeli przedstawiono w kolejnych podrozdziałach
+Powyższe ograniczenia wymusiły opracowanie dedykowanych modeli dla danych niejawnych. Najważniejsze z nich to implicit ALS (ang. \textit{implicit Alternating Least Squares}), wprowadzający model oparty na rozdzieleniu sygnału preferencji oraz poziomu pewności przypisanego obserwacji, oraz model BPR (ang. \textit{Bayesian Personalized Ranking}), który formułuje problem rekomendacji jako zadanie optymalizacji rankingu. Szczegółowy opis obu modeli przedstawiono w kolejnych podrozdziałach.
 
 \section{Implicit Alternating Least Squares (iALS)}
 
@@ -360,13 +360,13 @@ gdzie $C_\Theta$ jest stałą. Przyjmując oznaczenie $\lambda_\Theta = \frac{1}
 Połączenie logarytmu funkcji wiarogodności oraz logarytmu rozkładu a priori prowadzi do końcowej postaci kryterium optymalizacyjnego, które podlega maksymalizacji:
 
 \begin{equation}
-    \mathcal{L}_{\text{BPR}}(\Theta) = \sum_{(u, i, j) \in D_S} \ln \sigma(\hat{s}_{uij}) - \lambda_\Theta \left( \sum_{u \in U} \|\mathbf{x}_u\|_2^2 + \sum_{i \in I} \|\mathbf{y}_i\|_2^2 \right).
+    \mathcal{L}_{\text{BPR}}(\Theta) = \sum_{(u, i, j) \in D_S} \ln \sigma(\hat{s}_{uij}) - \lambda_\Theta \left( \sum_{u \in \mathcal{U}} \|\mathbf{x}_u\|_2^2 + \sum_{i \in \mathcal{I}} \|\mathbf{y}_i\|_2^2 \right).
 \end{equation}
 
 Uwzględniając postać predykcji z faktoryzacji macierzy ($\hat{s}_{uij} = \mathbf{x}_u^T \mathbf{y}_i - \mathbf{x}_u^T \mathbf{y}_j$), kryterium przybiera pełną postać:
 
 \begin{equation}
-    \mathcal{L}_{\text{BPR}}(\Theta) = \sum_{(u, i, j) \in D_S} \ln \sigma\left( \mathbf{x}_u^T \mathbf{y}_i - \mathbf{x}_u^T \mathbf{y}_j \right) - \lambda_\Theta \left( \sum_{u \in U} \|\mathbf{x}_u\|_2^2 + \sum_{i \in I} \|\mathbf{y}_i\|_2^2 \right).
+    \mathcal{L}_{\text{BPR}}(\Theta) = \sum_{(u, i, j) \in D_S} \ln \sigma\left( \mathbf{x}_u^T \mathbf{y}_i - \mathbf{x}_u^T \mathbf{y}_j \right) - \lambda_\Theta \left( \sum_{u \in \mathcal{U}} \|\mathbf{x}_u\|_2^2 + \sum_{i \in \mathcal{I}} \|\mathbf{y}_i\|_2^2 \right).
 \end{equation}
 
 \subsection{Optymalizacja z wykorzystaniem LearnBPR}
@@ -389,7 +389,7 @@ dla każdego użytkownika, a~więc jego liczność wynosi:
 co oznacza, że dla typowego użytkownika liczba trójek treningowych jest
 w~przybliżeniu liniowa względem rozmiaru całego katalogu obiektów $\mathcal{I}$.
 
-Z tego powodu w pracy Rendlego i in. \cite{rendle2009bpr} zaproponowano algorytm LearnBPR, oparty na stochastycznym wznoszeniu gradientu (ang. \textit{stochastic gradient ascent}) z zastosowaniem próbkowania bootstrapowego. Zamiast obliczać pełny gradient dla całego zbioru $D_{S}$, w każdej iteracji algorytmu losowana jest pojedyncza trójka danych $(u,i,j)$. Procedura ta polega na wyborze z równym prawdopodobieństwem użytkownika $u$, powiązanego z nim obiektu pozytywnego $i \in I_u^+$ oraz obiektu negatywnego $j \in I \setminus I_u^+$. Podejście to pozwala na znaczne obniżenie kosztu obliczeniowego pojedynczej iteracji. Warto zaznaczyć, że w oryginalnym sformułowaniu algorytmu LearnBPR losowanie trójek odbywa się ze zwracaniem i z rozkładu jednostajnego, a nie poprzez sekwencyjne przejście po użytkownikach lub obiektach, jak ma to miejsce w klasycznym stochastycznym wznoszeniu gradientu.
+Z tego powodu w pracy Rendlego i in. \cite{rendle2009bpr} zaproponowano algorytm LearnBPR, oparty na stochastycznym wznoszeniu gradientu (ang. \textit{stochastic gradient ascent}) z zastosowaniem próbkowania bootstrapowego. Zamiast obliczać pełny gradient dla całego zbioru $D_{S}$, w każdej iteracji algorytmu losowana jest pojedyncza trójka danych $(u,i,j)$. Procedura ta polega na wyborze z równym prawdopodobieństwem użytkownika $u$, powiązanego z nim obiektu pozytywnego $i \in \mathcal{I}_u^+$ oraz obiektu negatywnego $j \in \mathcal{I} \setminus \mathcal{I}_u^+$. Podejście to pozwala na znaczne obniżenie kosztu obliczeniowego pojedynczej iteracji. Warto zaznaczyć, że w oryginalnym sformułowaniu algorytmu LearnBPR losowanie trójek odbywa się ze zwracaniem i z rozkładu jednostajnego, a nie poprzez sekwencyjne przejście po użytkownikach lub obiektach, jak ma to miejsce w klasycznym stochastycznym wznoszeniu gradientu.
 
 \subsubsection{Wyprowadzenie reguł aktualizacji}
 
@@ -425,7 +425,7 @@ Aby wyznaczyć gradienty względem poszczególnych wektorów cech ukrytych, korz
 
 \subsubsection{Reguły aktualizacji algorytmu LearnBPR}
 
-Na podstawie wzorów \eqref{eq:gradxu}--\eqref{eq:gradyj} oraz reguły gradientu wznoszącego dla pojedynczej próbki, algorytm LearnBPR w każdej iteracji losuje ze zwracaniem trójkę $(u,i,j) \sim D_S$ i wykonuje aktualizację trzech wektorów cech ukrytych:
+Na podstawie wzorów \eqref{eq:gradxu}--\eqref{eq:gradyj} oraz reguły aktualizacji metodą wznoszenia gradientowego dla pojedynczej próbki, algorytm LearnBPR w każdej iteracji losuje ze zwracaniem trójkę $(u,i,j) \sim D_S$ i wykonuje aktualizację trzech wektorów cech ukrytych:
 \begin{align}
     \mathbf{x}_u &\leftarrow \mathbf{x}_u + \eta \Big( \sigma(-\hat{s}_{uij})(\mathbf{y}_i - \mathbf{y}_j) - 2\lambda_\Theta \mathbf{x}_u \Big), \\
     \mathbf{y}_i &\leftarrow \mathbf{y}_i + \eta \Big( \sigma(-\hat{s}_{uij})\,\mathbf{x}_u - 2\lambda_\Theta \mathbf{y}_i \Big), \\

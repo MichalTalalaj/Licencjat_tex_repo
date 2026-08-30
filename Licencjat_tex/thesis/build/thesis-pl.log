@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.3)  28 AUG 2026 11:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.3)  30 AUG 2026 22:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1141,7 +1141,7 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 Package rerunfilecheck Info: File `thesis-pl.out' has not changed.
-(rerunfilecheck)             Checksum: B16431B6B140A1D28577385B4F76EA9D;13128.
+(rerunfilecheck)             Checksum: E1B431F7EC9784E9F2A32CD9F0991D26;13133.
 Package logreq Info: Writing requests to 'thesis-pl.run.xml'.
 \openout1 = `thesis-pl.run.xml'.
 
@@ -1149,13 +1149,13 @@ Package logreq Info: Writing requests to 'thesis-pl.run.xml'.
 Here is how much of TeX's memory you used:
  25015 strings out of 467683
  435599 string characters out of 5431557
- 1324523 words of memory out of 5000000
+ 1324524 words of memory out of 5000000
  53433 multiletter control sequences out of 15000+600000
  654411 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,17n,90p,2112b,2362s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\misie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk><D:/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/MiKTeX/fonts/type1/public/pl/plbx10.pfb><D:/MiKTeX/fonts/type1/public/pl/plbx8.pfb><D:/MiKTeX/fonts/type1/public/pl/plex10.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi10.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi12.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi5.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi6.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi8.pfb><D:/MiKTeX/fonts/type1/public/pl/plmi9.pfb><D:/MiKTeX/fonts/type1/public/pl/plr10.pfb><D:/MiKTeX/fonts/type1/public/pl/plr6.pfb><D:/MiKTeX/fonts/type1/public/pl/plr8.pfb><D:/MiKTeX/fonts/type1/public/pl/plr9.pfb><D:/MiKTeX/fonts/type1/public/pl/plsy10.pfb><D:/MiKTeX/fonts/type1/public/pl/plsy6.pfb><D:/MiKTeX/fonts/type1/public/pl/plsy8.pfb><D:/MiKTeX/fonts/type1/public/pl/plsy9.pfb>
-Output written on d:\Studiowe\Licencjat\Licencjat_tex_repo\Licencjat_tex\thesis\build\thesis-pl.pdf (63 pages, 3199608 bytes).
+Output written on d:\Studiowe\Licencjat\Licencjat_tex_repo\Licencjat_tex\thesis\build\thesis-pl.pdf (63 pages, 3199179 bytes).
 PDF statistics:
  1728 PDF objects out of 1728 (max. 8388607)
  254 named destinations out of 1000 (max. 500000)

@@ -46,10 +46,10 @@
 \contentsline {chapter}{\numberline {5}Metodyka eksperymentów}{32}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Przygotowanie danych}{32}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Porównywane modele}{33}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Strojenie hiperparametrów}{33}{section.5.3}%
+\contentsline {section}{\numberline {5.3}Strojenie hiperparametrów}{34}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Finalna ewaluacja testowa}{34}{section.5.4}%
 \contentsline {section}{\numberline {5.5}Analiza wrażliwości na $\alpha $, $\beta $ i $\gamma $}{35}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Ograniczenia metodologii}{35}{section.5.6}%
+\contentsline {section}{\numberline {5.6}Ograniczenia metodologii}{36}{section.5.6}%
 \contentsline {chapter}{\numberline {6}Wyniki eksperymentów}{37}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Wyniki strojenia hiperparametrów}{37}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Analiza funkcji pewności}{40}{section.6.2}%

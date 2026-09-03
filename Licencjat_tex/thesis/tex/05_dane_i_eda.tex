@@ -5,9 +5,7 @@
 
 Dane wykorzystane w pracy pochodzą z publicznie dostępnej kolekcji zbiorów danych zebranych przez zespół Juliana McAuleya~\cite{mcauleySteamData} z Uniwersytetu Kalifornijskiego w San Diego w celu budowy systemów rekomendacyjnych i personalizacji. W szczególności wykorzystano podzbiór zawierający biblioteki gier użytkowników platformy dystrybucji cyfrowej Steam.
 
-Źródłowe dane miały postać pliku JSON, w którym każdy rekord opisywał bibliotekę jednego użytkownika, identyfikowanego przez zmienną \texttt{user\_id}. Dla każdego użytkownika dostępna była lista przypisanych do niego gier wraz z identyfikatorem gry (\texttt{item\_id}), nazwą (\texttt{item\_name}) oraz łącznym czasem rozgrywki (\texttt{playtime\_forever}) w minutach.
-
-Dane wejściowe zostały przekształcone do postaci ramki danych, w której pojedynczy wiersz odpowiada unikalnej parze użytkownik--gra, a~następnie do postaci macierzy rzadkiej, w~której wiersze odpowiadają użytkownikom, kolumny grom, a~wartości czasowi interakcji w~danej parze.
+Źródłowe dane miały postać pliku JSON, w którym każdy rekord opisywał bibliotekę jednego użytkownika, identyfikowanego przez zmienną \texttt{user\_id}. Dla każdego użytkownika dostępna była lista przypisanych do niego gier wraz z identyfikatorem gry (\texttt{item\_id}), nazwą (\texttt{item\_name}) oraz łącznym czasem rozgrywki (\texttt{playtime\_forever}) w minutach. Dane wejściowe zostały przekształcone do postaci ramki danych, w której pojedynczy wiersz odpowiada unikalnej parze użytkownik--gra.
 
 \section{Dane jako niejawna informacja zwrotna}
 
